@@ -5,8 +5,6 @@ date:   2011-08-08 00:00:00
 permalink: posts/rails-3-and-the-jquery-effect
 ---
 
-<img src="http://farm6.static.flickr.com/5300/5516467842_62c2c53678_z.jpg" width="700" alt="jQuery and Rails 3.1" title="jQuery and Rails 3.1"/>
-
 Ruby on Rails 3.0 was a big evolution of the Rails DNA. Architectural changes were hard to miss - true. But, more happened - more changed.
 
 In Rails 3.0 I saw a strategic change in the way the Rails Core Team viewed itself. Prototype went from being the Official JavaScript framework for Rails to being the Recommended JavaScript framework for Rails. That's a really big deal!

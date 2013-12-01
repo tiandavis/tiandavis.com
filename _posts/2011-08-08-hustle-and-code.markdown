@@ -5,8 +5,6 @@ date:   2011-08-08 00:00:00
 permalink: posts/hustle-and-code
 ---
 
-<img width="700" height="260" alt="Hustle and Code - Seventh Octave" src="http://28.media.tumblr.com/tumblr_lhvejky8uV1qa5a46o1_500.jpg">
-
 Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people [already have][1] and many of us are still cleaning up that mess.
 
 In [How to Design Programs][2], the authors said it well, "Bad programming is easy. *Idiots* can learn it in *21 days*, even if they are *Dummies*." 
