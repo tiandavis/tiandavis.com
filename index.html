@@ -1,0 +1,20 @@
+---
+layout: default
+title: Thoughts From The Trenches
+---
+
+<div id="home">
+  <header>
+    <h1>Software Engineer. <br> JavaScript. Ruby. Rails.</h1>
+  </header>
+	
+  <hr class="large">
+
+  <h3>Thoughts From The Trenches</h3>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

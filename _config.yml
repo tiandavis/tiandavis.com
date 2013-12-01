@@ -1,0 +1,4 @@
+name: Thoughts From The Trenches
+markdown: redcarpet
+pygments: true
+relative_permalinks: true
