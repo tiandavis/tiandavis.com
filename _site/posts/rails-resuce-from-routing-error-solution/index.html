@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>8-Bit Hustler - Ruby. JavaScript. Not necessarily in that order.</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Rails 3.0 rescue from Routing Error Solution</title>
-	<meta name="description" content="Software Engineer. JavaScript. Ruby. Rails.">
-	<meta name="author" content="Tian Davis">
-	
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <div id="off-canvas">
+      <div id="avatar">
+        <!--<img src="/assets/img/img1.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">-->
+      </div>
+      <div id="bio">
+          <h1>Hi, I'm Tian Davis.</h1>
+          <p>I'm a software developer, living in the United States and this is my personal blog. I craft code on <a href="https://github.com/tiandavis">Github</a> and share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a>. Shoot me an <a href="mailto:tiandavis@gmail.com">email</a> if you'd like to be in touch.</p>
+      </div>
+    </div>
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="/stylesheets/base.css">
-	<link rel="stylesheet" href="/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="/stylesheets/layout.css">
-	<link rel="stylesheet" href="/stylesheets/docs.css">
-	<link rel="stylesheet" href="/stylesheets/syntax.css">
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="" title="Back to Homepage">8-Bit Hustler</a></h1>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
 
-	<!-- Favicon
-	================================================== -->
-	<link rel="shortcut icon" href="/images/favicon.ico">
-	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2010-11-11T00:00:00Z" itemprop="datePublished">
+          11 November 2010
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">Rails 3.0 rescue from Routing Error Solution</h1>
+    <div itemprop="articleBody">
+      <p>Well, I've got good news and I've got bad news. As of Rails 3.0.1, using rescue_from in your ApplicationController to recover from a routing error is broken! That's the bad news.</p>
 
-</head>
-<body data-twttr-rendered="true">
-			<div class="container">
-				<div class="three columns sidebar">
-					<nav>
-						<h3 id="logo">Spartan</h3>
-						
-						<ul>
-							<li class="icon blog"><a href="/">Blog</a></li>
-							<li class="icon email"><a href="mailto:hello@tiandavis.com">Email</a></li>
-							<li class="icon twitter"><a href="https://twitter.com/tiandavis">Twitter</a></li>
-							<li class="icon github"><a href="https://github.com/tiandavis">Github</a></li>
-						</ul>
-					</nav>
-					&nbsp;
-				</div>
-				
-				<div class="twelve columns offset-by-one content">
-					<div class="doc-section clearfix post" id="typography">
-	<h2>Rails 3.0 rescue from Routing Error Solution</h2>
-	
-	<p>Well, I&#39;ve got good news and I&#39;ve got bad news. As of Rails 3.0.1, using rescue_from in your ApplicationController to recover from a routing error is broken! That&#39;s the bad news.</p>
-
-<p>The good news is I have a solution that will keep you in unison with the Rails Core Team. The Rails team has promised a fix some time in Rails 3.1. Until then, I&#39;ve got readers and I&#39;ve got customers and I <em>shudder</em> at the thought of showing them a generic error page.</p>
+<p>The good news is I have a solution that will keep you in unison with the Rails Core Team. The Rails team has promised a fix some time in Rails 3.1. Until then, I've got readers and I've got customers and I <em>shudder</em> at the thought of showing them a generic error page.</p>
 
 <h3>The Situation</h3>
 
-<p>It&#39;s bad enough an error has occurred in the first place. At that point I want to take control of the situation and rescue my audience from a bad experience back to enjoyment!</p>
+<p>It's bad enough an error has occurred in the first place. At that point I want to take control of the situation and rescue my audience from a bad experience back to enjoyment!</p>
 
 <p>Previously in Rails 2.3.8 and below you could handle routing errors elegantly using rescue_from ActionController::RoutingError:</p>
 
@@ -76,17 +74,18 @@
     <span class="k">end</span>
 </code></pre></div>
 
-<p>However, things are a little different in Rails 3. The reality is, as of Rails 3.0.1, ApplicationController can&#39;t catch ActionController::RoutingError and thus, we cannot take advantage of rescue_from like we used to.</p>
 
-<p>Now, for those of you who don&#39;t know, I&#39;m a realist. So, I&#39;m not expecting the Rails team to spring a solution overnight.</p>
+<p>However, things are a little different in Rails 3. The reality is, as of Rails 3.0.1, ApplicationController can't catch ActionController::RoutingError and thus, we cannot take advantage of rescue_from like we used to.</p>
 
-<p>Personally, I&#39;m going to wait for the Official fix from the Rails Core Team. In the meantime, I need a simple, no side effects solution that I can use right now!</p>
+<p>Now, for those of you who don't know, I'm a realist. So, I'm not expecting the Rails team to spring a solution overnight.</p>
+
+<p>Personally, I'm going to wait for the Official fix from the Rails Core Team. In the meantime, I need a simple, no side effects solution that I can use right now!</p>
 
 <h3>Simple Solution</h3>
 
-<p>This is one of those times when it&#39;s great to be a developer. There is nothing we can&#39;t solve with a little elbow grease and ingenuity. </p>
+<p>This is one of those times when it's great to be a developer. There is nothing we can't solve with a little elbow grease and ingenuity.</p>
 
-<p>Expanding on the suggestion given by the Rails core team, here&#39;s the solution I use to handle routing errors in Rails 3.0:</p>
+<p>Expanding on the suggestion given by the Rails core team, here's the solution I use to handle routing errors in Rails 3.0:</p>
 
 <h4>config/routes.rb</h4>
 
@@ -98,7 +97,8 @@
     <span class="k">end</span>
 </code></pre></div>
 
-<p>NOTE: The &quot;a&quot; is actually a parameter in the Rails 3 Route Globbing technique. For example, if your url was <em>/this-url-does-not-exist</em>, then params[:a] equals &quot;<em>/this-url-does-not-exist</em>&quot;. So be as creative as you&#39;d like handling that rogue route.</p>
+
+<p>NOTE: The "a" is actually a parameter in the Rails 3 Route Globbing technique. For example, if your url was <em>/this-url-does-not-exist</em>, then params[:a] equals "<em>/this-url-does-not-exist</em>". So be as creative as you'd like handling that rogue route.</p>
 
 <h4>app/controllers/errors_controller.rb</h4>
 
@@ -111,7 +111,8 @@
     <span class="k">end</span>
 </code></pre></div>
 
-<p>However, feel free to modify to fit your individual needs. Everyone&#39;s situation will be slightly different. For example, if you&#39;re not going to reuse your 404 error handling logic, then here&#39;s the full ErrorsController without inheritance:</p>
+
+<p>However, feel free to modify to fit your individual needs. Everyone's situation will be slightly different. For example, if you're not going to reuse your 404 error handling logic, then here's the full ErrorsController without inheritance:</p>
 
 <div class="highlight"><pre><code class="ruby">    <span class="k">class</span> <span class="nc">ErrorsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
       <span class="k">def</span> <span class="nf">routing</span>
@@ -120,15 +121,45 @@
     <span class="k">end</span>
 </code></pre></div>
 
-<p>I&#39;m big on keeping things simple. I believe solutions should be simple without being simplistic. Like I said earlier, I look forward to an Official solution from the Rails Core Team. Until then, this gets the job done!</p>
+
+<p>I'm big on keeping things simple. I believe solutions should be simple without being simplistic. Like I said earlier, I look forward to an Official solution from the Rails Core Team. Until then, this gets the job done!</p>
 
 <p>Well, I encourage you to dig into Rails 3 and have a little fun. And if you have another solution, post here so we can discuss. Until next time Beloved, take care!</p>
 
-</div>
-				</div>
-					
-			</div><!-- container -->
+    </div>
+    <div id="share" class="feat">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>
+    
+      <a rel="next" href="/posts/object-oriented-ruby-classes-mixins-and-jedi" id="next">
+        <span class="nav-title nav-title-next">newer</span> &rarr;
+      </a>
+    
+    
+  </article>
+</section>
 
-			<div class="resize"></div>
-	
-</body></html>
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; Tian Davis</small>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-00000000-1', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>

@@ -1,4 +1,15 @@
-name: Thoughts From The Trenches
-markdown: redcarpet
+name: "8-Bit Hustler"
+description: "Ruby. JavaScript. Not necessarily in that order."
+
+author: "Tian Davis"
+
+url: "http://tiandavis.com"
+baseurl: ""
+
+markdown: rdiscount
+permalink: :year/:month/:title.html
 pygments: true
-relative_permalinks: true
+
+# Google Analytics
+ga_domain: tiandavis.com
+ga_tracking_id: UA-00000000-1

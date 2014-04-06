@@ -61,7 +61,7 @@ Here's how a Jedi class might look:
 And the Padawan class might look like this:
 
 	{% highlight ruby %}
-   	require 'Force'
+    require 'Force'
     require 'Lightsaber'
 
     class Padawan
