@@ -273,17 +273,7 @@ It makes sense when you're dealing with legacy code that already has a base clas
 
 You will spend a lot of time wiring up your domain models, but you'll get a mature and flexible data layer - just the type of sprucing up any legacy app could use.
 
-###Try it out for yourself
-
-Use either *ruby dojo.rb* to run the example or better yet - run *irb*, then *load 'dojo.rb'* to interact with the Jedi Ruby objects live.
-
-What do you get when you mix Ruby, Jedi and Mixins? A helluva good time! Join the fun:
-
-[Download the Ruby Object Oriented Jedi Tutorial][3]
-
 
   [1]: http://starwars.wikia.com/wiki/Lightsaber_combat
   [2]: http://datamapper.org/
-  [3]: https://github.com/tiandavis/jedi
-
 
