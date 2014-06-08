@@ -96,7 +96,7 @@ During the Fall of 1996, Brendan [rewrote the JavaScript language][14] and built
 
 Microsoft implements JavaScript for the first time in Internet Explorer 3.0 in August 1996 - Here, it is called JScript. As explained by JavaScript guru Douglas Crockford in his talk titled The JavaScript Programming Language on YUI Theater,
 
-[Microsoft] did not want to deal with Sun about the trademark issue, and so they called their implementation JScript. A lot of people think that JScript and JavaScript are different but similar languages. That's not the case. They are just different names for the same language, and the reason the names are different was to get around trademark issues.
+*[Microsoft] did not want to deal with Sun about the trademark issue, and so they called their implementation JScript. A lot of people think that JScript and JavaScript are different but similar languages. That's not the case. They are just different names for the same language, and the reason the names are different was to get around trademark issues.*
 
 Today, ["JavaScript" is a trademark of Oracle Corporation][9]. It is used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.
 
@@ -188,7 +188,7 @@ The promise was simple - write your JavaScript against jQuery and your code was 
 
 Not surprising when you think about it because most code was server-side. In fact, ajax techniques had just barely started to become known. All this meant was folks simply didn't care about the frontend. All that changed with jQuery. Because of jQuery developers started to wake up and start noticing JavaScript.
 
-Now, clearly John is not a Goddess and neither is he a God. It funny because The Matrix had the Oracle and the Oracle was able to see a person's destiny. Well, I felt like John is our Oracle and he saw not just what JavaScript was, but what it could be.
+Now, clearly John is not a Goddess and neither is he a God. But its funny because The Matrix had the Oracle and the Oracle was able to see a person's destiny. Well, I felt like John was our Oracle and he saw not just what JavaScript was, but what it could be.
 
 Because of John and jQuery, collectively, we realized the dream of cross-browser development. We had finally normalized JavaScript development and laid a solid foundation for innovation. During this time, John taught us about the DOM in all its shabby self.
 
@@ -296,7 +296,7 @@ Eventually, CoffeeScript made its way to Brendan Eich - The Creator of JavaScrip
 
 Inspired by Ruby, Python and Haskell, CoffeeScript went on to become the default JavaScript language in the popular Ruby on Rails web framework. 
 
-With those results, CoffeeScript is (arguably), the most successful designer language ever released. But that was just the beginning of JavaScript's designer languages.
+With those results, CoffeeScript is (arguably) the most successful designer language ever released. But that was just the beginning of JavaScript's designer languages.
 
 Google Web Toolkit or GWT attempted to transpile Java to JavaScript (Oh how the mighty had fallen). Dart, GWT's predecessor, was Google's attempt to make GWT more like JavaScript. Effectively, Dart was Google's answer to CoffeeScript.
 
