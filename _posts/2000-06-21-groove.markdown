@@ -97,7 +97,7 @@ The backend leverages Ruby and Rails to create a REST API. For backend testing, 
 
 I write on my blog [8-Bit Hustler]. I craft code on [GitHub] and share thoughts on [Twitter] because I love the craft. I co-organize [Columbus Code Camp] because I love the people even more. 
 
-As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Shoot me an [email] if you’d like to get in touch.
+As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. I’d like a shot at helping you shape a masterpiece. Is there anything stopping you from [emailing][email] me right now?
 
 
 
