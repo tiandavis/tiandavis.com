@@ -6,6 +6,7 @@ title: Homepage
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
+	  {% if post.title != 'JavaScript Engineer' and post.title != 'Front End Hacker'  %}
       <li itemscope itemtype="http://schema.org/BlogPosting">
         <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
           <div class="p-wrap">
@@ -17,6 +18,7 @@ title: Homepage
           </div>
         </a>
       </li>
+	  {% endif %}
     {% endfor %}
   </ul>
 </div>

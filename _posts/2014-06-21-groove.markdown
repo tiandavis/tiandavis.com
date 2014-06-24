@@ -1,0 +1,124 @@
+---
+layout: resume
+title:  "Front End Hacker"
+date:   2014-06-21 00:00:00
+permalink: groove
+---
+
+###Groove Front End Analysis
+To prepare, I wanted to spend some time with Groove to see the application through the eyes of a fresh customer. Spoiler alert - I love the attention to detail and clear appreciation for design.
+
+Here are a few areas I thought would be really cool to iterate on:
+
+##Copying support email should have an effect
+Today, hovering over the [Copy] button has no effect. Also, once clicked, there is no visual cue Groove's inbox email is copied:
+
+![Groove][groove-copy-support-email-effect]
+
+The [Copy] button should change slightly on a hover event. When the [Copy] button is clicked, the copied text should flash to let the user know the text was actually copied.
+
+
+##Larger attachment trigger area needed
+Today, only the elements with an "attach-instructions" class trigger the file attachment event. As the number of attachments grow, it becomes less clear where files can be dragged to:
+
+![Groove][groove-attachment-area]
+
+The attachment box should have a larger area to trigger an attach event, else the drag & drop “feels” like threading a needle and could aggravate customers.
+
+##JavaScript charts should be vector based
+Canvas based charts are considered harmful because you can’t attach DOM events to chart elements, thereby limiting customization to vendor exposed functionality only:
+
+![Groove][groove-canvas-charts]
+
+Less important is they aren’t reliable in lower versions of IE without a polyfill.
+
+Canvas versus SVG is like Photoshop versus Illustrator. Both produce beautiful images, but Illustrator images are scalable and never lose crispness.
+
+Consider switching to SVG based charts. 
+
+We could even increase readability and comprehension by spelling out exactly what metrics we want to convey and leverage small inline charts called [sparklines].
+
+
+##Consensus
+Groove is a beautiful product. Love the app store concept too, though there's still some work to be done there as well.  I could see opening the app store to external developers and creating a Salesforce-like marketplace. 
+
+With that strategy, Groove could experience an eco-system growth similar to the explosive growth we saw back in ’08 when Twitter opened its API to external developers.
+
+
+###Front End Hacker
+Michelangelo never saw a lump of marble. 
+
+He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.
+
+For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby & JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, [code samples].
+
+##Code is Poetry
+
+As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.
+
+But my passion is open standards and front end development:
+
+![Capabilities][capabilities]
+
+The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
+
+Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.
+
+###Galileo
+
+[Galileo] demonstrates integrating with a third-party API. Here, we integrate with Twitter's API:
+
+![Galileo][galileo-screenshot]
+
+Galileo organizes a number of open source standards and projects:
+
+On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+
+For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
+
+
+
+###Enigma
+
+[Enigma] demonstrates best practice application architecture for modern, full stack, mobile ready web applications:
+
+![Enigma][enigma-screenshot]
+
+Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.
+
+On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+
+For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.
+
+The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on [Github][enigma].
+
+
+###What's next exactly...?
+
+I write on my blog [8-Bit Hustler]. I craft code on [GitHub] and share thoughts on [Twitter] because I love the craft. I co-organize [Columbus Code Camp] because I love the people even more. 
+
+As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Shoot me an [email] if you’d like to get in touch.
+
+
+
+[Pieta]: http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)
+[code samples]: https://github.com/tiandavis
+[8-Bit Hustler]: http://tiandavis.com/posts/javascript-and-the-monomyth/
+[GitHub]: https://github.com/tiandavis
+[Twitter]: https://twitter.com/tiandavis
+[Columbus Code Camp]: http://columbuscodecamp.com/
+[email]: mailto:tiandavis@gmail.com
+[enigma-screenshot]: /images/engima-screenshot.png "Enigma - Ruby/Rails"
+[galileo-screenshot]: /images/galileo-screenshot.png "Galileo - JavaScript - Front End"
+[capabilities]: /images/capabilities.png "Core Capabilities"
+[Galileo]: https://github.com/tiandavis/galileo
+[Enigma]: https://github.com/tiandavis/enigma
+
+[groove-copy-support-email-effect]: /images/groove-copy-support-email-effect.png "groove-copy-support-email-effect"
+[groove-attachment-area]: /images/groove-attachment-area.png "groove-attachment-area"
+[groove-canvas-charts]: /images/groove-canvas-charts.png "groove-canvas-charts"
+
+[sparklines]: http://omnipotent.net/jquery.sparkline/#s-about
+
+
+

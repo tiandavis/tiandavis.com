@@ -1,0 +1,79 @@
+---
+layout: resume
+title:  "JavaScript Engineer"
+date:   2014-06-20 00:00:00
+permalink: resume
+---
+
+Michelangelo never saw a lump of marble. 
+
+He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.
+
+For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby & JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, [code samples].
+
+##Code is Poetry
+
+As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.
+
+But my passion is open standards and front end development:
+
+![Capabilities][capabilities]
+
+The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
+
+Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.
+
+###Galileo
+
+[Galileo] demonstrates integrating with a third-party API. Here, we integrate with Twitter's API:
+
+![Galileo][galileo-screenshot]
+
+Galileo organizes a number of open source standards and projects:
+
+On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+
+For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
+
+
+
+###Enigma
+
+[Enigma] demonstrates best practice application architecture for modern, full stack, mobile ready web applications:
+
+![Enigma][enigma-screenshot]
+
+Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.
+
+On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+
+For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.
+
+The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on [Github][enigma].
+
+###What's next exactly...?
+
+I write on my blog [8-Bit Hustler]. I craft code on [GitHub] and share thoughts on [Twitter] because I love the craft. I co-organize [Columbus Code Camp] because I love the people even more. 
+
+As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Shoot me an [email] if you’d like to get in touch.
+ 
+
+
+
+
+[Pieta]: http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)
+[code samples]: https://github.com/tiandavis
+[8-Bit Hustler]: http://tiandavis.com/posts/javascript-and-the-monomyth/
+[GitHub]: https://github.com/tiandavis
+[Twitter]: https://twitter.com/tiandavis
+[Columbus Code Camp]: http://columbuscodecamp.com/
+[email]: mailto:tiandavis@gmail.com
+[enigma-screenshot]: /images/engima-screenshot.png "Engima - Ruby/Rails"
+[galileo-screenshot]: /images/galileo-screenshot.png "Galileo - JavaScript - Front End"
+[capabilities]: /images/capabilities.png "Core Capabilities"
+[Galileo]: https://github.com/tiandavis/galileo
+[Enigma]: https://github.com/tiandavis/enigma
+
+
+
+

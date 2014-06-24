@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>JavaScript Engineer</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+
+    </header>
+
+    <main>
+      	<section id="single-wrap">
+		  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+		    <h1 class="page-title" itemprop="name headline">Front End Hacker</h1>
+
+		    <div itemprop="articleBody">
+		      <h3>Groove Front End Analysis</h3>
+
+<p>To prepare, I wanted to spend some time with Groove to see the application through the eyes of a fresh customer. Spoiler alert - I love the attention to detail and clear appreciation for design.</p>
+
+<p>Here are a few areas I thought would be really cool to iterate on:</p>
+
+<h2>Copying support email should have an effect</h2>
+
+<p>Today, hovering over the [Copy] button has no effect. Also, once clicked, there is no visual cue Groove's inbox email is copied:</p>
+
+<p><img src="/images/groove-copy-support-email-effect.png" title="groove-copy-support-email-effect" alt="Groove" /></p>
+
+<p>The [Copy] button should change slightly on a hover event. When the [Copy] button is clicked, the copied text should flash to let the user know the text was actually copied.</p>
+
+<h2>Larger attachment trigger area needed</h2>
+
+<p>Today, only the elements with an "attach-instructions" class trigger the file attachment event. As the number of attachments grow, it becomes less clear where files can be dragged to:</p>
+
+<p><img src="/images/groove-attachment-area.png" title="groove-attachment-area" alt="Groove" /></p>
+
+<p>The attachment box should have a larger area to trigger an attach event, else the drag &amp; drop “feels” like threading a needle and could aggravate customers.</p>
+
+<h2>JavaScript charts should be vector based</h2>
+
+<p>Canvas based charts are considered harmful because you can’t attach DOM events to chart elements, thereby limiting customization to vendor exposed functionality only:</p>
+
+<p><img src="/images/groove-canvas-charts.png" title="groove-canvas-charts" alt="Groove" /></p>
+
+<p>Less important is they aren’t reliable in lower versions of IE without a polyfill.</p>
+
+<p>Canvas versus SVG is like Photoshop versus Illustrator. Both produce beautiful images, but Illustrator images are scalable and never lose crispness.</p>
+
+<p>Consider switching to SVG based charts.</p>
+
+<p>We could even increase readability and comprehension by spelling out exactly what metrics we want to convey and leverage small inline charts called <a href="http://omnipotent.net/jquery.sparkline/#s-about">sparklines</a>.</p>
+
+<h2>Consensus</h2>
+
+<p>Groove is a beautiful product. Love the app store concept too, though there's still some work to be done there as well.  I could see opening the app store to external developers and creating a Salesforce-like marketplace.</p>
+
+<p>With that strategy, Groove could experience an eco-system growth similar to the explosive growth we saw back in ’08 when Twitter opened its API to external developers.</p>
+
+<h3>Front End Hacker</h3>
+
+<p>Michelangelo never saw a lump of marble.</p>
+
+<p>He saw the <a href="http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)">Pieta</a> and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.</p>
+
+<p>For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby &amp; JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, <a href="https://github.com/tiandavis">code samples</a>.</p>
+
+<h2>Code is Poetry</h2>
+
+<p>As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.</p>
+
+<p>But my passion is open standards and front end development:</p>
+
+<p><img src="/images/capabilities.png" title="Core Capabilities" alt="Capabilities" /></p>
+
+<p>The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.</p>
+
+<p>Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.</p>
+
+<h3>Galileo</h3>
+
+<p><a href="https://github.com/tiandavis/galileo">Galileo</a> demonstrates integrating with a third-party API. Here, we integrate with Twitter's API:</p>
+
+<p><img src="/images/galileo-screenshot.png" title="Galileo - JavaScript - Front End" alt="Galileo" /></p>
+
+<p>Galileo organizes a number of open source standards and projects:</p>
+
+<p>On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.</p>
+
+<p>For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on <a href="https://github.com/tiandavis/galileo">Github</a>.</p>
+
+<h3>Enigma</h3>
+
+<p><a href="https://github.com/tiandavis/enigma">Enigma</a> demonstrates best practice application architecture for modern, full stack, mobile ready web applications:</p>
+
+<p><img src="/images/engima-screenshot.png" title="Enigma - Ruby/Rails" alt="Enigma" /></p>
+
+<p>Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.</p>
+
+<p>On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.</p>
+
+<p>For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.</p>
+
+<p>The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on <a href="https://github.com/tiandavis/enigma">Github</a>.</p>
+
+<h3>What's next exactly...?</h3>
+
+<p>I write on my blog <a href="http://tiandavis.com/posts/javascript-and-the-monomyth/">8-Bit Hustler</a>. I craft code on <a href="https://github.com/tiandavis">GitHub</a> and share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> because I love the craft. I co-organize <a href="http://columbuscodecamp.com/">Columbus Code Camp</a> because I love the people even more.</p>
+
+<p>As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Shoot me an <a href="mailto:tiandavis@gmail.com">email</a> if you’d like to get in touch.</p>
+
+		    </div>
+		  </article>
+		</section>
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; Tian Davis</small>
+    </footer>
+
+	<script src="/js/main.js"></script>
+
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>
