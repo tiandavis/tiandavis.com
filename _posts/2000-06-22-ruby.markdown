@@ -1,25 +1,27 @@
 ---
 layout: resume
-title:  "JavaScript Engineer"
-date:   2000-06-20 00:00:00
-permalink: resume
+title:  "Ruby & Rails Engineer"
+date:   2000-06-22 00:00:00
+permalink: ruby
 ---
 
 Michelangelo never saw a lump of marble. 
 
-He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.
+He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with Ruby. Ruby is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Twitter and Freckle.
 
-For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby & JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, [code samples].
+For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby & JavaScript software of my life. See, work experience below. I’m a Master Rails Developer. See, [code samples].
 
 ##Code is Poetry
 
 As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.
 
-But my passion is open standards and front end development:
+But my passion is open standards and the modern web:
 
 ![Capabilities][capabilities]
 
-The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
+My server-side experience leverages Ruby on Rails. I use RSpec for unit tests and FactoryGirl for mocking. I also use Capybara and Selenium for integration tests.
+
+My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
 
 Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.
 
