@@ -21,7 +21,7 @@ But my passion is open standards and the modern web:
 
 My server-side experience leverages Ruby on Rails. I use RSpec for unit tests and FactoryGirl for mocking. I also use Capybara and Selenium for integration tests.
 
-My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
+My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
 
 Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.
 

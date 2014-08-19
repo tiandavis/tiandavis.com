@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2014-08-04T20:00:42-04:00</updated>
+  <updated>2014-08-18T22:11:08-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1186,7 +1186,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;My server-side experience leverages Ruby on Rails. I use RSpec for unit tests and FactoryGirl for mocking. I also use Capybara and Selenium for integration tests.&lt;/p&gt;
 
-&lt;p&gt;My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
+&lt;p&gt;My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
 
 &lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
 
@@ -1230,110 +1230,6 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
     </entry>
   
     <entry>
-      <title>Front End Hacker</title>
-      <link href="http://tiandavis.com/groove" />
-      <summary type="html">&lt;h3&gt;Groove Front End Analysis&lt;/h3&gt;
-
-&lt;p&gt;To prepare, I wanted to spend some time with Groove to see the application through the eyes of a fresh customer. Spoiler alert - I love the attention to detail and clear appreciation for design.&lt;/p&gt;
-
-&lt;p&gt;Here are a few areas I thought would be really cool to iterate on:&lt;/p&gt;
-
-&lt;h2&gt;Copying support email should have an effect&lt;/h2&gt;
-
-&lt;p&gt;Today, hovering over the [Copy] button has no effect. Also, once clicked, there is no visual cue Groove's inbox email is copied:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/groove-copy-support-email-effect.png&quot; title=&quot;groove-copy-support-email-effect&quot; alt=&quot;Groove&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The [Copy] button should change slightly on a hover event. When the [Copy] button is clicked, the copied text should flash to let the user know the text was actually copied.&lt;/p&gt;
-
-&lt;h2&gt;Larger attachment trigger area needed&lt;/h2&gt;
-
-&lt;p&gt;Today, only the elements with an &quot;attach-instructions&quot; class trigger the file attachment event. As the number of attachments grow, it becomes less clear where files can be dragged to:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/groove-attachment-area.png&quot; title=&quot;groove-attachment-area&quot; alt=&quot;Groove&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The attachment box should have a larger area to trigger an attach event, else the drag &amp;amp; drop “feels” like threading a needle and could aggravate customers.&lt;/p&gt;
-
-&lt;h2&gt;JavaScript charts should be vector based&lt;/h2&gt;
-
-&lt;p&gt;Canvas based charts are considered harmful because you can’t attach DOM events to chart elements, thereby limiting customization to vendor exposed functionality only:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/groove-canvas-charts.png&quot; title=&quot;groove-canvas-charts&quot; alt=&quot;Groove&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Less important is they aren’t reliable in lower versions of IE without a polyfill.&lt;/p&gt;
-
-&lt;p&gt;Canvas versus SVG is like Photoshop versus Illustrator. Both produce beautiful images, but Illustrator images are scalable and never lose crispness.&lt;/p&gt;
-
-&lt;p&gt;Consider switching to SVG based charts.&lt;/p&gt;
-
-&lt;p&gt;We could even increase readability and comprehension by spelling out exactly what metrics we want to convey and leverage small inline charts called &lt;a href=&quot;http://omnipotent.net/jquery.sparkline/#s-about&quot;&gt;sparklines&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Consensus&lt;/h2&gt;
-
-&lt;p&gt;Groove is a beautiful product. Love the app store concept too, though there's still some work to be done there as well.  I could see opening the app store to external developers and creating a Salesforce-like marketplace.&lt;/p&gt;
-
-&lt;p&gt;With that strategy, Groove could experience an eco-system growth similar to the explosive growth we saw back in ’08 when Twitter opened its API to external developers.&lt;/p&gt;
-
-&lt;h3&gt;Front End Hacker&lt;/h3&gt;
-
-&lt;p&gt;Michelangelo never saw a lump of marble.&lt;/p&gt;
-
-&lt;p&gt;He saw the &lt;a href=&quot;http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)&quot;&gt;Pieta&lt;/a&gt; and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.&lt;/p&gt;
-
-&lt;p&gt;For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby &amp;amp; JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, &lt;a href=&quot;https://github.com/tiandavis&quot;&gt;code samples&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Code is Poetry&lt;/h2&gt;
-
-&lt;p&gt;As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.&lt;/p&gt;
-
-&lt;p&gt;But my passion is open standards and front end development:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/capabilities.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
-
-&lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
-
-&lt;h3&gt;Galileo&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot;&gt;Galileo&lt;/a&gt; demonstrates integrating with a third-party API. Here, we integrate with Twitter's API:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/galileo-screenshot.png&quot; title=&quot;Galileo - JavaScript - Front End&quot; alt=&quot;Galileo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Galileo organizes a number of open source standards and projects:&lt;/p&gt;
-
-&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
-
-&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Enigma&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/enigma&quot;&gt;Enigma&lt;/a&gt; demonstrates best practice application architecture for modern, full stack, mobile ready web applications:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/engima-screenshot.png&quot; title=&quot;Enigma - Ruby/Rails&quot; alt=&quot;Enigma&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.&lt;/p&gt;
-
-&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
-
-&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.&lt;/p&gt;
-
-&lt;p&gt;The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on &lt;a href=&quot;https://github.com/tiandavis/enigma&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;What's next exactly...?&lt;/h3&gt;
-
-&lt;p&gt;I write on my blog &lt;a href=&quot;http://tiandavis.com/posts/javascript-and-the-monomyth/&quot;&gt;8-Bit Hustler&lt;/a&gt;. I craft code on &lt;a href=&quot;https://github.com/tiandavis&quot;&gt;GitHub&lt;/a&gt; and share thoughts on &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;Twitter&lt;/a&gt; because I love the craft. I co-organize &lt;a href=&quot;http://columbuscodecamp.com/&quot;&gt;Columbus Code Camp&lt;/a&gt; because I love the people even more.&lt;/p&gt;
-
-&lt;p&gt;As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Is there anything stopping you from &lt;a href=&quot;mailto:tiandavis@gmail.com&quot;&gt;emailing&lt;/a&gt; me right now?&lt;/p&gt;
-</summary>
-      <id>http://tiandavis.com/groove</id>
-      <updated>2000-06-21T00:00:00Z</updated>
-      <author>
-        <name>Tian Davis</name>
-      </author>
-    </entry>
-  
-    <entry>
       <title>JavaScript Engineer</title>
       <link href="http://tiandavis.com/resume" />
       <summary type="html">&lt;p&gt;Michelangelo never saw a lump of marble.&lt;/p&gt;
@@ -1350,7 +1246,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;&lt;img src=&quot;/images/capabilities.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
+&lt;p&gt;The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
 
 &lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
 
