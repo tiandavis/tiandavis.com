@@ -8,7 +8,7 @@ permalink: talks
 * [JavaScript and The Monomyth][JavaScript and The Monomyth] **2014**
 
 
-[JavaScript and The Monomyth]: http://tiandavis.com/talks/javascript-and-the-monomyth
+[JavaScript and The Monomyth]: /talks/javascript-and-the-monomyth
 
 
 

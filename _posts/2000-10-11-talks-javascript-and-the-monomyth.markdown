@@ -27,7 +27,7 @@ That's what this talk is about.
 
 
 [The Monomyth]: http://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces
-[JavaScript and The Monomyth]: http://tiandavis.com/talks/javascript-and-the-monomyth
+[JavaScript and The Monomyth]: http://tiandavis.com/posts/javascript-and-the-monomyth/
 [Origins of JavaScript]: https://news.ycombinator.com/item?id=2783060
 [SpiderMonkey The First JavaScript Engine]: https://brendaneich.com/2011/06/new-javascript-engine-module-owner/
 

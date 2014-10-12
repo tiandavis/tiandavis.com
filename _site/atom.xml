@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2014-10-12T16:29:24-04:00</updated>
+  <updated>2014-10-12T17:07:13-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1251,7 +1251,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces&quot;&gt;The Monomyth&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://tiandavis.com/talks/javascript-and-the-monomyth&quot;&gt;JavaScript and The Monomyth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tiandavis.com/posts/javascript-and-the-monomyth/&quot;&gt;JavaScript and The Monomyth&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=2783060&quot;&gt;Origins of JavaScript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://brendaneich.com/2011/06/new-javascript-engine-module-owner/&quot;&gt;SpiderMonkey The First JavaScript Engine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1268,7 +1268,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
       <title>Talks</title>
       <link href="http://tiandavis.com/talks" />
       <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://tiandavis.com/talks/javascript-and-the-monomyth&quot;&gt;JavaScript and The Monomyth&lt;/a&gt; &lt;strong&gt;2014&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/talks/javascript-and-the-monomyth&quot;&gt;JavaScript and The Monomyth&lt;/a&gt; &lt;strong&gt;2014&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </summary>
