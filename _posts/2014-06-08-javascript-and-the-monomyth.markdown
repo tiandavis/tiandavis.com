@@ -330,7 +330,7 @@ KnockOut, Spine and JavaScriptMVC (CanJS) all aimed to organize JavaScript as Ba
 
 Around this time, Google open sources its V8 engine. Like its ancestor, SpiderMonkey, V8 is an open source JavaScript engine. V8 is the JavaScript engine behind Google's Chrome web browser.
 
-Later, projects like [NodeJS][27] use the V8 engine to turn JavaScript into a legitimate server-side language. This was the first server-side JavaScript runtime. But it was the first to realize a thriving ecosystem. 
+Later, projects like [NodeJS][27] use the V8 engine to turn JavaScript into a legitimate server-side language. This wasn't the first server-side JavaScript runtime. But it was the first to realize a thriving ecosystem. 
 
 Node gave us real-time, two-way connections using the HTML5 WebSocket protocol. The primary method to take advantage of HTML5 WebSockets was through [Socket.IO][28].
 

@@ -373,7 +373,7 @@ section#single-wrap p {
 
 section#single-wrap ul,
 section#single-wrap ol {
-  padding: 10px 80px;
+  /*padding: 10px 80px;*/
 }
 
 section#single-wrap ul li,
@@ -701,4 +701,45 @@ table tr:first-child td:first-child{
 
 table tr:first-child td:last-child{
 	border-width:0px 0px 1px 1px;
+}
+
+/*****************************************************************************/
+/*
+/* Talks
+/*
+/*****************************************************************************/
+
+.talks ul {
+	margin: 0;
+	padding: 0;
+	margin: 2em 0.5em;
+}
+
+.talks li {
+	list-style: none;
+}
+
+.talks li a {
+	text-decoration: none;
+}
+
+.talks li strong {
+	float: right;
+	font-weight: normal;
+}
+
+.talk ul {
+	margin-left: 2em;
+}
+
+/*****************************************************************************/
+/*
+/* 404
+/*
+/*****************************************************************************/
+
+.404 strong {
+	font-size: 50px;
+	font-align: center;
+	font-weight: bold;
 }

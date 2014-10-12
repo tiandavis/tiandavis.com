@@ -1,0 +1,15 @@
+---
+layout: talks
+title:  "Talks"
+date:   2000-06-20 00:00:00
+permalink: talks
+---
+
+* [JavaScript and The Monomyth][JavaScript and The Monomyth] **2014**
+
+
+[JavaScript and The Monomyth]: http://tiandavis.com/talks/javascript-and-the-monomyth
+
+
+
+

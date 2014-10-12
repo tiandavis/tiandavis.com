@@ -25,16 +25,20 @@ layout: default
       </a>
     </div>-->
 
-    {% if page.next and (page.next.title != 'JavaScript Engineer' and page.next.title != 'Ruby & Rails Engineer') %}
-      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
-        <span class="nav-title nav-title-next">newer</span> &rarr;
-      </a>
+    {% if page.next %}
+      {% if page.next.layout != 'resume' and page.next.layout != 'talks' and page.next.layout != 'talk'  %}
+        <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+          <span class="nav-title nav-title-next">newer</span> &rarr;
+        </a>
+      {% endif %}
     {% endif %}
 
     {% if page.previous %}
-      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
-        &larr; <span class="nav-title nav-title-prev">older</span>
-      </a>
+      {% if page.previous.layout != 'resume' and page.previous.layout != 'talks' and page.previous.layout != 'talk'  %}
+        <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+          &larr; <span class="nav-title nav-title-prev">older</span>
+        </a>
+      {% endif %}
     {% endif %}
   </article>
 </section>
