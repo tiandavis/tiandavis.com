@@ -30,7 +30,7 @@
 		  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
 		    <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
 			
-			<img src="../../images/sea-and-fog.png"></img>
+			<img src="{{ site.baseurl }}/images/ted-talks.png"></img>
 
 		    <div itemprop="articleBody" class="talks">
 		      {{ content }}
@@ -40,7 +40,7 @@
     </main>
 
     <footer>
-      <small>Powered by Jekyll - &copy; {{ site.author }}</small>
+      <small>Powered by Jekyll - &copy; 2010-{{ site.time | date: "%Y" }} {{ site.author }}</small>
     </footer>
 
 	<script src="{{ site.baseurl }}/js/main.js"></script>

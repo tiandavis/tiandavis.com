@@ -9,11 +9,9 @@ What does Luke Skywalker, Neo and Paul Atreides all have in common with JavaScri
 
 The Monomyth, as expressed in the Hero's Journey, exists in all human cultures and keeps getting updated because we humans reflect on our world through symbolic stories of our own lives.
 
-We leave our confort zone, have an experience that transforms us, then we recover and do it again. We don't literally slay dragons and fight Valdemort, but we face problems just as scary.
+We leave our confort zone, have an experience that transforms us, then we recover and do it again. We don't literally slay nightmarish machines and fight Sith Lords, but we face problems just as scary.
 
 JavaScript is no different. Together we'll take a journey through the story of JavaScript as you've never seen before. Think you know JavaScript? Believe me, you've never seen it like this...
-
-That's what this talk is about.
 
 ####Slides
 

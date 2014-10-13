@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2014-10-12T17:07:13-04:00</updated>
+  <updated>2014-10-13T14:05:20-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1236,11 +1236,9 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;The Monomyth, as expressed in the Hero&#39;s Journey, exists in all human cultures and keeps getting updated because we humans reflect on our world through symbolic stories of our own lives.&lt;/p&gt;
 
-&lt;p&gt;We leave our confort zone, have an experience that transforms us, then we recover and do it again. We don&#39;t literally slay dragons and fight Valdemort, but we face problems just as scary.&lt;/p&gt;
+&lt;p&gt;We leave our confort zone, have an experience that transforms us, then we recover and do it again. We don&#39;t literally slay nightmarish machines and fight Sith Lords, but we face problems just as scary.&lt;/p&gt;
 
 &lt;p&gt;JavaScript is no different. Together we&#39;ll take a journey through the story of JavaScript as you&#39;ve never seen before. Think you know JavaScript? Believe me, you&#39;ve never seen it like this...&lt;/p&gt;
-
-&lt;p&gt;That&#39;s what this talk is about.&lt;/p&gt;
 
 &lt;h4&gt;Slides&lt;/h4&gt;
 
