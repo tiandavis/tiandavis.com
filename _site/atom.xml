@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2014-10-16T14:03:57-04:00</updated>
+  <updated>2015-02-21T03:28:16-06:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1266,6 +1266,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
       <title>Talks</title>
       <link href="http://tiandavis.com/talks" />
       <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/talks/webrtc-unicorns-narwhals-and-the-real-time-web&quot;&gt;WebRTC: Unicorns, Narwhals and The Real-Time Web&lt;/a&gt; &lt;strong&gt;2015&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/talks/javascript-and-the-monomyth&quot;&gt;JavaScript and The Monomyth&lt;/a&gt; &lt;strong&gt;2014&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1332,6 +1333,42 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 </summary>
       <id>http://tiandavis.com/resume</id>
       <updated>2000-06-20T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>WebRTC: Unicorns, Narwhals and The Real-Time Web</title>
+      <link href="http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web" />
+      <summary type="html">&lt;p&gt;You probably don&#39;t know WebRTC as much as you think. I&#39;m not surprised. WebRTC is both amazing and terrifying.&lt;/p&gt;
+
+&lt;p&gt;No real standards exist between browser vendors. So how do you integrate WebRTC the right way? Even then, WebRTC is but one ingredient to a successful real-time web recipe.&lt;/p&gt;
+
+&lt;p&gt;This talk discusses lessons learned in the trenches building a next-generation real-time network. In particular, I discuss the bad parts of WebRTC and why it is still so crucial to business success. The talk further suggests how to get WebRTC solutions right and build a multidisciplinary software engineering team in the process.&lt;/p&gt;
+
+&lt;h4&gt;Slides&lt;/h4&gt;
+
+&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;b4a4e41f878b4955bb72c976329f1db7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;h4&gt;Resources&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tiandavis/webrtc&quot;&gt;Complete WebRTC example using Socket.IO for signaling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/webrtcftw&quot;&gt;WebRTC for the Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.html5rocks.com/en/tutorials/webrtc/basics/&quot;&gt;Getting Started with WebRTC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/18833920/webrtc-for-realtime-scaling/21103641#21103641&quot;&gt;WebRTC for Real-Time Scaling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.respoke.io/&quot;&gt;Scalable Communication Platform&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection#createDataChannel&quot;&gt;RTCPeerConnection#createDataChannel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/webrtc/samples&quot;&gt;WebRTC Samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/#why-another-data-channel&quot;&gt;Why another data channel?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bitbucket.org/webrtc/codelab&quot;&gt;WebRTC Codelab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</summary>
+      <id>http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web</id>
+      <updated>2000-02-21T00:00:00Z</updated>
       <author>
         <name>Tian Davis</name>
       </author>
