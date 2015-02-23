@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-02-21T03:28:16-06:00</updated>
+  <updated>2015-02-23T06:03:00-05:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1242,6 +1242,9 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;h4&gt;Slides&lt;/h4&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
+
 &lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;6697f7a03472013238ed56e996df704e&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
 
@@ -1253,6 +1256,30 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=2783060&quot;&gt;Origins of JavaScript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://brendaneich.com/2011/06/new-javascript-engine-module-owner/&quot;&gt;SpiderMonkey The First JavaScript Engine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+
+&lt;h4&gt;What Others Are Saying&lt;/h4&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Listening to &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; talk about the monomyth of JavaScript. He&amp;#39;s a great storyteller! &lt;a href=&quot;https://twitter.com/cmhcodecamp&quot;&gt;@cmhcodecamp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sarah Dutkiewicz (@sadukie) &lt;a href=&quot;https://twitter.com/sadukie/status/520946649280303105&quot;&gt;October 11, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Powerful presentation from &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; during &lt;a href=&quot;https://twitter.com/cmhcodecamp&quot;&gt;@cmhcodecamp&lt;/a&gt; about &lt;a href=&quot;https://twitter.com/hashtag/JavaScript?src=hash&quot;&gt;#JavaScript&lt;/a&gt; and it&amp;#39;s heroic journey. &lt;a href=&quot;http://t.co/eptFDnqW0Y&quot;&gt;http://t.co/eptFDnqW0Y&lt;/a&gt;&lt;/p&gt;&amp;mdash; Matt Boroi (@mattboroi) &lt;a href=&quot;https://twitter.com/mattboroi/status/520965900393275393&quot;&gt;October 11, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
 
 </summary>
       <id>http://tiandavis.com/talks/javascript-and-the-monomyth</id>
@@ -1349,6 +1376,9 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;h4&gt;Slides&lt;/h4&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
+
 &lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;b4a4e41f878b4955bb72c976329f1db7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
 
@@ -1365,6 +1395,41 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;li&gt;&lt;a href=&quot;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/#why-another-data-channel&quot;&gt;Why another data channel?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://bitbucket.org/webrtc/codelab&quot;&gt;WebRTC Codelab&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+
+&lt;h4&gt;What Others Are Saying&lt;/h4&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Excellent talk on WebRTC from &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/chiweb2015?src=hash&quot;&gt;#chiweb2015&lt;/a&gt;&lt;/p&gt;&amp;mdash; Eric Sorenson (@dubharmonic) &lt;a href=&quot;https://twitter.com/dubharmonic/status/569232562050043904&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Great webRTC talk at &lt;a href=&quot;https://twitter.com/hashtag/chiweb2015?src=hash&quot;&gt;#chiweb2015&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt;&lt;/p&gt;&amp;mdash; arcot (@SilverArc) &lt;a href=&quot;https://twitter.com/SilverArc/status/569239447679561729&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; Thanks for the webRTC talk!&lt;/p&gt;&amp;mdash; Dirk Watkins (@dirkwatkins) &lt;a href=&quot;https://twitter.com/dirkwatkins/status/569225899247210496&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
 
 </summary>
       <id>http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web</id>

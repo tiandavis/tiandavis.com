@@ -12,8 +12,9 @@ No real standards exist between browser vendors. So how do you integrate WebRTC 
 This talk discusses lessons learned in the trenches building a next-generation real-time network. In particular, I discuss the bad parts of WebRTC and why it is still so crucial to business success. The talk further suggests how to get WebRTC solutions right and build a multidisciplinary software engineering team in the process.
 
 ####Slides
-
+<p></p>
 <script async class="speakerdeck-embed" data-id="b4a4e41f878b4955bb72c976329f1db7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 ####Resources
 * [Complete WebRTC example using Socket.IO for signaling][GitHub]
@@ -25,6 +26,20 @@ This talk discusses lessons learned in the trenches building a next-generation r
 * [WebRTC Samples][WebRTC Samples]
 * [Why another data channel?][Why another data channel]
 * [WebRTC Codelab][codelab]
+
+
+####What Others Are Saying
+<p></p>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>Excellent talk on WebRTC from <a href="https://twitter.com/tiandavis">@tiandavis</a> <a href="https://twitter.com/hashtag/chiweb2015?src=hash">#chiweb2015</a></p>&mdash; Eric Sorenson (@dubharmonic) <a href="https://twitter.com/dubharmonic/status/569232562050043904">February 21, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p></p>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>Great webRTC talk at <a href="https://twitter.com/hashtag/chiweb2015?src=hash">#chiweb2015</a> by <a href="https://twitter.com/tiandavis">@tiandavis</a></p>&mdash; arcot (@SilverArc) <a href="https://twitter.com/SilverArc/status/569239447679561729">February 21, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p></p>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p><a href="https://twitter.com/tiandavis">@tiandavis</a> Thanks for the webRTC talk!</p>&mdash; Dirk Watkins (@dirkwatkins) <a href="https://twitter.com/dirkwatkins/status/569225899247210496">February 21, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 [GitHub]: https://github.com/tiandavis/webrtc
