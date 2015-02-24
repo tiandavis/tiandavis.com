@@ -9,7 +9,7 @@ You probably don't know WebRTC as much as you think. I'm not surprised. WebRTC i
 
 No real standards exist between browser vendors. So how do you integrate WebRTC the right way? Even then, WebRTC is but one ingredient to a successful real-time web recipe. 
 
-This talk discusses lessons learned in the trenches building a next-generation real-time network. In particular, I discuss the bad parts of WebRTC and why it is still so crucial to business success. The talk further suggests how to get WebRTC solutions right and build a multidisciplinary software engineering team in the process.
+This talk discusses lessons learned in the trenches developing with WebRTC. In particular, I discuss the bad parts of WebRTC and why it is still so crucial to business success. The talk further suggests how to get WebRTC solutions right and build a multidisciplinary software engineering team in the process.
 
 ####Slides
 <p></p>
@@ -17,11 +17,11 @@ This talk discusses lessons learned in the trenches building a next-generation r
 
 
 ####Resources
-* [Complete WebRTC example using Socket.IO for signaling][GitHub]
+* [Native WebRTC using Node & Socket.IO for Signaling][GitHub]
+* [Respoke - WebRTC Platform as a Service][Respoke]
 * [WebRTC for the Web][WebRTC for the Web]
 * [Getting Started with WebRTC][Getting Started with WebRTC]
 * [WebRTC for Real-Time Scaling][WebRTC for Real-Time Scaling]
-* [Scalable Communication Platform][Respoke]
 * [RTCPeerConnection#createDataChannel][RTCDataChannel]
 * [WebRTC Samples][WebRTC Samples]
 * [Why another data channel?][Why another data channel]
@@ -42,7 +42,7 @@ This talk discusses lessons learned in the trenches building a next-generation r
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-[GitHub]: https://github.com/tiandavis/webrtc
+[GitHub]: https://github.com/tiandavis/native-webrtc-node-socket.io-signaling
 [Getting Started with WebRTC]: http://www.html5rocks.com/en/tutorials/webrtc/basics/
 [WebRTC for Real-Time Scaling]: http://stackoverflow.com/questions/18833920/webrtc-for-realtime-scaling/21103641#21103641
 [Respoke]: https://www.respoke.io/
