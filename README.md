@@ -7,4 +7,4 @@ The following directories and their contents are Copyright Tian Davis. You may n
 _posts/
 images/
 
-All other directories and files are MIT Licensed. Cheers!
+All other directories and files are MIT Licensed.
