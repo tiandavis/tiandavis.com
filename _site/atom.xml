@@ -4,11 +4,65 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-02-24T00:07:55-05:00</updated>
+  <updated>2015-03-26T22:53:50-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
   </author>
+  
+    <entry>
+      <title>Git: Update Multiple Repos</title>
+      <link href="http://tiandavis.com/posts/git-update-multiple-repos" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/macroons-coffee.png&quot; title=&quot;Macroons Coffee&quot; alt=&quot;Macroons Coffee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Recently, I&#39;ve been working with a lot of git repos at a time.  I mean a lot. Like more than twenty. . . That&#39;s the bad news.&lt;/p&gt;
+
+&lt;p&gt;The code news is the code is all passionately crafted and a joy to work with. Which is one of the reasons I try to make sure I&#39;m always working with the latest-and-greatest before diving in.&lt;/p&gt;
+
+&lt;p&gt;But, I couldn&#39;t see myself running git pull for every single respository. Believe me, I tried. . .&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful&quot;&gt;Git pull&lt;/a&gt; itself has it&#39;s issues, so I wanted to be mindful of commit merges. In addition, I&#39;m often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I&#39;m always getting the latest-and-greatest remote branches as well.&lt;/p&gt;
+
+&lt;p&gt;By default, git pull helps you do neither particualary well. That&#39;s when I ran into the concept of git up.&lt;/p&gt;
+
+&lt;h3&gt;Git  Up&lt;/h3&gt;
+
+&lt;p&gt;With all versions of Git, you can configure a git alias. So I configured an alias called git up:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git config --global alias.up &lt;span class=&quot;s1&quot;&gt;&amp;#39;!git remote update -p; git merge --ff-only @{u}&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch.&lt;/p&gt;
+
+&lt;p&gt;Using this technique, I&#39;m able to get all remote branches while keeping the repository&#39;s commit history clean.&lt;/p&gt;
+
+&lt;p&gt;But the challenge still remained of how to deal with running git up for multiple git repos.&lt;/p&gt;
+
+&lt;h3&gt;Going Full Shell&lt;/h3&gt;
+
+&lt;p&gt;I use a &lt;a href=&quot;http://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos&quot;&gt;shell script&lt;/a&gt; to get the job done of updating multiple git repos:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;repo in repo1 repo2 repo3&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;${repo}&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git checkout master &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git up&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It&#39;s not perfect by any means, but it gets the job done. Some things to look out for. . .&lt;/p&gt;
+
+&lt;p&gt;First, you have to add a new repo to your for loop for each new repo you work with. In addition, you need to have previously git cloned the listed repo. Which makes sense because you can&#39;t checkout a branch for a nonexistent repo.&lt;/p&gt;
+
+&lt;p&gt;Finally, notice the use of the git up alias we created earlier. Combining both technqiues, you&#39;re able to reliably update multiple git repos at a time.&lt;/p&gt;
+
+&lt;p&gt;If you find yourself needing to update multiple git repos at a time, give this technique a try.&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/posts/git-update-multiple-repos</id>
+      <updated>2015-03-27T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
   
     <entry>
       <title>JavaScript and The Monomyth</title>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>8-Bit Hustler - Ruby. JavaScript. Not necessarily in that order.</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="off-canvas">
+      <div id="avatar">
+        <!--<img src="/assets/img/img1.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">-->
+      </div>
+      <div id="bio">
+          <h1>Hi, I'm Tian Davis.</h1>
+          <p>I'm a frontend engineer specializing in <a href="http://emberjs.com">EmberJS</a>. I live in the United States and this is my personal blog. I craft code on <a href="https://github.com/tiandavis">GitHub</a>, share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> and give <a href="/talks">talks on JavaScript</a>. Looking for a solid teammate or co-founder? Let's <a href="mailto:tiandavis@gmail.com">talk</a>...!</p>
+      </div>
+    </div>
+
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="" title="Back to Homepage">8-Bit Hustler</a></h1>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+	
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-03-27T00:00:00Z" itemprop="datePublished">
+          27 March 2015
+        </time>
+      </h5>
+    </div>
+
+    <h1 class="page-title" itemprop="name headline">Git: Update Multiple Repos</h1>
+
+    <div itemprop="articleBody">
+      <p><img src="/images/macroons-coffee.png" title="Macroons Coffee" alt="Macroons Coffee" /></p>
+
+<p>Recently, I've been working with a lot of git repos at a time.  I mean a lot. Like more than twenty. . . That's the bad news.</p>
+
+<p>The code news is the code is all passionately crafted and a joy to work with. Which is one of the reasons I try to make sure I'm always working with the latest-and-greatest before diving in.</p>
+
+<p>But, I couldn't see myself running git pull for every single respository. Believe me, I tried. . .</p>
+
+<p><a href="http://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful">Git pull</a> itself has it's issues, so I wanted to be mindful of commit merges. In addition, I'm often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I'm always getting the latest-and-greatest remote branches as well.</p>
+
+<p>By default, git pull helps you do neither particualary well. That's when I ran into the concept of git up.</p>
+
+<h3>Git  Up</h3>
+
+<p>With all versions of Git, you can configure a git alias. So I configured an alias called git up:</p>
+
+<div class="highlight"><pre><code class="bash">git config --global alias.up <span class="s1">&#39;!git remote update -p; git merge --ff-only @{u}&#39;</span>
+</code></pre></div>
+
+
+<p>This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch.</p>
+
+<p>Using this technique, I'm able to get all remote branches while keeping the repository's commit history clean.</p>
+
+<p>But the challenge still remained of how to deal with running git up for multiple git repos.</p>
+
+<h3>Going Full Shell</h3>
+
+<p>I use a <a href="http://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos">shell script</a> to get the job done of updating multiple git repos:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="k">for </span>repo in repo1 repo2 repo3<span class="p">;</span> <span class="k">do</span>
+    <span class="o">(</span><span class="nb">cd</span> <span class="s2">&quot;${repo}&quot;</span> <span class="o">&amp;&amp;</span> git checkout master <span class="o">&amp;&amp;</span> git up<span class="o">)</span>
+<span class="k">done</span>
+</code></pre></div>
+
+
+<p>It's not perfect by any means, but it gets the job done. Some things to look out for. . .</p>
+
+<p>First, you have to add a new repo to your for loop for each new repo you work with. In addition, you need to have previously git cloned the listed repo. Which makes sense because you can't checkout a branch for a nonexistent repo.</p>
+
+<p>Finally, notice the use of the git up alias we created earlier. Combining both technqiues, you're able to reliably update multiple git repos at a time.</p>
+
+<p>If you find yourself needing to update multiple git repos at a time, give this technique a try.</p>
+
+    </div>
+
+    <!--<div id="share" class="feat">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>-->
+
+    
+
+    
+      
+        <a rel="prev" href="/posts/javascript-and-the-monomyth" id="prev">
+          &larr; <span class="nav-title nav-title-prev">older</span>
+        </a>
+      
+    
+  </article>
+</section>
+
+
+
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; 2010-2015 Tian Davis</small>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>
