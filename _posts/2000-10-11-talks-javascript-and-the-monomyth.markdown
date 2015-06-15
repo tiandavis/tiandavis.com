@@ -26,10 +26,11 @@ JavaScript is no different. Together we'll take a journey through the story of J
 ####What Others Are Saying
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Listening to <a href="https://twitter.com/tiandavis">@tiandavis</a> talk about the monomyth of JavaScript. He&#39;s a great storyteller! <a href="https://twitter.com/cmhcodecamp">@cmhcodecamp</a></p>&mdash; Sarah Dutkiewicz (@sadukie) <a href="https://twitter.com/sadukie/status/520946649280303105">October 11, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Powerful presentation from <a href="https://twitter.com/tiandavis">@tiandavis</a> during <a href="https://twitter.com/cmhcodecamp">@cmhcodecamp</a> about <a href="https://twitter.com/hashtag/JavaScript?src=hash">#JavaScript</a> and it&#39;s heroic journey. <a href="http://t.co/eptFDnqW0Y">http://t.co/eptFDnqW0Y</a></p>&mdash; Matt Boroi (@mattboroi) <a href="https://twitter.com/mattboroi/status/520965900393275393">October 11, 2014</a></blockquote>
+
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 

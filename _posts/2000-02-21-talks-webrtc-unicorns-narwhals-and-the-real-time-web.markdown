@@ -31,14 +31,19 @@ This talk discusses lessons learned in the trenches developing with WebRTC. In p
 ####What Others Are Saying
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Excellent talk on WebRTC from <a href="https://twitter.com/tiandavis">@tiandavis</a> <a href="https://twitter.com/hashtag/chiweb2015?src=hash">#chiweb2015</a></p>&mdash; Eric Sorenson (@dubharmonic) <a href="https://twitter.com/dubharmonic/status/569232562050043904">February 21, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Great webRTC talk at <a href="https://twitter.com/hashtag/chiweb2015?src=hash">#chiweb2015</a> by <a href="https://twitter.com/tiandavis">@tiandavis</a></p>&mdash; arcot (@SilverArc) <a href="https://twitter.com/SilverArc/status/569239447679561729">February 21, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p><a href="https://twitter.com/tiandavis">@tiandavis</a> Thanks for the webRTC talk!</p>&mdash; Dirk Watkins (@dirkwatkins) <a href="https://twitter.com/dirkwatkins/status/569225899247210496">February 21, 2015</a></blockquote>
+
+<p></p>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">On using webRTC: &quot;It&#39;s kind of like asking somebody out on a date&quot; <a href="https://twitter.com/hashtag/pghtechfest?src=hash">#pghtechfest</a></p>&mdash; Brad (@deadlybrad42) <a href="https://twitter.com/deadlybrad42/status/609722334396727296">June 13, 2015</a></blockquote>
+
+<p></p>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">I&#39;m imagining a sweet lunch and learn based on <a href="https://twitter.com/tiandavis">@tiandavis</a> talk on webrtc. <a href="https://twitter.com/hashtag/pghtechfest?src=hash">#pghtechfest</a></p>&mdash; Steve Jackson (@stevejxsn) <a href="https://twitter.com/stevejxsn/status/609726673479708672">June 13, 2015</a></blockquote>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 

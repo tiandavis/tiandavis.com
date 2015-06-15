@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-03-26T22:53:50-04:00</updated>
+  <updated>2015-06-15T13:44:05-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1320,15 +1320,14 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Listening to &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; talk about the monomyth of JavaScript. He&amp;#39;s a great storyteller! &lt;a href=&quot;https://twitter.com/cmhcodecamp&quot;&gt;@cmhcodecamp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sarah Dutkiewicz (@sadukie) &lt;a href=&quot;https://twitter.com/sadukie/status/520946649280303105&quot;&gt;October 11, 2014&lt;/a&gt;&lt;/blockquote&gt;
 
 
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-
 
 
 &lt;p&gt;&lt;/p&gt;
 
 
 &lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Powerful presentation from &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; during &lt;a href=&quot;https://twitter.com/cmhcodecamp&quot;&gt;@cmhcodecamp&lt;/a&gt; about &lt;a href=&quot;https://twitter.com/hashtag/JavaScript?src=hash&quot;&gt;#JavaScript&lt;/a&gt; and it&amp;#39;s heroic journey. &lt;a href=&quot;http://t.co/eptFDnqW0Y&quot;&gt;http://t.co/eptFDnqW0Y&lt;/a&gt;&lt;/p&gt;&amp;mdash; Matt Boroi (@mattboroi) &lt;a href=&quot;https://twitter.com/mattboroi/status/520965900393275393&quot;&gt;October 11, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+
 
 
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
@@ -1459,9 +1458,6 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Excellent talk on WebRTC from &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/chiweb2015?src=hash&quot;&gt;#chiweb2015&lt;/a&gt;&lt;/p&gt;&amp;mdash; Eric Sorenson (@dubharmonic) &lt;a href=&quot;https://twitter.com/dubharmonic/status/569232562050043904&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
 
 
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-
 
 
 &lt;p&gt;&lt;/p&gt;
@@ -1470,7 +1466,12 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Great webRTC talk at &lt;a href=&quot;https://twitter.com/hashtag/chiweb2015?src=hash&quot;&gt;#chiweb2015&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt;&lt;/p&gt;&amp;mdash; arcot (@SilverArc) &lt;a href=&quot;https://twitter.com/SilverArc/status/569239447679561729&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
 
 
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; Thanks for the webRTC talk!&lt;/p&gt;&amp;mdash; Dirk Watkins (@dirkwatkins) &lt;a href=&quot;https://twitter.com/dirkwatkins/status/569225899247210496&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
 
 
 
@@ -1478,7 +1479,17 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 &lt;p&gt;&lt;/p&gt;
 
 
-&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; Thanks for the webRTC talk!&lt;/p&gt;&amp;mdash; Dirk Watkins (@dirkwatkins) &lt;a href=&quot;https://twitter.com/dirkwatkins/status/569225899247210496&quot;&gt;February 21, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;On using webRTC: &amp;quot;It&amp;#39;s kind of like asking somebody out on a date&amp;quot; &lt;a href=&quot;https://twitter.com/hashtag/pghtechfest?src=hash&quot;&gt;#pghtechfest&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brad (@deadlybrad42) &lt;a href=&quot;https://twitter.com/deadlybrad42/status/609722334396727296&quot;&gt;June 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+
+
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I&amp;#39;m imagining a sweet lunch and learn based on &lt;a href=&quot;https://twitter.com/tiandavis&quot;&gt;@tiandavis&lt;/a&gt; talk on webrtc. &lt;a href=&quot;https://twitter.com/hashtag/pghtechfest?src=hash&quot;&gt;#pghtechfest&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steve Jackson (@stevejxsn) &lt;a href=&quot;https://twitter.com/stevejxsn/status/609726673479708672&quot;&gt;June 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+
 
 
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
