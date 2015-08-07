@@ -11,7 +11,7 @@ He saw the [Pieta] and he would later write in his diaries about releasing the i
 
 Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I'm a Master JavaScript Engineer.
 
-##Best software of my life
+##Best software of my life...
 
 Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
 

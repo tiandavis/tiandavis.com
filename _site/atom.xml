@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T02:43:54-04:00</updated>
+  <updated>2015-08-07T03:06:04-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1367,7 +1367,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I&#39;m a Master JavaScript Engineer.&lt;/p&gt;
 
-&lt;h2&gt;Best software of my life&lt;/h2&gt;
+&lt;h2&gt;Best software of my life...&lt;/h2&gt;
 
 &lt;p&gt;Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at &lt;a href=&quot;https://www.respoke.io/&quot; title=&quot;Respoke Url&quot;&gt;Respoke&lt;/a&gt;, a communication PaaS startup built on WebRTC.&lt;/p&gt;
 
