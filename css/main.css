@@ -363,7 +363,7 @@ section#single-wrap h1.page-title {
   line-height: 135%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin: 0 0 60px;
+  margin: 20px 0 60px;
   padding: 0 40px;
 }
 
@@ -559,7 +559,7 @@ section#single-wrap img {
   #off-canvas #avatar img { width: 120px; }
   section#single-wrap { margin: 0 auto; }
   section#single-wrap .single-content { padding: 0 20px; }
-  section#single-wrap h1.page-title { padding: 0 20px; margin: 0 0 30px; }
+  section#single-wrap h1.page-title { padding: 0 20px; margin: 20px 0 30px; }
   section#single-wrap p { padding: 0 20px; }
 
   section#single-wrap ul,
