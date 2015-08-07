@@ -7,49 +7,60 @@ permalink: resume
 
 Michelangelo never saw a lump of marble. 
 
-He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Freckle.
+He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
-For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby & JavaScript software of my life. See, work experience below. I’m a Master JavaScript Developer. See, [code samples].
+Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I'm a Master JavaScript Engineer.
 
-##Code is Poetry
+##Best software of my life
 
-As a consultant for a major Fortune 500 company, I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.
+Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
 
-But my passion is open standards and front end development:
+![Respoke][respoke-logo]
 
-![Capabilities][capabilities]
+As a JavaScript Engineer on the Respoke team, I helped developers see how easily we can add secure video, voice and data communication to our own apps using the power of WebRTC.
 
-The bulk of my front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
+We used some of the most innovative front-end technologies of the day, including HTML5, CSS3 (LESS), Jade, Gulp, Bootstrap, JavaScript, jQuery, Angular, NodeWebkit, Jasmine, Sinon, SuperTest and Phantom:
+
+![Capabilities][capabilities-2]
+
+And with these, we built [Apollo] - A powerful Slack competitor that enables team collaboration with chat, live video and voice.
+
+![Apollo][apollo-dark]
+
+We helped shape the way development teams collaborate and write software together and in the process wrote some of the best software of our lives.
+
+![Apollo][apollo-group-conference]
+
+When Respoke needed a developer friendly and maintainable way to develop its email templates, I wrote what became [Caramel] - An open source responsive HTML email framework.
+
+![Respoke Emails][respoke-emails]
+
+The development team loves working on emails now. With Caramel, we got a beautiful and reusable way to work on multiple email templates.
+
+Caramel handled all the details of compiling our CSS preprocessors (Sass or Less), building responsive templates from our layouts, inlining CSS for increased email client compatiblity and uploading templates to our email service provider Mandrill.
+
+Helping developers see the value in WebRTC was itself a life changing experience. I shipped a [demo app](https://github.com/respoke/the-interview-backbone) showcasing all of Respoke's communication features. Contributed to Respoke's [Node server](https://github.com/respoke/node-respoke-admin) library. Wrote both our [Java server](https://github.com/respoke/respoke-java) library and [PHP server](https://github.com/respoke/respoke-php) library and contributed to our [documenation guides](https://github.com/respoke/docs).
+
+To share the unprecedented promise of [WebRTC](http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/), I toured the country giving talks on the topic I came to know and love.
+
+<p></p>
+<script async class="speakerdeck-embed" data-id="b4a4e41f878b4955bb72c976329f1db7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+##Code is poetry
+
+As a consultant JavaScript Engineer for [Nationwide](http://www.nationwide.com/), I've done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.
+
+![Nationwide][nationwide]
+
+But my passion is open standards and front-end development:
+
+![Capabilities][capabilities-1]
+
+The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.
 
 Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.
 
-###Galileo
-
-[Galileo] demonstrates integrating with a third-party API. Here, we integrate with Twitter's API:
-
-![Galileo][galileo-screenshot]
-
-Galileo organizes a number of open source standards and projects:
-
-On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
-
-For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
-
-
-
-###Enigma
-
-[Enigma] demonstrates best practice application architecture for modern, full stack, mobile ready web applications:
-
-![Enigma][enigma-screenshot]
-
-Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.
-
-On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
-
-For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.
-
-The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on [Github][enigma].
 
 ###What's next exactly...?
 
@@ -68,11 +79,20 @@ As I understand it, you’ve had a vision of your own Pieta. I’d like a shot a
 [Twitter]: https://twitter.com/tiandavis
 [Columbus Code Camp]: http://columbuscodecamp.com/
 [email]: mailto:tiandavis@gmail.com
-[enigma-screenshot]: /images/engima-screenshot.png "Engima - Ruby/Rails"
-[galileo-screenshot]: /images/galileo-screenshot.png "Galileo - JavaScript - Front End"
-[capabilities]: /images/capabilities.png "Core Capabilities"
-[Galileo]: https://github.com/tiandavis/galileo
-[Enigma]: https://github.com/tiandavis/enigma
+[capabilities-1]: /images/capabilities-1.png "Core Capabilities"
+[capabilities-2]: /images/capabilities-2.png "Core Capabilities"
+[respoke-logo]: /images/respoke.png "Respoke"
+[respoke]: https://www.respoke.io/ "Respoke Url"
+
+[apollo-dark]: /images/apollo-dark.png "Apollo Dark"
+[apollo-light]: /images/apollo-light.png "Apollo Light"
+[apollo-group-conference]: /images/apollo-group-conference.png "Apollo Group Conference"
+[apollo]: https://app.apollohd.com/#/ "Apollo"
+[caramel]: https://github.com/tiandavis/caramel "Caramel"
+[caramel-screenshot]: /images/caramel.png "Caramel"
+[respoke-emails]: /images/respoke-emails.png "Respoke Emails"
+
+[nationwide]: /images/nationwide.png "Nationwide"
 
 
 
