@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T03:48:57-04:00</updated>
+  <updated>2015-08-07T03:53:54-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1377,7 +1377,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;&lt;img src=&quot;/images/capabilities-1.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
+&lt;p&gt;The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Backbone, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
 
 &lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
 
