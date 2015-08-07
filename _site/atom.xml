@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T03:23:12-04:00</updated>
+  <updated>2015-08-07T03:34:26-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1367,6 +1367,20 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I&#39;m a Master JavaScript Engineer.&lt;/p&gt;
 
+&lt;h2&gt;Code is poetry&lt;/h2&gt;
+
+&lt;p&gt;As a Consultant JavaScript Engineer for &lt;a href=&quot;http://www.nationwide.com/&quot;&gt;Nationwide&lt;/a&gt;, I&#39;ve done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/nationwide.png&quot; title=&quot;Nationwide&quot; alt=&quot;Nationwide&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But my passion is open standards and front-end development:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/capabilities-1.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
+
+&lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
+
 &lt;h2&gt;Best software of my life...&lt;/h2&gt;
 
 &lt;p&gt;Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at &lt;a href=&quot;https://www.respoke.io/&quot; title=&quot;Respoke Url&quot;&gt;Respoke&lt;/a&gt;, a communication PaaS startup built on WebRTC.&lt;/p&gt;
@@ -1404,20 +1418,6 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;b4a4e41f878b4955bb72c976329f1db7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
-
-&lt;h2&gt;Code is poetry&lt;/h2&gt;
-
-&lt;p&gt;As a consultant JavaScript Engineer for &lt;a href=&quot;http://www.nationwide.com/&quot;&gt;Nationwide&lt;/a&gt;, I&#39;ve done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/nationwide.png&quot; title=&quot;Nationwide&quot; alt=&quot;Nationwide&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But my passion is open standards and front-end development:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/capabilities-1.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
-
-&lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
 
 &lt;h3&gt;What&#39;s next exactly...?&lt;/h3&gt;
 
