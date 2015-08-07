@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>8-Bit Hustler - Ruby. JavaScript. Not necessarily in that order.</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="off-canvas">
+      <div id="avatar">
+        <!--<img src="/assets/img/img1.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">-->
+      </div>
+      <div id="bio">
+          <h1>Hi, I'm Tian Davis.</h1>
+          <p>I'm a frontend engineer specializing in <a href="http://emberjs.com">EmberJS</a>. I live in the United States and this is my personal blog. I craft code on <a href="https://github.com/tiandavis">GitHub</a>, share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> and give <a href="/talks">talks on JavaScript</a>. Looking for a solid teammate or co-founder? Let's <a href="mailto:tiandavis@gmail.com">talk</a>...!</p>
+      </div>
+    </div>
+
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="" title="Back to Homepage">8-Bit Hustler</a></h1>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+	
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-02-17T00:00:00Z" itemprop="datePublished">
+          17 February 2015
+        </time>
+      </h5>
+    </div>
+
+    <h1 class="page-title" itemprop="name headline">JavaScript Shims Versus Polyfills</h1>
+
+    <div itemprop="articleBody">
+      <p><img src="/images/polyfilla.jpg" alt="Polyfilla" /></p>
+
+<p>I'm currently working on a conference talk about WebRTC. One of the foundations of any WebRTC library is some form of Google's original <a href="https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js?r=3905">adapter.js</a>, which seeks to normalize the WebRTC API across various browsers. As I was about to build this particular slide, one question started to whisper in my ear, "Is adapter.js a shim or a polyfill?" Eventually, the whisper grew louder and I had to find the answer.</p>
+
+<p>As a JavaScript developer, you've no doubt ran across an <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 library</a> and thought the same thing, "Is it really a shim, or is it really a polyfill?" If you're like me, you stopped, looked at both terms, and then scratched your head… In this article I'll clarify the definition of a JavaScript shim and a JavaScript polyfill so that you can be an informed developer. Knowing the difference will allow you to better choose the libraries you use.</p>
+
+<p>Back in 2010, Remy Sharp coined the term <a href="https://remysharp.com/2010/10/08/what-is-a-polyfill">JavaScript Polyfill</a>:</p>
+
+<blockquote><p>A polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect[s] the browser to provide natively. Flattening the API landscape if you will.</p></blockquote>
+
+<p>If the library determines a feature doesn't natively exist in your browser, it will provide that functionality by any means necessary. That could mean replicating the functionality using any combination of JavaScript, NPAPI, ActiveX and Flash (or anything for that matter). More importantly, you won't even know the polyfill is there because you're still using the native JavaScript code.</p>
+
+<p>Remy went on to share his understanding of a JavaScript Shim:</p>
+
+<blockquote><p>Shim, to me, meant a piece of code that you could add that would fix some functionality, but it would most often have it's own API.</p></blockquote>
+
+<p>This was a good start. Over the last few years, we've seen the JavaScript ecosystem evolve. One thing I've noticed is that we tend to think of shims as some smaller piece of code, whereas polyfills tend to be larger, more complex pieces of code. But there are other differences and similarities as well.</p>
+
+<p>I decided to list out those similarities and differences to give myself a better understanding of a shim versus a polyfill. Here's what I've found so far:</p>
+
+<h3>Similarities Between Polyfill and Shim</h3>
+
+<p><code>- Both seek to normalize functionality across browsers</code></p>
+
+<p><code>- Both tend to extend native methods, opting for their own implementation when the native method does not exist.</code></p>
+
+<h3>Differences Between Polyfill and Shim`</h3>
+
+<p><code>- Shims tend to be written in a single language</code></p>
+
+<p><code>-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization</code></p>
+
+<p>Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn't exist in that browser at all. I believe that's the pivotal point here.</p>
+
+<p><a href="https://twitter.com/simevidas">Sime Vidas</a> goes on to share his thoughts on shims vs polyfills on this <a href="http://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540">Stack Overflow</a> question on the topic:</p>
+
+<blockquote><p>From what I understand:
+A polyfill is code that detects if a certain "expected" API is missing and manually implements it. E.g.</p>
+
+<p><code>if (!Function.prototype.bind) {</code></p>
+
+<p><code>Function.prototype.bind = ...;</code></p>
+
+<p><code>}</code></p></blockquote>
+
+<p>A shim is code that intercepts existing API calls and implements different behavior. The idea here is to normalize certain APIs across different environments. So, if two browsers implement the same API differently, you could intercept the API calls in one of those browsers and make its behavior align with the other browser. Or, if a browser has a bug in one of its APIs, you could again intercept calls to that API, and then circumvent the bug.
+I think this is the most clear definition I've seen of the two so far. Vidas mentions the shim "intercepting" the API call. This creates a clearer visual than Sharp's "fix" definition.</p>
+
+<p>It also helps validate some of the differences I've noticed over the years. Namely, shims appear to be written in JavaScript only because the JavaScript API already exists (it just needs some smoothing to normalize behaviors across browsers). Whereas polyfills often have to use multiple language platforms because the JavaScript API does not exist at all.</p>
+
+<h3>Shim and Polyfill Real-World Parallels</h3>
+
+<p>In the real world a shim is a wedge-shaped piece of wood. "Polyfilla" is the name of a <a href="http://www.lepageproducts.com/ProductDetail.aspx?pid=101">spackling paste from LePage</a>. You'd typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn't exactly the same as the wall, but it acts close enough to the real thing to make it work.</p>
+
+<h4>Examples of JavaScript Polyfills</h4>
+
+<p>In particular, take a look at the available transports is Socket.IO. There is websocket, htmlfile, xhr-polling, jsonp-polling and flashsocket. Yes - Flash. Socket.IO is a great example of a JavaScript polyfill that manually implements WebSockets in older browsers by any means necessary. Falling back to flash allowed Socket.IO to approximate WebSockets in older browsers like IE 8 and IE 9 during a time when they held noticeable marketshare. This would not have been possible with a pure JavaScript implementation only.</p>
+
+<p>Today, the flashsocket transport is disabled by default in Socket.IO and will not activate on Chrome or other browsers that fully support WebSockets, even if flashsocket is specified as the only transport. To test flashsocket, you have to use IE 8 or IE 9, or other browsers that don't natively support WebSockets. Had Socket.IO been designed as a shim, it simply would not have worked in older versions of IE at all because shims don't implement features that don't exist.</p>
+
+<p>There are many other examples of great JavaScript polyfills that use a multitude of technologies in addition to JavaScrip to achieve cross-browser compatibility. Raphael falls back to VML in older versions of IE that don't support SVG. Store.js falls back to ActiveX and IE's non-standard userData in IE 6 and IE 7 where localStorage does not exist. Video.js falls back to Flash in older versions of IE that don't support the HTML5 video element. I could go on all day…</p>
+
+<p>The point is that shims only normalize browser behavior, whereas polyfills both normalize browser behavior and implement functionality where it does not exist.</p>
+
+<h3>Shim vs Polyfill Checklist</h3>
+
+<p>So as a developer, here's a quick checklist to figure out if you're developing a shim or a polyfill:</p>
+
+<p><strong><code>1.Does your library normalize a JavaScript API across the major browsers?</code></strong></p>
+
+<p><strong><code>2. Does the JavaScript API exist in some major browsers?</code></strong></p>
+
+<p><strong><code>3.Does your library implement the JavaScript API where it does not exist?</code></strong></p>
+
+<p>Here's a flow diagram of the decision tree:</p>
+
+<p><img src="/images/shim-polyfill-decision-tree.png" alt="Shim Polyfill Decision Tree" /></p>
+
+<h3>So is Google's Adapter.js a Shim or a Polyfill?</h3>
+
+<p>Let's use our decision framework to figure out the answer to the question:</p>
+
+<p><strong><code>1. Does adapter.js normalize a JavaScript API across the major browsers?</code></strong></p>
+
+<p>Yes. Adapter.js normalizes the WebRTC API.</p>
+
+<p><strong><code>2. Does the WebRTC API exist in some major browsers?</code></strong></p>
+
+<p>Yes. Currently, the WebRTC API exists in Chrome, Firefox and Opera.</p>
+
+<p><strong><code>3. Does adapter.js implement the WebRTC API where it does not exist?</code></strong></p>
+
+<p>No. Google's adapter.js library does not implement the WebRTC API in either IE or Safari.</p>
+
+<p>Based on our Shim versus Polyfill guide, Google's adapter.js is definitely a shim because it does normalize the Web RTC API, but stops short of implementing it in either IE or Safari.</p>
+
+<h3>Why Does it Matter?</h3>
+
+<p>I wrote this article because over the years using both terms has grown rather confusing. Some even go so far as to say <a href="https://books.google.com/books?id=qkd-yBhZokUC&amp;pg=PA155&amp;lpg=PA155&amp;dq=javascript+shim+polyfill+synonymous&amp;source=bl&amp;ots=P0hQTVgtoK&amp;sig=mhLt7IrbuyPz7_HT_huQIcqmuwk&amp;hl=en&amp;sa=X&amp;ei=Et3bVMatF4LngwSxsIRI&amp;ved=0CC4Q6AEwAg#v=onepage&amp;q=javascript%20shim%20polyfill%20synonymous&amp;f=false">shim is synonymous to polyfill</a>. That's simply not the case, nor should it be. There is both a place and a need for each term in the craft.</p>
+
+<p>This may all seem like semantics, but it's not. Understanding the difference between a shim and a polyfill is the difference between your app working in some browsers and your app working in all browsers. If you're like me, you go for all browsers or you die trying. Knowing your shims from your polyfills is key to getting you there.</p>
+
+    </div>
+
+    <!--<div id="share" class="feat">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>-->
+
+    
+      
+        <a rel="next" href="/posts/webrtc-instagram-video-filters" id="next">
+          <span class="nav-title nav-title-next">newer</span> &rarr;
+        </a>
+      
+    
+
+    
+      
+        <a rel="prev" href="/posts/the-history-of-the-pstn" id="prev">
+          &larr; <span class="nav-title nav-title-prev">older</span>
+        </a>
+      
+    
+  </article>
+</section>
+
+
+
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; 2010-2015 Tian Davis</small>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>8-Bit Hustler - Ruby. JavaScript. Not necessarily in that order.</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="off-canvas">
+      <div id="avatar">
+        <!--<img src="/assets/img/img1.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">-->
+      </div>
+      <div id="bio">
+          <h1>Hi, I'm Tian Davis.</h1>
+          <p>I'm a frontend engineer specializing in <a href="http://emberjs.com">EmberJS</a>. I live in the United States and this is my personal blog. I craft code on <a href="https://github.com/tiandavis">GitHub</a>, share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> and give <a href="/talks">talks on JavaScript</a>. Looking for a solid teammate or co-founder? Let's <a href="mailto:tiandavis@gmail.com">talk</a>...!</p>
+      </div>
+    </div>
+
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="" title="Back to Homepage">8-Bit Hustler</a></h1>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+	
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-03-04T00:00:00Z" itemprop="datePublished">
+          04 March 2015
+        </time>
+      </h5>
+    </div>
+
+    <h1 class="page-title" itemprop="name headline">WebRTC Instagram Video Filters</h1>
+
+    <div itemprop="articleBody">
+      <p><img src="/images/instagram-2.jpg" alt="Instagram" /></p>
+
+<p>With more than a $1 Billion valuation and over 75 million daily users, <a href="https://instagram.com/digium/">Instagram</a> is arguably one of the most popular social networks today. Did you know more than 55 million photos are posted daily on Instagram? Or that the platform sees over 8,500 likes per second?</p>
+
+
+
+
+<p>I&rsquo;ve always had a small love affair with image processing. So I figured let&rsquo;s have some fun with WebRTC and find out, &ldquo;Can you apply Instagram filters to a live WebRTC video stream?&rdquo; To be brutally honest, the question had been burning me for months, so I finally set out to find the answer.</p>
+
+
+
+
+<p>What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&rsquo;s a <a href="http://tiandavis.github.io/webrtc-instagram-video-filters/">live demo</a> I put together of the concept (Pro Tip: Use Chrome or <a href="http://caniuse.com/#feat=css-filters">FF 35+</a>). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. </p>
+
+
+
+
+<p>First, we need a little HTML to hang our video element and controls: </p>
+
+
+
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;respoke.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+. . .
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;video-streams&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">&quot;localVideo&quot;</span><span class="nt">&gt;&lt;/video&gt;</span>
+  <span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">&quot;remoteVideo&quot;</span><span class="nt">&gt;&lt;/video&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Instagram Filters:<span class="nt">&lt;/p&gt;</span>
+  
+<span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;filters&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;NoFilter&quot;</span><span class="nt">&gt;</span>#NoFilter<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;Willow&quot;</span><span class="nt">&gt;</span>#Willow<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;Earlybird&quot;</span><span class="nt">&gt;</span>#Earlybird<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;Mayfair&quot;</span><span class="nt">&gt;</span>#Mayfair<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;Amaro&quot;</span><span class="nt">&gt;</span>#Amaro<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+
+
+
+
+<p>Here, I included Google&rsquo;s <a href="http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill">adapter.js shim</a> to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&rsquo;ll use that video tag to display the video stream coming from our web camera. We&rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the <a href="http://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b">most popular filter on Instagram</a>. Now for the actual filters.</p>
+
+
+
+
+<p>Laying the foundation for the Instagram filters are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS3 filters</a>. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating <a href="http://designpieces.com/2014/09/instagram-filters-css3-effects/">every single Instagram filter using CSS3 filters</a>. Here are a few we&rsquo;ll use for this experiment:</p>
+
+
+
+
+<div class="highlight"><pre><code class="css"><span class="nc">.ig-willow</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">02</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">85</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">2</span><span class="p">)</span> <span class="n">sepia</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">02</span><span class="p">);</span>
+  <span class="n">filter</span><span class="o">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">02</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">85</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">2</span><span class="p">)</span> <span class="n">sepia</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">02</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.ig-earlybird</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="n">sepia</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">4</span><span class="p">)</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">6</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">9</span><span class="p">)</span> <span class="n">hue</span><span class="o">-</span><span class="n">rotate</span><span class="p">(</span><span class="m">-10</span><span class="n">deg</span><span class="p">);</span>
+  <span class="n">filter</span><span class="o">:</span> <span class="n">sepia</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">4</span><span class="p">)</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">6</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">9</span><span class="p">)</span> <span class="n">hue</span><span class="o">-</span><span class="n">rotate</span><span class="p">(</span><span class="m">-10</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.ig-mayfair</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">4</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">);</span>
+  <span class="n">filter</span><span class="o">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">4</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.ig-amaro</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">filter</span><span class="o">:</span> <span class="n">hue</span><span class="o">-</span><span class="n">rotate</span><span class="p">(</span><span class="m">-10</span><span class="n">deg</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">9</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">)</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">filter</span><span class="o">:</span> <span class="n">hue</span><span class="o">-</span><span class="n">rotate</span><span class="p">(</span><span class="m">-10</span><span class="n">deg</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">9</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">1</span><span class="p">)</span> <span class="n">saturate</span><span class="p">(</span><span class="m">1</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+<p>Using a combination of CSS3 filters: sepia, saturate, contrast, brightness and hue-rotate; we&rsquo;re able to approximate Instagram&rsquo;s Willow, Earlybird, Mayfair and Amaro filters. Now for the really fun part: bringing the app to life with a little JavaScript.</p>
+
+
+
+
+<p>To do this we&rsquo;ll leverage the camera access feature of WebRTC and then apply the CSS3 filters as we see fit. First, let&rsquo;s take a look at how we access the camera:</p>
+
+
+
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">constraints</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">video</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+  <span class="nx">audio</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">};</span>
+
+<span class="nx">getUserMedia</span><span class="p">(</span>
+  <span class="nx">constraints</span><span class="p">,</span> 
+  <span class="nx">onMediaStream</span><span class="p">,</span> 
+  <span class="nx">noMediaStream</span>
+<span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">onMediaStream</span><span class="p">(</span><span class="nx">stream</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;localVideo&quot;</span><span class="p">);</span>
+  
+  <span class="nx">attachMediaStream</span><span class="p">(</span><span class="nx">localVideo</span><span class="p">,</span> <span class="nx">stream</span><span class="p">);</span>
+  
+  <span class="nx">localVideo</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">noMediaStream</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;No media stream for us.&quot;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+<p>Here, we call getUserMedia and pass it three parameters. The first is a constraints object listing which devices to access, in this case, both the video camera and the mic. The last two parameters are callbacks. We use the first callback for when we successfully get a stream from our camera. We use the second callback if accessing the camera stream fails.</p>
+
+
+
+
+<p>Once we have the camera stream, we can then get the video element. Next, we attach the camera stream to the video element. We&rsquo;ll need to call play on the video element, if we don&rsquo;t then we&rsquo;ll just see a camera still shot. Now that we have our video playing, we&rsquo;ll want to implement a way to apply our Instagram filters to the video element.</p>
+
+
+
+
+<p>To accomplish this, we&rsquo;ll need to setup an event to apply each filter. Let&rsquo;s take a look at the JavaScript code to implement this:</p>
+
+
+
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;filters&quot;</span><span class="p">);</span> 
+
+<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">filter</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
+  
+  <span class="kd">var</span> <span class="nx">filters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;NoFilter&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
+    
+    <span class="s2">&quot;Willow&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;ig-willow&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
+    
+    <span class="s2">&quot;Earlybird&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;ig-earlybird&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
+    
+    <span class="s2">&quot;Mayfair&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;ig-mayfair&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
+    
+    <span class="s2">&quot;Amaro&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">&quot;ig-amaro&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}[</span><span class="nx">filter</span><span class="p">]();</span>
+<span class="p">});</span>
+</code></pre></div>
+
+
+
+
+<p>Here, we add an event listener to the list of Instagram filters. When a filter is clicked, we&rsquo;ll get its corresponding filter id. Once we have the filter id, it&rsquo;s an easy transition to apply the corresponding CSS3 filter to the video element. When we&rsquo;re ready to remove all filters, we just remove all CSS3 class filters from the video element.</p>
+
+
+
+
+<p>I went ahead and pushed my <a href="https://github.com/tiandavis/webrtc-instagram-video-filters">webrtc video filter code</a> to GitHub in its entirety. The instructions to run it locally are in the README. Git clone and you&rsquo;ll be up and running in 30 seconds.</p>
+
+
+
+
+<p>So that&rsquo;s my WebRTC project. As you can see, the video element is a first class HTML5 element. That means you can manipulate it in JavaScript and style it in CSS to your hearts delight. I just think it&rsquo;s so cool you can manipulate the look and feel of a live video stream.</p>
+
+
+
+
+<p>I&rsquo;ve heard #Mayfair is one of the top Instagram filters. Which one did you like best? I hope you had as much fun as I did and now you can add Instagram filters to your WebRTC video too.</p>
+
+
+    </div>
+
+    <!--<div id="share" class="feat">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>-->
+
+    
+      
+        <a rel="next" href="/posts/webrtc-screensharing-with-respoke-and-node-webkit" id="next">
+          <span class="nav-title nav-title-next">newer</span> &rarr;
+        </a>
+      
+    
+
+    
+      
+        <a rel="prev" href="/posts/javascript-shims-versus-polyfills" id="prev">
+          &larr; <span class="nav-title nav-title-prev">older</span>
+        </a>
+      
+    
+  </article>
+</section>
+
+
+
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; 2010-2015 Tian Davis</small>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>

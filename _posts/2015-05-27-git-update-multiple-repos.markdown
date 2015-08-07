@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git: Update Multiple Repos"
-date:   2015-03-27 00:00:00
+date:   2015-05-27 00:00:00
 permalink: posts/git-update-multiple-repos
 ---
 

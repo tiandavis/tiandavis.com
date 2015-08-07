@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>8-Bit Hustler - Ruby. JavaScript. Not necessarily in that order.</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="off-canvas">
+      <div id="avatar">
+        <!--<img src="/assets/img/img1.jpg" alt="Profile Picture" title="wow, very face, such photograph, wow">-->
+      </div>
+      <div id="bio">
+          <h1>Hi, I'm Tian Davis.</h1>
+          <p>I'm a frontend engineer specializing in <a href="http://emberjs.com">EmberJS</a>. I live in the United States and this is my personal blog. I craft code on <a href="https://github.com/tiandavis">GitHub</a>, share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> and give <a href="/talks">talks on JavaScript</a>. Looking for a solid teammate or co-founder? Let's <a href="mailto:tiandavis@gmail.com">talk</a>...!</p>
+      </div>
+    </div>
+
+    <header>
+      <div class="h-wrap">
+        <h1 class="title"><a href="" title="Back to Homepage">8-Bit Hustler</a></h1>
+        <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+	
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-04-10T00:00:00Z" itemprop="datePublished">
+          10 April 2015
+        </time>
+      </h5>
+    </div>
+
+    <h1 class="page-title" itemprop="name headline">WebRTC Screensharing With Respoke and Node-Webkit</h1>
+
+    <div itemprop="articleBody">
+      <p><img src="/images/node-webkit.png" alt="NodeWebkit" /></p>
+
+<h3>The Code</h3>
+
+<p>I've been working with a lot of developers on WebRTC solutions. One, in particular, needed screensharing for their next-generating proctoring solution, so I built a proof-of-concept (PoC) screensharing app using node-webkit.</p>
+
+<p>A typical video call with <a href="https://www.respoke.io/">Respoke</a> starts with starting a call with another endpoint:</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">otherEndpoint</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getEndpoint</span><span class="p">({</span>
+    <span class="nx">id</span><span class="o">:</span> <span class="nx">theirName</span>
+<span class="p">});</span>
+
+<span class="nx">otherEndpoint</span><span class="p">.</span><span class="nx">startCall</span><span class="p">({</span>
+      <span class="nx">onConnect</span><span class="o">:</span> <span class="nx">onConnect</span><span class="p">,</span>
+      <span class="nx">onLocalMedia</span><span class="o">:</span> <span class="nx">onLocalVideo</span>
+<span class="p">});</span>
+
+<span class="nx">To</span> <span class="nx">enable</span> <span class="nx">screensharing</span> <span class="nx">we</span> <span class="nx">just</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">pass</span> <span class="nx">getUserMedia</span> <span class="nx">MediaStreamContraints</span><span class="o">:</span>
+
+<span class="kd">var</span> <span class="nx">otherEndpoint</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getEndpoint</span><span class="p">({</span>
+    <span class="nx">id</span><span class="o">:</span> <span class="nx">theirName</span>
+  <span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">constraints</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">audio</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nx">video</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">mandatory</span><span class="o">:</span> <span class="p">{</span>
+              <span class="nx">chromeMediaSource</span><span class="o">:</span> <span class="s1">&#39;screen&#39;</span><span class="p">,</span>
+              <span class="nx">maxHeight</span><span class="o">:</span> <span class="mi">2000</span><span class="p">,</span>
+              <span class="nx">maxWidth</span><span class="o">:</span> <span class="mi">2000</span>
+            <span class="p">},</span>
+            <span class="nx">optional</span><span class="o">:</span> <span class="p">[]</span>
+      <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nx">otherEndpoint</span><span class="p">.</span><span class="nx">startCall</span><span class="p">({</span>
+    <span class="nx">constraints</span><span class="o">:</span> <span class="nx">constraints</span><span class="p">,</span>
+      <span class="nx">onConnect</span><span class="o">:</span> <span class="nx">onConnect</span><span class="p">,</span>
+      <span class="nx">onLocalMedia</span><span class="o">:</span> <span class="nx">onLocalVideo</span>
+<span class="p">});</span>
+</code></pre></div>
+
+
+<p>In addition, we need to enable usermedia screen capturing in node-webkit. To do this, we added the following chromium-args to our npm package.json file:</p>
+
+<div class="highlight"><pre><code class="js"><span class="p">{</span>
+  <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+  <span class="s2">&quot;chromium-args&quot;</span><span class="o">:</span> <span class="s2">&quot;--enable-usermedia-screen-capturing&quot;</span>
+  <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>The <code>--enable-usermedia-screen-capturing</code> chromium flag replaces the media transmitted with your screen instead of your camera input.</p>
+
+<p>Our <a href="https://github.com/respoke/respoke-screen-sharing-node-webkit">Respoke screensharing demo</a> is open source. To use it, head over to our Respoke Screensharing Node-Webkit GitHub repo. Then run the following commands from your terminal:</p>
+
+<div class="highlight"><pre><code class="bash">git clone https://github.com/respoke/respoke-screensharing-node-webkit.git
+
+<span class="nb">cd </span>respoke-screensharing-node-webkit
+
+npm install
+
+Open Node Webkit Instance 1
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+
+Open Node Webkit Instance 2
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+</code></pre></div>
+
+
+<p>Give it a try. If you find any issues, we welcome pull requests.</p>
+
+<h3>Media Stream Constraints</h3>
+
+<p>To make screensharing work, we had to pass a MediaStreamContraint object literal. But, where does all this come from? It all starts with a w3 spec. When specs are not final, vendor implementation typically starts from a draft spec. In this case, the Media Capture and Streams working draft. There is no current consensus on what every constraints should be. The working drafts acts a starting point so vendors like Google can start implementing real examples of how constraints are used.</p>
+
+<p>For example, the working draft specifies constraints like width, height, frameRate and aspectRatio. But the Chromium MediaConstraints source code specifies so much more available constraints like minAspectRatio, maxAspectRatio, minWidth, maxWidth, minHeight, maxHeight, minFrameRate and maxFrameRate:</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+    
+    <span class="c1">// Constraint keys used by a local video source.</span>
+    <span class="c1">// Specified by draft-alvestrand-constraints-resolution-00b</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinAspectRatio</span><span class="p">[];</span> <span class="c1">// minAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxAspectRatio</span><span class="p">[];</span> <span class="c1">// maxAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxWidth</span><span class="p">[];</span> <span class="c1">// maxWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinWidth</span><span class="p">[];</span> <span class="c1">// minWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxHeight</span><span class="p">[];</span> <span class="c1">// maxHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinHeight</span><span class="p">[];</span> <span class="c1">// minHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxFrameRate</span><span class="p">[];</span> <span class="c1">// maxFrameRate</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinFrameRate</span><span class="p">[];</span> <span class="c1">// minFrameRate</span>
+
+    <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+<p>The Chromium MediaConstraints even go on to define other interesting experimental contraints like echoCancellation, noiseReduction and cpuOveruseDetection:</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+    <span class="c1">// Constraint keys used by a local audio source.</span>
+    <span class="c1">// These keys are google specific.</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEchoCancellation</span><span class="p">[];</span> <span class="c1">// googEchoCancellation</span>
+   
+    <span class="c1">// Google-specific constraint keys for a local video source</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kNoiseReduction</span><span class="p">[];</span> <span class="c1">// googNoiseReduction</span>
+    
+    <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+    
+    <span class="c1">// googTemporalLayeredScreencast</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kCpuOveruseDetection</span><span class="p">[];</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+<p>Of course there is no guarantee that those features will make it to the final Media Capture and Streams spec.</p>
+
+<p>Flags
+We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle.</p>
+
+<p>For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: <code>--enable-usermedia-screen-capturing</code>.</p>
+
+<p>It’s source code is defined in Chromium’s content_switches.h header file:</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="c1">// Defines all the &quot;content&quot; command-line switches.</span>
+
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+
+<span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
+<span class="c1">// All switches in alphabetical order. The switches should be documented</span>
+<span class="c1">// alongside the definition of their values in the .cc file.</span>
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+
+<span class="n">CONTENT_EXPORT</span> <span class="k">extern</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[];</span>
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>And implemented in Chromium’s content_switches.cc file:</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &quot;content/public/common/content_switches.h&quot;</span>
+
+<span class="cp">#include &quot;base/command_line.h&quot;</span>
+
+<span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+
+<span class="c1">// Enable screen capturing support for MediaStream API.</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[]</span> <span class="o">=</span>
+    <span class="s">&quot;enable-usermedia-screen-capturing&quot;</span><span class="p">;</span>
+    
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>We then use those flags as chromium-args in our node-webkit apps. You can pass chromium flags to chrome directly as well. On Mac OS X, you’d use:</p>
+
+<p><code>open -a "Google Chrome" --args --enable-usermedia-screen-capturing</code></p>
+
+<p>On Windows, something like:
+<code>chrome.exe --args --enable-usermedia-screen-capturing</code></p>
+
+<p>I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.</p>
+
+    </div>
+
+    <!--<div id="share" class="feat">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>-->
+
+    
+      
+        <a rel="next" href="/posts/git-update-multiple-repos" id="next">
+          <span class="nav-title nav-title-next">newer</span> &rarr;
+        </a>
+      
+    
+
+    
+      
+        <a rel="prev" href="/posts/webrtc-instagram-video-filters" id="prev">
+          &larr; <span class="nav-title nav-title-prev">older</span>
+        </a>
+      
+    
+  </article>
+</section>
+
+
+
+    </main>
+
+    <footer>
+      <small>Powered by Jekyll - &copy; 2010-2015 Tian Davis</small>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>

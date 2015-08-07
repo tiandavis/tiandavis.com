@@ -4,11 +4,122 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T16:24:00-04:00</updated>
+  <updated>2015-08-07T18:36:35-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
   </author>
+  
+    <entry>
+      <title>Using Chance.js To Generate Sample Data</title>
+      <link href="http://tiandavis.com/posts/using-chance-to-generate-sample-data" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/chancejs.png&quot; alt=&quot;Chance.js&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&#39;s not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you&#39;re trying to deliver business value.&lt;/p&gt;
+
+&lt;p&gt;You&#39;re certainly not trying to build the world&#39;s greatest random number generator. And you&#39;re definitely not trying to build the world&#39;s greatest random email generator either. Unless you&#39;re &lt;a href=&quot;http://chancejs.com/#gender&quot;&gt;chance.js&lt;/a&gt; that is.&lt;/p&gt;
+
+&lt;h3&gt;What is Chance&lt;/h3&gt;
+
+&lt;p&gt;Chance is a JavaScript micro library, narrowly focused on generating random data. That data could be as general as a random number or random string. Or Chance can be as specific as a random last name or a random phone number.&lt;/p&gt;
+
+&lt;p&gt;Chance comes in great during automated testing, but it is also incredibly useful when working with peer-to-peer WebRTC apps as well because it helps you generate random conference rooms and other data.&lt;/p&gt;
+
+&lt;h3&gt;How to use Chance&lt;/h3&gt;
+
+&lt;h4&gt;Generating Random User Data&lt;/h4&gt;
+
+&lt;p&gt;For example, say you&#39;re working with a new instance of &lt;a href=&quot;https://www.respoke.io/&quot;&gt;Respoke&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;respoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;appId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;918e31a3-34aa-40f8-aa4c-b5409f9e4053&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;developmentMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When connecting, you&#39;d supply Respoke with a unique endpointId identifying the person connecting:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;endpointId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;endpointId&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Think of your endpointId as a unique username or email address or some other unique data point. Using Chance, we have a few good options to work with.&lt;/p&gt;
+
+&lt;p&gt;First, we could use Chance to generate a random email address:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;endpointId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you need to use a particular domain, you could set that using Chance as well:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;endpointId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;respoke.io&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Another potential use here is to generate a random Twitter username:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;endpointId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The great part is you didn&#39;t have to write a single utility function.&lt;/p&gt;
+
+&lt;h4&gt;Generating Random Room Data&lt;/h4&gt;
+
+&lt;p&gt;Once connected to Respoke, you&#39;d want to then create a new group or join an existing group. Here, you could use Chance to generate a random group name.&lt;/p&gt;
+
+&lt;p&gt;You could use Chance to generate a random Black Berry Pin:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;connect&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bb_pin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//&amp;#39;985de771&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or you could you use Chance to generate a random Facebook Id:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;connect&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fbid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//&amp;#39;1000039460258605&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or you could you use Chance to generate a random Unix timestamp:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;connect&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hammertime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//2273327300317&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;My personal favorite is the hammertime method. How could you not love a library with a method called hammertime?&lt;/p&gt;
+
+&lt;p&gt;According to startup lore, Hammertime was coined by a startup whose founder had an interesting interaction with M.C. Hammer. There was no name given to &quot;Unix time with milliseconds&quot; and while brainstorming ideas (because Unix time with milliseconds is a confusing mouthful), someone suggested Hammertime and it stuck.&lt;/p&gt;
+
+&lt;p&gt;Chance is a pretty neat library for generating lots of random data. Data you would have otherwise had to craft yourself. Give it a chance...See what I did there? ;)&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/posts/using-chance-to-generate-sample-data</id>
+      <updated>2015-07-04T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
   
     <entry>
       <title>Git: Update Multiple Repos</title>
@@ -58,7 +169,674 @@
 &lt;p&gt;If you find yourself needing to update multiple git repos at a time, give this technique a try.&lt;/p&gt;
 </summary>
       <id>http://tiandavis.com/posts/git-update-multiple-repos</id>
-      <updated>2015-03-27T00:00:00Z</updated>
+      <updated>2015-05-27T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>WebRTC Screensharing With Respoke and Node-Webkit</title>
+      <link href="http://tiandavis.com/posts/webrtc-screensharing-with-respoke-and-node-webkit" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/node-webkit.png&quot; alt=&quot;NodeWebkit&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;The Code&lt;/h3&gt;
+
+&lt;p&gt;I&#39;ve been working with a lot of developers on WebRTC solutions. One, in particular, needed screensharing for their next-generating proctoring solution, so I built a proof-of-concept (PoC) screensharing app using node-webkit.&lt;/p&gt;
+
+&lt;p&gt;A typical video call with &lt;a href=&quot;https://www.respoke.io/&quot;&gt;Respoke&lt;/a&gt; starts with starting a call with another endpoint:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;otherEndpoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEndpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theirName&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;otherEndpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;startCall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;onConnect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onConnect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;onLocalMedia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onLocalVideo&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;To&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;screensharing&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;we&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;just&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;need&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pass&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserMedia&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MediaStreamContraints&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;otherEndpoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEndpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theirName&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;constraints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;mandatory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;chromeMediaSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;screen&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;maxHeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;optional&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;otherEndpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;startCall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;constraints&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;constraints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;onConnect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onConnect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;onLocalMedia&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onLocalVideo&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In addition, we need to enable usermedia screen capturing in node-webkit. To do this, we added the following chromium-args to our npm package.json file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;chromium-args&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;--enable-usermedia-screen-capturing&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The &lt;code&gt;--enable-usermedia-screen-capturing&lt;/code&gt; chromium flag replaces the media transmitted with your screen instead of your camera input.&lt;/p&gt;
+
+&lt;p&gt;Our &lt;a href=&quot;https://github.com/respoke/respoke-screen-sharing-node-webkit&quot;&gt;Respoke screensharing demo&lt;/a&gt; is open source. To use it, head over to our Respoke Screensharing Node-Webkit GitHub repo. Then run the following commands from your terminal:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone https://github.com/respoke/respoke-screensharing-node-webkit.git
+
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;respoke-screensharing-node-webkit
+
+npm install
+
+Open Node Webkit Instance 1
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+
+Open Node Webkit Instance 2
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Give it a try. If you find any issues, we welcome pull requests.&lt;/p&gt;
+
+&lt;h3&gt;Media Stream Constraints&lt;/h3&gt;
+
+&lt;p&gt;To make screensharing work, we had to pass a MediaStreamContraint object literal. But, where does all this come from? It all starts with a w3 spec. When specs are not final, vendor implementation typically starts from a draft spec. In this case, the Media Capture and Streams working draft. There is no current consensus on what every constraints should be. The working drafts acts a starting point so vendors like Google can start implementing real examples of how constraints are used.&lt;/p&gt;
+
+&lt;p&gt;For example, the working draft specifies constraints like width, height, frameRate and aspectRatio. But the Chromium MediaConstraints source code specifies so much more available constraints like minAspectRatio, maxAspectRatio, minWidth, maxWidth, minHeight, maxHeight, minFrameRate and maxFrameRate:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MediaConstraintsInterface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// Constraint keys used by a local video source.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Specified by draft-alvestrand-constraints-resolution-00b&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMinAspectRatio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// minAspectRatio&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMaxAspectRatio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// maxAspectRatio&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMaxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// maxWidth&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMinWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// minWidth&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMaxHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// maxHeight&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMinHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// minHeight&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMaxFrameRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// maxFrameRate&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kMinFrameRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// minFrameRate&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The Chromium MediaConstraints even go on to define other interesting experimental contraints like echoCancellation, noiseReduction and cpuOveruseDetection:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MediaConstraintsInterface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;public:&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Constraint keys used by a local audio source.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// These keys are google specific.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kEchoCancellation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// googEchoCancellation&lt;/span&gt;
+   
+    &lt;span class=&quot;c1&quot;&gt;// Google-specific constraint keys for a local video source&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kNoiseReduction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// googNoiseReduction&lt;/span&gt;
+    
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// googTemporalLayeredScreencast&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCpuOveruseDetection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Of course there is no guarantee that those features will make it to the final Media Capture and Streams spec.&lt;/p&gt;
+
+&lt;p&gt;Flags
+We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle.&lt;/p&gt;
+
+&lt;p&gt;For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: &lt;code&gt;--enable-usermedia-screen-capturing&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s source code is defined in Chromium’s content_switches.h header file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Defines all the &amp;quot;content&amp;quot; command-line switches.&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;switches&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// All switches in alphabetical order. The switches should be documented&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// alongside the definition of their values in the .cc file.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;CONTENT_EXPORT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extern&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kEnableUserMediaScreenCapturing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And implemented in Chromium’s content_switches.cc file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;quot;content/public/common/content_switches.h&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#include &amp;quot;base/command_line.h&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;switches&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Enable screen capturing support for MediaStream API.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kEnableUserMediaScreenCapturing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&amp;quot;enable-usermedia-screen-capturing&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We then use those flags as chromium-args in our node-webkit apps. You can pass chromium flags to chrome directly as well. On Mac OS X, you’d use:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;open -a &quot;Google Chrome&quot; --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On Windows, something like:
+&lt;code&gt;chrome.exe --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/posts/webrtc-screensharing-with-respoke-and-node-webkit</id>
+      <updated>2015-04-10T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>WebRTC Instagram Video Filters</title>
+      <link href="http://tiandavis.com/posts/webrtc-instagram-video-filters" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/instagram-2.jpg&quot; alt=&quot;Instagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With more than a $1 Billion valuation and over 75 million daily users, &lt;a href=&quot;https://instagram.com/digium/&quot;&gt;Instagram&lt;/a&gt; is arguably one of the most popular social networks today. Did you know more than 55 million photos are posted daily on Instagram? Or that the platform sees over 8,500 likes per second?&lt;/p&gt;
+
+
+
+
+&lt;p&gt;I&amp;rsquo;ve always had a small love affair with image processing. So I figured let&amp;rsquo;s have some fun with WebRTC and find out, &amp;ldquo;Can you apply Instagram filters to a live WebRTC video stream?&amp;rdquo; To be brutally honest, the question had been burning me for months, so I finally set out to find the answer.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&amp;rsquo;s a &lt;a href=&quot;http://tiandavis.github.io/webrtc-instagram-video-filters/&quot;&gt;live demo&lt;/a&gt; I put together of the concept (Pro Tip: Use Chrome or &lt;a href=&quot;http://caniuse.com/#feat=css-filters&quot;&gt;FF 35+&lt;/a&gt;). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. &lt;/p&gt;
+
+
+
+
+&lt;p&gt;First, we need a little HTML to hang our video element and controls: &lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;respoke.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+. . .
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;video-streams&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;video&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;localVideo&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/video&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;video&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;remoteVideo&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/video&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Instagram Filters:&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;filters&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;NoFilter&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#NoFilter&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Willow&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#Willow&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Earlybird&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#Earlybird&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Mayfair&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#Mayfair&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Amaro&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#Amaro&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Here, I included Google&amp;rsquo;s &lt;a href=&quot;http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill&quot;&gt;adapter.js shim&lt;/a&gt; to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&amp;rsquo;ll use that video tag to display the video stream coming from our web camera. We&amp;rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the &lt;a href=&quot;http://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b&quot;&gt;most popular filter on Instagram&lt;/a&gt;. Now for the actual filters.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Laying the foundation for the Instagram filters are &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/filter&quot;&gt;CSS3 filters&lt;/a&gt;. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating &lt;a href=&quot;http://designpieces.com/2014/09/instagram-filters-css3-effects/&quot;&gt;every single Instagram filter using CSS3 filters&lt;/a&gt;. Here are a few we&amp;rsquo;ll use for this experiment:&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.ig-willow&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sepia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sepia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.ig-earlybird&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sepia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sepia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.ig-mayfair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.ig-amaro&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Using a combination of CSS3 filters: sepia, saturate, contrast, brightness and hue-rotate; we&amp;rsquo;re able to approximate Instagram&amp;rsquo;s Willow, Earlybird, Mayfair and Amaro filters. Now for the really fun part: bringing the app to life with a little JavaScript.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;To do this we&amp;rsquo;ll leverage the camera access feature of WebRTC and then apply the CSS3 filters as we see fit. First, let&amp;rsquo;s take a look at how we access the camera:&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;constraints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+  &lt;span class=&quot;nx&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;getUserMedia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;constraints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+  &lt;span class=&quot;nx&quot;&gt;onMediaStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+  &lt;span class=&quot;nx&quot;&gt;noMediaStream&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onMediaStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;localVideo&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+  &lt;span class=&quot;nx&quot;&gt;attachMediaStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+  &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;noMediaStream&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;No media stream for us.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Here, we call getUserMedia and pass it three parameters. The first is a constraints object listing which devices to access, in this case, both the video camera and the mic. The last two parameters are callbacks. We use the first callback for when we successfully get a stream from our camera. We use the second callback if accessing the camera stream fails.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Once we have the camera stream, we can then get the video element. Next, we attach the camera stream to the video element. We&amp;rsquo;ll need to call play on the video element, if we don&amp;rsquo;t then we&amp;rsquo;ll just see a camera still shot. Now that we have our video playing, we&amp;rsquo;ll want to implement a way to apply our Instagram filters to the video element.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;To accomplish this, we&amp;rsquo;ll need to setup an event to apply each filter. Let&amp;rsquo;s take a look at the JavaScript code to implement this:&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;filters&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+
+&lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;click&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;NoFilter&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;Willow&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ig-willow&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;Earlybird&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ig-earlybird&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;Mayfair&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ig-mayfair&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;Amaro&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;localVideo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ig-amaro&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Here, we add an event listener to the list of Instagram filters. When a filter is clicked, we&amp;rsquo;ll get its corresponding filter id. Once we have the filter id, it&amp;rsquo;s an easy transition to apply the corresponding CSS3 filter to the video element. When we&amp;rsquo;re ready to remove all filters, we just remove all CSS3 class filters from the video element.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;I went ahead and pushed my &lt;a href=&quot;https://github.com/tiandavis/webrtc-instagram-video-filters&quot;&gt;webrtc video filter code&lt;/a&gt; to GitHub in its entirety. The instructions to run it locally are in the README. Git clone and you&amp;rsquo;ll be up and running in 30 seconds.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;So that&amp;rsquo;s my WebRTC project. As you can see, the video element is a first class HTML5 element. That means you can manipulate it in JavaScript and style it in CSS to your hearts delight. I just think it&amp;rsquo;s so cool you can manipulate the look and feel of a live video stream.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;I&amp;rsquo;ve heard #Mayfair is one of the top Instagram filters. Which one did you like best? I hope you had as much fun as I did and now you can add Instagram filters to your WebRTC video too.&lt;/p&gt;
+
+</summary>
+      <id>http://tiandavis.com/posts/webrtc-instagram-video-filters</id>
+      <updated>2015-03-04T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>JavaScript Shims Versus Polyfills</title>
+      <link href="http://tiandavis.com/posts/javascript-shims-versus-polyfills" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/polyfilla.jpg&quot; alt=&quot;Polyfilla&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m currently working on a conference talk about WebRTC. One of the foundations of any WebRTC library is some form of Google&#39;s original &lt;a href=&quot;https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js?r=3905&quot;&gt;adapter.js&lt;/a&gt;, which seeks to normalize the WebRTC API across various browsers. As I was about to build this particular slide, one question started to whisper in my ear, &quot;Is adapter.js a shim or a polyfill?&quot; Eventually, the whisper grew louder and I had to find the answer.&lt;/p&gt;
+
+&lt;p&gt;As a JavaScript developer, you&#39;ve no doubt ran across an &lt;a href=&quot;https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills&quot;&gt;HTML5 library&lt;/a&gt; and thought the same thing, &quot;Is it really a shim, or is it really a polyfill?&quot; If you&#39;re like me, you stopped, looked at both terms, and then scratched your head… In this article I&#39;ll clarify the definition of a JavaScript shim and a JavaScript polyfill so that you can be an informed developer. Knowing the difference will allow you to better choose the libraries you use.&lt;/p&gt;
+
+&lt;p&gt;Back in 2010, Remy Sharp coined the term &lt;a href=&quot;https://remysharp.com/2010/10/08/what-is-a-polyfill&quot;&gt;JavaScript Polyfill&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect[s] the browser to provide natively. Flattening the API landscape if you will.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;If the library determines a feature doesn&#39;t natively exist in your browser, it will provide that functionality by any means necessary. That could mean replicating the functionality using any combination of JavaScript, NPAPI, ActiveX and Flash (or anything for that matter). More importantly, you won&#39;t even know the polyfill is there because you&#39;re still using the native JavaScript code.&lt;/p&gt;
+
+&lt;p&gt;Remy went on to share his understanding of a JavaScript Shim:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Shim, to me, meant a piece of code that you could add that would fix some functionality, but it would most often have it&#39;s own API.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This was a good start. Over the last few years, we&#39;ve seen the JavaScript ecosystem evolve. One thing I&#39;ve noticed is that we tend to think of shims as some smaller piece of code, whereas polyfills tend to be larger, more complex pieces of code. But there are other differences and similarities as well.&lt;/p&gt;
+
+&lt;p&gt;I decided to list out those similarities and differences to give myself a better understanding of a shim versus a polyfill. Here&#39;s what I&#39;ve found so far:&lt;/p&gt;
+
+&lt;h3&gt;Similarities Between Polyfill and Shim&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;- Both seek to normalize functionality across browsers&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;- Both tend to extend native methods, opting for their own implementation when the native method does not exist.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;Differences Between Polyfill and Shim`&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;- Shims tend to be written in a single language&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn&#39;t exist in that browser at all. I believe that&#39;s the pivotal point here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/simevidas&quot;&gt;Sime Vidas&lt;/a&gt; goes on to share his thoughts on shims vs polyfills on this &lt;a href=&quot;http://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540&quot;&gt;Stack Overflow&lt;/a&gt; question on the topic:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;From what I understand:
+A polyfill is code that detects if a certain &quot;expected&quot; API is missing and manually implements it. E.g.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if (!Function.prototype.bind) {&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Function.prototype.bind = ...;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;A shim is code that intercepts existing API calls and implements different behavior. The idea here is to normalize certain APIs across different environments. So, if two browsers implement the same API differently, you could intercept the API calls in one of those browsers and make its behavior align with the other browser. Or, if a browser has a bug in one of its APIs, you could again intercept calls to that API, and then circumvent the bug.
+I think this is the most clear definition I&#39;ve seen of the two so far. Vidas mentions the shim &quot;intercepting&quot; the API call. This creates a clearer visual than Sharp&#39;s &quot;fix&quot; definition.&lt;/p&gt;
+
+&lt;p&gt;It also helps validate some of the differences I&#39;ve noticed over the years. Namely, shims appear to be written in JavaScript only because the JavaScript API already exists (it just needs some smoothing to normalize behaviors across browsers). Whereas polyfills often have to use multiple language platforms because the JavaScript API does not exist at all.&lt;/p&gt;
+
+&lt;h3&gt;Shim and Polyfill Real-World Parallels&lt;/h3&gt;
+
+&lt;p&gt;In the real world a shim is a wedge-shaped piece of wood. &quot;Polyfilla&quot; is the name of a &lt;a href=&quot;http://www.lepageproducts.com/ProductDetail.aspx?pid=101&quot;&gt;spackling paste from LePage&lt;/a&gt;. You&#39;d typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn&#39;t exactly the same as the wall, but it acts close enough to the real thing to make it work.&lt;/p&gt;
+
+&lt;h4&gt;Examples of JavaScript Polyfills&lt;/h4&gt;
+
+&lt;p&gt;In particular, take a look at the available transports is Socket.IO. There is websocket, htmlfile, xhr-polling, jsonp-polling and flashsocket. Yes - Flash. Socket.IO is a great example of a JavaScript polyfill that manually implements WebSockets in older browsers by any means necessary. Falling back to flash allowed Socket.IO to approximate WebSockets in older browsers like IE 8 and IE 9 during a time when they held noticeable marketshare. This would not have been possible with a pure JavaScript implementation only.&lt;/p&gt;
+
+&lt;p&gt;Today, the flashsocket transport is disabled by default in Socket.IO and will not activate on Chrome or other browsers that fully support WebSockets, even if flashsocket is specified as the only transport. To test flashsocket, you have to use IE 8 or IE 9, or other browsers that don&#39;t natively support WebSockets. Had Socket.IO been designed as a shim, it simply would not have worked in older versions of IE at all because shims don&#39;t implement features that don&#39;t exist.&lt;/p&gt;
+
+&lt;p&gt;There are many other examples of great JavaScript polyfills that use a multitude of technologies in addition to JavaScrip to achieve cross-browser compatibility. Raphael falls back to VML in older versions of IE that don&#39;t support SVG. Store.js falls back to ActiveX and IE&#39;s non-standard userData in IE 6 and IE 7 where localStorage does not exist. Video.js falls back to Flash in older versions of IE that don&#39;t support the HTML5 video element. I could go on all day…&lt;/p&gt;
+
+&lt;p&gt;The point is that shims only normalize browser behavior, whereas polyfills both normalize browser behavior and implement functionality where it does not exist.&lt;/p&gt;
+
+&lt;h3&gt;Shim vs Polyfill Checklist&lt;/h3&gt;
+
+&lt;p&gt;So as a developer, here&#39;s a quick checklist to figure out if you&#39;re developing a shim or a polyfill:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;1.Does your library normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;2. Does the JavaScript API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;3.Does your library implement the JavaScript API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s a flow diagram of the decision tree:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/shim-polyfill-decision-tree.png&quot; alt=&quot;Shim Polyfill Decision Tree&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;So is Google&#39;s Adapter.js a Shim or a Polyfill?&lt;/h3&gt;
+
+&lt;p&gt;Let&#39;s use our decision framework to figure out the answer to the question:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;1. Does adapter.js normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes. Adapter.js normalizes the WebRTC API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;2. Does the WebRTC API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes. Currently, the WebRTC API exists in Chrome, Firefox and Opera.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;3. Does adapter.js implement the WebRTC API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No. Google&#39;s adapter.js library does not implement the WebRTC API in either IE or Safari.&lt;/p&gt;
+
+&lt;p&gt;Based on our Shim versus Polyfill guide, Google&#39;s adapter.js is definitely a shim because it does normalize the Web RTC API, but stops short of implementing it in either IE or Safari.&lt;/p&gt;
+
+&lt;h3&gt;Why Does it Matter?&lt;/h3&gt;
+
+&lt;p&gt;I wrote this article because over the years using both terms has grown rather confusing. Some even go so far as to say &lt;a href=&quot;https://books.google.com/books?id=qkd-yBhZokUC&amp;amp;pg=PA155&amp;amp;lpg=PA155&amp;amp;dq=javascript+shim+polyfill+synonymous&amp;amp;source=bl&amp;amp;ots=P0hQTVgtoK&amp;amp;sig=mhLt7IrbuyPz7_HT_huQIcqmuwk&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=Et3bVMatF4LngwSxsIRI&amp;amp;ved=0CC4Q6AEwAg#v=onepage&amp;amp;q=javascript%20shim%20polyfill%20synonymous&amp;amp;f=false&quot;&gt;shim is synonymous to polyfill&lt;/a&gt;. That&#39;s simply not the case, nor should it be. There is both a place and a need for each term in the craft.&lt;/p&gt;
+
+&lt;p&gt;This may all seem like semantics, but it&#39;s not. Understanding the difference between a shim and a polyfill is the difference between your app working in some browsers and your app working in all browsers. If you&#39;re like me, you go for all browsers or you die trying. Knowing your shims from your polyfills is key to getting you there.&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/posts/javascript-shims-versus-polyfills</id>
+      <updated>2015-02-17T00:00:00Z</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>The History of The PSTN</title>
+      <link href="http://tiandavis.com/posts/the-history-of-the-pstn" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/pstn-2.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;SUMMARY&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.respoke.io/&quot;&gt;Respoke&lt;/a&gt; gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It&#39;s all possible because of the &lt;a href=&quot;http://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65&quot;&gt;Public Switch Telephone Network&lt;/a&gt; (PSTN). Here&#39;s a look at where the PSTN has been and where we&#39;re taking it...&lt;/p&gt;
+
+&lt;h3&gt;HISTORY OF THE PSTN&lt;/h3&gt;
+
+&lt;p&gt;The history of the public switched telephone network (PSTN) is the history of American Bell and AT&amp;amp;T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first &lt;a href=&quot;http://www.google.com/patents/US174465&quot;&gt;improvement in telegraphy&lt;/a&gt; and made the first ever voice transmission over wire. It was hardly what we can imagine today.&lt;/p&gt;
+
+&lt;p&gt;The first voice transmission used what is called a ring-down circuit. What that means is there were no dialing of numbers; No ringing of headsets. Instead, an actual physical wire connected two devices. Remember when you were a kid and you&#39;d play tin can telephone. What did you do? You connected two tin cans by wire. Then you could here your friend talk on the other end. A ring-down circuit is a lot like playing tin can telephone, just over a greater distance.&lt;/p&gt;
+
+&lt;p&gt;Initially, telephone users had to whistle into the phone to attract the attention of another telephone user. Within a year of Alexandar&#39;s patent, he added a calling bell to make signaling easier.&lt;/p&gt;
+
+&lt;p&gt;Over time, this simple design evolved from a one-way voice transmission, by which only one user could speak, to a bi-directional voice transmission, whereby both users could speak. Things started to get a little more complicated at this point.&lt;/p&gt;
+
+&lt;p&gt;Moving the voices across the wire required a carbon microphone, a battery, an electromagnet, and an iron diaphragm. The concept of dialing a number to reach a destination still didn&#39;t exist. The also process required a physical cable between each location that the user wanted to call. Clearly this does not scale...&lt;/p&gt;
+
+&lt;p&gt;Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a &lt;a href=&quot;http://www.google.com/patents/US911968&quot;&gt;switch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With a switch telephone, users only needed connection to a centralized office. Then that centralized office could coordinate connected the call to its final destination.&lt;/p&gt;
+
+&lt;p&gt;Imagine a pair of copper wires running from every phone to a central exchange in your town. At the exchange, the operator had a big switchboard. The switchboard had a 2 pin connection socket - called a jack socket - for every pair of wires entering the exchange.&lt;/p&gt;
+
+&lt;p&gt;When you wanted to talk to another person, you would ring the operator and give the name or number of the other party. Then the operator would connect a patch cord ( a 2 wire cable with a jack plug on each end ) between the two phones and the two people could communicate. Using a patch cord - a two wire cable with a jack plug on each end - the operator would connect each party&#39;s jack socket. Then the receiving party&#39;s telephone bell would ring and the two parties could communicate.&lt;/p&gt;
+
+&lt;p&gt;Believe it or not, the &lt;a href=&quot;http://www.telcomhistory.org/operators.shtml&quot;&gt;first operators were teenage boys&lt;/a&gt;. Surprising - I know - but they often engaged in horseplay and foul language:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-1.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Telephone companies soon began hiring young women in order to present a more civilized image to customers:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-2.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Women would go on to dominate the switchboard profession. Operators were well trained in switchboard technique and in deportment, before starting work on the switchboards. Here are a group training in switchboard technique and in deportment before starting work on the switchboard. Denver, Colorado 1910:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-3.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s another group of operators at a switchboard in Santa Fe, New Mexico 1921:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-4.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bundles of wires called trunks ran between exchanges, forming proto-networks. Networks connected together until they connected countries across the world. This was the beginning of the PSTN.&lt;/p&gt;
+
+&lt;p&gt;At first the telephone operator acted as a switch. Fast forward 100 years - give or take a decade - and the electronic switch replaced the human switch.&lt;/p&gt;
+
+&lt;h3&gt;THE PSTN TODAY&lt;/h3&gt;
+
+&lt;p&gt;What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into &lt;a href=&quot;http://www.voip-sip.org/analog-telephony/&quot;&gt;analog switches&lt;/a&gt; and then into electronic switches. A lot also changed along the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-5.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Analog voice signals carried across the wire with amplifiers evolved into digital signals carried across the globe with repeaters. Repeater simply repeat whatever binary data it receives. If the repeater received 010101, it passed on 010101.&lt;/p&gt;
+
+&lt;p&gt;All digital meant cleaner sound quality travelled over longer and longer distances. It also meant the PSTN could release new features faster. Features like call waiting and call forwarding and conference calling were now built into the PSTN message driven network.&lt;/p&gt;
+
+&lt;p&gt;As technology progressed, the telephony industry found an alternative to message formats and during the dawn of the Internet a new transport format was invented - packets. This formed the foundation of what would become a separate data network.&lt;/p&gt;
+
+&lt;p&gt;Instead of being transmitted over a circuit-switched network, the digital information is packetized, and transmission occurs as IP packets over a packet-switched network. These packet-switched networks form the foundation of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Voice_over_IP&quot;&gt;Voice Over IP&lt;/a&gt; (VOIP) technology we know today.&lt;/p&gt;
+
+&lt;p&gt;Now we live in a world of two networks; One circuit-switched and the other packet-switched. When those worlds interoperate, they do so using protocols that enable packet-switched digital data to communicated with circuit-switched digital data. Those protocols include, but are not limited to: H.264, V8, H.232, H.323, SIP, MGCP and others.&lt;/p&gt;
+
+&lt;p&gt;Currently H.323 is the most widely deployed VoIP call-control protocol. H.323, however, is not widely seen as a protocol that is robust enough for PSTN networks. For these networks, other protocols such as Media Gateway Control Protocol (MGCP) and Session Initiation Protocol (SIP) are being developed.&lt;/p&gt;
+
+&lt;p&gt;PHONE NUMBERS&lt;/p&gt;
+
+&lt;p&gt;Phone numbers in particular are fascinating. Phone numbers are simply different across the globe. To bring the point home, take a look at a few numbers across locales:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;USA (NANP): +1 (555) 555-5555&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;India: +91 22 555 5555&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;London: +44 20 5555 5555&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.nanpa.com/&quot;&gt;North American Numbering Plan&lt;/a&gt; (NANP) is an integrated telephone numbering plan serving 20 North American countries that share its resources. These countries include the United States and its territories, Canada, Bermuda, Anguilla, Antigua &amp;amp; Barbuda, the Bahamas, Barbados, the British Virgin Islands, the Cayman Islands, Dominica, the Dominican Republic, Grenada, Jamaica, Montserrat, Saint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Trinidad and Tobago, and Turks &amp;amp; Caicos.&lt;/p&gt;
+
+&lt;p&gt;Regulatory authorities in each participating country have plenary authority over numbering resources, but the participating countries share numbering resources cooperatively.&lt;/p&gt;
+
+&lt;p&gt;AT&amp;amp;T developed the North American Numbering Plan in 1947 to simplify and facilitate direct dialing of long distance calls. Implementation of the plan began in 1951.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.itu.int/en/Pages/default.aspx&quot;&gt;International Telecommunications Union&lt;/a&gt; (ITU) assigned country code &quot;1&quot; to the NANP area. The NANP conforms with ITU Recommendation E.164, the international standard for telephone numbering plans.&lt;/p&gt;
+
+&lt;p&gt;NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Area (NPA) code, commonly called an area code, followed by a seven-digit local number. The format is usually represented as:&lt;/p&gt;
+
+&lt;p&gt;+1 NXX-NXX-XXXX&lt;/p&gt;
+
+&lt;p&gt;where N is any digit from 2 through 9 and X is any digit from 0 through 9. Routing calls requires multiple switching offices. The phone number itself is a coded map for routing the call.&lt;/p&gt;
+
+&lt;p&gt;In the NANP countries, for example, we have 10-digit phone numbers:
+- The first three digits are the area code or national destination code (NDC), which helps route the call to the right regional switching station.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt; The next three digits are the exchange, which represents the smallest amount of circuits that can be bundled on the same switch. In other words, when you make a call to another user in your same exchange - maybe a neighbor around the corner - the call doesn&#39;t have to be routed onto another switch.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt; The last four digits of the phone number represent the subscriber number, which is tied to your specific address and phone lines.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Within a company or larger organization, each employee or department might have its own extension. Extensions from the main phone number are routed through something called a private branch exchange (PBX) that operates on the premises. To make an international call requires further instructions.&lt;/p&gt;
+
+&lt;p&gt;The call needs to be routed through your long-distance phone carrier to another country&#39;s long-distance phone carrier. To signal such a switch, you have to dial two separate numbers, your country&#39;s exit code (or international access code) and the corresponding country code of the place you&#39;re calling.&lt;/p&gt;
+
+&lt;p&gt;Almost all &lt;a href=&quot;http://electronics.howstuffworks.com/telephone-country-codes1.htm&quot;&gt;exit codes are either 00 or 011&lt;/a&gt;, although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.&lt;/p&gt;
+
+&lt;p&gt;For example, the country code for the United States is 1, but the United States shares that country code with Canada and several smaller island nations like Jamaica, Puerto Rico and Guam.&lt;/p&gt;
+
+&lt;h3&gt;PBX&lt;/h3&gt;
+
+&lt;p&gt;No doubt you&#39;ve heard the term PBX before. A PBX or Private Branch Exchange is a small telephone switch - think of it as a mini exchange.&lt;/p&gt;
+
+&lt;p&gt;Businesses install PBXs to reduce the number of phone lines they need to lease from the telephone company. Imagine that without a PBX, you would have to to rent one telephone line for every employee with a phone.&lt;/p&gt;
+
+&lt;p&gt;With a PBX system, you only need to rent as many lines from your telephone provider as the maximum number of staff making external calls at one time. In most businesses this is only about &lt;a href=&quot;http://www.techsoup.org/support/articles-and-how-tos/phone-systems-on-a-shoestring&quot;&gt;10-12% of the workforce&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What you didn&#39;t know is before the &lt;a href=&quot;http://cypressnorth.com/technology/setting-up-a-small-office-or-home-office-voip-system-with-asterisk-pbx-part-1/&quot;&gt;tangled mess of PBX&lt;/a&gt;&#39;s gone by:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-6.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were &lt;a href=&quot;http://www.ohmreunion.com/memorabilia/pbx.htm&quot;&gt;human powered switchboard operators&lt;/a&gt; in businesses, government and large commercial buildings:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-7.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, not even remotely as large as your local switchboard would be. Here there were usually anywhere from 2-4 people at most:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pstn-8.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the PBX system, every telephone in a business location is wired to the PBX, using either standard cables or more recently Cat 5 ethernet cabling. When a member of staff picks up their phone and dials the outside access code (usually 9), the PBX connects that person to an outside line, and onto the PSTN.&lt;/p&gt;
+
+&lt;p&gt;PBX solutions themselves have gone from a consortium of wires and frames to a single commodity hardware or higher grade application running open source software that allows you to create a &lt;a href=&quot;http://www.asterisk.org/&quot;&gt;virtual PBX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Open source software like Asterisk is an example of this paradigm shift. With Asterisk you can create a PBX, an IVR system, a conference bridge and virtually any other communications app you can imagine. Asterisk was one of the first open source PBX software packages.&lt;/p&gt;
+
+&lt;p&gt;Asterisk supports a wide range of Voice over IP protocols, including the Session Initiation Protocol (SIP), the Media Gateway Control Protocol (MGCP), and H.323. Asterisk can interoperate with most SIP telephones, acting both as registrar and as a gateway between IP phones and the PSTN.&lt;/p&gt;
+
+&lt;h3&gt;PSTN AT RESPOKE&lt;/h3&gt;
+
+&lt;p&gt;The PBX has gone from a tangled mess of wires to software running on commodity boxes to a &lt;a href=&quot;http://www.digium.com/en/products/switchvox-cloud&quot;&gt;hosted PBX&lt;/a&gt; in the cloud. The web was only the natural progression.&lt;/p&gt;
+
+&lt;p&gt;You can use Respoke to &lt;a href=&quot;https://docs-int.respoke.io/tutorials/calling-to-and-from-a-phone.html&quot;&gt;make phone calls and receive phone calls&lt;/a&gt; from phones on the PSTN as well as other Respoke client endpoints. It&#39;s easy...&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// here&amp;#39;s the App ID value from the portal:&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;appid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;DD90A374-0C06-456F-9D4F-E8038E6523D2&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// create a client object using the App ID value&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;respoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;appId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;appid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;developmentMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// listen for the &amp;#39;connect&amp;#39; event&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;connect&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Connected to Respoke!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Now all you have to do is make a call&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;startPhoneCall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;+15558675309&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Attach listener to receive calls&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;call&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;did&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// We got a call from a phone number!&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;caller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Using a combination of WebRTC media channel and good &#39;ol fashioned ingenuity, Respoke takes your IP based voice data and converts it into digital SIP data which can be consumed by regular phone devices.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re talking to someone on the web or VOIP device, your voice data stays on the packet-switched network - just like a regular VOIP call. If you&#39;re talking to someone on a cellphone carrier or landline, Respoke takes care of the details to communicate with that person&#39;s circuit-switched network.&lt;/p&gt;
+
+&lt;p&gt;Of course you can do a lot of other things with Respoke as well. Like video, voice and text communications. Now you have access to the PSTN network as well. Sky&#39;s the limit from here on out.&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/posts/the-history-of-the-pstn</id>
+      <updated>2014-11-21T00:00:00Z</updated>
       <author>
         <name>Tian Davis</name>
       </author>
