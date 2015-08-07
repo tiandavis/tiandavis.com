@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T03:53:54-04:00</updated>
+  <updated>2015-08-07T12:20:49-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1409,15 +1409,27 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;Caramel handled all the details of compiling our CSS preprocessors (Sass or Less), building responsive templates from our layouts, inlining CSS for increased email client compatiblity and uploading templates to our email service provider Mandrill.&lt;/p&gt;
 
-&lt;p&gt;Helping developers see the value in WebRTC was itself a life changing experience. I shipped a &lt;a href=&quot;https://github.com/respoke/the-interview-backbone&quot;&gt;demo app&lt;/a&gt; showcasing all of Respoke&#39;s communication features. Contributed to Respoke&#39;s &lt;a href=&quot;https://github.com/respoke/node-respoke-admin&quot;&gt;Node server&lt;/a&gt; library. Wrote both our &lt;a href=&quot;https://github.com/respoke/respoke-java&quot;&gt;Java server&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/respoke-php&quot;&gt;PHP server&lt;/a&gt; library and contributed to our &lt;a href=&quot;https://github.com/respoke/docs&quot;&gt;documenation guides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Helping developers see the value in WebRTC was itself a life changing experience. I shipped a &lt;a href=&quot;https://github.com/respoke/the-interview-backbone&quot;&gt;demo app&lt;/a&gt; showcasing all of Respoke&#39;s communication features. Contributed to both Respoke&#39;s &lt;a href=&quot;https://github.com/respoke/respoke&quot;&gt;JavaScript client&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/node-respoke-admin&quot;&gt;Node server&lt;/a&gt; library. Wrote both our &lt;a href=&quot;https://github.com/respoke/respoke-java&quot;&gt;Java server&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/respoke-php&quot;&gt;PHP server&lt;/a&gt; library and contributed to our &lt;a href=&quot;https://github.com/respoke/docs&quot;&gt;documenation guides&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;To share the unprecedented promise of secure video, voice and chat that is &lt;a href=&quot;http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/&quot;&gt;WebRTC&lt;/a&gt;, I toured the country giving talks on the topic I came to know and love.&lt;/p&gt;
+&lt;p&gt;To share the unprecedented promise of secure video, voice and chat that is &lt;a href=&quot;http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/&quot;&gt;WebRTC&lt;/a&gt;, I toured the east coast giving talks on the topic I came to both know and love.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
 
 &lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;b4a4e41f878b4955bb72c976329f1db7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
 
+
+&lt;h3&gt;I ship because I love the craft&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Galileo&lt;/a&gt; was one of the first Fortune 5M type products I ever shipped. It empowers Twitter users to build an audience based on their specific interests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/galileo-screenshot.png&quot; title=&quot;Galileo&quot; alt=&quot;Galileo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Galileo&lt;/a&gt; demonstrates integrating with a third-party API. Here, we integrate with Twitter&#39;s API. Galileo also organizes a number of open source standards and projects:&lt;/p&gt;
+
+&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
+
+&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;What&#39;s next exactly...?&lt;/h3&gt;
 

@@ -54,12 +54,27 @@ The development team loves working on emails now. With Caramel, we got a beautif
 
 Caramel handled all the details of compiling our CSS preprocessors (Sass or Less), building responsive templates from our layouts, inlining CSS for increased email client compatiblity and uploading templates to our email service provider Mandrill.
 
-Helping developers see the value in WebRTC was itself a life changing experience. I shipped a [demo app](https://github.com/respoke/the-interview-backbone) showcasing all of Respoke's communication features. Contributed to Respoke's [Node server](https://github.com/respoke/node-respoke-admin) library. Wrote both our [Java server](https://github.com/respoke/respoke-java) library and [PHP server](https://github.com/respoke/respoke-php) library and contributed to our [documenation guides](https://github.com/respoke/docs).
+Helping developers see the value in WebRTC was itself a life changing experience. I shipped a [demo app](https://github.com/respoke/the-interview-backbone) showcasing all of Respoke's communication features. Contributed to both Respoke's [JavaScript client](https://github.com/respoke/respoke) library and [Node server](https://github.com/respoke/node-respoke-admin) library. Wrote both our [Java server](https://github.com/respoke/respoke-java) library and [PHP server](https://github.com/respoke/respoke-php) library and contributed to our [documenation guides](https://github.com/respoke/docs).
 
-To share the unprecedented promise of secure video, voice and chat that is [WebRTC](http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/), I toured the country giving talks on the topic I came to know and love.
+To share the unprecedented promise of secure video, voice and chat that is [WebRTC](http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/), I toured the east coast giving talks on the topic I came to both know and love.
 
 <p></p>
 <script async class="speakerdeck-embed" data-id="b4a4e41f878b4955bb72c976329f1db7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+###I ship because I love the craft
+[Galileo] was one of the first Fortune 5M type products I ever shipped. It empowers Twitter users to build an audience based on their specific interests:
+
+![Galileo][galileo-screenshot]
+
+[Galileo] demonstrates integrating with a third-party API. Here, we integrate with Twitter's API. Galileo also organizes a number of open source standards and projects:
+
+On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+
+For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
+
+
+
 
 
 ###What's next exactly...?
@@ -93,6 +108,10 @@ As I understand it, you’ve had a vision of your own Pieta. I’d like a shot a
 [respoke-emails]: /images/respoke-emails.png "Respoke Emails"
 
 [nationwide]: /images/nationwide.png "Nationwide"
+
+[galileo-screenshot]: /images/galileo-screenshot.png "Galileo"
+
+[galileo]: https://github.com/tiandavis/galileo "Galileo"
 
 
 
