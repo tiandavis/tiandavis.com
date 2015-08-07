@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T12:20:49-04:00</updated>
+  <updated>2015-08-07T12:22:48-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1427,9 +1427,9 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Galileo&lt;/a&gt; demonstrates integrating with a third-party API. Here, we integrate with Twitter&#39;s API. Galileo also organizes a number of open source standards and projects:&lt;/p&gt;
 
-&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
+&lt;p&gt;On the front-end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
 
-&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For front-end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;What&#39;s next exactly...?&lt;/h3&gt;
 

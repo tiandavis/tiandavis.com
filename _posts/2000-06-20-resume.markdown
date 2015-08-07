@@ -69,9 +69,9 @@ To share the unprecedented promise of secure video, voice and chat that is [WebR
 
 [Galileo] demonstrates integrating with a third-party API. Here, we integrate with Twitter's API. Galileo also organizes a number of open source standards and projects:
 
-On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
+On the front-end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.
 
-For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
+For front-end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on [Github][galileo].
 
 
 
