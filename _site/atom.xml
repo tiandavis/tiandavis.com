@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T03:34:26-04:00</updated>
+  <updated>2015-08-07T03:48:57-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -1411,7 +1411,7 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;Helping developers see the value in WebRTC was itself a life changing experience. I shipped a &lt;a href=&quot;https://github.com/respoke/the-interview-backbone&quot;&gt;demo app&lt;/a&gt; showcasing all of Respoke&#39;s communication features. Contributed to Respoke&#39;s &lt;a href=&quot;https://github.com/respoke/node-respoke-admin&quot;&gt;Node server&lt;/a&gt; library. Wrote both our &lt;a href=&quot;https://github.com/respoke/respoke-java&quot;&gt;Java server&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/respoke-php&quot;&gt;PHP server&lt;/a&gt; library and contributed to our &lt;a href=&quot;https://github.com/respoke/docs&quot;&gt;documenation guides&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;To share the unprecedented promise of &lt;a href=&quot;http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/&quot;&gt;WebRTC&lt;/a&gt;, I toured the country giving talks on the topic I came to know and love.&lt;/p&gt;
+&lt;p&gt;To share the unprecedented promise of secure video, voice and chat that is &lt;a href=&quot;http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/&quot;&gt;WebRTC&lt;/a&gt;, I toured the country giving talks on the topic I came to know and love.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
