@@ -9,9 +9,9 @@ Michelangelo never saw a lump of marble.
 
 He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
-![Companies][companies]
+Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup. I'm a Master JavaScript Engineer.
 
-Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I'm a Master JavaScript Engineer.
+![Companies][companies]
 
 ##Code is poetry
 

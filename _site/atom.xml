@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-07T18:41:05-04:00</updated>
+  <updated>2015-08-09T13:13:28-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -2143,9 +2143,9 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;He saw the &lt;a href=&quot;http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)&quot;&gt;Pieta&lt;/a&gt; and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/companies.png&quot; title=&quot;Companies&quot; alt=&quot;Companies&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup. I&#39;m a Master JavaScript Engineer.&lt;/p&gt;
 
-&lt;p&gt;Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to building some of the best JavaScript software of my life at a startup. I&#39;m a Master JavaScript Engineer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/companies.png&quot; title=&quot;Companies&quot; alt=&quot;Companies&quot; /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Code is poetry&lt;/h2&gt;
 
