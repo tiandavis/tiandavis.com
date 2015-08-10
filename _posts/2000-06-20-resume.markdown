@@ -36,7 +36,7 @@ We used some of the most innovative front-end technologies of the day, including
 
 ![Capabilities][capabilities-2]
 
-And with these, we built [Apollo] - A powerful Slack competitor that enables team collaboration with chat, live video and voice.
+And with these, we built [Apollo] - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.
 
 ![Apollo][apollo-dark]
 
