@@ -4,7 +4,7 @@
   <id>http://tiandavis.com</id>
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
-  <updated>2015-08-10T14:07:32-04:00</updated>
+  <updated>2015-08-27T10:57:57-04:00</updated>
   <rights>Copyright 2014, Tian Davis</rights>
   <author>
     <name>Tian Davis</name>
@@ -2000,53 +2000,75 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
     </entry>
   
     <entry>
-      <title>Ruby &amp; Rails Engineer</title>
+      <title>Ruby, Rails &amp; JavaScript&lt;br/&gt;Developer</title>
       <link href="http://tiandavis.com/ruby" />
       <summary type="html">&lt;p&gt;Michelangelo never saw a lump of marble.&lt;/p&gt;
 
-&lt;p&gt;He saw the &lt;a href=&quot;http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)&quot;&gt;Pieta&lt;/a&gt; and he would later write in his diaries about releasing the image inside. I do the same thing with Ruby. Ruby is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Twitter and Freckle.&lt;/p&gt;
+&lt;p&gt;He saw the &lt;a href=&quot;http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)&quot;&gt;Pieta&lt;/a&gt; and he would later write in his diaries about releasing the image inside. I do the same thing with Ruby. Ruby is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, GitHub and Slack.&lt;/p&gt;
 
-&lt;p&gt;For over four years, as a Consultant, I’ve led a Fortune 500 development team through an agile transformation and built some of the best Ruby &amp;amp; JavaScript software of my life. See, work experience below. I’m a Master Rails Developer. See, &lt;a href=&quot;https://github.com/tiandavis&quot;&gt;code samples&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 Ruby development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup.&lt;/p&gt;
 
-&lt;h2&gt;Code is Poetry&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/images/companies.png&quot; title=&quot;Companies&quot; alt=&quot;Companies&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As a consultant for a major Fortune 500 company, I&#39;ve done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.&lt;/p&gt;
+&lt;h2&gt;Code is poetry&lt;/h2&gt;
 
-&lt;p&gt;But my passion is open standards and the modern web:&lt;/p&gt;
+&lt;p&gt;As a Consultant Engineer for &lt;a href=&quot;http://www.nationwide.com/&quot;&gt;Nationwide&lt;/a&gt;, I&#39;ve done everything from written a full featured REST API in Ruby/Rails to standing up high availability AWS servers (EC2, S3) instances.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/capabilities.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;But my passion is open standards and front-end development:&lt;/p&gt;
 
-&lt;p&gt;My server-side experience leverages Ruby on Rails. I use RSpec for unit tests and FactoryGirl for mocking. I also use Capybara and Selenium for integration tests.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/capabilities-1.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;My front end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
+&lt;p&gt;The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Backbone, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.&lt;/p&gt;
 
 &lt;p&gt;Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.&lt;/p&gt;
 
-&lt;h3&gt;Galileo&lt;/h3&gt;
+&lt;h2&gt;Best software of my life...&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot;&gt;Galileo&lt;/a&gt; demonstrates integrating with a third-party API. Here, we integrate with Twitter&#39;s API:&lt;/p&gt;
+&lt;p&gt;Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at &lt;a href=&quot;https://www.respoke.io/&quot; title=&quot;Respoke Url&quot;&gt;Respoke&lt;/a&gt;, a communication PaaS startup built on WebRTC.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/galileo-screenshot.png&quot; title=&quot;Galileo - JavaScript - Front End&quot; alt=&quot;Galileo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As a JavaScript Engineer on the Respoke team, I helped developers see how easily we can add secure video, voice and data communication to our own apps using the power of WebRTC.&lt;/p&gt;
 
-&lt;p&gt;Galileo organizes a number of open source standards and projects:&lt;/p&gt;
+&lt;p&gt;We used some of the most innovative front-end technologies of the day, including HTML5, CSS3 (LESS), Jade, Gulp, Bootstrap, JavaScript, ES6, Babel, jQuery, Angular, NodeWebkit, Jasmine, Sinon, SuperTest and Phantom:&lt;/p&gt;
 
-&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/capabilities-2.png&quot; title=&quot;Core Capabilities&quot; alt=&quot;Capabilities&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And with these, we built &lt;a href=&quot;https://app.apollohd.com/#/&quot; title=&quot;Apollo&quot;&gt;Apollo&lt;/a&gt; - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.&lt;/p&gt;
 
-&lt;h3&gt;Enigma&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/apollo-dark.png&quot; title=&quot;Apollo Dark&quot; alt=&quot;Apollo&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/enigma&quot;&gt;Enigma&lt;/a&gt; demonstrates best practice application architecture for modern, full stack, mobile ready web applications:&lt;/p&gt;
+&lt;p&gt;We helped shape the way development teams collaborate and write software together and in the process wrote some of the best software of our lives.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/engima-screenshot.png&quot; title=&quot;Engima - Ruby/Rails&quot; alt=&quot;Enigma&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/apollo-group-conference.png&quot; title=&quot;Apollo Group Conference&quot; alt=&quot;Apollo&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Enigma demonstrates best practice application architecture for modern, full stack, mobile ready web applications.&lt;/p&gt;
+&lt;p&gt;When Respoke needed a developer friendly and maintainable way to develop its email templates, I wrote what became &lt;a href=&quot;https://github.com/tiandavis/caramel&quot; title=&quot;Caramel&quot;&gt;Caramel&lt;/a&gt; - An open source responsive HTML email framework.&lt;/p&gt;
 
-&lt;p&gt;On the front end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/respoke-emails.png&quot; title=&quot;Respoke Emails&quot; alt=&quot;Respoke Emails&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;For front end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks.&lt;/p&gt;
+&lt;p&gt;The development team loves working on emails now. With Caramel, we got a beautiful and reusable way to work on multiple email templates.&lt;/p&gt;
 
-&lt;p&gt;The backend leverages Ruby and Rails to create a REST API. For backend testing, we leverage RSpec for unit tests and FactoryGirl for mocking. We also used Capybara and Selenium for integration tests. See more on &lt;a href=&quot;https://github.com/tiandavis/enigma&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Caramel handled all the details of compiling our CSS preprocessors (Sass or Less), building responsive templates from our layouts, inlining CSS for increased email client compatiblity and uploading templates to our email service provider Mandrill.&lt;/p&gt;
+
+&lt;p&gt;Helping developers see the value in WebRTC was itself a life changing experience. I shipped a &lt;a href=&quot;https://github.com/respoke/the-interview-backbone&quot;&gt;demo app&lt;/a&gt; showcasing all of Respoke&#39;s communication features. Contributed to both Respoke&#39;s &lt;a href=&quot;https://github.com/respoke/respoke&quot;&gt;JavaScript client&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/node-respoke-admin&quot;&gt;Node server&lt;/a&gt; library. Wrote both our &lt;a href=&quot;https://github.com/respoke/respoke-java&quot;&gt;Java server&lt;/a&gt; library and &lt;a href=&quot;https://github.com/respoke/respoke-php&quot;&gt;PHP server&lt;/a&gt; library and contributed to our &lt;a href=&quot;https://github.com/respoke/docs&quot;&gt;documenation guides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To share the unprecedented promise of secure video, voice and chat that is &lt;a href=&quot;http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/&quot;&gt;WebRTC&lt;/a&gt;, I toured the east coast giving talks on the topic I came to both know and love.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;b4a4e41f878b4955bb72c976329f1db7&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;h3&gt;I ship because I love the craft&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Galileo&lt;/a&gt; was one of the first Fortune 5M type products I ever shipped. It empowers Twitter users to build an audience based on their specific interests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/galileo-screenshot.png&quot; title=&quot;Galileo&quot; alt=&quot;Galileo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Galileo&lt;/a&gt; demonstrates integrating with a third-party API. Here, we integrate with Twitter&#39;s API. Galileo also organizes a number of open source standards and projects:&lt;/p&gt;
+
+&lt;p&gt;On the front-end, we use HTML5, CSS3, Foundation, Sass (SCSS), jQuery, Underscore, Backbone and Store.&lt;/p&gt;
+
+&lt;p&gt;For front-end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on &lt;a href=&quot;https://github.com/tiandavis/galileo&quot; title=&quot;Galileo&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;What&#39;s next exactly...?&lt;/h3&gt;
 
