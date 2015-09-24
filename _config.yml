@@ -1,5 +1,5 @@
-name: "8-Bit Hustler"
-description: "Ruby. JavaScript. Not necessarily in that order."
+name: "Tian Davis"
+description: "Software should be beautiful & inspired."
 
 author: "Tian Davis"
 
@@ -7,8 +7,8 @@ url: "http://tiandavis.com"
 baseurl: ""
 
 markdown: rdiscount
-permalink: :year/:month/:title.html
-pygments: true
+permalink: /thoughts/:year/:month/:title.html
+highlighter: pygments
 
 # Google Analytics
 ga_domain: tiandavis.com

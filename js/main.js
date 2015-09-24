@@ -1,67 +1,24 @@
-//TODO: implement an equivalent to $(document.ready)
-//window.onload will do the job for now.
-window.onload = function() {
+jQuery(document).ready(function($) {
+  	//Toggle Products
+  	$(".active .i").toggle(function() {
+  		$(this).html("&ndash;");
+  		$(this).parent().parent().next(".details").fadeIn("slow");
+  	}, function() {
+  		$(this).html("+");
+  		$(this).parent().parent().next(".details").hide();
+  	});
 
-    var $menuIcon = document.getElementsByClassName("menu-icon")[0],
-        $offCanva = document.getElementById('off-canvas');
+  	//ScrollTo
+  	$(".top").click(function() {
+  		$("html, body").animate({scrollTop: $(".products").offset().top}, 2000);
+  	});
 
-    $menuIcon.addEventListener('click', function() {
-        toggleClass($menuIcon, 'close');
-        toggleClass($offCanva, 'toggled');
-        removeClass($menuIcon, 'hover');
-    }, false);
+  	//Affiliates
+  	$(".checkout").click(function() {
+  		//Grab the affiliate source
+  		var parameters = $.deparam.querystring();
 
-    $menuIcon.addEventListener('mouseenter', function() {
-        addClass($menuIcon, 'hover');
-    });
-
-    $menuIcon.addEventListener('mouseleave', function() {
-        removeClass($menuIcon, 'hover');
-    });
-
-    function addClass(element, className) {
-        element.className += " " + className;
-    }
-
-    function removeClass(element, className) {
-        // Capture any surrounding space characters to prevent repeated
-        // additions and removals from leaving lots of spaces.
-        var classNameRegEx = new RegExp("\\s*" + className + "\\s*");
-        element.className = element.className.replace(classNameRegEx, " ");
-    }
-
-    function toggleClass(element, className) {
-        if (!element || !className) {
-            return;
-        }
-
-        if (element.className.indexOf(className) === -1) {
-            addClass(element, className);
-        } else {
-            removeClass(element, className);
-        }
-    }
-
-    // Open Twitter/share in a Pop-Up
-    var $popup = document.getElementsByClassName("popup")[0];
-    if (!$popup) {
-        return;
-    }
-    $popup.addEventListener('click', function(e) {
-        e.preventDefault()
-        var width  = 575,
-            height = 400,
-            left   = (document.documentElement.clientWidth  - width)  / 2,
-            top    = (document.documentElement.clientHeight - height) / 2,
-            url    = this.href,
-            opts   = 'status=1' +
-                     ',width='  + width  +
-                     ',height=' + height +
-                     ',top='    + top    +
-                     ',left='   + left;
-
-        window.open(url, 'twitter', opts);
-
-        return false;
-    });
-}
+  		//Update checkout link with affiliate source
+  		$(".checkout").querystring(parameters);
+  	});
+});

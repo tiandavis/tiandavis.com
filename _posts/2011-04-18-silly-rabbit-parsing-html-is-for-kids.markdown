@@ -1,9 +1,12 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Silly Rabbit, Parsing HTML is for Kids!"
 date:   2011-04-18 00:00:00
-permalink: posts/silly-rabbit-parsing-html-is-for-kids
+permalink: /thoughts/posts/silly-rabbit-parsing-html-is-for-kids
 ---
+
+![trix](/images/trix.jpg)
 
 If I had a nickel for every time a developer says, "Don't worry, I'll just whip up a RegEx and parse that HTML in no time." I'd retire right this very second. I've grown less and less shocked over the years. Still I'm left surprised every time.
 
@@ -36,14 +39,14 @@ Depending on your language and platform, I understand this is easier said than d
 
 In fact, I'll do you one better. Instead of just saying, "Grab an HTML Parser." I'll point out fine HTML Parsers for different platforms:
 
- - Ruby: Try [Nokogiri][3]
- - JavaScript: Try [jQuery][4]
- - PHP: Try [PHP5 DOMDocument][5]
- - .Net(C#): Try [Html Agility Pack][6]
- - VB6: Try [MSHTML][7] - The DOM Parser used in IE
- - Python: Try [lxml][8]
- - Perl: Try [HTML:Parser][9]
- - Java: Try [HTML Cleaner][10]
+Ruby: Try [Nokogiri][3]
+JavaScript: Try [jQuery][4]
+PHP: Try [PHP5 DOMDocument][5]
+.Net(C#): Try [Html Agility Pack][6]
+VB6: Try [MSHTML][7]The DOM Parser used in IE
+Python: Try [lxml][8]
+Perl: Try [HTML:Parser][9]
+Java: Try [HTML Cleaner][10]
 
 There, now all you have to do is get up to speed. Then see if one of these full-fledged HTML Parsers will do the trick.
 

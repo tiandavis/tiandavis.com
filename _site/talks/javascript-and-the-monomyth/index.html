@@ -21,17 +21,14 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-
-    </header>
-
     <main>
-      	<section id="single-wrap">
-		  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
-		    <h1 class="page-title" itemprop="name headline">JavaScript and The Monomyth</h1>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
 
-		    <div itemprop="articleBody" class="talks talk">
-		      <p>What does Luke Skywalker, Neo and Paul Atreides all have in common with JavaScript?</p>
+    <h1 class="page-title" itemprop="name headline">JavaScript and The Monomyth</h1>
+
+    <div itemprop="articleBody">
+      <p>What does Luke Skywalker, Neo and Paul Atreides all have in common with JavaScript?</p>
 
 <p>The Monomyth, as expressed in the Hero's Journey, exists in all human cultures and keeps getting updated because we humans reflect on our world through symbolic stories of our own lives.</p>
 
@@ -47,15 +44,19 @@
 <script async class="speakerdeck-embed" data-id="6697f7a03472013238ed56e996df704e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
+<p><br></p>
+
 <h4>Resources</h4>
 
-<ul>
-<li><a href="http://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces">The Monomyth</a></li>
-<li><a href="http://tiandavis.com/posts/javascript-and-the-monomyth/">JavaScript and The Monomyth</a></li>
-<li><a href="https://news.ycombinator.com/item?id=2783060">Origins of JavaScript</a></li>
-<li><a href="https://brendaneich.com/2011/06/new-javascript-engine-module-owner/">SpiderMonkey The First JavaScript Engine</a></li>
-</ul>
+<p><a href="http://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces">The Monomyth</a></p>
 
+<p><a href="http://tiandavis.com/posts/javascript-and-the-monomyth/">JavaScript and The Monomyth</a></p>
+
+<p><a href="https://news.ycombinator.com/item?id=2783060">Origins of JavaScript</a></p>
+
+<p><a href="https://brendaneich.com/2011/06/new-javascript-engine-module-owner/">SpiderMonkey The First JavaScript Engine</a></p>
+
+<p><br></p>
 
 <h4>What Others Are Saying</h4>
 
@@ -80,17 +81,35 @@
 
 
 
-		    </div>
-		  </article>
-		</section>
+    </div>
+    
+    <div id="share" class="feat">            
+      <p><a href="/talks/" style="text-decoration: none;">← return to all talks</a></p>
+    </div>
+    
+  </article>
+</section>
+
+
+
     </main>
 
     <footer>
-      <small>Powered by Jekyll - &copy; 2010-2015 Tian Davis</small>
+        <p style="font-size: 80%;">All Content Copyright © 2015 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 
-	<script src="/js/main.js"></script>
-
+    <script src="/js/jquery.js"></script>
+    <script src="/js/imageMapResizer.js"></script>
+    <script src="/js/moment.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+      	$("map").imageMapResize();
+        
+        var date = moment().format('DD MMMM YYYY');
+        $(".date").html(date);
+    });
+    </script>
     
     
       <script>

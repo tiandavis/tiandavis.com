@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Using Chance.js To Generate Sample Data"
 date:   2015-07-04 00:00:00
-permalink: posts/using-chance-to-generate-sample-data
+permalink: /thoughts/posts/using-chance-to-generate-sample-data
 ---
 
 ![Chance.js](/images/chancejs.png)

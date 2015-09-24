@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "JavaScript Shims Versus Polyfills"
 date:   2015-02-17 00:00:00
-permalink: posts/javascript-shims-versus-polyfills
+permalink: /thoughts/posts/javascript-shims-versus-polyfills
 ---
 
 ![Polyfilla](/images/polyfilla.jpg)

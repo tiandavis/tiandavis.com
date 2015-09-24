@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "The History of The PSTN"
 date:   2014-11-21 00:00:00
-permalink: posts/the-history-of-the-pstn
+permalink: /thoughts/posts/the-history-of-the-pstn
 ---
 
 

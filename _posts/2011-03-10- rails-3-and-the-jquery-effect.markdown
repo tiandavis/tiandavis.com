@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Rails 3 and The jQuery Effect"
 date:   2011-08-08 00:00:00
-permalink: posts/rails-3-and-the-jquery-effect
+permalink: /thoughts/posts/rails-3-and-the-jquery-effect
 ---
 
 Ruby on Rails 3.0 was a big evolution of the Rails DNA. Architectural changes were hard to miss - true. But, more happened - more changed.
@@ -15,9 +16,10 @@ That opened the door for JavaScript options when using Rails. And dare I say, it
 
 There I stood as a Rails developer - proud as ever - because above all this move showed that the Rails Core Team leads. I call this *The jQuery Effect* and it's about getting out of the way of progress:
 
-	{% highlight html %}
-    <!--The jQuery Effect-->
-    <script type="text/javascript">jQuery.noConflict();</script>{% endhighlight %} 
+{% highlight html %}
+<!--The jQuery Effect-->
+<script type="text/javascript">jQuery.noConflict();</script>
+{% endhighlight %} 
 
 jQuery has built a vibrant community of developers. And dare I say it was this single line of code that turned the tides in the JavaScript Framework Wars.
 
@@ -33,15 +35,16 @@ All this over a dollar ($) sign? Yes! Only one framework at a time could use the
 
 What John Resig and the jQuery Core Team realized was that people used the $ for efficiency not identity. So let other frameworks use the $ and give jQuery developers the best of both worlds:
 
-	{% highlight html %}
-    <script type="text/javascript">jQuery.noConflict();</script>
-    <script type="text/javascript">
-      jQuery(document).ready(function($) {
-        $("#button").click(function() {
-           alert('Hello World!');
-        });
-      }); //document.ready
-    </script>{% endhighlight %} 
+{% highlight html %}
+<script type="text/javascript">jQuery.noConflict();</script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("#button").click(function() {
+       alert('Hello World!');
+    });
+  }); //document.ready
+</script>
+{% endhighlight %} 
 
 As a result jQuery developers didn't have to choose efficiency over flexibility. While the other frameworks pandered, "One Framework to Rule Them ALL." jQuery played it's hand and moved aside.
 

@@ -1,9 +1,12 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Hustle and Code"
 date:   2011-08-08 00:00:00
-permalink: posts/hustle-and-code
+permalink: /thoughts/posts/hustle-and-code
 ---
+
+![revolution](/images/revolution.jpg)
 
 Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people [already have][1] and many of us are still cleaning up that mess.
 

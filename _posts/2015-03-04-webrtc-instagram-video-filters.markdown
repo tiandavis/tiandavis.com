@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "WebRTC Instagram Video Filters"
 date:   2015-03-04 00:00:00
-permalink: posts/webrtc-instagram-video-filters
+permalink: /thoughts/posts/webrtc-instagram-video-filters
 ---
 
 ![Instagram](/images/instagram-2.jpg)

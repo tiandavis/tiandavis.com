@@ -1,0 +1,37 @@
+---
+layout: posts
+title:  "Software should be beautiful & inspired."
+date:   2010-07-01 00:00:00
+permalink: /thoughts/
+---
+
+<section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <ul class="posts">
+        {% for post in site.posts limit: 20 %}
+        <br/>
+        
+        <br/>
+        
+         <div class="feat">
+           <h5 class="page-date">
+             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+               {{ post.date | date_to_long_string }}
+             </time>
+           </h5>
+         </div>
+
+         <h1 class="page-title" itemprop="name headline"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+         
+         <h5 class="page-author">Handwritten by {{ post.author }}</h5>
+
+         <div itemprop="articleBody">
+           {{ post.content }}
+         </div>
+         
+        {% endfor %}
+      </ul>
+  </article>
+</section>
+
+

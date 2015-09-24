@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "JavaScript and The Monomyth"
 date:   2014-06-08 00:00:00
-permalink: posts/javascript-and-the-monomyth
+permalink: /thoughts/posts/javascript-and-the-monomyth
 ---
 
 ![The Hero's Journey][1]
@@ -401,7 +402,7 @@ Chasing a lone animal into the enchanted wood (the animal usually gets away) | L
 
 
 
-[1]: /images/new-chart-of-history.jpg  "The Hero's Journey"
+[1]: /thoughts/static/new-chart-of-history.jpg  "The Hero's Journey"
 [2]: https://brendaneich.com/2008/04/popularity/
 [3]: http://blog.jquery.com/2008/09/28/jquery-microsoft-nokia/
 [4]: https://twitter.com/dhh/statuses/45923430608023552

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      <title>JavaScript Engineer</title>
+      <title>Software Engineer</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta http-equiv="content-language" content="en-gb" />
@@ -21,23 +21,22 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-
-    </header>
-
     <main>
-      	<section id="single-wrap">
-		  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
-		    <h1 class="page-title" itemprop="name headline">JavaScript Engineer</h1>
+      <section id="single-wrap">
+        <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
 
-		    <div itemprop="articleBody">
-		      <p>Michelangelo never saw a lump of marble.</p>
+          <h1 class="page-title" itemprop="name headline">Software Engineer</h1>
+
+          <div itemprop="articleBody">
+            <p>Michelangelo never saw a lump of marble.</p>
 
 <p>He saw the <a href="http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)">Pieta</a> and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.</p>
 
-<p>Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup. I'm a Master JavaScript Engineer.</p>
+<p>Over the last five years, as a Front-End Developer, I’ve done everything from led a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup. I'm a Software Engineer.</p>
 
 <p><img src="/images/companies.png" title="Companies" alt="Companies" /></p>
+
+<p><br></p>
 
 <h2>Code is poetry</h2>
 
@@ -50,6 +49,8 @@
 <p>The bulk of my front-end experience leverages HTML5, CSS3 (SCSS), Compass, Foundation, JavaScript, CoffeeScript, Require, jQuery, PhoneGap, Backbone, Ember, Handlebars, Emblem and EmberScript. I leverage the ember-cli as much as possible.</p>
 
 <p>Testing is near and dear to me. To get the job done, I leverage QUnit, Jasmine, Sinon and Phantom running on Node.</p>
+
+<p><br></p>
 
 <h2>Best software of my life...</h2>
 
@@ -87,6 +88,8 @@
 <script async class="speakerdeck-embed" data-id="b4a4e41f878b4955bb72c976329f1db7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
+<p><br></p>
+
 <h3>I ship because I love the craft</h3>
 
 <p><a href="https://github.com/tiandavis/galileo" title="Galileo">Galileo</a> was one of the first Fortune 5M type products I ever shipped. It empowers Twitter users to build an audience based on their specific interests:</p>
@@ -99,23 +102,34 @@
 
 <p>For front-end unit tests, we leverage QUnit, Jasmine for integration tests and Sinon for spies and mocks. The backend integrates nicely with the official Twitter API. See more on <a href="https://github.com/tiandavis/galileo" title="Galileo">Github</a>.</p>
 
-<h3>What's next exactly...?</h3>
+<p><br></p>
 
-<p>I write on my blog <a href="http://tiandavis.com/posts/javascript-and-the-monomyth/">8-Bit Hustler</a>. I craft code on <a href="https://github.com/tiandavis">GitHub</a> and share thoughts on <a href="https://twitter.com/tiandavis">Twitter</a> because I love the craft. I co-organize <a href="http://columbuscodecamp.com/">Columbus Code Camp</a> because I love the people even more.</p>
+<h3>What's next exactly...?</h3>
 
 <p>As I understand it, you’ve had a vision of your own Pieta. I’d like a shot at helping you shape a masterpiece. Is there anything stopping you from <a href="mailto:tiandavis@gmail.com">emailing</a> me right now?</p>
 
-		    </div>
-		  </article>
-		</section>
+          </div>
+    
+        </article>
+      </section>
     </main>
 
     <footer>
-      <small>Powered by Jekyll</small>
+        <p style="font-size: 80%;">All Content Copyright © 2015 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 
-	<script src="/js/main.js"></script>
-
+    <script src="/js/jquery.js"></script>
+    <script src="/js/imageMapResizer.js"></script>
+    <script src="/js/moment.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+      	$("map").imageMapResize();
+        
+        var date = moment().format('DD MMMM YYYY');
+        $(".date").html(date);
+    });
+    </script>
     
     
       <script>

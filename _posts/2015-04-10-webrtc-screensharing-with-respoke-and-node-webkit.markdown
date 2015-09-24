@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "WebRTC Screensharing With Respoke and Node-Webkit"
 date:   2015-04-10 00:00:00
-permalink: posts/webrtc-screensharing-with-respoke-and-node-webkit
+permalink: /thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit
 ---
 
 ![NodeWebkit](/images/node-webkit.png)

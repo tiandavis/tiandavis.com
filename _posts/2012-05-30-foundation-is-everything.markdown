@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Foundation Is Everything"
 date:   2012-05-30 00:00:00
-permalink: posts/foundation-is-everything
+permalink: /thoughts/posts/foundation-is-everything
 ---
 
 I remember when I first realized some Universities were no longer teaching Computer Engineering and Computer Science students C++. Realizing the sad truth in it, I cringed. Flushed with sadness, I was utterly sick to my stomach.

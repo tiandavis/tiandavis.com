@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Tian Davis
 title:  "Git: Update Multiple Repos"
 date:   2015-05-27 00:00:00
-permalink: posts/git-update-multiple-repos
+permalink: /thoughts/posts/git-update-multiple-repos
 ---
 
 ![Macroons Coffee][1]
