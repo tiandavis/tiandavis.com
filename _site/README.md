@@ -1,2 +1,1 @@
-All content copyright TechOctave, LLC.
-
+All Content Copyright © Tian Davis. All Rights Reserved.
