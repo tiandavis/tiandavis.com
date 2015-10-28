@@ -6,7 +6,7 @@
   <link href="http://tiandavis.com" />
   <link href="http://tiandavis.com/atom.xml" rel="self" />
   
-  <updated>2015-10-28T01:20:46-04:00</updated>
+  <updated>2015-10-28T12:53:49-04:00</updated>
   
   <rights>Copyright 2015, Tian Davis</rights>
   
@@ -14,6 +14,39 @@
     <name>Tian Davis</name>
   </author>
   
+  
+    <entry>
+      <title>Git for TortoiseSVN Developers Tutorial</title>
+      <link href="http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/git-for-tortoise-svn-developers.png&quot; alt=&quot;Git for TortoiseSVN Developers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today I published a series of screencasts to explore &lt;a href=&quot;/screencasts/git-for-tortoise-svn-developers/&quot;&gt;how to use Git from a Subversion developers&lt;/a&gt; perspective. In particular, a Subversion developer using the ubiquitous TortoiseSVN client.&lt;/p&gt;
+
+&lt;p&gt;Git is a powerful source code management platform. What many don’t know is Git can be a very flexible and forgiving source code management tool too. If you’re coming from a Subversion client like TortoiseSVN and want to start being productive with Git immediately, then this course is for you. If you’re looking for a fun way to brush up on your Git and see SVN in action, this may also be the course for you too.&lt;/p&gt;
+
+&lt;p&gt;In this course, we&#39;re going to line up SVN and Git, side-by-side and take you through everything you need to start being productive in Git immediately. The topics we’ll cover include:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;High&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Level&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Differences&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;between&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SVN&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Git&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Organizing&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Branches&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Committing&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Code&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Merging&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Code&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Getting&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Latest&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Code&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Tagging&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Code&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Releases&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Whether you’re new to a team or an established tech lead, we’ll cover all the functions teams transitioning from SVN to Git need to be successful. In this tutorial, we’ll be using Git version 1.9.3 and TortoiseSVN 1.9.2&lt;/p&gt;
+</summary>
+      <id>http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial</id>
+      <updated>2015-10-27T20:00:00-04:00</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
   
     <entry>
       <title>Using Chance.js To Generate Sample Data</title>
