@@ -1,0 +1,26 @@
+---
+layout: talks
+title:  "Screencasts"
+date:   2010-07-01 00:00:00
+permalink: /screencasts/
+---
+
+<section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <br>
+    
+    {% for page in site.pages %}
+    {% unless page.screencast == nil %}
+      <div itemprop="articleBody">
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+        
+        {{ page.content | markdownify }}
+        
+        <br><br><br>
+      </div>
+    {% endunless %}
+    {% endfor %}
+  </article>
+</section>
+
+

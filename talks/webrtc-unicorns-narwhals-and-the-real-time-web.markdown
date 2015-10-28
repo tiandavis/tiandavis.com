@@ -3,7 +3,7 @@ layout: talk
 title:  "WebRTC: Unicorns, Narwhals and The Real-Time Web"
 date:   2000-02-21 00:00:00
 talk: true
-permalink: talks/webrtc-unicorns-narwhals-and-the-real-time-web/
+permalink: /talks/webrtc-unicorns-narwhals-and-the-real-time-web/
 ---
 
 You probably don't know WebRTC as much as you think. I'm not surprised. WebRTC is both amazing and terrifying. 
