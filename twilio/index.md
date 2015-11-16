@@ -19,7 +19,9 @@ Take a look at the documentation reorganization I lead at Respoke and a few blog
 
 ###Documentation
 
-Lead the documentation and reorganization of Respoke's developer documentation along product lines. The goal being a clear distinction between Guides for client libraries (JavaScript, iOS, Android), server libraries (Node, Ruby, .NET, PHP, Java) and REST API(JSON) and their respective API References and Example Code.
+Lead the documentation and reorganization of Respoke's developer docs along product lines - Client libraries (JavaScript, iOS, Android), Server libraries (Node, Ruby, .NET, PHP, Java) and REST API (JSON). 
+
+With a focus on quick Guides, the goal was a clear distinction between Guides, API References and Example Code.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://docs.respoke.io/">Getting started with Respoke - Respoke Documentation</a></h4><p>Get started with Respoke. Quickstart guides, reference documentation, and FAQs for developers. REST | Javascript</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
@@ -115,7 +117,7 @@ Contributed fixes to the respective browser plugins.
 
 <br>
 
-Lead the reorganization and documentation of Respoke Documentation to what you see today.
+Lead the reorganization and documentation of the Respoke docs to what you see today.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/docs/commits?author=tiandavis">respoke/docs</a></h4><p>Contribute to docs development by creating an account on GitHub.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
@@ -129,7 +131,7 @@ Extracted Caramel from a Respoke internal tool I built to facilitate cross-platf
 
 <br>
 
-Contributed Yahoo email client fixes upstream to Salted which eventually became the baseline for Respoke's and Caramel's framework.
+Contributed Yahoo email client fixes upstream to Salted which eventually became the baseline for Respoke's and Caramel's responsive email framework.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/rodriguezcommaj/salted/commits?author=tiandavis">rodriguezcommaj/salted</a></h4><p>salted - Salted: A responsive email template</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
