@@ -2,12 +2,12 @@
 layout: resume
 title:  "Developer Educator"
 date:   2015-11-14 00:00:00
-permalink: /twilio/
+permalink: /developer-educator/
 ---
 
-<img src="http://i.imgur.com/3Tj8Nos.jpg"/>
+<img src="/images/git-for-tortoise-svn-developers.png"/>
 
-I know how hard it is to build developer trust and community because I've done it as part of the Community Team at Respoke. I'd love the opportunity to do it again at Twilio.
+I know how hard it is to build developer trust and community because I've done it as part of the Community Team at Respoke. I'd love the opportunity to do it again.
 
 <br>
 
@@ -67,9 +67,9 @@ Thought leadership piece discussing the story of JavaScript told through the eye
 
 ###Screencasts
 
-Technical screencast showing developers how best to poll servers using JavaScript's setTimeout and jQuery's ajax.
+Technical screencast showing Subversion developers how to [get production ready using Git](/screencasts/git-for-tortoise-svn-developers/).
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://www.youtube.com/watch?v=LLW221gWG_4">HTTP Polling</a></h4><p>Technical screencast showing developers how best to poll servers using JavaScript's setTimeout and jQuery's ajax.</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://www.youtube.com/watch?v=9nUAd3-x_a4">Git for Tortoise SVN Developers (1/8)</a></h4><p>Git is a powerful source code management platform. What many don't know is Git can be a very flexible and forgiving source code management tool as well. If you're coming from a Subversion client like TortoiseSVN and want to start being productive with Git immediately, then this course is for you.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 
