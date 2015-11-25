@@ -82,6 +82,20 @@ I ship hiqh quality code. I've shipped critical components on both Respoke's Com
 
 <br>
 
+###Apollo HD
+
+Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
+
+![Apollo][apollo-dark]
+
+As a JavaScript Engineer on the Respoke team, I helped developers see how easily we can add secure video, voice and data communication to our own apps using the power of WebRTC.
+
+We used some of the most innovative front-end technologies of the day, including HTML5, CSS3 (LESS), Jade, Gulp, Bootstrap, JavaScript, ES6, Babel, jQuery, Angular, NodeWebkit, Jasmine, Sinon, SuperTest and Phantom.
+
+And with these, we built [Apollo](https://www.apollohd.com/) - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.
+
+<br>
+
 ###Respoke Sample Project
 
 Wrote a production-ready sample application showing developers how to use key use cases of Respoke, like Brokered Authentication, Audio Management, Video Management, Data Management, Presence, CallerId and automated tests to make sure the the code sample is always accurate.
@@ -180,7 +194,7 @@ Along with the talk, distributed a small sample signaling app using Node, Socket
 
 Another talk focused on the story of JavaScript as seen through the eyes of the Hero's Journey itself.
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: http://tiandavis.com/posts/javascript-and-the-monomyth/</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: http://tiandavis.com/posts/javascript-and-the-monomyth/</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 
@@ -191,4 +205,5 @@ Another talk focused on the story of JavaScript as seen through the eyes of the 
 I'd love to learn more about the position, the team and the company. Go ahead, <a href="mailto:tiandavis@gmail.com">email</a> me and we'll continue the conversation.
 
 
-
+[apollo-dark]: /images/apollo-dark.png "Apollo Dark"
+[respoke]: https://www.respoke.io/ "Respoke Url"
