@@ -2,7 +2,7 @@
 layout: resume
 title:  "Software Engineer"
 date:   2010-07-01 00:00:00
-permalink: /ExakTime/
+permalink: /exaktime/
 ---
 
 <img src="/images/git-for-tortoise-svn-developers.png"/>
