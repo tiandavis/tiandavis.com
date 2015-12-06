@@ -7,7 +7,7 @@ permalink: /developer/
 
 <img src="/images/git-for-tortoise-svn-developers.png"/>
 
-I know how hard it is to build the right team with the right people. I took some time to review your core work and I believe I'm the guy for the job.
+I know how hard it is to build the right team with the right people. I took some time to review your core products and I believe I'm the right guy for the job.
 
 <br>
 
