@@ -2,12 +2,12 @@
 layout: resume
 title:  "Software Engineer"
 date:   2010-07-01 00:00:00
-permalink: /exaktime/
+permalink: /developer/
 ---
 
 <img src="/images/git-for-tortoise-svn-developers.png"/>
 
-I know how hard it is to build the right team with the right people. I took some time to review JobClock Hornet and TimeSummit and I believe I'm the guy for the job.
+I know how hard it is to build the right team with the right people. I took some time to review your core work and I believe I'm the guy for the job.
 
 <br>
 
