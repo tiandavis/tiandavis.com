@@ -43,18 +43,6 @@ permalink: /
 
 <br>
 
-#Screencasts
-
-<br>
-
-##Git for TortoiseSVN Developers
-
-A serious side-by-side walk through of [Git for enterprise developers](/screencasts/git-for-tortoise-svn-developers/) transitioning from Subversion & TortoiseSVN - See the full screencast.
-
-<iframe width="100%" height="390" src="https://www.youtube.com/embed/9nUAd3-x_a4" frameborder="0" allowfullscreen></iframe>
-
-
-<br>
 
 #Talks On Development
 
