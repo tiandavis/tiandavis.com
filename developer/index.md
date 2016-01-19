@@ -37,6 +37,17 @@ To get there, we used best-of-breed tools like .NET (C#), ASP.NET MVC, jQuery, B
 
 <br>
 
+Check out another .NET project that's more on the automation side of the house. This app automates logging into Gmail, taking a screenshot and uploading the screenshot to Amazon S3.
+
+<img src="http://i.imgur.com/SPpCF9V.png"/>
+
+It uses Dapper.Net micro ORM to insert a record of the results into a relational database. Testing heavily with NUnit.
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/tiandavis/litmus">tiandavis/litmus</a></h4><p>litmus - Automated Gmail Screenshot Processing</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+
+
 ###Apollo HD
 
 Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
