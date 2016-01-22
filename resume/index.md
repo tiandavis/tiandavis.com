@@ -18,7 +18,7 @@ Over the last five years, as a Tech Lead and Front-End Developer, I’ve done ev
 
 ##Strong engineering skills
 
-I ship hiqh quality code. I've shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
+I ship high quality code. I've shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
 
 <br>
 
