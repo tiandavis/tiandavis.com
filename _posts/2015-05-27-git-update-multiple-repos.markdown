@@ -14,12 +14,12 @@ The code news is the code is all passionately crafted and a joy to work with. Wh
 
 But, I couldn't see myself running git pull for every single respository. Believe me, I tried. . .
 
-[Git pull][2] itself has it's issues, so I wanted to be mindful of commit merges. In addition, I'm often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I'm always getting the latest-and-greatest remote branches as well. 
+[Git pull][2] itself has it's issues, so I wanted to be mindful of commit merges. In addition, I'm often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I'm always getting the latest-and-greatest remote branches as well.
 
 By default, git pull helps you do neither particualary well. That's when I ran into the concept of git up.
 
 
-###Git  Up
+### Git Up
 
 With all versions of Git, you can configure a git alias. So I configured an alias called git up:
 
@@ -27,14 +27,14 @@ With all versions of Git, you can configure a git alias. So I configured an alia
 git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'
 {% endhighlight %}
 
-This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch. 
+This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch.
 
-Using this technique, I'm able to get all remote branches while keeping the repository's commit history clean. 
+Using this technique, I'm able to get all remote branches while keeping the repository's commit history clean.
 
 But the challenge still remained of how to deal with running git up for multiple git repos.
 
 
-###Going Full Shell
+### Going Full Shell
 
 I use a [shell script][3] to get the job done of updating multiple git repos:
 
@@ -59,4 +59,3 @@ If you find yourself needing to update multiple git repos at a time, give this t
 [3]: http://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos
 [4]: https://twitter.com/dhh/statuses/45923430608023552
 [6]: http://techoctave.com/c7/posts/90-designer-languages
-

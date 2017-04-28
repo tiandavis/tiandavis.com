@@ -6,9 +6,11 @@ author: "Tian Davis"
 url: "http://tiandavis.com"
 baseurl: ""
 
-markdown: rdiscount
+#markdown: rdiscount
+markdown: kramdown
 permalink: /thoughts/:year/:month/:title.html
-highlighter: pygments
+#highlighter: pygments
+highlighter: rouge
 
 # Google Analytics
 ga_domain: tiandavis.com

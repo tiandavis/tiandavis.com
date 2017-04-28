@@ -12,13 +12,13 @@ No real standards exist between browser vendors. So how do you integrate WebRTC 
 
 This talk discusses lessons learned in the trenches developing with WebRTC. In particular, I discuss the bad parts of WebRTC and why it is still so crucial to business success. The talk further suggests how to get WebRTC solutions right and build a multidisciplinary software engineering team in the process.
 
-####Slides
+#### Slides
 <p></p>
 <script async class="speakerdeck-embed" data-id="b4a4e41f878b4955bb72c976329f1db7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 <br>
 
-####Resources
+#### Resources
 
 [Native WebRTC using Node & Socket.IO for Signaling][GitHub]
 
@@ -40,7 +40,7 @@ This talk discusses lessons learned in the trenches developing with WebRTC. In p
 
 <br>
 
-####What Others Are Saying
+#### What Others Are Saying
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Excellent talk on WebRTC from <a href="https://twitter.com/tiandavis">@tiandavis</a> <a href="https://twitter.com/hashtag/chiweb2015?src=hash">#chiweb2015</a></p>&mdash; Eric Sorenson (@dubharmonic) <a href="https://twitter.com/dubharmonic/status/569232562050043904">February 21, 2015</a></blockquote>
 

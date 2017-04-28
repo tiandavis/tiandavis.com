@@ -14,13 +14,13 @@ We leave our confort zone, have an experience that transforms us, then we recove
 
 JavaScript is no different. Together we'll take a journey through the story of JavaScript as you've never seen before. Think you know JavaScript? Believe me, you've never seen it like this...
 
-####Slides
+#### Slides
 <p></p>
 <script async class="speakerdeck-embed" data-id="6697f7a03472013238ed56e996df704e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 <br>
 
-####Resources
+#### Resources
 [The Monomyth][The Monomyth]
 
 [JavaScript and The Monomyth][JavaScript and The Monomyth]
@@ -31,7 +31,7 @@ JavaScript is no different. Together we'll take a journey through the story of J
 
 <br>
 
-####What Others Are Saying
+#### What Others Are Saying
 <p></p>
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>Listening to <a href="https://twitter.com/tiandavis">@tiandavis</a> talk about the monomyth of JavaScript. He&#39;s a great storyteller! <a href="https://twitter.com/cmhcodecamp">@cmhcodecamp</a></p>&mdash; Sarah Dutkiewicz (@sadukie) <a href="https://twitter.com/sadukie/status/520946649280303105">October 11, 2014</a></blockquote>
 

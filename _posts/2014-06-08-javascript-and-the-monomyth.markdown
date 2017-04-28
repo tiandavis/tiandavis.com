@@ -36,7 +36,7 @@ In a monomyth, the hero begins in the ordinary world, and receives a call to ent
 Collectively, mankind faced the beginnings of the strangest and most powerful of worlds it had ever created - The Internet. So sets the stage for our hero and the birth of a language...
 
 
-####The Call to Adventure
+#### The Call to Adventure
 *In the Call to Adventure, the hero begins in a mundane situation of normality from which some information is received that acts as a call to head off into the unknown.*
 
 Early April 1995, Brendan Eich is recruited to Netscape with the promise of "doing Scheme" in the browser. Netscape recruited him because he could hack quickly and in part because he had some language chops. 
@@ -54,7 +54,7 @@ STL was an early standard library for C++ without which you'd have to write your
 Things seldom go according to plan and little did he know both Scheme and C would play heavy on his design of JavaScript.
 
 
-####Refusal of the Call
+#### Refusal of the Call
 *Often when the call is given, the future hero first refuses to heed it. This may be from a sense of duty or obligation, fear, insecurity, a sense of inadequacy, or any of a range of reasons that work to hold the person in his or her current circumstances.*
 
 Brendan never did put Scheme in the browser. Instead, he created a new language called JavaScript. As he remembers it, "[t]he diktat from upper engineering management was that the language [must 'look like Java'][2]."
@@ -74,7 +74,7 @@ In Self, however, one makes a copy of an existing object and then adds additiona
 These would form the necessary ingredients for creating JavaScript, but it would take an act of God to birth the language into existence. In the software development industry, we call these acts of god a release.
 
 
-####Supernatural Aid
+#### Supernatural Aid
 *Once the hero has committed to the quest, consciously or unconsciously, his guide and magical helper appears or becomes known. More often than not, this supernatural mentor will present the hero with one or more talismans or artifacts that will aid them later in their quest.*
 
 Netscape 2.0 Beta's [extremely tight release schedule of March 1996][12] forced Brendan to complete the first version of JavaScript in only [ten days][13]. Management at Netscape was sure Microsoft was gunning for them, after turning down a low ball offer to buy Netscape earlier that year. 
@@ -90,7 +90,7 @@ Through those inhomogeneous mixtures of concepts and directives a finer language
 And once the soot was removed and the steel polished, JavaScript was born.
 
 
-####Crossing the Threshold
+#### Crossing the Threshold
 *This is the point where the person actually crosses into the field of adventure, leaving the known limits of his or her world and venturing into an unknown and dangerous realm where the rules and limits are not known.*
 
 During the Fall of 1996, Brendan [rewrote the JavaScript language][14] and built the first-ever JavaScript engine. This engine is code named SpiderMonkey and is later released as open source. JavaScript is finally decoupled from the Netscape browser. JavaScript is standardized as ECMA-262 specification called EMCAScript.
@@ -113,7 +113,7 @@ The gods must have seen the irony because it wouldn't be too long before this si
 
 
 
-####Belly of the Whale
+#### Belly of the Whale
 *The belly of the whale represents the final separation from the hero's known world and self. By entering this stage, the person shows willingness to undergo a metamorphosis.*
 
 Early 1998, Netscape along with Brendan found the Mozilla Project. Named after the original code name of the Netscape Navigator browser which is a blending of "Mosaic and Godzilla".
@@ -142,7 +142,7 @@ With a growing number of browser vendors, the future of JavaScript laid on the f
 Yet, with a little help, the promise of JavaScript everywhere had a very real chance to succeed. But, it wasn't easy...
 
 
-####The Road of Trials
+#### The Road of Trials
 *The road of trials is a series of tests, tasks, or ordeals that the person must undergo to begin the transformation. Often the person fails one or more of these tests, which often occur in threes.*
 
 Luke Skywalker had his Lightsaber training with Obi-Wan Kanobi. Neo his sparring with Morpheus. They had it easy...
@@ -180,7 +180,7 @@ Too many browsers, the DOM was a mess and JavaScript organization was a thing un
 It was this willingness to go beyond that would form a fundamental cornerstone of the JavaScript community. And with such a large elephant, we began to eat it piece by delicious piece.
 
 
-####The Meeting with the Goddess
+#### The Meeting with the Goddess
 *This is the point when the person experiences a love that has the power and significance of the all-powerful, all encompassing, unconditional love that a fortunate infant may experience with his or her mother. This is a very important step in the process and is often represented by the person finding the other person that he or she loves most completely.*
 
 January 2006, John Resig released [jQuery at BarCamp NYC][18]. jQuery opens the door for JavaScript to run consistently in every browser. Up until now, no one had taken on the challenge to reconciled JavaScript behavior across disparate browser vendors.
@@ -198,7 +198,7 @@ Non-Obtrusive JavaScript (no inline JavaScript) started to become a very real po
 It wouldn't be long before jQuery became synonymous with cross-browser JavaScript development, but it didn't get there without challenges.
 
 
-####Temptation away from the true path
+#### Temptation away from the true path
 *In this step, the hero faces those temptations, often of a physical or pleasurable nature, that may lead him or her to abandon or stray from his or her quest.*
 
 You don't have to wonder where JavaScript would be without jQuery. For me, the answer is clear...Nowhere! Without cross-browser compatibility, JavaScript would have been of very little use. 
@@ -222,7 +222,7 @@ No one knows how the war started. As with all wars, the issue was about assets a
 Developers were used to mixing widget libraries from the DHTML days. Now, they were just happy these widgets would work in multiple browsers. But as with things too good to be true, there was a catch...
 
 
-####Atonement with the Father
+#### Atonement with the Father
 *In this step the person must confront and be initiated by whatever holds the ultimate power in his or her life. In many myths and stories this is the father, or a father figure who has life and death power. This is the center point of the journey. All the previous steps have been moving into this place, all that follow will move out from it.*
 
 Around May 2008, almost two years after the initial release of jQuery, The Framework Wars peaked. But with developers firmly in either camp, this war would be won with converts.
@@ -242,7 +242,7 @@ As a result, jQuery developers didn't have to choose efficiency over flexibility
 After trying jQuery, many developers never went back to either MooTools, Prototype or ExtJS. Instead, they opted to rewrite their most favorite plugins in jQuery. What came next was the Golden Age of jQuery.
 
 
-####Apotheosis (becoming god-like)
+#### Apotheosis (becoming god-like)
 *This step is a god-like phase where the hero earns a period of rest, peace and fulfillment before the hero begins the return.*
 
 May 2008, Douglas Crockford published his seminal book "[JavaScript: The Good Parts][19]". 
@@ -254,7 +254,7 @@ Later that year, in September 2008, Microsoft switches out its own [AJAX library
 As JavaScript had become the de-facto programming language of the web, jQuery had become the de-facto JavaScript normalization framework of the web.
 
 
-####The Ultimate Boon
+#### The Ultimate Boon
 *The ultimate boon is the achievement of the goal of the quest. It is what the person went on the journey to get. All the previous steps serve to prepare and purify the person for this step, since in many myths the boon is something transcendent like the elixir of life itself, or a plant that supplies immortality, or the holy grail.*
 
 jQuery opened cross-browser JavaScript development to all developers. Later libraries either made jQuery the foundation for interacting with the browser or implemented a compatible (sometimes identical) API.
@@ -277,7 +277,7 @@ Though the DOM remained a mess, JavaScript normalization libraries like jQuery s
 The hero must then decide whether to return to the ordinary world with this boon. If the hero does decide to return, he or she often faces challenges on the return journey. If the hero returns successfully, the boon or gift may be used to improve the world.
 
 
-####Refusal of the Return
+#### Refusal of the Return
 *Having found bliss and enlightenment in the other world, the hero may not want to return to the ordinary world to bestow the boon onto his fellow man.*
 
 John leaves the Mozilla Corporation, and work on jQuery, to join the Khan Academy. The project is left in the hands of a core group of developers. 
@@ -286,7 +286,7 @@ JavaScript is now cross-browser, but code organization is still a mess and often
 
 But something else was brewing under the covers. Something very few people saw coming. The very way some started to write JavaScript changed entirely. The age of the Designer Language began...
 
-####The Magic Flight
+#### The Magic Flight
 *Sometimes the hero must escape with the boon, if it is something that the gods have been jealously guarding. It can be just as adventurous and dangerous returning from the journey as it was to go on it.*
 
 A [Designer Language][6] is a programming language created to avoid the perceived shortcomings of an existing language, usually by creating a superset of the existing language by modifying syntax or modifying programming constructs.
@@ -310,7 +310,7 @@ What's interesting is most designer languages still allowed you to use all your 
 Times were changing rapidly. The grassroots investment in JavaScript by the development community didn't go unnoticed. JavaScript became the [most popular language used on GitHub][24].
  
 
-####Rescue from Without
+#### Rescue from Without
 *Just as the hero may need guides and assistants to set out on the quest, oftentimes he or she must have powerful guides and rescuers to bring them back to everyday life, especially if the person has been wounded or weakened by the experience.*
 
 Around this time, [Apple dropped support for Flash][25] on its new iPhone in favor of more open standards like HTML5, CSS and JavaScript. In subsequent years, [Adobe itself would drop support for Flash][8] on mobile devices all together. 
@@ -318,7 +318,7 @@ Around this time, [Apple dropped support for Flash][25] on its new iPhone in fav
 Microsoft drops support for IE6 as the [countdown][26] to the death of IE6 continued. jQuery would later create a project fork that drops support for IE6 as to decrease the libraries bloat.
 
 
-####The Crossing of the Return Threshold
+#### The Crossing of the Return Threshold
 *The trick in returning is to retain the wisdom gained on the quest, to integrate that wisdom into a human life, and then maybe figure out how to share the wisdom with the rest of the world.*
 
 [Micro MVC libraries][7] arise to offer JavaScript code organization along with jQuery integration. Some of those libraries include Backbone, KnockOut, Spine and JavaScriptMVC (CanJS). 
@@ -348,7 +348,7 @@ JavaScript begins to show up in microcontrollers like Raspberry PI and Arduino. 
 It was starting to become clear to everyone that JavaScript was now simply everywhere...
 
 
-####Master of Two Worlds
+#### Master of Two Worlds
 *Mastering two worlds is usually represented by a transcendental hero like Jesus or Buddha. The person has become comfortable and competent in both the inner and outer worlds.*
 
 With the advent of NodeJS, it was now possible to use JavaScript throughout the entire application stack. JavaScript had mastered the server-side and the frontend as well. Core business logic moved from the server to the frontend.
@@ -368,7 +368,7 @@ JavaScript and how best to use it is now a central analysis for custom web appli
 JavaScript was now for serious engineers...
 
 
-####Freedom to Live
+#### Freedom to Live
 *Mastery leads to freedom from the fear of death, which in turn is the freedom to live. This is sometimes referred to as living in the moment, neither anticipating the future nor regretting the past.*
 
 Frontend development is now a legitimate software profession. Developers get to choose whether to focus on frontend development or server-side development. No longer is frontend development a nice-to-have with server-side being core.

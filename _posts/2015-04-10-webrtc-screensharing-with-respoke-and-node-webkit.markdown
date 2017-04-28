@@ -8,7 +8,7 @@ permalink: /thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit
 
 ![NodeWebkit](/images/node-webkit.png)
 
-###The Code
+### The Code
 
 I've been working with a lot of developers on WebRTC solutions. One, in particular, needed screensharing for their next-generating proctoring solution, so I built a proof-of-concept (PoC) screensharing app using node-webkit.
 
@@ -79,7 +79,7 @@ Open Node Webkit Instance 2
 
 Give it a try. If you find any issues, we welcome pull requests.
 
-###Media Stream Constraints
+### Media Stream Constraints
 
 To make screensharing work, we had to pass a MediaStreamContraint object literal. But, where does all this come from? It all starts with a w3 spec. When specs are not final, vendor implementation typically starts from a draft spec. In this case, the Media Capture and Streams working draft. There is no current consensus on what every constraints should be. The working drafts acts a starting point so vendors like Google can start implementing real examples of how constraints are used.
 
@@ -89,7 +89,7 @@ For example, the working draft specifies constraints like width, height, frameRa
 class MediaConstraintsInterface {
   public:
     . . .
-    
+
     // Constraint keys used by a local video source.
     // Specified by draft-alvestrand-constraints-resolution-00b
     static const char kMinAspectRatio[]; // minAspectRatio
@@ -114,12 +114,12 @@ class MediaConstraintsInterface {
     // Constraint keys used by a local audio source.
     // These keys are google specific.
     static const char kEchoCancellation[]; // googEchoCancellation
-   
+
     // Google-specific constraint keys for a local video source
     static const char kNoiseReduction[]; // googNoiseReduction
-    
+
     . . .
-    
+
     // googTemporalLayeredScreencast
     static const char kCpuOveruseDetection[];
 };
@@ -129,7 +129,7 @@ class MediaConstraintsInterface {
 Of course there is no guarantee that those features will make it to the final Media Capture and Streams spec.
 
 Flags
-We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle. 
+We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle.
 
 For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: `--enable-usermedia-screen-capturing`.
 
@@ -163,7 +163,7 @@ namespace switches {
 // Enable screen capturing support for MediaStream API.
 const char kEnableUserMediaScreenCapturing[] =
     "enable-usermedia-screen-capturing";
-    
+
 . . .
 }
 {% endhighlight %}
@@ -175,4 +175,4 @@ We then use those flags as chromium-args in our node-webkit apps. You can pass c
 On Windows, something like:
 `chrome.exe --args --enable-usermedia-screen-capturing`
 
-I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends. 
+I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.

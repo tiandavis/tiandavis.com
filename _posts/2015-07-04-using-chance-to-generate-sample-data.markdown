@@ -8,19 +8,19 @@ permalink: /thoughts/posts/using-chance-to-generate-sample-data
 
 ![Chance.js](/images/chancejs.png)
 
-It's not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you're trying to deliver business value. 
+It's not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you're trying to deliver business value.
 
 You're certainly not trying to build the world's greatest random number generator. And you're definitely not trying to build the world's greatest random email generator either. Unless you're [chance.js](http://chancejs.com/#gender) that is.
 
-###What is Chance
+### What is Chance
 
-Chance is a JavaScript micro library, narrowly focused on generating random data. That data could be as general as a random number or random string. Or Chance can be as specific as a random last name or a random phone number. 
+Chance is a JavaScript micro library, narrowly focused on generating random data. That data could be as general as a random number or random string. Or Chance can be as specific as a random last name or a random phone number.
 
 Chance comes in great during automated testing, but it is also incredibly useful when working with peer-to-peer WebRTC apps as well because it helps you generate random conference rooms and other data.
 
-###How to use Chance
+### How to use Chance
 
-####Generating Random User Data
+#### Generating Random User Data
 
 For example, say you're working with a new instance of [Respoke](https://www.respoke.io/):
 
@@ -67,7 +67,7 @@ client.connect({
 
 The great part is you didn't have to write a single utility function.
 
-####Generating Random Room Data
+#### Generating Random Room Data
 
 Once connected to Respoke, you'd want to then create a new group or join an existing group. Here, you could use Chance to generate a random group name.
 

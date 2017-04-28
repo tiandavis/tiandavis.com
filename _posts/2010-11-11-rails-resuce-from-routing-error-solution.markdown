@@ -10,7 +10,7 @@ Well, I've got good news and I've got bad news. As of Rails 3.0.1, using rescue_
 
 The good news is I have a solution that will keep you in unison with the Rails Core Team. The Rails team has promised a fix some time in Rails 3.1. Until then, I've got readers and I've got customers and I *shudder* at the thought of showing them a generic error page.
 
-###The Situation
+### The Situation
 
 It's bad enough an error has occurred in the first place. At that point I want to take control of the situation and rescue my audience from a bad experience back to enjoyment!
 
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     if exception
         logger.info "Rendering 404: #{exception.message}"
     end
-      
+
     render :file => "#{Rails.root}/public/404.html", :status => 404, :layout => false
   end
 end
@@ -37,13 +37,13 @@ Now, for those of you who don't know, I'm a realist. So, I'm not expecting the R
 
 Personally, I'm going to wait for the Official fix from the Rails Core Team. In the meantime, I need a simple, no side effects solution that I can use right now!
 
-###Simple Solution
+### Simple Solution
 
-This is one of those times when it's great to be a developer. There is nothing we can't solve with a little elbow grease and ingenuity. 
+This is one of those times when it's great to be a developer. There is nothing we can't solve with a little elbow grease and ingenuity.
 
 Expanding on the suggestion given by the Rails core team, here's the solution I use to handle routing errors in Rails 3.0:
 
-####config/routes.rb
+#### config/routes.rb
 
 This code should go to the end of your routes.rb file. That way it will be given the least priority and therefore, act as a wildcard catchall for all those rogue url resources.
 
@@ -56,7 +56,7 @@ end
 
 NOTE: The "a" is actually a parameter in the Rails 3 Route Globbing technique. For example, if your url was */this-url-does-not-exist*, then params[:a] equals "*/this-url-does-not-exist*". So be as creative as you'd like handling that rogue route.
 
-####app/controllers/errors_controller.rb
+#### app/controllers/errors_controller.rb
 Here, I handle my routing errors. I leverage previous 404 handling code from my original ApplicationController mentioned above. So, my errors_controller.rb looks like this:
 
 {% highlight ruby %}

@@ -65,7 +65,7 @@ It also helps validate some of the differences I've noticed over the years. Name
 In the real world a shim is a wedge-shaped piece of wood. "Polyfilla" is the name of a [spackling paste from LePage](http://www.lepageproducts.com/ProductDetail.aspx?pid=101). You'd typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn't exactly the same as the wall, but it acts close enough to the real thing to make it work.
 
 
-####Examples of JavaScript Polyfills
+#### Examples of JavaScript Polyfills
 
 In particular, take a look at the available transports is Socket.IO. There is websocket, htmlfile, xhr-polling, jsonp-polling and flashsocket. Yes - Flash. Socket.IO is a great example of a JavaScript polyfill that manually implements WebSockets in older browsers by any means necessary. Falling back to flash allowed Socket.IO to approximate WebSockets in older browsers like IE 8 and IE 9 during a time when they held noticeable marketshare. This would not have been possible with a pure JavaScript implementation only.
 

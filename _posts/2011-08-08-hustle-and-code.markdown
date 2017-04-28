@@ -10,11 +10,11 @@ permalink: /thoughts/posts/hustle-and-code
 
 Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people [already have][1] and many of us are still cleaning up that mess.
 
-In [How to Design Programs][2], the authors said it well, "Bad programming is easy. *Idiots* can learn it in *21 days*, even if they are *Dummies*." 
+In [How to Design Programs][2], the authors said it well, "Bad programming is easy. *Idiots* can learn it in *21 days*, even if they are *Dummies*."
 
 But this isn't 1991 and the tragedy that was Visual Basic (VB). This isn't a time when the 21 days paradigm turned everyone - from Help Desk Support to Accountants to Managers to Lawyers - into overnight programmers. Yet, still this notion of learn to program overnight lingers more tragically than even The Bard himself could imagine.
 
-###Why is everyone in such a rush?
+### Why is everyone in such a rush?
 
 In [Teach Yourself Programming in Ten Years][3], author Peter Norvig posits the quintessential question in this knowledge arms race, "Why is everyone in such a rush?"
 
@@ -24,9 +24,9 @@ Fast-forward to 2011 and the results are even more astounding. If you want to [t
 
 That's 3 to 4 times more titles than just a decade ago. In both cases, programming titles are the the overwhelming majority. In particular, the *hours* category has a higher density of computer programming books than the *days* category.
 
-Hours? Learn to program in Hours? You can't learn the necessary fundamentals in hours, nor days. It takes years! It takes Ten Years! 
+Hours? Learn to program in Hours? You can't learn the necessary fundamentals in hours, nor days. It takes years! It takes Ten Years!
 
-###The Fundamentals - You can't rush good wine!
+### The Fundamentals - You can't rush good wine!
 
 Like good wine, you can't rush good programming. It will take time. You won't learn it in 24 hours. But with passion and purpose and lots and lots of practice, you can get good - really good!
 
@@ -34,11 +34,11 @@ You don't necessarily have to finish a four-year Computer Engineering or Compute
 
 For some, you will be an apprentice to a parent, older sibling or mentor. For others, you might start programming games as a youngling. Still, for others, you will go to University for the fundamentals and if you are lucky, leave before the other nonsense.
 
-But each of you will have a different, diverse story and that's Ok! That's the DNA that will shape your decisions and the projects you pursue. 
+But each of you will have a different, diverse story and that's Ok! That's the DNA that will shape your decisions and the projects you pursue.
 
 The point is there are fundamentals in the development game and no matter how you get it, you better have it! You can't rush the fundamentals either - they need time to mature and coarse through your veins. The fundamentals need time to learn you!
 
-###You've got to Hustle to get Good!
+### You've got to Hustle to get Good!
 
 Sorry to say, but you're not going to get good grinding assignments in a grey cube for eight hours-a-day. Nothing inherently with the color grey stops you either. It's just that mentorship seldom takes place in corporate life.
 
@@ -56,7 +56,7 @@ Those are the times where you'll learn what's right, what's wrong and what needs
 
 But most importantly, those are the times when you'll either learn to take responsibility for the software decisions you make or you'll join the countless many who've decided to never take responsibility for the decisions they make. These are the experiences that make great product designers and you will draw on them time-and-time again.
 
-###Spartan or Arcadian? Warrior or Brawler?
+### Spartan or Arcadian? Warrior or Brawler?
 
 The way I see it, you have two choices. Learn from Dummies and be an Arcadian - a brawler at best. Or face your personal Agoge and emerge a Spartan - an Elite Warrior.
 
@@ -70,7 +70,7 @@ Dummies care about the latest IDE and the latest shiny runtime features. They do
 
 Programming for Dummies won't teach you to appreciate data integrity or domain modeling. Programming for Dummies won't teach you how to value your software team. You've got to learn to value these precepts on your own!
 
-###Don't back down - Step up!
+### Don't back down - Step up!
 
 You don't want to be an Arcadian, you want to be a Spartan. We need you to be a Spartan. And that's not happening in 30 or 21 days. It's not happening in 24 or 12 hours. And it's certainly not going to happen learning from Sams or any other Dummy.
 

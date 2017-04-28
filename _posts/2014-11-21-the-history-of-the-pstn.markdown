@@ -9,12 +9,12 @@ permalink: /thoughts/posts/the-history-of-the-pstn
 
 ![pstn-2](/images/pstn-2.jpg)
 
-###SUMMARY
+### SUMMARY
 
 [Respoke](https://www.respoke.io/) gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It's all possible because of the [Public Switch Telephone Network](http://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65) (PSTN). Here's a look at where the PSTN has been and where we're taking it...
 
 
-###HISTORY OF THE PSTN
+### HISTORY OF THE PSTN
 
 The history of the public switched telephone network (PSTN) is the history of American Bell and AT&T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first [improvement in telegraphy](http://www.google.com/patents/US174465) and made the first ever voice transmission over wire. It was hardly what we can imagine today.
 
@@ -22,11 +22,11 @@ The first voice transmission used what is called a ring-down circuit. What that 
 
 Initially, telephone users had to whistle into the phone to attract the attention of another telephone user. Within a year of Alexandar's patent, he added a calling bell to make signaling easier.
 
-Over time, this simple design evolved from a one-way voice transmission, by which only one user could speak, to a bi-directional voice transmission, whereby both users could speak. Things started to get a little more complicated at this point. 
+Over time, this simple design evolved from a one-way voice transmission, by which only one user could speak, to a bi-directional voice transmission, whereby both users could speak. Things started to get a little more complicated at this point.
 
 Moving the voices across the wire required a carbon microphone, a battery, an electromagnet, and an iron diaphragm. The concept of dialing a number to reach a destination still didn't exist. The also process required a physical cable between each location that the user wanted to call. Clearly this does not scale...
 
-Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a [switch](http://www.google.com/patents/US911968). 
+Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a [switch](http://www.google.com/patents/US911968).
 
 With a switch telephone, users only needed connection to a centralized office. Then that centralized office could coordinate connected the call to its final destination.
 
@@ -38,7 +38,7 @@ Believe it or not, the [first operators were teenage boys](http://www.telcomhist
 
 ![pstn-2](/images/pstn-1.jpg)
 
-Telephone companies soon began hiring young women in order to present a more civilized image to customers: 
+Telephone companies soon began hiring young women in order to present a more civilized image to customers:
 
 ![pstn-2](/images/pstn-2.jpg)
 
@@ -55,7 +55,7 @@ Bundles of wires called trunks ran between exchanges, forming proto-networks. Ne
 At first the telephone operator acted as a switch. Fast forward 100 years - give or take a decade - and the electronic switch replaced the human switch.
 
 
-###THE PSTN TODAY
+### THE PSTN TODAY
 
 What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into [analog switches](http://www.voip-sip.org/analog-telephony/) and then into electronic switches. A lot also changed along the way.
 
@@ -96,7 +96,7 @@ NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Ar
 
 +1 NXX-NXX-XXXX
 
-where N is any digit from 2 through 9 and X is any digit from 0 through 9. Routing calls requires multiple switching offices. The phone number itself is a coded map for routing the call. 
+where N is any digit from 2 through 9 and X is any digit from 0 through 9. Routing calls requires multiple switching offices. The phone number itself is a coded map for routing the call.
 
 In the NANP countries, for example, we have 10-digit phone numbers:
 - The first three digits are the area code or national destination code (NDC), which helps route the call to the right regional switching station.
@@ -105,16 +105,16 @@ In the NANP countries, for example, we have 10-digit phone numbers:
 
 ** The last four digits of the phone number represent the subscriber number, which is tied to your specific address and phone lines.**
 
-Within a company or larger organization, each employee or department might have its own extension. Extensions from the main phone number are routed through something called a private branch exchange (PBX) that operates on the premises. To make an international call requires further instructions. 
+Within a company or larger organization, each employee or department might have its own extension. Extensions from the main phone number are routed through something called a private branch exchange (PBX) that operates on the premises. To make an international call requires further instructions.
 
 The call needs to be routed through your long-distance phone carrier to another country's long-distance phone carrier. To signal such a switch, you have to dial two separate numbers, your country's exit code (or international access code) and the corresponding country code of the place you're calling.
 
-Almost all [exit codes are either 00 or 011](http://electronics.howstuffworks.com/telephone-country-codes1.htm), although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries. 
+Almost all [exit codes are either 00 or 011](http://electronics.howstuffworks.com/telephone-country-codes1.htm), although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.
 
 For example, the country code for the United States is 1, but the United States shares that country code with Canada and several smaller island nations like Jamaica, Puerto Rico and Guam.
 
 
-###PBX
+### PBX
 
 No doubt you've heard the term PBX before. A PBX or Private Branch Exchange is a small telephone switch - think of it as a mini exchange.  
 
@@ -144,7 +144,7 @@ Open source software like Asterisk is an example of this paradigm shift. With As
 Asterisk supports a wide range of Voice over IP protocols, including the Session Initiation Protocol (SIP), the Media Gateway Control Protocol (MGCP), and H.323. Asterisk can interoperate with most SIP telephones, acting both as registrar and as a gateway between IP phones and the PSTN.
 
 
-###PSTN AT RESPOKE
+### PSTN AT RESPOKE
 
 The PBX has gone from a tangled mess of wires to software running on commodity boxes to a [hosted PBX](http://www.digium.com/en/products/switchvox-cloud) in the cloud. The web was only the natural progression.
 

@@ -5,7 +5,7 @@ date:   2010-07-01 00:00:00
 permalink: /resume/
 ---
 
-Michelangelo never saw a lump of marble. 
+Michelangelo never saw a lump of marble.
 
 He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with code. Code is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
@@ -16,13 +16,13 @@ Over the last five years, as a Tech Lead and Front-End Developer, I’ve done ev
 <br>
 
 
-##Strong engineering skills
+## Strong engineering skills
 
 I ship high quality code. I've shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
 
 <br>
 
-###Apollo HD
+### Apollo HD
 
 Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
 
@@ -38,7 +38,7 @@ And with these, we built [Apollo](https://www.apollohd.com/) - A powerful Slack 
 
 <br>
 
-###Respoke Server Libraries
+### Respoke Server Libraries
 
 Wrote Respoke PHP and Respoke Java server-side libraries.
 
@@ -50,7 +50,7 @@ Wrote Respoke PHP and Respoke Java server-side libraries.
 
 <br>
 
-###Open Source Contributions
+### Open Source Contributions
 
 Contributed a critical bug fix to Respoke.js which prevented screen sharing from working in Firefox and Chrome.
 
@@ -87,13 +87,13 @@ Contributed Yahoo email client fixes upstream to Salted which eventually became 
 <br>
 <br>
 
-##Community Leadership
+## Community Leadership
 
 I believe in servant leadership and have always served the developer community first and my interests second.
 
 <br>
 
-###Community Contributions
+### Community Contributions
 
 Demonstrated both patience and empathy while managing external contributors to both Respoke's open source chan_respoke library and developer documentation.
 
@@ -102,7 +102,7 @@ Demonstrated both patience and empathy while managing external contributors to b
 
 <br>
 
-###Community Advocacy
+### Community Advocacy
 
 In addition to helping developers make progress with Respoke.js, I also acted as an advocate on their behalf; Relaying ease of use issues to the right development team.
 
@@ -111,7 +111,7 @@ In addition to helping developers make progress with Respoke.js, I also acted as
 
 <br>
 
-###Developer Talks
+### Developer Talks
 
 Toured the east coast, introducing developers to WebRTC - a powerful HTML5 API for encrypted peer-to-peer Voice, Video and Data communications.
 
@@ -134,14 +134,14 @@ Another talk focused on the story of JavaScript as seen through the eyes of the 
 <br>
 <br>
 
-##Strong technical writing skills 
+## Strong technical writing skills
 
 Take a look at a few screencasts and blog posts I produced along the way.
 
 <br>
 
 
-###Screencasts
+### Screencasts
 
 Technical screencast on my favorite uses of the setInterval and setTimeout JavaScript timers.
 
@@ -151,7 +151,7 @@ Technical screencast on my favorite uses of the setInterval and setTimeout JavaS
 <br>
 
 
-###Articles
+### Articles
 
 Thought leadership technical blog post on blog.respoke.io discussing whether Google's WebRTC adapter.js is a shim or a polyfill and creating a framework for other developers to determine whether a JavaScript library is a shim or a polyfill.
 
@@ -188,11 +188,11 @@ Thought leadership piece discussing the story of JavaScript told through the eye
 <br>
 <br>
 
-##What's next exactly...?
+## What's next exactly...?
 
 I'd love to learn more about the position, the team and the company. Go ahead, <a href="mailto:tiandavis@gmail.com">email</a> me and we'll continue the conversation.
 
- 
+
 
 
 
@@ -224,8 +224,3 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [galileo]: https://github.com/tiandavis/galileo "Galileo"
 
 [companies]: /images/companies.png "Companies"
-
-
-
-
-
