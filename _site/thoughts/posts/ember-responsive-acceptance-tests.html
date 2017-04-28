@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>Ember Responsive Acceptance Tests</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      
+      <meta name="description" content="You’ve spent so much time crafting a responsive experience for what was once exclusively for desktop. You can see the light at the end of the tunnel. Then you’re hit with the dreaded question, “How do you integrate the responsive UI into your acceptance test suite?” Panic sets because you know the impossible has arrived. BREATHE. On our front-end team, we’re on a push to retrofit a mobile responsive UI/UX onto an existing desktop ember...">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+      <section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+	
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2017-04-27T20:00:00-04:00" itemprop="datePublished">
+          27 April 2017
+        </time>
+      </h5>
+    </div>
+
+    <h1 class="page-title" itemprop="name headline">Ember Responsive Acceptance Tests</h1>
+    
+    <h5 class="page-author">Handwritten by Tian Davis</h5>
+
+    <div itemprop="articleBody">
+      <p><img src="/images/ember-responsive-acceptance-tests-2.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>You’ve spent so much time crafting a responsive experience for what was once exclusively for desktop. You can see the light at the end of the tunnel. Then you’re hit with the dreaded question, “How do you integrate the responsive UI into your acceptance test suite?”</p>
+
+<p>Panic sets because you know the impossible has arrived.</p>
+
+<p>BREATHE.</p>
+
+<p>On our front-end team, we’re on a push to <a href="http://webstandardssherpa.com/reviews/responsive-retrofitting/">retrofit</a> a mobile responsive UI/UX onto an existing desktop ember application.</p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-4.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>Using <a href="https://github.com/freshbooks/ember-responsive/">ember-responsive</a>, we’ve made some initial progress so far.</p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-5.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>The goal of ember-responsive is to give you a simple, Ember-aware way of dealing with media queries. The key way ember-responsive meets this goal is by providing you ember computed properties that change based on your applications responsive breakpoints. These resulting media-* classes help us avoid using more media queries than we need.</p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-6.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>Our acceptance test suite is mature and it would be awesome if we can run those same tests against a mobile form factor (even if it’s just a desktop browser resized). Obviously, this is challenging because web browsers disable window.resizeTo and window.resizeBy APIs. So it is not practical to programmatically resize a web browser during tests.</p>
+
+<p>We’re able to update ./testem.js to resize, at-least, Chrome/Opera during an ember test -s run.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">"framework"</span><span class="p">:</span> <span class="s2">"qunit"</span><span class="p">,</span>
+  <span class="s2">"test_page"</span><span class="p">:</span> <span class="s2">"tests/index.html?hidepassed"</span><span class="p">,</span>
+  <span class="s2">"disable_watching"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="s2">"launch_in_ci"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">"PhantomJS"</span>
+  <span class="p">],</span>
+  <span class="s2">"launch_in_dev"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">"PhantomJS"</span><span class="p">,</span>
+    <span class="s2">"Chrome"</span><span class="p">,</span>
+    <span class="s2">"Opera"</span>
+  <span class="p">],</span>
+
+  <span class="s2">"browser_args"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"Opera"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">"--window-size=320,600"</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>The tough part, unexpectedly, was getting ember-responsive to inject our media-* classes during acceptance tests. But if we could just get that piece working, then we would have a shot at getting the responsive form factor itself under test.</p>
+
+<p>I <a href="https://github.com/freshbooks/ember-responsive/issues/95">reached out</a> to the ember-responsive maintainers and they were very helpful in understanding what options we had to inject the media-* classes during acceptance test runs. Of the two options, removing the ./tests/helpers/responsive.js helper seems to be the most flexible so far.</p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-9.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>With the removal of ./tests/helpers/responsive.js, media-* classes inject as expected. Now, with the new Opera instance resized to hit the media-mobile breakpoint, we’re able to run our acceptance tests against the mobile form factor.</p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-1.png" alt="ember-responsive acceptance tests" /></p>
+
+<p><img src="/images/ember-responsive-acceptance-tests-3.png" alt="ember-responsive acceptance tests" /></p>
+
+<p>I think the key during the conversion is validating which class names/id names/etc are used for clicks/inputs/interaction/etc. Once we use those classes/ids on the responsive side, then BOOM, the acceptance tests can interact w/ the responsive UI and validate things are working. Missing functionality should break the tests in the Opera instance as expected.</p>
+
+<p>Ideally, we’d have an actual mobile browser, running on an actual mobile device, but that option doesn’t seem available to any team at the moment. So if you’re stuck figuring out how to bring your responsive ember application under test, give this approach a try.</p>
+
+
+    </div>
+    
+    <div id="share" class="feat">      
+      <p>discuss on twitter</p>
+      
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+      
+      <div class="line"></div>
+      
+      <br/>
+      
+      <p><a href="/thoughts/" style="text-decoration: none;">← return to all articles</a></p>
+    </div>
+    
+  </article>
+</section>
+
+
+
+    </main>
+
+    <footer>
+        <p style="font-size: 80%;">All Content Copyright © 2017 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+    </footer>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/imageMapResizer.js"></script>
+    <script src="/js/moment.js"></script>
+    <script>
+    jQuery(document).ready(function($) {
+      	$("map").imageMapResize();
+        
+        var date = moment().format('DD MMMM YYYY');
+        $(".date").html(date);
+    });
+    </script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-17961498-4', 'tiandavis.com');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>

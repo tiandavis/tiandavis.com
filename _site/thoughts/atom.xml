@@ -6,7 +6,7 @@
   <link href="http://0.0.0.0:4000" />
   <link href="http://0.0.0.0:4000/atom.xml" rel="self" />
   
-  <updated>2017-04-28T14:18:54-04:00</updated>
+  <updated>2017-04-28T15:55:56-04:00</updated>
   
   <rights>Copyright 2017, Tian Davis</rights>
   
@@ -14,6 +14,77 @@
     <name>Tian Davis</name>
   </author>
   
+  
+    <entry>
+      <title>Ember Responsive Acceptance Tests</title>
+      <link href="http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests" />
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-2.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ve spent so much time crafting a responsive experience for what was once exclusively for desktop. You can see the light at the end of the tunnel. Then you’re hit with the dreaded question, “How do you integrate the responsive UI into your acceptance test suite?”&lt;/p&gt;
+
+&lt;p&gt;Panic sets because you know the impossible has arrived.&lt;/p&gt;
+
+&lt;p&gt;BREATHE.&lt;/p&gt;
+
+&lt;p&gt;On our front-end team, we’re on a push to &lt;a href=&quot;http://webstandardssherpa.com/reviews/responsive-retrofitting/&quot;&gt;retrofit&lt;/a&gt; a mobile responsive UI/UX onto an existing desktop ember application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-4.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using &lt;a href=&quot;https://github.com/freshbooks/ember-responsive/&quot;&gt;ember-responsive&lt;/a&gt;, we’ve made some initial progress so far.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-5.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal of ember-responsive is to give you a simple, Ember-aware way of dealing with media queries. The key way ember-responsive meets this goal is by providing you ember computed properties that change based on your applications responsive breakpoints. These resulting media-* classes help us avoid using more media queries than we need.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-6.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our acceptance test suite is mature and it would be awesome if we can run those same tests against a mobile form factor (even if it’s just a desktop browser resized). Obviously, this is challenging because web browsers disable window.resizeTo and window.resizeBy APIs. So it is not practical to programmatically resize a web browser during tests.&lt;/p&gt;
+
+&lt;p&gt;We’re able to update ./testem.js to resize, at-least, Chrome/Opera during an ember test -s run.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;framework&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;qunit&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;test_page&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tests/index.html?hidepassed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;disable_watching&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;launch_in_ci&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;PhantomJS&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;launch_in_dev&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;PhantomJS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Chrome&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Opera&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+
+  &lt;span class=&quot;s2&quot;&gt;&quot;browser_args&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Opera&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&quot;--window-size=320,600&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The tough part, unexpectedly, was getting ember-responsive to inject our media-* classes during acceptance tests. But if we could just get that piece working, then we would have a shot at getting the responsive form factor itself under test.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&quot;https://github.com/freshbooks/ember-responsive/issues/95&quot;&gt;reached out&lt;/a&gt; to the ember-responsive maintainers and they were very helpful in understanding what options we had to inject the media-* classes during acceptance test runs. Of the two options, removing the ./tests/helpers/responsive.js helper seems to be the most flexible so far.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-9.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With the removal of ./tests/helpers/responsive.js, media-* classes inject as expected. Now, with the new Opera instance resized to hit the media-mobile breakpoint, we’re able to run our acceptance tests against the mobile form factor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-1.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-3.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think the key during the conversion is validating which class names/id names/etc are used for clicks/inputs/interaction/etc. Once we use those classes/ids on the responsive side, then BOOM, the acceptance tests can interact w/ the responsive UI and validate things are working. Missing functionality should break the tests in the Opera instance as expected.&lt;/p&gt;
+
+&lt;p&gt;Ideally, we’d have an actual mobile browser, running on an actual mobile device, but that option doesn’t seem available to any team at the moment. So if you’re stuck figuring out how to bring your responsive ember application under test, give this approach a try.&lt;/p&gt;
+
+</summary>
+      <id>http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests</id>
+      <updated>2017-04-27T20:00:00-04:00</updated>
+      <author>
+        <name>Tian Davis</name>
+      </author>
+    </entry>
   
     <entry>
       <title>Git for TortoiseSVN Developers Tutorial</title>
