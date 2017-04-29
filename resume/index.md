@@ -9,16 +9,36 @@ Michelangelo never saw a lump of marble.
 
 He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with code. Code is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
-Over the last five years, as a Tech Lead and Front-End Developer, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at a distributed startup. I'm a Software Engineer.
+Over the last twelve years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I'm a seasoned Software Engineer.
 
 ![Capabilities][capabilities-1]
 
 <br>
 
 
-## Strong engineering skills
+## Strong Engineering Skills
 
-I ship high quality code. I've shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
+Currently, I wax poetic with ember.js as a software developer on [BrowZine's Front-End Engineering][browzine] Team - a remote startup in the academic and commercial research space.
+
+Previously, I shipped critical components on both Respoke's Community Team and Respoke's Front-End Team - a distributed startup in the communication space. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
+
+<br>
+
+### BrowZine
+
+I've been fortunate, really fortunate, that my startup experience has been shaped with some of the most talented engineers and business leaders I've ever worked with.
+
+![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-4.png)
+
+![Capabilities][capabilities-3]
+
+I'm currently working with a talented team of engineers, leading the retrofitting of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far.
+
+![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-5.png)
+
+Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
+
+Learn more about we got [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
 
 <br>
 
@@ -206,6 +226,7 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [email]: mailto:tiandavis@gmail.com
 [capabilities-1]: /images/capabilities-1.png "Core Capabilities"
 [capabilities-2]: /images/capabilities-2.png "Core Capabilities"
+[capabilities-3]: /images/capabilities-3.png "Core Capabilities"
 [respoke-logo]: /images/respoke.png "Respoke"
 [respoke]: https://www.respoke.io/ "Respoke Url"
 
@@ -224,3 +245,5 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [galileo]: https://github.com/tiandavis/galileo "Galileo"
 
 [companies]: /images/companies.png "Companies"
+
+[browzine]: https://develop.browzine.com/libraries/222/subjects
