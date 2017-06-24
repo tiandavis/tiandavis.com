@@ -2,11 +2,11 @@
 <feed xmlns="https://www.w3.org/2005/Atom">
   <title>Tian Davis Thoughts</title>
   
-  <id>http://0.0.0.0:4000</id>
-  <link href="http://0.0.0.0:4000" />
-  <link href="http://0.0.0.0:4000/atom.xml" rel="self" />
+  <id>http://tiandavis.com</id>
+  <link href="http://tiandavis.com" />
+  <link href="http://tiandavis.com/atom.xml" rel="self" />
   
-  <updated>2017-06-24T14:50:03-04:00</updated>
+  <updated>2017-06-24T15:40:19-04:00</updated>
   
   <rights>Copyright 2017, Tian Davis</rights>
   
@@ -17,7 +17,7 @@
   
     <entry>
       <title>Ember Responsive Acceptance Tests</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests" />
+      <link href="http://tiandavis.com/thoughts/posts/ember-responsive-acceptance-tests" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-2.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ve spent so much time crafting a responsive experience for what was once exclusively for desktop. You can see the light at the end of the tunnel. Then you’re hit with the dreaded question, “How do you integrate the responsive UI into your acceptance test suite?”&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;p&gt;Ideally, we’d have an actual mobile browser, running on an actual mobile device, but that option doesn’t seem available to any team at the moment. So if you’re stuck figuring out how to bring your responsive ember application under test, give this approach a try.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests</id>
+      <id>http://tiandavis.com/thoughts/posts/ember-responsive-acceptance-tests</id>
       <updated>2017-04-27T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -88,7 +88,7 @@
   
     <entry>
       <title>Git for TortoiseSVN Developers Tutorial</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/git-for-tortoise-svn-developers-tutorial" />
+      <link href="http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/git-for-tortoise-svn-developers.png&quot; alt=&quot;Git for TortoiseSVN Developers&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I published a series of screencasts to explore &lt;a href=&quot;/screencasts/git-for-tortoise-svn-developers/&quot;&gt;how to use Git from a Subversion developers&lt;/a&gt; perspective. In particular, a Subversion developer using the ubiquitous TortoiseSVN client.&lt;/p&gt;
@@ -111,7 +111,7 @@
 
 &lt;p&gt;Whether you’re new to a team or an established tech lead, we’ll cover all the functions teams transitioning from SVN to Git need to be successful. In this tutorial, we’ll be using Git version 1.9.3 and TortoiseSVN 1.9.2&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/git-for-tortoise-svn-developers-tutorial</id>
+      <id>http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial</id>
       <updated>2015-10-27T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -120,7 +120,7 @@
   
     <entry>
       <title>Using Chance.js To Generate Sample Data</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/using-chance-to-generate-sample-data" />
+      <link href="http://tiandavis.com/thoughts/posts/using-chance-to-generate-sample-data" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/chancejs.png&quot; alt=&quot;Chance.js&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you’re trying to deliver business value.&lt;/p&gt;
@@ -206,7 +206,7 @@
 
 &lt;p&gt;Chance is a pretty neat library for generating lots of random data. Data you would have otherwise had to craft yourself. Give it a chance…See what I did there? ;)&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/using-chance-to-generate-sample-data</id>
+      <id>http://tiandavis.com/thoughts/posts/using-chance-to-generate-sample-data</id>
       <updated>2015-07-03T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -215,7 +215,7 @@
   
     <entry>
       <title>Git: Update Multiple Repos</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/git-update-multiple-repos" />
+      <link href="http://tiandavis.com/thoughts/posts/git-update-multiple-repos" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/macroons-coffee.png&quot; alt=&quot;Macroons Coffee&quot; title=&quot;Macroons Coffee&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recently, I’ve been working with a lot of git repos at a time.  I mean a lot. Like more than twenty. . . That’s the bad news.&lt;/p&gt;
@@ -257,7 +257,7 @@
 &lt;p&gt;If you find yourself needing to update multiple git repos at a time, give this technique a try.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/git-update-multiple-repos</id>
+      <id>http://tiandavis.com/thoughts/posts/git-update-multiple-repos</id>
       <updated>2015-05-26T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -266,7 +266,7 @@
   
     <entry>
       <title>WebRTC Screensharing With Respoke and Node-Webkit</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit" />
+      <link href="http://tiandavis.com/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/node-webkit.png&quot; alt=&quot;NodeWebkit&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
@@ -423,7 +423,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</id>
+      <id>http://tiandavis.com/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</id>
       <updated>2015-04-09T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -432,7 +432,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
   
     <entry>
       <title>WebRTC Instagram Video Filters</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/webrtc-instagram-video-filters" />
+      <link href="http://tiandavis.com/thoughts/posts/webrtc-instagram-video-filters" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/instagram-2.jpg&quot; alt=&quot;Instagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With more than a $1 Billion valuation and over 75 million daily users, &lt;a href=&quot;https://instagram.com/digium/&quot;&gt;Instagram&lt;/a&gt; is arguably one of the most popular social networks today. Did you know more than 55 million photos are posted daily on Instagram? Or that the platform sees over 8,500 likes per second?&lt;/p&gt;
@@ -554,7 +554,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;I&amp;rsquo;ve heard #Mayfair is one of the top Instagram filters. Which one did you like best? I hope you had as much fun as I did and now you can add Instagram filters to your WebRTC video too.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/webrtc-instagram-video-filters</id>
+      <id>http://tiandavis.com/thoughts/posts/webrtc-instagram-video-filters</id>
       <updated>2015-03-03T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -563,7 +563,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
   
     <entry>
       <title>JavaScript Shims Versus Polyfills</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/javascript-shims-versus-polyfills" />
+      <link href="http://tiandavis.com/thoughts/posts/javascript-shims-versus-polyfills" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/polyfilla.jpg&quot; alt=&quot;Polyfilla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’m currently working on a conference talk about WebRTC. One of the foundations of any WebRTC library is some form of Google’s original &lt;a href=&quot;https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js?r=3905&quot;&gt;adapter.js&lt;/a&gt;, which seeks to normalize the WebRTC API across various browsers. As I was about to build this particular slide, one question started to whisper in my ear, “Is adapter.js a shim or a polyfill?” Eventually, the whisper grew louder and I had to find the answer.&lt;/p&gt;
@@ -678,7 +678,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;This may all seem like semantics, but it’s not. Understanding the difference between a shim and a polyfill is the difference between your app working in some browsers and your app working in all browsers. If you’re like me, you go for all browsers or you die trying. Knowing your shims from your polyfills is key to getting you there.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/javascript-shims-versus-polyfills</id>
+      <id>http://tiandavis.com/thoughts/posts/javascript-shims-versus-polyfills</id>
       <updated>2015-02-16T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -687,7 +687,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>The History of The PSTN</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/the-history-of-the-pstn" />
+      <link href="http://tiandavis.com/thoughts/posts/the-history-of-the-pstn" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/pstn-2.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
@@ -863,7 +863,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Of course you can do a lot of other things with Respoke as well. Like video, voice and text communications. Now you have access to the PSTN network as well. Sky’s the limit from here on out.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/the-history-of-the-pstn</id>
+      <id>http://tiandavis.com/thoughts/posts/the-history-of-the-pstn</id>
       <updated>2014-11-20T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -872,7 +872,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>JavaScript and The Monomyth</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/javascript-and-the-monomyth" />
+      <link href="http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/thoughts/static/new-chart-of-history.jpg&quot; alt=&quot;The Hero's Journey&quot; title=&quot;The Hero's Journey&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In his seminal work, “The Hero with a Thousand Faces”, Joseph Campbell put forth the idea of &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces&quot;&gt;The Monomyth&lt;/a&gt;. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation.&lt;/p&gt;
@@ -1296,7 +1296,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;/table&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/javascript-and-the-monomyth</id>
+      <id>http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth</id>
       <updated>2014-06-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1305,7 +1305,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Foundation Is Everything</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/foundation-is-everything" />
+      <link href="http://tiandavis.com/thoughts/posts/foundation-is-everything" />
       <summary type="html">&lt;p&gt;I remember when I first realized some Universities were no longer teaching Computer Engineering and Computer Science students C++. Realizing the sad truth in it, I cringed. Flushed with sadness, I was utterly sick to my stomach.&lt;/p&gt;
 
 &lt;p&gt;You see, I spent my University years watching men do things with C/C++ that would blow your mind today. Granted, these men were utter freaks of nature, and I mean that in a good way.&lt;/p&gt;
@@ -1380,7 +1380,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;Do it because you love open source. Do it because you cherish progress. Do it because, like me, you live and breathe this shit!&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/foundation-is-everything</id>
+      <id>http://tiandavis.com/thoughts/posts/foundation-is-everything</id>
       <updated>2012-05-29T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1389,7 +1389,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Hustle and Code</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/hustle-and-code" />
+      <link href="http://tiandavis.com/thoughts/posts/hustle-and-code" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/revolution.jpg&quot; alt=&quot;revolution&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people &lt;a href=&quot;https://en.wikipedia.org/wiki/Visual_Basic&quot;&gt;already have&lt;/a&gt; and many of us are still cleaning up that mess.&lt;/p&gt;
@@ -1463,7 +1463,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;What’s the rush? Slow down. Learn the Fundamentals. And Hustle. Cause learning to develop good software takes ten years. Hustle and Code. Get used to it.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/hustle-and-code</id>
+      <id>http://tiandavis.com/thoughts/posts/hustle-and-code</id>
       <updated>2011-08-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1472,7 +1472,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Rails 3 and The jQuery Effect</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/rails-3-and-the-jquery-effect" />
+      <link href="http://tiandavis.com/thoughts/posts/rails-3-and-the-jquery-effect" />
       <summary type="html">&lt;p&gt;Ruby on Rails 3.0 was a big evolution of the Rails DNA. Architectural changes were hard to miss - true. But, more happened - more changed.&lt;/p&gt;
 
 &lt;p&gt;In Rails 3.0 I saw a strategic change in the way the Rails Core Team viewed itself. Prototype went from being the Official JavaScript framework for Rails to being the Recommended JavaScript framework for Rails. That’s a really big deal!&lt;/p&gt;
@@ -1553,7 +1553,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;I commend both the jQuery Core Team and the Rails Core Team. And many thanks for teaching this powerful lesson indeed. I can’t wait to get my hands on the Rails 3.1 release.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/rails-3-and-the-jquery-effect</id>
+      <id>http://tiandavis.com/thoughts/posts/rails-3-and-the-jquery-effect</id>
       <updated>2011-08-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1562,7 +1562,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Silly Rabbit, Parsing HTML is for Kids!</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/silly-rabbit-parsing-html-is-for-kids" />
+      <link href="http://tiandavis.com/thoughts/posts/silly-rabbit-parsing-html-is-for-kids" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/trix.jpg&quot; alt=&quot;trix&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If I had a nickel for every time a developer says, “Don’t worry, I’ll just whip up a RegEx and parse that HTML in no time.” I’d retire right this very second. I’ve grown less and less shocked over the years. Still I’m left surprised every time.&lt;/p&gt;
@@ -1616,7 +1616,7 @@ Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cl
 &lt;p&gt;You’ll thank yourself in a couple weeks when the Red Bull and adrenaline wears off. It’s really not worth it! Granted we all have to start from somewhere. Think of this as your new beginning.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</id>
+      <id>http://tiandavis.com/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</id>
       <updated>2011-04-17T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1625,7 +1625,7 @@ Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cl
   
     <entry>
       <title>Object Oriented Ruby: Classes, Mixins and Jedi</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi" />
+      <link href="http://tiandavis.com/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi" />
       <summary type="html">&lt;p&gt;Objects, Ruby Classes and Mixins are the topics today. Ruby is a dynamic language with a focus on simplicity and productivity. Object Oriented programming in Ruby is at once elegant and simple. Ready for more power and flexibility? Let’s get started…&lt;/p&gt;
 
 &lt;p&gt;Most academics approach object oriented discussions with Tonka toys and furry kittens. Well, academia can take a backseat. From here on out, dump the Tonka toys and put the kittens to bed - we’re talking Lightsabers and Jedi baby!&lt;/p&gt;
@@ -1879,7 +1879,7 @@ Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cl
 &lt;p&gt;You will spend a lot of time wiring up your domain models, but you’ll get a mature and flexible data layer - just the type of sprucing up any legacy app could use.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</id>
+      <id>http://tiandavis.com/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</id>
       <updated>2011-01-26T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1888,7 +1888,7 @@ Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cl
   
     <entry>
       <title>Rails 3.0 rescue from Routing Error Solution</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/rails-resuce-from-routing-error-solution" />
+      <link href="http://tiandavis.com/thoughts/posts/rails-resuce-from-routing-error-solution" />
       <summary type="html">&lt;p&gt;Well, I’ve got good news and I’ve got bad news. As of Rails 3.0.1, using rescue_from in your ApplicationController to recover from a routing error is broken! That’s the bad news.&lt;/p&gt;
 
 &lt;p&gt;The good news is I have a solution that will keep you in unison with the Rails Core Team. The Rails team has promised a fix some time in Rails 3.1. Until then, I’ve got readers and I’ve got customers and I &lt;em&gt;shudder&lt;/em&gt; at the thought of showing them a generic error page.&lt;/p&gt;
@@ -1956,7 +1956,7 @@ Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cl
 
 &lt;p&gt;Well, I encourage you to dig into Rails 3 and have a little fun. And if you have another solution, post here so we can discuss. Until next time Beloved, take care!&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/rails-resuce-from-routing-error-solution</id>
+      <id>http://tiandavis.com/thoughts/posts/rails-resuce-from-routing-error-solution</id>
       <updated>2010-11-10T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
