@@ -675,13 +675,13 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 <p>I decided to list out those similarities and differences to give myself a better understanding of a shim versus a polyfill. Here’s what I’ve found so far:</p>
 
-<p>###Similarities Between Polyfill and Shim</p>
+<h3 id="similarities-between-polyfill-and-shim">Similarities Between Polyfill and Shim</h3>
 
 <p><code class="highlighter-rouge">- Both seek to normalize functionality across browsers</code></p>
 
 <p><code class="highlighter-rouge">- Both tend to extend native methods, opting for their own implementation when the native method does not exist.</code></p>
 
-<p>###Differences Between Polyfill and Shim`</p>
+<h3 id="differences-between-polyfill-and-shim">Differences Between Polyfill and Shim`</h3>
 
 <p><code class="highlighter-rouge">- Shims tend to be written in a single language</code></p>
 
@@ -713,7 +713,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>It also helps validate some of the differences I’ve noticed over the years. Namely, shims appear to be written in JavaScript only because the JavaScript API already exists (it just needs some smoothing to normalize behaviors across browsers). Whereas polyfills often have to use multiple language platforms because the JavaScript API does not exist at all.</p>
 
-<p>###Shim and Polyfill Real-World Parallels</p>
+<h3 id="shim-and-polyfill-real-world-parallels">Shim and Polyfill Real-World Parallels</h3>
 
 <p>In the real world a shim is a wedge-shaped piece of wood. “Polyfilla” is the name of a <a href="http://www.lepageproducts.com/ProductDetail.aspx?pid=101">spackling paste from LePage</a>. You’d typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn’t exactly the same as the wall, but it acts close enough to the real thing to make it work.</p>
 
@@ -727,7 +727,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>The point is that shims only normalize browser behavior, whereas polyfills both normalize browser behavior and implement functionality where it does not exist.</p>
 
-<p>###Shim vs Polyfill Checklist</p>
+<h3 id="shim-vs-polyfill-checklist">Shim vs Polyfill Checklist</h3>
 
 <p>So as a developer, here’s a quick checklist to figure out if you’re developing a shim or a polyfill:</p>
 
@@ -741,7 +741,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p><img src="/images/shim-polyfill-decision-tree.png" alt="Shim Polyfill Decision Tree" /></p>
 
-<p>###So is Google’s Adapter.js a Shim or a Polyfill?</p>
+<h3 id="so-is-googles-adapterjs-a-shim-or-a-polyfill">So is Google’s Adapter.js a Shim or a Polyfill?</h3>
 
 <p>Let’s use our decision framework to figure out the answer to the question:</p>
 
@@ -759,7 +759,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>Based on our Shim versus Polyfill guide, Google’s adapter.js is definitely a shim because it does normalize the Web RTC API, but stops short of implementing it in either IE or Safari.</p>
 
-<p>###Why Does it Matter?</p>
+<h3 id="why-does-it-matter">Why Does it Matter?</h3>
 
 <p>I wrote this article because over the years using both terms has grown rather confusing. Some even go so far as to say <a href="https://books.google.com/books?id=qkd-yBhZokUC&amp;pg=PA155&amp;lpg=PA155&amp;dq=javascript+shim+polyfill+synonymous&amp;source=bl&amp;ots=P0hQTVgtoK&amp;sig=mhLt7IrbuyPz7_HT_huQIcqmuwk&amp;hl=en&amp;sa=X&amp;ei=Et3bVMatF4LngwSxsIRI&amp;ved=0CC4Q6AEwAg#v=onepage&amp;q=javascript%20shim%20polyfill%20synonymous&amp;f=false">shim is synonymous to polyfill</a>. That’s simply not the case, nor should it be. There is both a place and a need for each term in the craft.</p>
 
@@ -1000,9 +1000,9 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>Even in the telling of this story, you and I, experience the psychic unity of mankind. A unity that binds us to the craft. JavaScript is the hero here. This is its journey.</p>
 
-<p>##The 17 Stages of the Monomyth</p>
+<h2 id="the-17-stages-of-the-monomyth">The 17 Stages of the Monomyth</h2>
 
-<p>###The Departure</p>
+<h3 id="the-departure">The Departure</h3>
 
 <p>In a monomyth, the hero begins in the ordinary world, and receives a call to enter an unknown world of strange powers and events. The hero who accepts the call to enter this strange world must face tasks and trials, either alone or with assistance.</p>
 
@@ -1097,7 +1097,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>JavaScript was now on the golden path. In addition to not being tied to a single browser, now it would be funded, indefinitely by a foundation dedicated to its future and the future of us all.</p>
 
-<p>###The Initiation</p>
+<h3 id="the-initiation">The Initiation</h3>
 
 <p>In the most intense versions of the narrative, the hero must survive a severe challenge, often with help. If the hero survives, he may achieve a great gift or “boon.”</p>
 
@@ -1231,7 +1231,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>Though the DOM remained a mess, JavaScript normalization libraries like jQuery shield us from its quirks. However, JavaScript code organization remained messy for some time. Yet, as innovation grew, so grew the potential for sane JavaScript with it.</p>
 
-<p>###The Return</p>
+<h3 id="the-return">The Return</h3>
 
 <p>The hero must then decide whether to return to the ordinary world with this boon. If the hero does decide to return, he or she often faces challenges on the return journey. If the hero returns successfully, the boon or gift may be used to improve the world.</p>
 
@@ -1331,7 +1331,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>That I leave to you…</p>
 
-<p>##Common Mythic Elements</p>
+<h2 id="common-mythic-elements">Common Mythic Elements</h2>
 
 <p>There are <a href="http://www.moongadget.com/origins/myth.html">common mythic elements</a> in all monomyths. Here’s how JavaScript compares to Star Wars and The Matrix:</p>
 
@@ -2145,7 +2145,7 @@ Java: Try <a href="http://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
     <script>
     jQuery(document).ready(function($) {
       	$("map").imageMapResize();
-        
+
         var date = moment().format('DD MMMM YYYY');
         $(".date").html(date);
     });

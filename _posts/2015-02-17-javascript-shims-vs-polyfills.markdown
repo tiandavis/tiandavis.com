@@ -28,14 +28,14 @@ This was a good start. Over the last few years, we've seen the JavaScript ecosys
 I decided to list out those similarities and differences to give myself a better understanding of a shim versus a polyfill. Here's what I've found so far:
 
 
-###Similarities Between Polyfill and Shim
+### Similarities Between Polyfill and Shim
 
 `- Both seek to normalize functionality across browsers`
 
 `- Both tend to extend native methods, opting for their own implementation when the native method does not exist.`
 
 
-###Differences Between Polyfill and Shim`
+### Differences Between Polyfill and Shim`
 
 `- Shims tend to be written in a single language`
 
@@ -49,9 +49,9 @@ Polyfills often have to use multiple language platforms because sometimes a part
 > A polyfill is code that detects if a certain "expected" API is missing and manually implements it. E.g.
 
 > `if (!Function.prototype.bind) {`
-    
+
 > `Function.prototype.bind = ...;`
-    
+
 > `}`
 
 A shim is code that intercepts existing API calls and implements different behavior. The idea here is to normalize certain APIs across different environments. So, if two browsers implement the same API differently, you could intercept the API calls in one of those browsers and make its behavior align with the other browser. Or, if a browser has a bug in one of its APIs, you could again intercept calls to that API, and then circumvent the bug.
@@ -60,7 +60,7 @@ I think this is the most clear definition I've seen of the two so far. Vidas men
 It also helps validate some of the differences I've noticed over the years. Namely, shims appear to be written in JavaScript only because the JavaScript API already exists (it just needs some smoothing to normalize behaviors across browsers). Whereas polyfills often have to use multiple language platforms because the JavaScript API does not exist at all.
 
 
-###Shim and Polyfill Real-World Parallels 
+### Shim and Polyfill Real-World Parallels
 
 In the real world a shim is a wedge-shaped piece of wood. "Polyfilla" is the name of a [spackling paste from LePage](http://www.lepageproducts.com/ProductDetail.aspx?pid=101). You'd typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn't exactly the same as the wall, but it acts close enough to the real thing to make it work.
 
@@ -76,7 +76,7 @@ There are many other examples of great JavaScript polyfills that use a multitude
 The point is that shims only normalize browser behavior, whereas polyfills both normalize browser behavior and implement functionality where it does not exist.
 
 
-###Shim vs Polyfill Checklist
+### Shim vs Polyfill Checklist
 
 So as a developer, here's a quick checklist to figure out if you're developing a shim or a polyfill:
 
@@ -91,7 +91,7 @@ Here's a flow diagram of the decision tree:
 ![Shim Polyfill Decision Tree](/images/shim-polyfill-decision-tree.png)
 
 
-###So is Google's Adapter.js a Shim or a Polyfill? 
+### So is Google's Adapter.js a Shim or a Polyfill?
 
 Let's use our decision framework to figure out the answer to the question:
 
@@ -110,7 +110,7 @@ No. Google's adapter.js library does not implement the WebRTC API in either IE o
 Based on our Shim versus Polyfill guide, Google's adapter.js is definitely a shim because it does normalize the Web RTC API, but stops short of implementing it in either IE or Safari.
 
 
-###Why Does it Matter?
+### Why Does it Matter?
 
 I wrote this article because over the years using both terms has grown rather confusing. Some even go so far as to say [shim is synonymous to polyfill](https://books.google.com/books?id=qkd-yBhZokUC&pg=PA155&lpg=PA155&dq=javascript+shim+polyfill+synonymous&source=bl&ots=P0hQTVgtoK&sig=mhLt7IrbuyPz7_HT_huQIcqmuwk&hl=en&sa=X&ei=Et3bVMatF4LngwSxsIRI&ved=0CC4Q6AEwAg#v=onepage&q=javascript%20shim%20polyfill%20synonymous&f=false). That's simply not the case, nor should it be. There is both a place and a need for each term in the craft.
 

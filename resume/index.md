@@ -7,7 +7,7 @@ permalink: /resume/
 
 Michelangelo never saw a lump of marble.
 
-He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with code. Code is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
+He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
 Over the last twelve years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I'm a seasoned Software Engineer.
 
@@ -32,13 +32,17 @@ I've been fortunate, really fortunate, that my startup experience has been shape
 
 ![Capabilities][capabilities-3]
 
-I'm currently working with a talented team of engineers, leading the retrofitting of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far.
+I'm currently working with a talented team of engineers, leading the [retrofitting][browzine-subjects] of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
 
-![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-5.png)
+The application is built using Ember and Sass on the frontend, running atop a Node Express API on the backend.
+
+![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-10.png)
+
+![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-11.png)
 
 Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
 
-Learn more about we got [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
+Learn more about we got our [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
 
 <br>
 
@@ -247,3 +251,5 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [companies]: /images/companies.png "Companies"
 
 [browzine]: https://develop.browzine.com/libraries/222/subjects
+
+[browzine-subjects]: http://develop.browzine.com/libraries/222/subjects/60/bookcases/87/bookshelves/267?sort=title

@@ -6,7 +6,7 @@
   <link href="http://0.0.0.0:4000" />
   <link href="http://0.0.0.0:4000/atom.xml" rel="self" />
   
-  <updated>2017-04-28T21:34:01-04:00</updated>
+  <updated>2017-06-24T13:18:11-04:00</updated>
   
   <rights>Copyright 2017, Tian Davis</rights>
   
@@ -588,13 +588,13 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;I decided to list out those similarities and differences to give myself a better understanding of a shim versus a polyfill. Here’s what I’ve found so far:&lt;/p&gt;
 
-&lt;p&gt;###Similarities Between Polyfill and Shim&lt;/p&gt;
+&lt;h3 id=&quot;similarities-between-polyfill-and-shim&quot;&gt;Similarities Between Polyfill and Shim&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Both seek to normalize functionality across browsers&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Both tend to extend native methods, opting for their own implementation when the native method does not exist.&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;###Differences Between Polyfill and Shim`&lt;/p&gt;
+&lt;h3 id=&quot;differences-between-polyfill-and-shim&quot;&gt;Differences Between Polyfill and Shim`&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Shims tend to be written in a single language&lt;/code&gt;&lt;/p&gt;
 
@@ -626,7 +626,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;It also helps validate some of the differences I’ve noticed over the years. Namely, shims appear to be written in JavaScript only because the JavaScript API already exists (it just needs some smoothing to normalize behaviors across browsers). Whereas polyfills often have to use multiple language platforms because the JavaScript API does not exist at all.&lt;/p&gt;
 
-&lt;p&gt;###Shim and Polyfill Real-World Parallels&lt;/p&gt;
+&lt;h3 id=&quot;shim-and-polyfill-real-world-parallels&quot;&gt;Shim and Polyfill Real-World Parallels&lt;/h3&gt;
 
 &lt;p&gt;In the real world a shim is a wedge-shaped piece of wood. “Polyfilla” is the name of a &lt;a href=&quot;http://www.lepageproducts.com/ProductDetail.aspx?pid=101&quot;&gt;spackling paste from LePage&lt;/a&gt;. You’d typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn’t exactly the same as the wall, but it acts close enough to the real thing to make it work.&lt;/p&gt;
 
@@ -640,7 +640,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;The point is that shims only normalize browser behavior, whereas polyfills both normalize browser behavior and implement functionality where it does not exist.&lt;/p&gt;
 
-&lt;p&gt;###Shim vs Polyfill Checklist&lt;/p&gt;
+&lt;h3 id=&quot;shim-vs-polyfill-checklist&quot;&gt;Shim vs Polyfill Checklist&lt;/h3&gt;
 
 &lt;p&gt;So as a developer, here’s a quick checklist to figure out if you’re developing a shim or a polyfill:&lt;/p&gt;
 
@@ -654,7 +654,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;&lt;img src=&quot;/images/shim-polyfill-decision-tree.png&quot; alt=&quot;Shim Polyfill Decision Tree&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;###So is Google’s Adapter.js a Shim or a Polyfill?&lt;/p&gt;
+&lt;h3 id=&quot;so-is-googles-adapterjs-a-shim-or-a-polyfill&quot;&gt;So is Google’s Adapter.js a Shim or a Polyfill?&lt;/h3&gt;
 
 &lt;p&gt;Let’s use our decision framework to figure out the answer to the question:&lt;/p&gt;
 
@@ -672,7 +672,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Based on our Shim versus Polyfill guide, Google’s adapter.js is definitely a shim because it does normalize the Web RTC API, but stops short of implementing it in either IE or Safari.&lt;/p&gt;
 
-&lt;p&gt;###Why Does it Matter?&lt;/p&gt;
+&lt;h3 id=&quot;why-does-it-matter&quot;&gt;Why Does it Matter?&lt;/h3&gt;
 
 &lt;p&gt;I wrote this article because over the years using both terms has grown rather confusing. Some even go so far as to say &lt;a href=&quot;https://books.google.com/books?id=qkd-yBhZokUC&amp;amp;pg=PA155&amp;amp;lpg=PA155&amp;amp;dq=javascript+shim+polyfill+synonymous&amp;amp;source=bl&amp;amp;ots=P0hQTVgtoK&amp;amp;sig=mhLt7IrbuyPz7_HT_huQIcqmuwk&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ei=Et3bVMatF4LngwSxsIRI&amp;amp;ved=0CC4Q6AEwAg#v=onepage&amp;amp;q=javascript%20shim%20polyfill%20synonymous&amp;amp;f=false&quot;&gt;shim is synonymous to polyfill&lt;/a&gt;. That’s simply not the case, nor should it be. There is both a place and a need for each term in the craft.&lt;/p&gt;
 
@@ -893,9 +893,9 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Even in the telling of this story, you and I, experience the psychic unity of mankind. A unity that binds us to the craft. JavaScript is the hero here. This is its journey.&lt;/p&gt;
 
-&lt;p&gt;##The 17 Stages of the Monomyth&lt;/p&gt;
+&lt;h2 id=&quot;the-17-stages-of-the-monomyth&quot;&gt;The 17 Stages of the Monomyth&lt;/h2&gt;
 
-&lt;p&gt;###The Departure&lt;/p&gt;
+&lt;h3 id=&quot;the-departure&quot;&gt;The Departure&lt;/h3&gt;
 
 &lt;p&gt;In a monomyth, the hero begins in the ordinary world, and receives a call to enter an unknown world of strange powers and events. The hero who accepts the call to enter this strange world must face tasks and trials, either alone or with assistance.&lt;/p&gt;
 
@@ -990,7 +990,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;JavaScript was now on the golden path. In addition to not being tied to a single browser, now it would be funded, indefinitely by a foundation dedicated to its future and the future of us all.&lt;/p&gt;
 
-&lt;p&gt;###The Initiation&lt;/p&gt;
+&lt;h3 id=&quot;the-initiation&quot;&gt;The Initiation&lt;/h3&gt;
 
 &lt;p&gt;In the most intense versions of the narrative, the hero must survive a severe challenge, often with help. If the hero survives, he may achieve a great gift or “boon.”&lt;/p&gt;
 
@@ -1124,7 +1124,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Though the DOM remained a mess, JavaScript normalization libraries like jQuery shield us from its quirks. However, JavaScript code organization remained messy for some time. Yet, as innovation grew, so grew the potential for sane JavaScript with it.&lt;/p&gt;
 
-&lt;p&gt;###The Return&lt;/p&gt;
+&lt;h3 id=&quot;the-return&quot;&gt;The Return&lt;/h3&gt;
 
 &lt;p&gt;The hero must then decide whether to return to the ordinary world with this boon. If the hero does decide to return, he or she often faces challenges on the return journey. If the hero returns successfully, the boon or gift may be used to improve the world.&lt;/p&gt;
 
@@ -1224,7 +1224,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;That I leave to you…&lt;/p&gt;
 
-&lt;p&gt;##Common Mythic Elements&lt;/p&gt;
+&lt;h2 id=&quot;common-mythic-elements&quot;&gt;Common Mythic Elements&lt;/h2&gt;
 
 &lt;p&gt;There are &lt;a href=&quot;http://www.moongadget.com/origins/myth.html&quot;&gt;common mythic elements&lt;/a&gt; in all monomyths. Here’s how JavaScript compares to Star Wars and The Matrix:&lt;/p&gt;
 
