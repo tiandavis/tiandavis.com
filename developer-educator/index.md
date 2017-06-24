@@ -194,7 +194,7 @@ Along with the talk, distributed a small sample signaling app using Node, Socket
 
 Another talk focused on the story of JavaScript as seen through the eyes of the Hero's Journey itself.
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: https://tiandavis.com/posts/javascript-and-the-monomyth</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: https://tiandavis.com/thoughts/posts/javascript-and-the-monomyth</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 

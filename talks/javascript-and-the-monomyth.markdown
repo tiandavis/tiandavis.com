@@ -43,7 +43,7 @@ JavaScript is no different. Together we'll take a journey through the story of J
 
 
 [The Monomyth]: https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces
-[JavaScript and The Monomyth]: https://tiandavis.com/posts/javascript-and-the-monomyth
+[JavaScript and The Monomyth]: https://tiandavis.com/thoughts/posts/javascript-and-the-monomyth
 [Origins of JavaScript]: https://news.ycombinator.com/item?id=2783060
 [SpiderMonkey The First JavaScript Engine]: https://brendaneich.com/2011/06/new-javascript-engine-module-owner/
 
