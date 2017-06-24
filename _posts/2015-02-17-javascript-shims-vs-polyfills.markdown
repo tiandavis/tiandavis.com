@@ -43,7 +43,7 @@ I decided to list out those similarities and differences to give myself a better
 
 Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn't exist in that browser at all. I believe that's the pivotal point here.
 
-[Sime Vidas](https://twitter.com/simevidas) goes on to share his thoughts on shims vs polyfills on this [Stack Overflow](http://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540) question on the topic:
+[Sime Vidas](https://twitter.com/simevidas) goes on to share his thoughts on shims vs polyfills on this [Stack Overflow](https://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540) question on the topic:
 
 > From what I understand:
 > A polyfill is code that detects if a certain "expected" API is missing and manually implements it. E.g.
@@ -62,7 +62,7 @@ It also helps validate some of the differences I've noticed over the years. Name
 
 ### Shim and Polyfill Real-World Parallels
 
-In the real world a shim is a wedge-shaped piece of wood. "Polyfilla" is the name of a [spackling paste from LePage](http://www.lepageproducts.com/ProductDetail.aspx?pid=101). You'd typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn't exactly the same as the wall, but it acts close enough to the real thing to make it work.
+In the real world a shim is a wedge-shaped piece of wood. "Polyfilla" is the name of a [spackling paste from LePage](https://www.lepageproducts.com/ProductDetail.aspx?pid=101). You'd typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn't exactly the same as the wall, but it acts close enough to the real thing to make it work.
 
 
 #### Examples of JavaScript Polyfills

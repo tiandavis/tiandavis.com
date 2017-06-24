@@ -130,7 +130,7 @@ Demonstrated both patience and empathy while managing external contributors to b
 
 In addition to helping developers make progress with Respoke.js, I also acted as an advocate on their behalf; Relaying ease of use issues to the right development team.
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="http://community.respoke.io/t/sending-json-via-sendmessage-method/84">Sending JSON via sendMessage method</a></h4><p>I am trying to figure out how to send a JSON object via the client's sendMessage method so that my app can send data back and forth between two different clients. The docs only cover how to send a plain string so I have been stabbing in the dark so far.</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://community.respoke.io/t/sending-json-via-sendmessage-method/84">Sending JSON via sendMessage method</a></h4><p>I am trying to figure out how to send a JSON object via the client's sendMessage method so that my app can send data back and forth between two different clients. The docs only cover how to send a plain string so I have been stabbing in the dark so far.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <br>
@@ -151,7 +151,7 @@ Along with the talk, distributed a small sample signaling app using Node, Socket
 
 Another talk focused on the story of JavaScript as seen through the eyes of the Hero's Journey itself.
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: http://tiandavis.com/posts/javascript-and-the-monomyth/</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://speakerdeck.com/tiandavis/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>JavaScript and The Monomyth explores the story of JavaScript as you've never seen before. Learn more about The Monomyth. Dig deeper into the story of JavaScript: https://tiandavis.com/posts/javascript-and-the-monomyth</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 
@@ -186,12 +186,12 @@ Results?
 
 Google search result rank number three for the topic.
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="http://imgur.com/rFmqzLH"></a></h4><p></p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://imgur.com/rFmqzLH"></a></h4><p></p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 "@corgrath: The best article I have read so far regarding the shim vs polyfill terminology. Thanks :-)"
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="http://imgur.com/zteGlFL"></a></h4><p></p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://imgur.com/zteGlFL"></a></h4><p></p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 
@@ -206,7 +206,7 @@ Fun technical blog post written for blog.respoke.io mashing up two popular conce
 
 Thought leadership piece discussing the story of JavaScript told through the eyes of Joseph Campbell's "Hero's Journey".
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth/">JavaScript and The Monomyth</a></h4><p>In his seminal work, "The Hero with a Thousand Faces", Joseph Campbell put forth the idea of The Monomyth. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation. Simply put, all of mankind's myriad myths are but variations of a single great story. This is the monomyth and is most commonly expressed as a hero's journey....</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://tiandavis.com/thoughts/posts/javascript-and-the-monomyth/">JavaScript and The Monomyth</a></h4><p>In his seminal work, "The Hero with a Thousand Faces", Joseph Campbell put forth the idea of The Monomyth. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation. Simply put, all of mankind's myriad myths are but variations of a single great story. This is the monomyth and is most commonly expressed as a hero's journey....</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <br>
@@ -221,12 +221,12 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 
 
 
-[Pieta]: http://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)
+[Pieta]: https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)
 [code samples]: https://github.com/tiandavis
-[8-Bit Hustler]: http://tiandavis.com/posts/javascript-and-the-monomyth/
+[8-Bit Hustler]: https://tiandavis.com/posts/javascript-and-the-monomyth
 [GitHub]: https://github.com/tiandavis
 [Twitter]: https://twitter.com/tiandavis
-[Columbus Code Camp]: http://columbuscodecamp.com/
+[Columbus Code Camp]: https://columbuscodecamp.com/
 [email]: mailto:tiandavis@gmail.com
 [capabilities-1]: /images/capabilities-1.png "Core Capabilities"
 [capabilities-2]: /images/capabilities-2.png "Core Capabilities"
@@ -252,4 +252,4 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 
 [browzine]: https://develop.browzine.com/libraries/222/subjects
 
-[browzine-subjects]: http://develop.browzine.com/libraries/222/subjects/60/bookcases/87/bookshelves/267?sort=title
+[browzine-subjects]: https://develop.browzine.com/libraries/222/subjects/60/bookcases/87/bookshelves/267?sort=title

@@ -12,7 +12,7 @@ permalink: /thoughts/posts/webrtc-instagram-video-filters
 
 <p>I&rsquo;ve always had a small love affair with image processing. So I figured let&rsquo;s have some fun with WebRTC and find out, &ldquo;Can you apply Instagram filters to a live WebRTC video stream?&rdquo; To be brutally honest, the question had been burning me for months, so I finally set out to find the answer.</p>
 
-<p>What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&rsquo;s a <a href="http://tiandavis.github.io/webrtc-instagram-video-filters/">live demo</a> I put together of the concept (Pro Tip: Use Chrome or <a href="http://caniuse.com/#feat=css-filters">FF 35+</a>). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. </p>
+<p>What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&rsquo;s a <a href="https://tiandavis.github.io/webrtc-instagram-video-filters/">live demo</a> I put together of the concept (Pro Tip: Use Chrome or <a href="https://caniuse.com/#feat=css-filters">FF 35+</a>). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. </p>
 
 <p>First, we need a little HTML to hang our video element and controls: </p>
 
@@ -36,9 +36,9 @@ permalink: /thoughts/posts/webrtc-instagram-video-filters
 </ul>
 {% endhighlight %}
 
-<p>Here, I included Google&rsquo;s <a href="http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill">adapter.js shim</a> to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&rsquo;ll use that video tag to display the video stream coming from our web camera. We&rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the <a href="http://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b">most popular filter on Instagram</a>. Now for the actual filters.</p>
+<p>Here, I included Google&rsquo;s <a href="http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill">adapter.js shim</a> to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&rsquo;ll use that video tag to display the video stream coming from our web camera. We&rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the <a href="https://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b">most popular filter on Instagram</a>. Now for the actual filters.</p>
 
-<p>Laying the foundation for the Instagram filters are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS3 filters</a>. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating <a href="http://designpieces.com/2014/09/instagram-filters-css3-effects/">every single Instagram filter using CSS3 filters</a>. Here are a few we&rsquo;ll use for this experiment:</p>
+<p>Laying the foundation for the Instagram filters are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS3 filters</a>. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating <a href="https://designpieces.com/2014/09/instagram-filters-css3-effects/">every single Instagram filter using CSS3 filters</a>. Here are a few we&rsquo;ll use for this experiment:</p>
 
 {% highlight css %}
 .ig-willow {

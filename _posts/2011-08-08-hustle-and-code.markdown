@@ -79,8 +79,8 @@ But you can do it! You can learn the proper Software Development Life Cycle (SDL
 What's the rush? Slow down. Learn the Fundamentals. And Hustle. Cause learning to develop good software takes ten years. Hustle and Code. Get used to it.
 
 
-  [1]: http://en.wikipedia.org/wiki/Visual_Basic
-  [2]: http://www.ccs.neu.edu/home/matthias/HtDP2e/index.html
-  [3]: http://norvig.com/21-days.html
-  [4]: http://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=1/ref=s_b_np
-  [5]: http://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=3/ref=s_b_np
+  [1]: https://en.wikipedia.org/wiki/Visual_Basic
+  [2]: https://www.ccs.neu.edu/home/matthias/HtDP2e/index.html
+  [3]: https://norvig.com/21-days.html
+  [4]: https://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=1/ref=s_b_np
+  [5]: https://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=3/ref=s_b_np

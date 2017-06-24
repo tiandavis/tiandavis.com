@@ -11,12 +11,12 @@ permalink: /thoughts/posts/the-history-of-the-pstn
 
 ### SUMMARY
 
-[Respoke](https://www.respoke.io/) gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It's all possible because of the [Public Switch Telephone Network](http://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65) (PSTN). Here's a look at where the PSTN has been and where we're taking it...
+[Respoke](https://www.respoke.io/) gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It's all possible because of the [Public Switch Telephone Network](https://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65) (PSTN). Here's a look at where the PSTN has been and where we're taking it...
 
 
 ### HISTORY OF THE PSTN
 
-The history of the public switched telephone network (PSTN) is the history of American Bell and AT&T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first [improvement in telegraphy](http://www.google.com/patents/US174465) and made the first ever voice transmission over wire. It was hardly what we can imagine today.
+The history of the public switched telephone network (PSTN) is the history of American Bell and AT&T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first [improvement in telegraphy](https://www.google.com/patents/US174465) and made the first ever voice transmission over wire. It was hardly what we can imagine today.
 
 The first voice transmission used what is called a ring-down circuit. What that means is there were no dialing of numbers; No ringing of headsets. Instead, an actual physical wire connected two devices. Remember when you were a kid and you'd play tin can telephone. What did you do? You connected two tin cans by wire. Then you could here your friend talk on the other end. A ring-down circuit is a lot like playing tin can telephone, just over a greater distance.
 
@@ -26,7 +26,7 @@ Over time, this simple design evolved from a one-way voice transmission, by whic
 
 Moving the voices across the wire required a carbon microphone, a battery, an electromagnet, and an iron diaphragm. The concept of dialing a number to reach a destination still didn't exist. The also process required a physical cable between each location that the user wanted to call. Clearly this does not scale...
 
-Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a [switch](http://www.google.com/patents/US911968).
+Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a [switch](https://www.google.com/patents/US911968).
 
 With a switch telephone, users only needed connection to a centralized office. Then that centralized office could coordinate connected the call to its final destination.
 
@@ -34,7 +34,7 @@ Imagine a pair of copper wires running from every phone to a central exchange in
 
 When you wanted to talk to another person, you would ring the operator and give the name or number of the other party. Then the operator would connect a patch cord ( a 2 wire cable with a jack plug on each end ) between the two phones and the two people could communicate. Using a patch cord - a two wire cable with a jack plug on each end - the operator would connect each party's jack socket. Then the receiving party's telephone bell would ring and the two parties could communicate.
 
-Believe it or not, the [first operators were teenage boys](http://www.telcomhistory.org/operators.shtml). Surprising - I know - but they often engaged in horseplay and foul language:
+Believe it or not, the [first operators were teenage boys](https://www.telcomhistory.org/operators.shtml). Surprising - I know - but they often engaged in horseplay and foul language:
 
 ![pstn-2](/images/pstn-1.jpg)
 
@@ -57,7 +57,7 @@ At first the telephone operator acted as a switch. Fast forward 100 years - give
 
 ### THE PSTN TODAY
 
-What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into [analog switches](http://www.voip-sip.org/analog-telephony/) and then into electronic switches. A lot also changed along the way.
+What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into [analog switches](https://www.voip-sip.org/analog-telephony/) and then into electronic switches. A lot also changed along the way.
 
 ![pstn-2](/images/pstn-5.jpg)
 
@@ -67,7 +67,7 @@ All digital meant cleaner sound quality travelled over longer and longer distanc
 
 As technology progressed, the telephony industry found an alternative to message formats and during the dawn of the Internet a new transport format was invented - packets. This formed the foundation of what would become a separate data network.
 
-Instead of being transmitted over a circuit-switched network, the digital information is packetized, and transmission occurs as IP packets over a packet-switched network. These packet-switched networks form the foundation of the [Voice Over IP](http://en.wikipedia.org/wiki/Voice_over_IP) (VOIP) technology we know today.
+Instead of being transmitted over a circuit-switched network, the digital information is packetized, and transmission occurs as IP packets over a packet-switched network. These packet-switched networks form the foundation of the [Voice Over IP](https://en.wikipedia.org/wiki/Voice_over_IP) (VOIP) technology we know today.
 
 Now we live in a world of two networks; One circuit-switched and the other packet-switched. When those worlds interoperate, they do so using protocols that enable packet-switched digital data to communicated with circuit-switched digital data. Those protocols include, but are not limited to: H.264, V8, H.232, H.323, SIP, MGCP and others.
 
@@ -84,13 +84,13 @@ Phone numbers in particular are fascinating. Phone numbers are simply different 
 
 **London: +44 20 5555 5555**
 
-The [North American Numbering Plan](http://www.nanpa.com/) (NANP) is an integrated telephone numbering plan serving 20 North American countries that share its resources. These countries include the United States and its territories, Canada, Bermuda, Anguilla, Antigua & Barbuda, the Bahamas, Barbados, the British Virgin Islands, the Cayman Islands, Dominica, the Dominican Republic, Grenada, Jamaica, Montserrat, Saint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Trinidad and Tobago, and Turks & Caicos.
+The [North American Numbering Plan](https://www.nanpa.com/) (NANP) is an integrated telephone numbering plan serving 20 North American countries that share its resources. These countries include the United States and its territories, Canada, Bermuda, Anguilla, Antigua & Barbuda, the Bahamas, Barbados, the British Virgin Islands, the Cayman Islands, Dominica, the Dominican Republic, Grenada, Jamaica, Montserrat, Saint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Trinidad and Tobago, and Turks & Caicos.
 
 Regulatory authorities in each participating country have plenary authority over numbering resources, but the participating countries share numbering resources cooperatively.
 
 AT&T developed the North American Numbering Plan in 1947 to simplify and facilitate direct dialing of long distance calls. Implementation of the plan began in 1951.
 
-The [International Telecommunications Union](http://www.itu.int/en/Pages/default.aspx) (ITU) assigned country code "1" to the NANP area. The NANP conforms with ITU Recommendation E.164, the international standard for telephone numbering plans.
+The [International Telecommunications Union](https://www.itu.int/en/Pages/default.aspx) (ITU) assigned country code "1" to the NANP area. The NANP conforms with ITU Recommendation E.164, the international standard for telephone numbering plans.
 
 NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Area (NPA) code, commonly called an area code, followed by a seven-digit local number. The format is usually represented as:
 
@@ -109,7 +109,7 @@ Within a company or larger organization, each employee or department might have 
 
 The call needs to be routed through your long-distance phone carrier to another country's long-distance phone carrier. To signal such a switch, you have to dial two separate numbers, your country's exit code (or international access code) and the corresponding country code of the place you're calling.
 
-Almost all [exit codes are either 00 or 011](http://electronics.howstuffworks.com/telephone-country-codes1.htm), although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.
+Almost all [exit codes are either 00 or 011](https://electronics.howstuffworks.com/telephone-country-codes1.htm), although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.
 
 For example, the country code for the United States is 1, but the United States shares that country code with Canada and several smaller island nations like Jamaica, Puerto Rico and Guam.
 
@@ -120,13 +120,13 @@ No doubt you've heard the term PBX before. A PBX or Private Branch Exchange is a
 
 Businesses install PBXs to reduce the number of phone lines they need to lease from the telephone company. Imagine that without a PBX, you would have to to rent one telephone line for every employee with a phone.
 
-With a PBX system, you only need to rent as many lines from your telephone provider as the maximum number of staff making external calls at one time. In most businesses this is only about [10-12% of the workforce](http://www.techsoup.org/support/articles-and-how-tos/phone-systems-on-a-shoestring).
+With a PBX system, you only need to rent as many lines from your telephone provider as the maximum number of staff making external calls at one time. In most businesses this is only about [10-12% of the workforce](https://www.techsoup.org/support/articles-and-how-tos/phone-systems-on-a-shoestring).
 
-What you didn't know is before the [tangled mess of PBX](http://cypressnorth.com/technology/setting-up-a-small-office-or-home-office-voip-system-with-asterisk-pbx-part-1/)'s gone by:
+What you didn't know is before the [tangled mess of PBX](https://cypressnorth.com/technology/setting-up-a-small-office-or-home-office-voip-system-with-asterisk-pbx-part-1/)'s gone by:
 
 ![pstn-2](/images/pstn-6.jpg)
 
-There were [human powered switchboard operators](http://www.ohmreunion.com/memorabilia/pbx.htm) in businesses, government and large commercial buildings:
+There were [human powered switchboard operators](https://www.ohmreunion.com/memorabilia/pbx.htm) in businesses, government and large commercial buildings:
 
 ![pstn-2](/images/pstn-7.jpg)
 
@@ -137,7 +137,7 @@ Of course, not even remotely as large as your local switchboard would be. Here t
 
 In the PBX system, every telephone in a business location is wired to the PBX, using either standard cables or more recently Cat 5 ethernet cabling. When a member of staff picks up their phone and dials the outside access code (usually 9), the PBX connects that person to an outside line, and onto the PSTN.
 
-PBX solutions themselves have gone from a consortium of wires and frames to a single commodity hardware or higher grade application running open source software that allows you to create a [virtual PBX](http://www.asterisk.org/).
+PBX solutions themselves have gone from a consortium of wires and frames to a single commodity hardware or higher grade application running open source software that allows you to create a [virtual PBX](https://www.asterisk.org/).
 
 Open source software like Asterisk is an example of this paradigm shift. With Asterisk you can create a PBX, an IVR system, a conference bridge and virtually any other communications app you can imagine. Asterisk was one of the first open source PBX software packages.
 
@@ -146,7 +146,7 @@ Asterisk supports a wide range of Voice over IP protocols, including the Session
 
 ### PSTN AT RESPOKE
 
-The PBX has gone from a tangled mess of wires to software running on commodity boxes to a [hosted PBX](http://www.digium.com/en/products/switchvox-cloud) in the cloud. The web was only the natural progression.
+The PBX has gone from a tangled mess of wires to software running on commodity boxes to a [hosted PBX](https://www.digium.com/en/products/switchvox-cloud) in the cloud. The web was only the natural progression.
 
 You can use Respoke to [make phone calls and receive phone calls](https://docs-int.respoke.io/tutorials/calling-to-and-from-a-phone.html) from phones on the PSTN as well as other Respoke client endpoints. It's easy...
 

@@ -91,4 +91,4 @@ I commend both the jQuery Core Team and the Rails Core Team. And many thanks for
 
 
 
-  [1]: http://twitter.com/dhh/statuses/45923430608023552
+  [1]: https://twitter.com/dhh/statuses/45923430608023552

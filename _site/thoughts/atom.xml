@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
   <title>Tian Davis Thoughts</title>
   
-  <id>http://0.0.0.0:4000</id>
-  <link href="http://0.0.0.0:4000" />
-  <link href="http://0.0.0.0:4000/atom.xml" rel="self" />
+  <id>http://tiandavis.com</id>
+  <link href="http://tiandavis.com" />
+  <link href="http://tiandavis.com/atom.xml" rel="self" />
   
-  <updated>2017-06-24T13:18:11-04:00</updated>
+  <updated>2017-06-24T14:04:13-04:00</updated>
   
   <rights>Copyright 2017, Tian Davis</rights>
   
@@ -17,7 +17,7 @@
   
     <entry>
       <title>Ember Responsive Acceptance Tests</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests" />
+      <link href="http://tiandavis.com/thoughts/posts/ember-responsive-acceptance-tests" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-2.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ve spent so much time crafting a responsive experience for what was once exclusively for desktop. You can see the light at the end of the tunnel. Then you’re hit with the dreaded question, “How do you integrate the responsive UI into your acceptance test suite?”&lt;/p&gt;
@@ -26,7 +26,7 @@
 
 &lt;p&gt;BREATHE.&lt;/p&gt;
 
-&lt;p&gt;On our front-end team, we’re on a push to &lt;a href=&quot;http://webstandardssherpa.com/reviews/responsive-retrofitting/&quot;&gt;retrofit&lt;/a&gt; a mobile responsive UI/UX onto an existing desktop ember application.&lt;/p&gt;
+&lt;p&gt;On our front-end team, we’re on a push to &lt;a href=&quot;https://webstandardssherpa.com/reviews/responsive-retrofitting/&quot;&gt;retrofit&lt;/a&gt; a mobile responsive UI/UX onto an existing desktop ember application.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/ember-responsive-acceptance-tests-4.png&quot; alt=&quot;ember-responsive acceptance tests&quot; /&gt;&lt;/p&gt;
 
@@ -79,7 +79,7 @@
 &lt;p&gt;Ideally, we’d have an actual mobile browser, running on an actual mobile device, but that option doesn’t seem available to any team at the moment. So if you’re stuck figuring out how to bring your responsive ember application under test, give this approach a try.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests</id>
+      <id>http://tiandavis.com/thoughts/posts/ember-responsive-acceptance-tests</id>
       <updated>2017-04-27T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -88,7 +88,7 @@
   
     <entry>
       <title>Git for TortoiseSVN Developers Tutorial</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/git-for-tortoise-svn-developers-tutorial" />
+      <link href="http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/git-for-tortoise-svn-developers.png&quot; alt=&quot;Git for TortoiseSVN Developers&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I published a series of screencasts to explore &lt;a href=&quot;/screencasts/git-for-tortoise-svn-developers/&quot;&gt;how to use Git from a Subversion developers&lt;/a&gt; perspective. In particular, a Subversion developer using the ubiquitous TortoiseSVN client.&lt;/p&gt;
@@ -111,7 +111,7 @@
 
 &lt;p&gt;Whether you’re new to a team or an established tech lead, we’ll cover all the functions teams transitioning from SVN to Git need to be successful. In this tutorial, we’ll be using Git version 1.9.3 and TortoiseSVN 1.9.2&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/git-for-tortoise-svn-developers-tutorial</id>
+      <id>http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial</id>
       <updated>2015-10-27T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -120,12 +120,12 @@
   
     <entry>
       <title>Using Chance.js To Generate Sample Data</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/using-chance-to-generate-sample-data" />
+      <link href="http://tiandavis.com/thoughts/posts/using-chance-to-generate-sample-data" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/chancejs.png&quot; alt=&quot;Chance.js&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you’re trying to deliver business value.&lt;/p&gt;
 
-&lt;p&gt;You’re certainly not trying to build the world’s greatest random number generator. And you’re definitely not trying to build the world’s greatest random email generator either. Unless you’re &lt;a href=&quot;http://chancejs.com/#gender&quot;&gt;chance.js&lt;/a&gt; that is.&lt;/p&gt;
+&lt;p&gt;You’re certainly not trying to build the world’s greatest random number generator. And you’re definitely not trying to build the world’s greatest random email generator either. Unless you’re &lt;a href=&quot;https://chancejs.com/#gender&quot;&gt;chance.js&lt;/a&gt; that is.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-is-chance&quot;&gt;What is Chance&lt;/h3&gt;
 
@@ -206,7 +206,7 @@
 
 &lt;p&gt;Chance is a pretty neat library for generating lots of random data. Data you would have otherwise had to craft yourself. Give it a chance…See what I did there? ;)&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/using-chance-to-generate-sample-data</id>
+      <id>http://tiandavis.com/thoughts/posts/using-chance-to-generate-sample-data</id>
       <updated>2015-07-03T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -215,7 +215,7 @@
   
     <entry>
       <title>Git: Update Multiple Repos</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/git-update-multiple-repos" />
+      <link href="http://tiandavis.com/thoughts/posts/git-update-multiple-repos" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/macroons-coffee.png&quot; alt=&quot;Macroons Coffee&quot; title=&quot;Macroons Coffee&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recently, I’ve been working with a lot of git repos at a time.  I mean a lot. Like more than twenty. . . That’s the bad news.&lt;/p&gt;
@@ -224,7 +224,7 @@
 
 &lt;p&gt;But, I couldn’t see myself running git pull for every single respository. Believe me, I tried. . .&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful&quot;&gt;Git pull&lt;/a&gt; itself has it’s issues, so I wanted to be mindful of commit merges. In addition, I’m often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I’m always getting the latest-and-greatest remote branches as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful&quot;&gt;Git pull&lt;/a&gt; itself has it’s issues, so I wanted to be mindful of commit merges. In addition, I’m often helping teammates validate new features or bugfixes in bleeding edge branches, so I wanted to make sure I’m always getting the latest-and-greatest remote branches as well.&lt;/p&gt;
 
 &lt;p&gt;By default, git pull helps you do neither particualary well. That’s when I ran into the concept of git up.&lt;/p&gt;
 
@@ -242,7 +242,7 @@
 
 &lt;h3 id=&quot;going-full-shell&quot;&gt;Going Full Shell&lt;/h3&gt;
 
-&lt;p&gt;I use a &lt;a href=&quot;http://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos&quot;&gt;shell script&lt;/a&gt; to get the job done of updating multiple git repos:&lt;/p&gt;
+&lt;p&gt;I use a &lt;a href=&quot;https://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos&quot;&gt;shell script&lt;/a&gt; to get the job done of updating multiple git repos:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;repo &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;repo1 repo2 repo3; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git checkout master &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git up&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -257,7 +257,7 @@
 &lt;p&gt;If you find yourself needing to update multiple git repos at a time, give this technique a try.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/git-update-multiple-repos</id>
+      <id>http://tiandavis.com/thoughts/posts/git-update-multiple-repos</id>
       <updated>2015-05-26T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -266,7 +266,7 @@
   
     <entry>
       <title>WebRTC Screensharing With Respoke and Node-Webkit</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit" />
+      <link href="http://tiandavis.com/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/node-webkit.png&quot; alt=&quot;NodeWebkit&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
@@ -423,7 +423,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</id>
+      <id>http://tiandavis.com/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</id>
       <updated>2015-04-09T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -432,14 +432,14 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
   
     <entry>
       <title>WebRTC Instagram Video Filters</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/webrtc-instagram-video-filters" />
+      <link href="http://tiandavis.com/thoughts/posts/webrtc-instagram-video-filters" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/instagram-2.jpg&quot; alt=&quot;Instagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With more than a $1 Billion valuation and over 75 million daily users, &lt;a href=&quot;https://instagram.com/digium/&quot;&gt;Instagram&lt;/a&gt; is arguably one of the most popular social networks today. Did you know more than 55 million photos are posted daily on Instagram? Or that the platform sees over 8,500 likes per second?&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve always had a small love affair with image processing. So I figured let&amp;rsquo;s have some fun with WebRTC and find out, &amp;ldquo;Can you apply Instagram filters to a live WebRTC video stream?&amp;rdquo; To be brutally honest, the question had been burning me for months, so I finally set out to find the answer.&lt;/p&gt;
 
-&lt;p&gt;What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&amp;rsquo;s a &lt;a href=&quot;http://tiandavis.github.io/webrtc-instagram-video-filters/&quot;&gt;live demo&lt;/a&gt; I put together of the concept (Pro Tip: Use Chrome or &lt;a href=&quot;http://caniuse.com/#feat=css-filters&quot;&gt;FF 35+&lt;/a&gt;). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. &lt;/p&gt;
+&lt;p&gt;What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&amp;rsquo;s a &lt;a href=&quot;https://tiandavis.github.io/webrtc-instagram-video-filters/&quot;&gt;live demo&lt;/a&gt; I put together of the concept (Pro Tip: Use Chrome or &lt;a href=&quot;https://caniuse.com/#feat=css-filters&quot;&gt;FF 35+&lt;/a&gt;). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. &lt;/p&gt;
 
 &lt;p&gt;First, we need a little HTML to hang our video element and controls: &lt;/p&gt;
 
@@ -461,9 +461,9 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Amaro&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;#Amaro&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Here, I included Google&amp;rsquo;s &lt;a href=&quot;http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill&quot;&gt;adapter.js shim&lt;/a&gt; to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&amp;rsquo;ll use that video tag to display the video stream coming from our web camera. We&amp;rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the &lt;a href=&quot;http://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b&quot;&gt;most popular filter on Instagram&lt;/a&gt;. Now for the actual filters.&lt;/p&gt;
+&lt;p&gt;Here, I included Google&amp;rsquo;s &lt;a href=&quot;http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill&quot;&gt;adapter.js shim&lt;/a&gt; to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&amp;rsquo;ll use that video tag to display the video stream coming from our web camera. We&amp;rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the &lt;a href=&quot;https://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b&quot;&gt;most popular filter on Instagram&lt;/a&gt;. Now for the actual filters.&lt;/p&gt;
 
-&lt;p&gt;Laying the foundation for the Instagram filters are &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/filter&quot;&gt;CSS3 filters&lt;/a&gt;. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating &lt;a href=&quot;http://designpieces.com/2014/09/instagram-filters-css3-effects/&quot;&gt;every single Instagram filter using CSS3 filters&lt;/a&gt;. Here are a few we&amp;rsquo;ll use for this experiment:&lt;/p&gt;
+&lt;p&gt;Laying the foundation for the Instagram filters are &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/filter&quot;&gt;CSS3 filters&lt;/a&gt;. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating &lt;a href=&quot;https://designpieces.com/2014/09/instagram-filters-css3-effects/&quot;&gt;every single Instagram filter using CSS3 filters&lt;/a&gt;. Here are a few we&amp;rsquo;ll use for this experiment:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.ig-willow&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;-webkit-filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saturate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.85&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brightness&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sepia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -554,7 +554,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;I&amp;rsquo;ve heard #Mayfair is one of the top Instagram filters. Which one did you like best? I hope you had as much fun as I did and now you can add Instagram filters to your WebRTC video too.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/webrtc-instagram-video-filters</id>
+      <id>http://tiandavis.com/thoughts/posts/webrtc-instagram-video-filters</id>
       <updated>2015-03-03T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -563,7 +563,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
   
     <entry>
       <title>JavaScript Shims Versus Polyfills</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/javascript-shims-versus-polyfills" />
+      <link href="http://tiandavis.com/thoughts/posts/javascript-shims-versus-polyfills" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/polyfilla.jpg&quot; alt=&quot;Polyfilla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’m currently working on a conference talk about WebRTC. One of the foundations of any WebRTC library is some form of Google’s original &lt;a href=&quot;https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js?r=3905&quot;&gt;adapter.js&lt;/a&gt;, which seeks to normalize the WebRTC API across various browsers. As I was about to build this particular slide, one question started to whisper in my ear, “Is adapter.js a shim or a polyfill?” Eventually, the whisper grew louder and I had to find the answer.&lt;/p&gt;
@@ -602,7 +602,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn’t exist in that browser at all. I believe that’s the pivotal point here.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/simevidas&quot;&gt;Sime Vidas&lt;/a&gt; goes on to share his thoughts on shims vs polyfills on this &lt;a href=&quot;http://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540&quot;&gt;Stack Overflow&lt;/a&gt; question on the topic:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/simevidas&quot;&gt;Sime Vidas&lt;/a&gt; goes on to share his thoughts on shims vs polyfills on this &lt;a href=&quot;https://stackoverflow.com/questions/6599815/what-is-the-difference-between-a-shim-and-a-polyfill/17331540#17331540&quot;&gt;Stack Overflow&lt;/a&gt; question on the topic:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;From what I understand:
@@ -628,7 +628,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;h3 id=&quot;shim-and-polyfill-real-world-parallels&quot;&gt;Shim and Polyfill Real-World Parallels&lt;/h3&gt;
 
-&lt;p&gt;In the real world a shim is a wedge-shaped piece of wood. “Polyfilla” is the name of a &lt;a href=&quot;http://www.lepageproducts.com/ProductDetail.aspx?pid=101&quot;&gt;spackling paste from LePage&lt;/a&gt;. You’d typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn’t exactly the same as the wall, but it acts close enough to the real thing to make it work.&lt;/p&gt;
+&lt;p&gt;In the real world a shim is a wedge-shaped piece of wood. “Polyfilla” is the name of a &lt;a href=&quot;https://www.lepageproducts.com/ProductDetail.aspx?pid=101&quot;&gt;spackling paste from LePage&lt;/a&gt;. You’d typically use a shim to level off a leaning stove or other appliance. On the other hand, spackling paste would be used to fill a hole in a wall or other crevice. Notice the stove has to exist in order to use the shim at all. Whereas the polyfill (spackling paste) is used to fill a gap in the wall. The polyfill itself isn’t exactly the same as the wall, but it acts close enough to the real thing to make it work.&lt;/p&gt;
 
 &lt;h4 id=&quot;examples-of-javascript-polyfills&quot;&gt;Examples of JavaScript Polyfills&lt;/h4&gt;
 
@@ -678,7 +678,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;This may all seem like semantics, but it’s not. Understanding the difference between a shim and a polyfill is the difference between your app working in some browsers and your app working in all browsers. If you’re like me, you go for all browsers or you die trying. Knowing your shims from your polyfills is key to getting you there.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/javascript-shims-versus-polyfills</id>
+      <id>http://tiandavis.com/thoughts/posts/javascript-shims-versus-polyfills</id>
       <updated>2015-02-16T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -687,16 +687,16 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>The History of The PSTN</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/the-history-of-the-pstn" />
+      <link href="http://tiandavis.com/thoughts/posts/the-history-of-the-pstn" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/pstn-2.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;summary&quot;&gt;SUMMARY&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.respoke.io/&quot;&gt;Respoke&lt;/a&gt; gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It’s all possible because of the &lt;a href=&quot;http://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65&quot;&gt;Public Switch Telephone Network&lt;/a&gt; (PSTN). Here’s a look at where the PSTN has been and where we’re taking it…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.respoke.io/&quot;&gt;Respoke&lt;/a&gt; gives you the power to build the next Skype in the browser, on your smartphone and even on your desktop. It’s all possible because of the &lt;a href=&quot;https://community.respoke.io/t/sign-up-now-for-our-pstn-beta/65&quot;&gt;Public Switch Telephone Network&lt;/a&gt; (PSTN). Here’s a look at where the PSTN has been and where we’re taking it…&lt;/p&gt;
 
 &lt;h3 id=&quot;history-of-the-pstn&quot;&gt;HISTORY OF THE PSTN&lt;/h3&gt;
 
-&lt;p&gt;The history of the public switched telephone network (PSTN) is the history of American Bell and AT&amp;amp;T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first &lt;a href=&quot;http://www.google.com/patents/US174465&quot;&gt;improvement in telegraphy&lt;/a&gt; and made the first ever voice transmission over wire. It was hardly what we can imagine today.&lt;/p&gt;
+&lt;p&gt;The history of the public switched telephone network (PSTN) is the history of American Bell and AT&amp;amp;T. In 1875 Alexander Bell formed the American Bell Telephone Company. A year later in 1876, Alexander Bell patented the first &lt;a href=&quot;https://www.google.com/patents/US174465&quot;&gt;improvement in telegraphy&lt;/a&gt; and made the first ever voice transmission over wire. It was hardly what we can imagine today.&lt;/p&gt;
 
 &lt;p&gt;The first voice transmission used what is called a ring-down circuit. What that means is there were no dialing of numbers; No ringing of headsets. Instead, an actual physical wire connected two devices. Remember when you were a kid and you’d play tin can telephone. What did you do? You connected two tin cans by wire. Then you could here your friend talk on the other end. A ring-down circuit is a lot like playing tin can telephone, just over a greater distance.&lt;/p&gt;
 
@@ -706,7 +706,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Moving the voices across the wire required a carbon microphone, a battery, an electromagnet, and an iron diaphragm. The concept of dialing a number to reach a destination still didn’t exist. The also process required a physical cable between each location that the user wanted to call. Clearly this does not scale…&lt;/p&gt;
 
-&lt;p&gt;Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a &lt;a href=&quot;http://www.google.com/patents/US911968&quot;&gt;switch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Placing a physical cable between every household that required access to a telephone was neither cost effective  or feasible. Bell developed another method that could map any phone to another phone without a direct connection. Bell patented the device and called it a &lt;a href=&quot;https://www.google.com/patents/US911968&quot;&gt;switch&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With a switch telephone, users only needed connection to a centralized office. Then that centralized office could coordinate connected the call to its final destination.&lt;/p&gt;
 
@@ -714,7 +714,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;When you wanted to talk to another person, you would ring the operator and give the name or number of the other party. Then the operator would connect a patch cord ( a 2 wire cable with a jack plug on each end ) between the two phones and the two people could communicate. Using a patch cord - a two wire cable with a jack plug on each end - the operator would connect each party’s jack socket. Then the receiving party’s telephone bell would ring and the two parties could communicate.&lt;/p&gt;
 
-&lt;p&gt;Believe it or not, the &lt;a href=&quot;http://www.telcomhistory.org/operators.shtml&quot;&gt;first operators were teenage boys&lt;/a&gt;. Surprising - I know - but they often engaged in horseplay and foul language:&lt;/p&gt;
+&lt;p&gt;Believe it or not, the &lt;a href=&quot;https://www.telcomhistory.org/operators.shtml&quot;&gt;first operators were teenage boys&lt;/a&gt;. Surprising - I know - but they often engaged in horseplay and foul language:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/pstn-1.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
@@ -736,7 +736,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;h3 id=&quot;the-pstn-today&quot;&gt;THE PSTN TODAY&lt;/h3&gt;
 
-&lt;p&gt;What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into &lt;a href=&quot;http://www.voip-sip.org/analog-telephony/&quot;&gt;analog switches&lt;/a&gt; and then into electronic switches. A lot also changed along the way.&lt;/p&gt;
+&lt;p&gt;What started as direct home to home connections, evolved into home to central switch connections. Human powered switches we called operators evolved into &lt;a href=&quot;https://www.voip-sip.org/analog-telephony/&quot;&gt;analog switches&lt;/a&gt; and then into electronic switches. A lot also changed along the way.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/pstn-5.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
@@ -746,7 +746,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;As technology progressed, the telephony industry found an alternative to message formats and during the dawn of the Internet a new transport format was invented - packets. This formed the foundation of what would become a separate data network.&lt;/p&gt;
 
-&lt;p&gt;Instead of being transmitted over a circuit-switched network, the digital information is packetized, and transmission occurs as IP packets over a packet-switched network. These packet-switched networks form the foundation of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Voice_over_IP&quot;&gt;Voice Over IP&lt;/a&gt; (VOIP) technology we know today.&lt;/p&gt;
+&lt;p&gt;Instead of being transmitted over a circuit-switched network, the digital information is packetized, and transmission occurs as IP packets over a packet-switched network. These packet-switched networks form the foundation of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Voice_over_IP&quot;&gt;Voice Over IP&lt;/a&gt; (VOIP) technology we know today.&lt;/p&gt;
 
 &lt;p&gt;Now we live in a world of two networks; One circuit-switched and the other packet-switched. When those worlds interoperate, they do so using protocols that enable packet-switched digital data to communicated with circuit-switched digital data. Those protocols include, but are not limited to: H.264, V8, H.232, H.323, SIP, MGCP and others.&lt;/p&gt;
 
@@ -762,13 +762,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;&lt;strong&gt;London: +44 20 5555 5555&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;http://www.nanpa.com/&quot;&gt;North American Numbering Plan&lt;/a&gt; (NANP) is an integrated telephone numbering plan serving 20 North American countries that share its resources. These countries include the United States and its territories, Canada, Bermuda, Anguilla, Antigua &amp;amp; Barbuda, the Bahamas, Barbados, the British Virgin Islands, the Cayman Islands, Dominica, the Dominican Republic, Grenada, Jamaica, Montserrat, Saint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Trinidad and Tobago, and Turks &amp;amp; Caicos.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.nanpa.com/&quot;&gt;North American Numbering Plan&lt;/a&gt; (NANP) is an integrated telephone numbering plan serving 20 North American countries that share its resources. These countries include the United States and its territories, Canada, Bermuda, Anguilla, Antigua &amp;amp; Barbuda, the Bahamas, Barbados, the British Virgin Islands, the Cayman Islands, Dominica, the Dominican Republic, Grenada, Jamaica, Montserrat, Saint Maarten, St. Kitts and Nevis, St. Lucia, St. Vincent and the Grenadines, Trinidad and Tobago, and Turks &amp;amp; Caicos.&lt;/p&gt;
 
 &lt;p&gt;Regulatory authorities in each participating country have plenary authority over numbering resources, but the participating countries share numbering resources cooperatively.&lt;/p&gt;
 
 &lt;p&gt;AT&amp;amp;T developed the North American Numbering Plan in 1947 to simplify and facilitate direct dialing of long distance calls. Implementation of the plan began in 1951.&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;http://www.itu.int/en/Pages/default.aspx&quot;&gt;International Telecommunications Union&lt;/a&gt; (ITU) assigned country code “1” to the NANP area. The NANP conforms with ITU Recommendation E.164, the international standard for telephone numbering plans.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.itu.int/en/Pages/default.aspx&quot;&gt;International Telecommunications Union&lt;/a&gt; (ITU) assigned country code “1” to the NANP area. The NANP conforms with ITU Recommendation E.164, the international standard for telephone numbering plans.&lt;/p&gt;
 
 &lt;p&gt;NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Area (NPA) code, commonly called an area code, followed by a seven-digit local number. The format is usually represented as:&lt;/p&gt;
 
@@ -789,7 +789,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;The call needs to be routed through your long-distance phone carrier to another country’s long-distance phone carrier. To signal such a switch, you have to dial two separate numbers, your country’s exit code (or international access code) and the corresponding country code of the place you’re calling.&lt;/p&gt;
 
-&lt;p&gt;Almost all &lt;a href=&quot;http://electronics.howstuffworks.com/telephone-country-codes1.htm&quot;&gt;exit codes are either 00 or 011&lt;/a&gt;, although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.&lt;/p&gt;
+&lt;p&gt;Almost all &lt;a href=&quot;https://electronics.howstuffworks.com/telephone-country-codes1.htm&quot;&gt;exit codes are either 00 or 011&lt;/a&gt;, although there are a few exceptions like Cuba (119) and Nigeria (009). Country codes are one - to three-digit prefixes that are assigned to specific countries or groups of countries.&lt;/p&gt;
 
 &lt;p&gt;For example, the country code for the United States is 1, but the United States shares that country code with Canada and several smaller island nations like Jamaica, Puerto Rico and Guam.&lt;/p&gt;
 
@@ -799,13 +799,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Businesses install PBXs to reduce the number of phone lines they need to lease from the telephone company. Imagine that without a PBX, you would have to to rent one telephone line for every employee with a phone.&lt;/p&gt;
 
-&lt;p&gt;With a PBX system, you only need to rent as many lines from your telephone provider as the maximum number of staff making external calls at one time. In most businesses this is only about &lt;a href=&quot;http://www.techsoup.org/support/articles-and-how-tos/phone-systems-on-a-shoestring&quot;&gt;10-12% of the workforce&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With a PBX system, you only need to rent as many lines from your telephone provider as the maximum number of staff making external calls at one time. In most businesses this is only about &lt;a href=&quot;https://www.techsoup.org/support/articles-and-how-tos/phone-systems-on-a-shoestring&quot;&gt;10-12% of the workforce&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;What you didn’t know is before the &lt;a href=&quot;http://cypressnorth.com/technology/setting-up-a-small-office-or-home-office-voip-system-with-asterisk-pbx-part-1/&quot;&gt;tangled mess of PBX&lt;/a&gt;’s gone by:&lt;/p&gt;
+&lt;p&gt;What you didn’t know is before the &lt;a href=&quot;https://cypressnorth.com/technology/setting-up-a-small-office-or-home-office-voip-system-with-asterisk-pbx-part-1/&quot;&gt;tangled mess of PBX&lt;/a&gt;’s gone by:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/pstn-6.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;There were &lt;a href=&quot;http://www.ohmreunion.com/memorabilia/pbx.htm&quot;&gt;human powered switchboard operators&lt;/a&gt; in businesses, government and large commercial buildings:&lt;/p&gt;
+&lt;p&gt;There were &lt;a href=&quot;https://www.ohmreunion.com/memorabilia/pbx.htm&quot;&gt;human powered switchboard operators&lt;/a&gt; in businesses, government and large commercial buildings:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/pstn-7.jpg&quot; alt=&quot;pstn-2&quot; /&gt;&lt;/p&gt;
 
@@ -815,7 +815,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;In the PBX system, every telephone in a business location is wired to the PBX, using either standard cables or more recently Cat 5 ethernet cabling. When a member of staff picks up their phone and dials the outside access code (usually 9), the PBX connects that person to an outside line, and onto the PSTN.&lt;/p&gt;
 
-&lt;p&gt;PBX solutions themselves have gone from a consortium of wires and frames to a single commodity hardware or higher grade application running open source software that allows you to create a &lt;a href=&quot;http://www.asterisk.org/&quot;&gt;virtual PBX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PBX solutions themselves have gone from a consortium of wires and frames to a single commodity hardware or higher grade application running open source software that allows you to create a &lt;a href=&quot;https://www.asterisk.org/&quot;&gt;virtual PBX&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Open source software like Asterisk is an example of this paradigm shift. With Asterisk you can create a PBX, an IVR system, a conference bridge and virtually any other communications app you can imagine. Asterisk was one of the first open source PBX software packages.&lt;/p&gt;
 
@@ -823,7 +823,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;h3 id=&quot;pstn-at-respoke&quot;&gt;PSTN AT RESPOKE&lt;/h3&gt;
 
-&lt;p&gt;The PBX has gone from a tangled mess of wires to software running on commodity boxes to a &lt;a href=&quot;http://www.digium.com/en/products/switchvox-cloud&quot;&gt;hosted PBX&lt;/a&gt; in the cloud. The web was only the natural progression.&lt;/p&gt;
+&lt;p&gt;The PBX has gone from a tangled mess of wires to software running on commodity boxes to a &lt;a href=&quot;https://www.digium.com/en/products/switchvox-cloud&quot;&gt;hosted PBX&lt;/a&gt; in the cloud. The web was only the natural progression.&lt;/p&gt;
 
 &lt;p&gt;You can use Respoke to &lt;a href=&quot;https://docs-int.respoke.io/tutorials/calling-to-and-from-a-phone.html&quot;&gt;make phone calls and receive phone calls&lt;/a&gt; from phones on the PSTN as well as other Respoke client endpoints. It’s easy…&lt;/p&gt;
 
@@ -863,7 +863,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Of course you can do a lot of other things with Respoke as well. Like video, voice and text communications. Now you have access to the PSTN network as well. Sky’s the limit from here on out.&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/the-history-of-the-pstn</id>
+      <id>http://tiandavis.com/thoughts/posts/the-history-of-the-pstn</id>
       <updated>2014-11-20T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -872,10 +872,10 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>JavaScript and The Monomyth</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/javascript-and-the-monomyth" />
+      <link href="http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/thoughts/static/new-chart-of-history.jpg&quot; alt=&quot;The Hero's Journey&quot; title=&quot;The Hero's Journey&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In his seminal work, “The Hero with a Thousand Faces”, Joseph Campbell put forth the idea of &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces&quot;&gt;The Monomyth&lt;/a&gt;. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation.&lt;/p&gt;
+&lt;p&gt;In his seminal work, “The Hero with a Thousand Faces”, Joseph Campbell put forth the idea of &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces&quot;&gt;The Monomyth&lt;/a&gt;. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation.&lt;/p&gt;
 
 &lt;p&gt;Simply put, all of mankind’s myriad myths are but variations of a single great story. This is the monomyth and is most commonly expressed as a hero’s journey.&lt;/p&gt;
 
@@ -940,13 +940,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;h4 id=&quot;supernatural-aid&quot;&gt;Supernatural Aid&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;Once the hero has committed to the quest, consciously or unconsciously, his guide and magical helper appears or becomes known. More often than not, this supernatural mentor will present the hero with one or more talismans or artifacts that will aid them later in their quest.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Netscape 2.0 Beta’s &lt;a href=&quot;http://www.jwz.org/gruntle/nscpdorm.html&quot;&gt;extremely tight release schedule of March 1996&lt;/a&gt; forced Brendan to complete the first version of JavaScript in only &lt;a href=&quot;http://www.jwz.org/blog/2010/10/every-day-i-learn-something-new-and-stupid/#comment-1048&quot;&gt;ten days&lt;/a&gt;. Management at Netscape was sure Microsoft was gunning for them, after turning down a low ball offer to buy Netscape earlier that year.&lt;/p&gt;
+&lt;p&gt;Netscape 2.0 Beta’s &lt;a href=&quot;https://www.jwz.org/gruntle/nscpdorm.html&quot;&gt;extremely tight release schedule of March 1996&lt;/a&gt; forced Brendan to complete the first version of JavaScript in only &lt;a href=&quot;https://www.jwz.org/blog/2010/10/every-day-i-learn-something-new-and-stupid/#comment-1048&quot;&gt;ten days&lt;/a&gt;. Management at Netscape was sure Microsoft was gunning for them, after turning down a low ball offer to buy Netscape earlier that year.&lt;/p&gt;
 
 &lt;p&gt;What’s the old saying, “Just because you’re paranoid doesn’t mean they aren’t after you.” In this case, Microsoft was out for Netscape and the killer was to be VBScript in Internet Explorer. Things were about to get real - real fast…!&lt;/p&gt;
 
 &lt;p&gt;Though still the market leader in web browsers, Netscape speed up its release of Netscape 2.0. I like to think of that release as a crucible. In went Brendan Eich, his experiences with Scheme, Self, Java and C; his marching orders for the language to “look like Java” and “have objects without classes”.&lt;/p&gt;
 
-&lt;p&gt;Those things were the raw &lt;a href=&quot;http://en.wikipedia.org/wiki/Japanese_swordsmithing#Metallurgy&quot;&gt;Tamahagane&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Those things were the raw &lt;a href=&quot;https://en.wikipedia.org/wiki/Japanese_swordsmithing#Metallurgy&quot;&gt;Tamahagane&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Through those inhomogeneous mixtures of concepts and directives a finer language would reveal itself. Through the crucible, out came what would be one of the most popular programming languages in the world.&lt;/p&gt;
 
@@ -961,9 +961,9 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;&lt;em&gt;[Microsoft] did not want to deal with Sun about the trademark issue, and so they called their implementation JScript. A lot of people think that JScript and JavaScript are different but similar languages. That’s not the case. They are just different names for the same language, and the reason the names are different was to get around trademark issues.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Today, &lt;a href=&quot;http://tsdr.uspto.gov/#caseNumber=75026640&amp;amp;caseType=SERIAL_NO&amp;amp;searchType=statusSearch&quot;&gt;“JavaScript” is a trademark of Oracle Corporation&lt;/a&gt;. It is used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.&lt;/p&gt;
+&lt;p&gt;Today, &lt;a href=&quot;https://tsdr.uspto.gov/#caseNumber=75026640&amp;amp;caseType=SERIAL_NO&amp;amp;searchType=statusSearch&quot;&gt;“JavaScript” is a trademark of Oracle Corporation&lt;/a&gt;. It is used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.&lt;/p&gt;
 
-&lt;p&gt;Around this time in 1997, a fork of SpiderMonkey is developed at Netscape called &lt;a href=&quot;http://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)&quot;&gt;Rhino&lt;/a&gt;. Where SpiderMokey is written in C, Rhino is developed entirely in Java. At the time, Netscape was planning to produce a version of Netscape Navigator written fully in Java and so it needed an implementation of JavaScript written in Java.&lt;/p&gt;
+&lt;p&gt;Around this time in 1997, a fork of SpiderMonkey is developed at Netscape called &lt;a href=&quot;https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)&quot;&gt;Rhino&lt;/a&gt;. Where SpiderMokey is written in C, Rhino is developed entirely in Java. At the time, Netscape was planning to produce a version of Netscape Navigator written fully in Java and so it needed an implementation of JavaScript written in Java.&lt;/p&gt;
 
 &lt;p&gt;Of course Rhino could be embedded into any Java application to provide scripting to end users. Say for example you wanted to build a version of Excel running on top the JVM. And say your wanted to provide scripting capabilities in Excel similar to VBA.&lt;/p&gt;
 
@@ -1021,13 +1021,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Until then, supporting as many browsers as possible would continue to be an uphill battle. Later, we would find that each browsers Document Object Model (DOM) implementation was just as bad - if not worse…!&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&quot;http://ejohn.org/blog/the-dom-is-a-mess/&quot;&gt;DOM&lt;/a&gt; was a also mess. CSS selectors were inconsistent. DOM modification from JavaScript was inconsistent. Event management was downright agonizing.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://ejohn.org/blog/the-dom-is-a-mess/&quot;&gt;DOM&lt;/a&gt; was a also mess. CSS selectors were inconsistent. DOM modification from JavaScript was inconsistent. Event management was downright agonizing.&lt;/p&gt;
 
 &lt;p&gt;Even the most widely used DOM method - getElementById - returned inconsistent results from every browser. But it wasn’t just that method, nearly every DOM method was broken in some way, in some browser.&lt;/p&gt;
 
 &lt;p&gt;Moral of the story was if there’s a DOM method, there’s probably a problem with it somewhere, in some capacity. All of this was compounded by the growing popularity of JavaScript and its frenzied, almost barbarian integration to come.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Dynamic_HTML&quot;&gt;Dynamic HTML&lt;/a&gt; (DHTML) techniques had grown in popularity. It wasn’t long before developers took to JavaScript like a fat kid to cake. JavaScript was all over there place like spaghetti with a toddler.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Dynamic_HTML&quot;&gt;Dynamic HTML&lt;/a&gt; (DHTML) techniques had grown in popularity. It wasn’t long before developers took to JavaScript like a fat kid to cake. JavaScript was all over there place like spaghetti with a toddler.&lt;/p&gt;
 
 &lt;p&gt;By the time most of us joined a team, JavaScript was scattered inline throughout HTML. There were monstrous JavaScript files. Sometime so many they would make you dizzy.&lt;/p&gt;
 
@@ -1040,7 +1040,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;h4 id=&quot;the-meeting-with-the-goddess&quot;&gt;The Meeting with the Goddess&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;This is the point when the person experiences a love that has the power and significance of the all-powerful, all encompassing, unconditional love that a fortunate infant may experience with his or her mother. This is a very important step in the process and is often represented by the person finding the other person that he or she loves most completely.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;January 2006, John Resig released &lt;a href=&quot;http://ejohn.org/blog/bar-camp-nyc/&quot;&gt;jQuery at BarCamp NYC&lt;/a&gt;. jQuery opens the door for JavaScript to run consistently in every browser. Up until now, no one had taken on the challenge to reconciled JavaScript behavior across disparate browser vendors.&lt;/p&gt;
+&lt;p&gt;January 2006, John Resig released &lt;a href=&quot;https://ejohn.org/blog/bar-camp-nyc/&quot;&gt;jQuery at BarCamp NYC&lt;/a&gt;. jQuery opens the door for JavaScript to run consistently in every browser. Up until now, no one had taken on the challenge to reconciled JavaScript behavior across disparate browser vendors.&lt;/p&gt;
 
 &lt;p&gt;The promise was simple - write your JavaScript against jQuery and your code was guaranteed to run in every browser. Now, it is common place to use jQuery. But, back then, not many people stopped to wonder what it could be to have JavaScript just work.&lt;/p&gt;
 
@@ -1090,7 +1090,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Using jQuery.noConfict() John and the jQuery team allowed developers to continue to use jQuery’s dollar ($) sign while still allowing other frameworks to work properly.&lt;/p&gt;
 
-&lt;p&gt;What John Resig and the jQuery Core Team realized was that people used the dollar ($) alias for &lt;a href=&quot;http://tiandavis.com/posts/rails-3-and-the-jquery-effect/&quot;&gt;efficiency not identity&lt;/a&gt;. So why not let other frameworks use the $ alias and give jQuery developers the best of both worlds.&lt;/p&gt;
+&lt;p&gt;What John Resig and the jQuery Core Team realized was that people used the dollar ($) alias for &lt;a href=&quot;https://tiandavis.com/posts/rails-3-and-the-jquery-effect/&quot;&gt;efficiency not identity&lt;/a&gt;. So why not let other frameworks use the $ alias and give jQuery developers the best of both worlds.&lt;/p&gt;
 
 &lt;p&gt;As a result, jQuery developers didn’t have to choose efficiency over flexibility. While the other frameworks pandered, “One Framework to Rule Them ALL”, jQuery introduced jQuery.noConflict(), played it’s hand and moved aside.&lt;/p&gt;
 
@@ -1099,11 +1099,11 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;h4 id=&quot;apotheosis-becoming-god-like&quot;&gt;Apotheosis (becoming god-like)&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;This step is a god-like phase where the hero earns a period of rest, peace and fulfillment before the hero begins the return.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;May 2008, Douglas Crockford published his seminal book “&lt;a href=&quot;http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742&quot;&gt;JavaScript: The Good Parts&lt;/a&gt;”.&lt;/p&gt;
+&lt;p&gt;May 2008, Douglas Crockford published his seminal book “&lt;a href=&quot;https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742&quot;&gt;JavaScript: The Good Parts&lt;/a&gt;”.&lt;/p&gt;
 
 &lt;p&gt;Here, Crockford identified the abundance of good ideas that make JavaScript an outstanding object-oriented programming language-ideas such as functions, loose typing, dynamic objects, and an expressive object literal notation.&lt;/p&gt;
 
-&lt;p&gt;Later that year, in September 2008, Microsoft switches out its own &lt;a href=&quot;http://blog.jquery.com/2008/09/28/jquery-microsoft-nokia/&quot;&gt;AJAX library for jQuery&lt;/a&gt; and ships jQuery with Visual Studio. Two years later, in March 2011, the popular Ruby web framework, Ruby on Rails, switched out &lt;a href=&quot;https://twitter.com/dhh/statuses/45923430608023552&quot;&gt;Prototype for jQuery&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Later that year, in September 2008, Microsoft switches out its own &lt;a href=&quot;https://blog.jquery.com/2008/09/28/jquery-microsoft-nokia/&quot;&gt;AJAX library for jQuery&lt;/a&gt; and ships jQuery with Visual Studio. Two years later, in March 2011, the popular Ruby web framework, Ruby on Rails, switched out &lt;a href=&quot;https://twitter.com/dhh/statuses/45923430608023552&quot;&gt;Prototype for jQuery&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;As JavaScript had become the de-facto programming language of the web, jQuery had become the de-facto JavaScript normalization framework of the web.&lt;/p&gt;
 
@@ -1114,11 +1114,11 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;JavaScript was becoming a language for “real” developers. Consistent behavior in every browser was our version of the elixir of life…It was our holy grail and led to many innovations.&lt;/p&gt;
 
-&lt;p&gt;JSON or &lt;a href=&quot;http://en.wikipedia.org/wiki/JSON&quot;&gt;JavaScript Object Notation&lt;/a&gt; became the standard for transmitting objects between a server and web application using Ajax.&lt;/p&gt;
+&lt;p&gt;JSON or &lt;a href=&quot;https://en.wikipedia.org/wiki/JSON&quot;&gt;JavaScript Object Notation&lt;/a&gt; became the standard for transmitting objects between a server and web application using Ajax.&lt;/p&gt;
 
 &lt;p&gt;The brainchild of Douglas Crockford, JSON uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application and steadily became an alternative to XML.&lt;/p&gt;
 
-&lt;p&gt;Libraries like &lt;a href=&quot;http://raphaeljs.com/&quot;&gt;Raphael&lt;/a&gt; show us we never needed flash for beautiful interactive graphics. It also showed us what a commitment to cross-browser consistently can yield.&lt;/p&gt;
+&lt;p&gt;Libraries like &lt;a href=&quot;https://raphaeljs.com/&quot;&gt;Raphael&lt;/a&gt; show us we never needed flash for beautiful interactive graphics. It also showed us what a commitment to cross-browser consistently can yield.&lt;/p&gt;
 
 &lt;p&gt;Raphael is a cross-browser JavaScript library that draws Vector graphics for web sites. It will use SVG for most browsers, but will use VML for older versions of Internet Explorer.&lt;/p&gt;
 
@@ -1140,9 +1140,9 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;h4 id=&quot;the-magic-flight&quot;&gt;The Magic Flight&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;Sometimes the hero must escape with the boon, if it is something that the gods have been jealously guarding. It can be just as adventurous and dangerous returning from the journey as it was to go on it.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;A &lt;a href=&quot;http://techoctave.com/c7/posts/90-designer-languages&quot;&gt;Designer Language&lt;/a&gt; is a programming language created to avoid the perceived shortcomings of an existing language, usually by creating a superset of the existing language by modifying syntax or modifying programming constructs.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&quot;https://techoctave.com/c7/posts/90-designer-languages&quot;&gt;Designer Language&lt;/a&gt; is a programming language created to avoid the perceived shortcomings of an existing language, usually by creating a superset of the existing language by modifying syntax or modifying programming constructs.&lt;/p&gt;
 
-&lt;p&gt;In late 2009, Jeremy Ashkenas, quietly committed &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; to the JavaScript world. CoffeeScript was a programming language that &lt;a href=&quot;http://en.wikipedia.org/wiki/Source-to-source_compiler&quot;&gt;transcompiled&lt;/a&gt; to JavaScript. It was also the first designer language to bring back the concept of class based programming to JavaScript. In a short two years, CoffeeScript managed to influence legions of developers.&lt;/p&gt;
+&lt;p&gt;In late 2009, Jeremy Ashkenas, quietly committed &lt;a href=&quot;https://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; to the JavaScript world. CoffeeScript was a programming language that &lt;a href=&quot;https://en.wikipedia.org/wiki/Source-to-source_compiler&quot;&gt;transcompiled&lt;/a&gt; to JavaScript. It was also the first designer language to bring back the concept of class based programming to JavaScript. In a short two years, CoffeeScript managed to influence legions of developers.&lt;/p&gt;
 
 &lt;p&gt;Eventually, CoffeeScript made its way to Brendan Eich - The Creator of JavaScript - inevitably influencing the future of the language.&lt;/p&gt;
 
@@ -1158,19 +1158,19 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;What’s interesting is most designer languages still allowed you to use all your favorite frontend frameworks like jQuery. Though some like GWT and Objective-J do not because they provide their own underlying framework.&lt;/p&gt;
 
-&lt;p&gt;Times were changing rapidly. The grassroots investment in JavaScript by the development community didn’t go unnoticed. JavaScript became the &lt;a href=&quot;http://redmonk.com/dberkholz/2014/05/02/github-language-trends-and-the-fragmenting-landscape/&quot;&gt;most popular language used on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Times were changing rapidly. The grassroots investment in JavaScript by the development community didn’t go unnoticed. JavaScript became the &lt;a href=&quot;https://redmonk.com/dberkholz/2014/05/02/github-language-trends-and-the-fragmenting-landscape/&quot;&gt;most popular language used on GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;rescue-from-without&quot;&gt;Rescue from Without&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;Just as the hero may need guides and assistants to set out on the quest, oftentimes he or she must have powerful guides and rescuers to bring them back to everyday life, especially if the person has been wounded or weakened by the experience.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Around this time, &lt;a href=&quot;http://www.apple.com/hotnews/thoughts-on-flash/&quot;&gt;Apple dropped support for Flash&lt;/a&gt; on its new iPhone in favor of more open standards like HTML5, CSS and JavaScript. In subsequent years, &lt;a href=&quot;https://forums.adobe.com/message/4580870&quot;&gt;Adobe itself would drop support for Flash&lt;/a&gt; on mobile devices all together.&lt;/p&gt;
+&lt;p&gt;Around this time, &lt;a href=&quot;https://www.apple.com/hotnews/thoughts-on-flash/&quot;&gt;Apple dropped support for Flash&lt;/a&gt; on its new iPhone in favor of more open standards like HTML5, CSS and JavaScript. In subsequent years, &lt;a href=&quot;https://forums.adobe.com/message/4580870&quot;&gt;Adobe itself would drop support for Flash&lt;/a&gt; on mobile devices all together.&lt;/p&gt;
 
-&lt;p&gt;Microsoft drops support for IE6 as the &lt;a href=&quot;http://www.modern.ie/en-us/ie6countdown&quot;&gt;countdown&lt;/a&gt; to the death of IE6 continued. jQuery would later create a project fork that drops support for IE6 as to decrease the libraries bloat.&lt;/p&gt;
+&lt;p&gt;Microsoft drops support for IE6 as the &lt;a href=&quot;https://www.modern.ie/en-us/ie6countdown&quot;&gt;countdown&lt;/a&gt; to the death of IE6 continued. jQuery would later create a project fork that drops support for IE6 as to decrease the libraries bloat.&lt;/p&gt;
 
 &lt;h4 id=&quot;the-crossing-of-the-return-threshold&quot;&gt;The Crossing of the Return Threshold&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;The trick in returning is to retain the wisdom gained on the quest, to integrate that wisdom into a human life, and then maybe figure out how to share the wisdom with the rest of the world.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/&quot;&gt;Micro MVC libraries&lt;/a&gt; arise to offer JavaScript code organization along with jQuery integration. Some of those libraries include Backbone, KnockOut, Spine and JavaScriptMVC (CanJS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/&quot;&gt;Micro MVC libraries&lt;/a&gt; arise to offer JavaScript code organization along with jQuery integration. Some of those libraries include Backbone, KnockOut, Spine and JavaScriptMVC (CanJS).&lt;/p&gt;
 
 &lt;p&gt;Backbone, written by the creator of CoffeeScript - Jeremy Ashkenas, is a JavaScript library with a RESTful JSON interface and is based on the model–view–presenter (MVP) design pattern.&lt;/p&gt;
 
@@ -1180,9 +1180,9 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Around this time, Google open sources its V8 engine. Like its ancestor, SpiderMonkey, V8 is an open source JavaScript engine. V8 is the JavaScript engine behind Google’s Chrome web browser.&lt;/p&gt;
 
-&lt;p&gt;Later, projects like &lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt; use the V8 engine to turn JavaScript into a legitimate server-side language. This wasn’t the first server-side JavaScript runtime. But it was the first to realize a thriving ecosystem.&lt;/p&gt;
+&lt;p&gt;Later, projects like &lt;a href=&quot;https://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt; use the V8 engine to turn JavaScript into a legitimate server-side language. This wasn’t the first server-side JavaScript runtime. But it was the first to realize a thriving ecosystem.&lt;/p&gt;
 
-&lt;p&gt;Node gave us real-time, two-way connections using the HTML5 WebSocket protocol. The primary method to take advantage of HTML5 WebSockets was through &lt;a href=&quot;http://socket.io/&quot;&gt;Socket.IO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Node gave us real-time, two-way connections using the HTML5 WebSocket protocol. The primary method to take advantage of HTML5 WebSockets was through &lt;a href=&quot;https://socket.io/&quot;&gt;Socket.IO&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Socket.IO is a JavaScript library for realtime web applications. It has two parts: a client-side library that runs in the browser, and a server-side library for NodeJS. Both components have a nearly identical API. Like NodeJS, it is event-driven.&lt;/p&gt;
 
@@ -1203,7 +1203,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Essentially, the server becomes just another API which is consumed by various frontends. So the Single Page Application (SPA) arose. Now the debate isn’t which server-side web application framework do I use, instead many developers ask what frontend framework do I use to organize my code?&lt;/p&gt;
 
-&lt;p&gt;Frontend MVC frameworks like Ember and Angular arise to answer that question. &lt;a href=&quot;http://emberjs.com/&quot;&gt;Ember&lt;/a&gt; provides an opinionated framework with coverage for common uses cases and is unobstructive with jQuery integration. Ember is the Rails of JavaScript.&lt;/p&gt;
+&lt;p&gt;Frontend MVC frameworks like Ember and Angular arise to answer that question. &lt;a href=&quot;https://emberjs.com/&quot;&gt;Ember&lt;/a&gt; provides an opinionated framework with coverage for common uses cases and is unobstructive with jQuery integration. Ember is the Rails of JavaScript.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://angularjs.org/&quot;&gt;Angular&lt;/a&gt; has elements of inline JavaScript called directives. Most common scenarios must be implemented by the developer. But its not really inline JavaScript, just custom Angular properties embedded in HTML. If jQuery is not present in your script path, Angular falls back to its own implementation of a subset of jQuery Google calls jQLite.&lt;/p&gt;
 
@@ -1226,7 +1226,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;h2 id=&quot;common-mythic-elements&quot;&gt;Common Mythic Elements&lt;/h2&gt;
 
-&lt;p&gt;There are &lt;a href=&quot;http://www.moongadget.com/origins/myth.html&quot;&gt;common mythic elements&lt;/a&gt; in all monomyths. Here’s how JavaScript compares to Star Wars and The Matrix:&lt;/p&gt;
+&lt;p&gt;There are &lt;a href=&quot;https://www.moongadget.com/origins/myth.html&quot;&gt;common mythic elements&lt;/a&gt; in all monomyths. Here’s how JavaScript compares to Star Wars and The Matrix:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -1296,7 +1296,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;/table&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/javascript-and-the-monomyth</id>
+      <id>http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth</id>
       <updated>2014-06-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1305,7 +1305,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Foundation Is Everything</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/foundation-is-everything" />
+      <link href="http://tiandavis.com/thoughts/posts/foundation-is-everything" />
       <summary type="html">&lt;p&gt;I remember when I first realized some Universities were no longer teaching Computer Engineering and Computer Science students C++. Realizing the sad truth in it, I cringed. Flushed with sadness, I was utterly sick to my stomach.&lt;/p&gt;
 
 &lt;p&gt;You see, I spent my University years watching men do things with C/C++ that would blow your mind today. Granted, these men were utter freaks of nature, and I mean that in a good way.&lt;/p&gt;
@@ -1323,13 +1323,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;And if impending doom wasn’t lurking around the corner, he’d say, “Give it five minutes.” Give it five minutes. That meant learn to sleep on problems - a technique I use almost every single day.&lt;/p&gt;
 
-&lt;p&gt;For kicks we’d code trivia programs on paper. Or hop on over to the &lt;a href=&quot;http://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest&quot;&gt;International Obfuscated C Code Contest&lt;/a&gt; to checkout the latest entries. C/C++ can be a powerful binding force.&lt;/p&gt;
+&lt;p&gt;For kicks we’d code trivia programs on paper. Or hop on over to the &lt;a href=&quot;https://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest&quot;&gt;International Obfuscated C Code Contest&lt;/a&gt; to checkout the latest entries. C/C++ can be a powerful binding force.&lt;/p&gt;
 
 &lt;p&gt;You see, what I learned most from Hercules was less about being a coding BAMF and more about being an effective mentor, teacher and guide. And there isn’t a semi-colon in the world I wouldn’t write to learn those lessons.&lt;/p&gt;
 
 &lt;h3 id=&quot;cerberus&quot;&gt;Cerberus&lt;/h3&gt;
 
-&lt;p&gt;Then there were the Twins. I affectionately called them &lt;a href=&quot;http://en.wikipedia.org/wiki/Cerberus&quot;&gt;Cerberus&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Then there were the Twins. I affectionately called them &lt;a href=&quot;https://en.wikipedia.org/wiki/Cerberus&quot;&gt;Cerberus&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;The title wasn’t as glamorous as Hercules. Naturally, they didn’t care for it. I understood. It’s not like they were guarding anything in particular. Quite the opposite actually.&lt;/p&gt;
 
@@ -1380,7 +1380,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;Do it because you love open source. Do it because you cherish progress. Do it because, like me, you live and breathe this shit!&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/foundation-is-everything</id>
+      <id>http://tiandavis.com/thoughts/posts/foundation-is-everything</id>
       <updated>2012-05-29T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1389,22 +1389,22 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Hustle and Code</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/hustle-and-code" />
+      <link href="http://tiandavis.com/thoughts/posts/hustle-and-code" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/revolution.jpg&quot; alt=&quot;revolution&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people &lt;a href=&quot;http://en.wikipedia.org/wiki/Visual_Basic&quot;&gt;already have&lt;/a&gt; and many of us are still cleaning up that mess.&lt;/p&gt;
+&lt;p&gt;Slow down. Learn the Fundamentals. And Hustle. Because learning to develop good software takes ten years. A lot of people will disagree with me on this. A lot of big people &lt;a href=&quot;https://en.wikipedia.org/wiki/Visual_Basic&quot;&gt;already have&lt;/a&gt; and many of us are still cleaning up that mess.&lt;/p&gt;
 
-&lt;p&gt;In &lt;a href=&quot;http://www.ccs.neu.edu/home/matthias/HtDP2e/index.html&quot;&gt;How to Design Programs&lt;/a&gt;, the authors said it well, “Bad programming is easy. &lt;em&gt;Idiots&lt;/em&gt; can learn it in &lt;em&gt;21 days&lt;/em&gt;, even if they are &lt;em&gt;Dummies&lt;/em&gt;.”&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://www.ccs.neu.edu/home/matthias/HtDP2e/index.html&quot;&gt;How to Design Programs&lt;/a&gt;, the authors said it well, “Bad programming is easy. &lt;em&gt;Idiots&lt;/em&gt; can learn it in &lt;em&gt;21 days&lt;/em&gt;, even if they are &lt;em&gt;Dummies&lt;/em&gt;.”&lt;/p&gt;
 
 &lt;p&gt;But this isn’t 1991 and the tragedy that was Visual Basic (VB). This isn’t a time when the 21 days paradigm turned everyone - from Help Desk Support to Accountants to Managers to Lawyers - into overnight programmers. Yet, still this notion of learn to program overnight lingers more tragically than even The Bard himself could imagine.&lt;/p&gt;
 
 &lt;h3 id=&quot;why-is-everyone-in-such-a-rush&quot;&gt;Why is everyone in such a rush?&lt;/h3&gt;
 
-&lt;p&gt;In &lt;a href=&quot;http://norvig.com/21-days.html&quot;&gt;Teach Yourself Programming in Ten Years&lt;/a&gt;, author Peter Norvig posits the quintessential question in this knowledge arms race, “Why is everyone in such a rush?”&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://norvig.com/21-days.html&quot;&gt;Teach Yourself Programming in Ten Years&lt;/a&gt;, author Peter Norvig posits the quintessential question in this knowledge arms race, “Why is everyone in such a rush?”&lt;/p&gt;
 
 &lt;p&gt;To bring the point home, Norvig did an Amazon search to see how many book titles promised to teach you something in X amount of days. He received 248 hits. Later he swapped &lt;em&gt;days&lt;/em&gt; with &lt;em&gt;hours&lt;/em&gt; with similar results at 253 hits. Norvig goes on to note that 96% of the titles returned were computer and programming related. That was 2001.&lt;/p&gt;
 
-&lt;p&gt;Fast-forward to 2011 and the results are even more astounding. If you want to &lt;a href=&quot;http://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;amp;rank=%2Bfeaturedrank&amp;amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;amp;sz=25&amp;amp;pg=1/ref=s_b_np&quot;&gt;teach yourself something in X days&lt;/a&gt;, you’ll find 950 titles at your disposal. &lt;a href=&quot;http://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;amp;rank=%2Bfeaturedrank&amp;amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;amp;sz=25&amp;amp;pg=3/ref=s_b_np&quot;&gt;Swap days with hours&lt;/a&gt; and you’ll find 675 titles.&lt;/p&gt;
+&lt;p&gt;Fast-forward to 2011 and the results are even more astounding. If you want to &lt;a href=&quot;https://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;amp;rank=%2Bfeaturedrank&amp;amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;amp;sz=25&amp;amp;pg=1/ref=s_b_np&quot;&gt;teach yourself something in X days&lt;/a&gt;, you’ll find 950 titles at your disposal. &lt;a href=&quot;https://www.amazon.com/exec/obidos/search-handle-url/ix=books&amp;amp;rank=%2Bfeaturedrank&amp;amp;fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&amp;amp;sz=25&amp;amp;pg=3/ref=s_b_np&quot;&gt;Swap days with hours&lt;/a&gt; and you’ll find 675 titles.&lt;/p&gt;
 
 &lt;p&gt;That’s 3 to 4 times more titles than just a decade ago. In both cases, programming titles are the the overwhelming majority. In particular, the &lt;em&gt;hours&lt;/em&gt; category has a higher density of computer programming books than the &lt;em&gt;days&lt;/em&gt; category.&lt;/p&gt;
 
@@ -1463,7 +1463,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;What’s the rush? Slow down. Learn the Fundamentals. And Hustle. Cause learning to develop good software takes ten years. Hustle and Code. Get used to it.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/hustle-and-code</id>
+      <id>http://tiandavis.com/thoughts/posts/hustle-and-code</id>
       <updated>2011-08-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1472,7 +1472,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Rails 3 and The jQuery Effect</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/rails-3-and-the-jquery-effect" />
+      <link href="http://tiandavis.com/thoughts/posts/rails-3-and-the-jquery-effect" />
       <summary type="html">&lt;p&gt;Ruby on Rails 3.0 was a big evolution of the Rails DNA. Architectural changes were hard to miss - true. But, more happened - more changed.&lt;/p&gt;
 
 &lt;p&gt;In Rails 3.0 I saw a strategic change in the way the Rails Core Team viewed itself. Prototype went from being the Official JavaScript framework for Rails to being the Recommended JavaScript framework for Rails. That’s a really big deal!&lt;/p&gt;
@@ -1535,7 +1535,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;When Rails 3.0 was released, I believe DHH and the Rails Core Team took a similar stance as the jQuery team did so long ago: Give developers options and get out of the way of progress - let evolution play its course.&lt;/p&gt;
 
-&lt;p&gt;Earlier today &lt;a href=&quot;http://twitter.com/dhh/statuses/45923430608023552&quot;&gt;DHH announced&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Earlier today &lt;a href=&quot;https://twitter.com/dhh/statuses/45923430608023552&quot;&gt;DHH announced&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Rails 3.1 will ship with jQuery as the default JavaScript library. Prototype helpers/RJS are going into a gem.&lt;/p&gt;&amp;mdash; DHH (@dhh) &lt;a href=&quot;https://twitter.com/dhh/statuses/45923430608023552&quot;&gt;March 10, 2011&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
@@ -1553,7 +1553,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;I commend both the jQuery Core Team and the Rails Core Team. And many thanks for teaching this powerful lesson indeed. I can’t wait to get my hands on the Rails 3.1 release.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/rails-3-and-the-jquery-effect</id>
+      <id>http://tiandavis.com/thoughts/posts/rails-3-and-the-jquery-effect</id>
       <updated>2011-08-07T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1562,7 +1562,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
   
     <entry>
       <title>Silly Rabbit, Parsing HTML is for Kids!</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/silly-rabbit-parsing-html-is-for-kids" />
+      <link href="http://tiandavis.com/thoughts/posts/silly-rabbit-parsing-html-is-for-kids" />
       <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/trix.jpg&quot; alt=&quot;trix&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If I had a nickel for every time a developer says, “Don’t worry, I’ll just whip up a RegEx and parse that HTML in no time.” I’d retire right this very second. I’ve grown less and less shocked over the years. Still I’m left surprised every time.&lt;/p&gt;
@@ -1574,13 +1574,13 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 &lt;p&gt;Whether it’s reading HTML or stripping HTML tags out of user generated content, the feeling is always the same - utter shock!
 Talking a developer out of using RegEx to parse HTML is like talking a good friend off the ledge. Curiously, no one ever says, “Hey, let’s use RegEx to parse XML!” So what’s the deal with HTML? Is it the familiarity?&lt;/p&gt;
 
-&lt;p&gt;Hell, even Jon Skeet cannot parse HTML using regular expressions and the last guy to try went &lt;a href=&quot;http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html&quot;&gt;batshit crazy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hell, even Jon Skeet cannot parse HTML using regular expressions and the last guy to try went &lt;a href=&quot;https://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html&quot;&gt;batshit crazy&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Time is too valuable to start down this path. Spend what little time you have implementing your core requirements and business logic. This is not a fight you need to pursue. Just say no and get back to the primary task at hand.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-problem&quot;&gt;The problem&lt;/h3&gt;
 
-&lt;p&gt;Where do I begin? Where do I even begin? What can I say that hasn’t &lt;a href=&quot;http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags#answer-1732454&quot;&gt;already been said&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Where do I begin? Where do I even begin? What can I say that hasn’t &lt;a href=&quot;https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags#answer-1732454&quot;&gt;already been said&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Honestly, I don’t know where to begin. The truth is there will be hundreds of scenarios that you didn’t or couldn’t or will never think about. Maybe even thousands.&lt;/p&gt;
 
@@ -1596,14 +1596,14 @@ Talking a developer out of using RegEx to parse HTML is like talking a good frie
 
 &lt;p&gt;In fact, I’ll do you one better. Instead of just saying, “Grab an HTML Parser.” I’ll point out fine HTML Parsers for different platforms:&lt;/p&gt;
 
-&lt;p&gt;Ruby: Try &lt;a href=&quot;http://nokogiri.org/&quot;&gt;Nokogiri&lt;/a&gt;
-JavaScript: Try &lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;
-PHP: Try &lt;a href=&quot;http://docs.php.net/manual/en/domdocument.loadhtml.php&quot;&gt;PHP5 DOMDocument&lt;/a&gt;
-.Net(C#): Try &lt;a href=&quot;http://htmlagilitypack.codeplex.com/&quot;&gt;Html Agility Pack&lt;/a&gt;
-VB6: Try &lt;a href=&quot;http://www.codeguru.com/vb/vb_internet/html/article.php/c4815&quot;&gt;MSHTML&lt;/a&gt;The DOM Parser used in IE
-Python: Try &lt;a href=&quot;http://lxml.de/xpathxslt.html&quot;&gt;lxml&lt;/a&gt;
-Perl: Try &lt;a href=&quot;http://search.cpan.org/~gaas/HTML-Parser-3.68/Parser.pm&quot;&gt;HTML:Parser&lt;/a&gt;
-Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cleaner&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ruby: Try &lt;a href=&quot;https://nokogiri.org/&quot;&gt;Nokogiri&lt;/a&gt;
+JavaScript: Try &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt;
+PHP: Try &lt;a href=&quot;https://docs.php.net/manual/en/domdocument.loadhtml.php&quot;&gt;PHP5 DOMDocument&lt;/a&gt;
+.Net(C#): Try &lt;a href=&quot;https://htmlagilitypack.codeplex.com/&quot;&gt;Html Agility Pack&lt;/a&gt;
+VB6: Try &lt;a href=&quot;https://www.codeguru.com/vb/vb_internet/html/article.php/c4815&quot;&gt;MSHTML&lt;/a&gt;The DOM Parser used in IE
+Python: Try &lt;a href=&quot;https://lxml.de/xpathxslt.html&quot;&gt;lxml&lt;/a&gt;
+Perl: Try &lt;a href=&quot;https://search.cpan.org/~gaas/HTML-Parser-3.68/Parser.pm&quot;&gt;HTML:Parser&lt;/a&gt;
+Java: Try &lt;a href=&quot;https://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cleaner&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;There, now all you have to do is get up to speed. Then see if one of these full-fledged HTML Parsers will do the trick.&lt;/p&gt;
 
@@ -1616,7 +1616,7 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
 &lt;p&gt;You’ll thank yourself in a couple weeks when the Red Bull and adrenaline wears off. It’s really not worth it! Granted we all have to start from somewhere. Think of this as your new beginning.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</id>
+      <id>http://tiandavis.com/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</id>
       <updated>2011-04-17T20:00:00-04:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1625,12 +1625,12 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
   
     <entry>
       <title>Object Oriented Ruby: Classes, Mixins and Jedi</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi" />
+      <link href="http://tiandavis.com/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi" />
       <summary type="html">&lt;p&gt;Objects, Ruby Classes and Mixins are the topics today. Ruby is a dynamic language with a focus on simplicity and productivity. Object Oriented programming in Ruby is at once elegant and simple. Ready for more power and flexibility? Let’s get started…&lt;/p&gt;
 
 &lt;p&gt;Most academics approach object oriented discussions with Tonka toys and furry kittens. Well, academia can take a backseat. From here on out, dump the Tonka toys and put the kittens to bed - we’re talking Lightsabers and Jedi baby!&lt;/p&gt;
 
-&lt;iframe width=&quot;700&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/_xP3fI7yn5s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;700&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_xP3fI7yn5s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;objects&quot;&gt;Objects&lt;/h3&gt;
 
@@ -1645,7 +1645,7 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
 &lt;span class=&quot;n&quot;&gt;anakin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lightsaber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ruby&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;anakin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;juyo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Here, the &lt;em&gt;anakin&lt;/em&gt; object is an instance of the Jedi class. Apparently, Anakin is having trouble with some galactic fraktards and fires up his Ruby lightsaber using the &lt;em&gt;lightsaber&lt;/em&gt; method. Then Anakin proceeds to bring the hurt using a lightsaber combat form called &lt;a href=&quot;http://starwars.wikia.com/wiki/Lightsaber_combat&quot;&gt;Juyo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here, the &lt;em&gt;anakin&lt;/em&gt; object is an instance of the Jedi class. Apparently, Anakin is having trouble with some galactic fraktards and fires up his Ruby lightsaber using the &lt;em&gt;lightsaber&lt;/em&gt; method. Then Anakin proceeds to bring the hurt using a lightsaber combat form called &lt;a href=&quot;https://starwars.wikia.com/wiki/Lightsaber_combat&quot;&gt;Juyo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Using the Jedi class is deceivingly simple. That simplicity is possible because of a well designed domain model (collection of ruby classes that model a particular system).&lt;/p&gt;
 
@@ -1874,12 +1874,12 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
 
 &lt;p&gt;I could stop here, but I believe you’ll be able to make better judgments when you have a fuller picture of the issue. So I’m going to tell you when implementing Active Record as a mixin makes sense.&lt;/p&gt;
 
-&lt;p&gt;It makes sense when you’re dealing with legacy code that already has a base class coupled with an inefficient, custom data access layer. Then I recommend using a Ruby ORM like &lt;a href=&quot;http://datamapper.org/&quot;&gt;Datamapper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It makes sense when you’re dealing with legacy code that already has a base class coupled with an inefficient, custom data access layer. Then I recommend using a Ruby ORM like &lt;a href=&quot;https://datamapper.org/&quot;&gt;Datamapper&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You will spend a lot of time wiring up your domain models, but you’ll get a mature and flexible data layer - just the type of sprucing up any legacy app could use.&lt;/p&gt;
 
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</id>
+      <id>http://tiandavis.com/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</id>
       <updated>2011-01-26T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>
@@ -1888,7 +1888,7 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
   
     <entry>
       <title>Rails 3.0 rescue from Routing Error Solution</title>
-      <link href="http://0.0.0.0:4000/thoughts/posts/rails-resuce-from-routing-error-solution" />
+      <link href="http://tiandavis.com/thoughts/posts/rails-resuce-from-routing-error-solution" />
       <summary type="html">&lt;p&gt;Well, I’ve got good news and I’ve got bad news. As of Rails 3.0.1, using rescue_from in your ApplicationController to recover from a routing error is broken! That’s the bad news.&lt;/p&gt;
 
 &lt;p&gt;The good news is I have a solution that will keep you in unison with the Rails Core Team. The Rails team has promised a fix some time in Rails 3.1. Until then, I’ve got readers and I’ve got customers and I &lt;em&gt;shudder&lt;/em&gt; at the thought of showing them a generic error page.&lt;/p&gt;
@@ -1956,7 +1956,7 @@ Java: Try &lt;a href=&quot;http://htmlcleaner.sourceforge.net/&quot;&gt;HTML Cle
 
 &lt;p&gt;Well, I encourage you to dig into Rails 3 and have a little fun. And if you have another solution, post here so we can discuss. Until next time Beloved, take care!&lt;/p&gt;
 </summary>
-      <id>http://0.0.0.0:4000/thoughts/posts/rails-resuce-from-routing-error-solution</id>
+      <id>http://tiandavis.com/thoughts/posts/rails-resuce-from-routing-error-solution</id>
       <updated>2010-11-10T19:00:00-05:00</updated>
       <author>
         <name>Tian Davis</name>

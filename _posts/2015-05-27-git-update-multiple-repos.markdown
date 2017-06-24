@@ -55,7 +55,7 @@ If you find yourself needing to update multiple git repos at a time, give this t
 
 
 [1]: /images/macroons-coffee.png  "Macroons Coffee"
-[2]: http://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful
-[3]: http://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos
+[2]: https://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful
+[3]: https://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos
 [4]: https://twitter.com/dhh/statuses/45923430608023552
-[6]: http://techoctave.com/c7/posts/90-designer-languages
+[6]: https://techoctave.com/c7/posts/90-designer-languages

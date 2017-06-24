@@ -10,7 +10,7 @@ permalink: /thoughts/posts/using-chance-to-generate-sample-data
 
 It's not like writing sample data is hard per se. I just always felt like it was unnecessary. Most of the time you're trying to deliver business value.
 
-You're certainly not trying to build the world's greatest random number generator. And you're definitely not trying to build the world's greatest random email generator either. Unless you're [chance.js](http://chancejs.com/#gender) that is.
+You're certainly not trying to build the world's greatest random number generator. And you're definitely not trying to build the world's greatest random email generator either. Unless you're [chance.js](https://chancejs.com/#gender) that is.
 
 ### What is Chance
 

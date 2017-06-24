@@ -1,5 +1,5 @@
 /*
-VideoJS VimCSS Skin (http://videojs.com)
+VideoJS VimCSS Skin (https://videojs.com)
 Version 2.0.0
 */
 
@@ -84,7 +84,7 @@ Version 2.0.0
 }
 .vim-css div.vjs-big-play-button span {
   margin: 22px 0 0 35px;
-  /* Drawing the play triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+  /* Drawing the play triangle with borders - https://www.infimum.dk/HTML/slantinfo.html */
   border-left: 36px solid #fff; /* Width & Color of play icon */
   /* Height of play icon is total top & bottom border widths. Color is transparent. */
   border-top: 18px solid rgba(0,0,0,0); border-bottom: 18px solid rgba(0,0,0,0);

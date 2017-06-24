@@ -1,3 +1,3 @@
 User-agent: * 
 Disallow: 
-Sitemap: http://tiandavis.com/sitemap.xml
+Sitemap: https://tiandavis.com/sitemap.xml

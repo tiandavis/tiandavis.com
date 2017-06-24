@@ -10,7 +10,7 @@ Objects, Ruby Classes and Mixins are the topics today. Ruby is a dynamic languag
 
 Most academics approach object oriented discussions with Tonka toys and furry kittens. Well, academia can take a backseat. From here on out, dump the Tonka toys and put the kittens to bed - we're talking Lightsabers and Jedi baby!
 
-<iframe width="700" height="315" src="http://www.youtube.com/embed/_xP3fI7yn5s" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="315" src="https://www.youtube.com/embed/_xP3fI7yn5s" frameborder="0" allowfullscreen></iframe>
 
 ### Objects
 
@@ -293,5 +293,5 @@ It makes sense when you're dealing with legacy code that already has a base clas
 You will spend a lot of time wiring up your domain models, but you'll get a mature and flexible data layer - just the type of sprucing up any legacy app could use.
 
 
-  [1]: http://starwars.wikia.com/wiki/Lightsaber_combat
-  [2]: http://datamapper.org/
+  [1]: https://starwars.wikia.com/wiki/Lightsaber_combat
+  [2]: https://datamapper.org/

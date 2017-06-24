@@ -59,13 +59,13 @@ This is not about being a Cowboy Coder. You do not have to be a Hero. I'm pretty
 You'll thank yourself in a couple weeks when the Red Bull and adrenaline wears off. It's really not worth it! Granted we all have to start from somewhere. Think of this as your new beginning.
 
 
-  [1]: http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html
-  [2]: http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags#answer-1732454
-  [3]: http://nokogiri.org/
-  [4]: http://jquery.com/
-  [5]: http://docs.php.net/manual/en/domdocument.loadhtml.php
-  [6]: http://htmlagilitypack.codeplex.com/
-  [7]: http://www.codeguru.com/vb/vb_internet/html/article.php/c4815
-  [8]: http://lxml.de/xpathxslt.html
-  [9]: http://search.cpan.org/~gaas/HTML-Parser-3.68/Parser.pm
-  [10]: http://htmlcleaner.sourceforge.net/
+  [1]: https://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html
+  [2]: https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags#answer-1732454
+  [3]: https://nokogiri.org/
+  [4]: https://jquery.com/
+  [5]: https://docs.php.net/manual/en/domdocument.loadhtml.php
+  [6]: https://htmlagilitypack.codeplex.com/
+  [7]: https://www.codeguru.com/vb/vb_internet/html/article.php/c4815
+  [8]: https://lxml.de/xpathxslt.html
+  [9]: https://search.cpan.org/~gaas/HTML-Parser-3.68/Parser.pm
+  [10]: https://htmlcleaner.sourceforge.net/

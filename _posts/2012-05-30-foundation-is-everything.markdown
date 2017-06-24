@@ -81,5 +81,5 @@ But not because I said so.
 Do it because you love open source. Do it because you cherish progress. Do it because, like me, you live and breathe this shit!
 
 
-  [1]: http://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest
-  [2]: http://en.wikipedia.org/wiki/Cerberus
+  [1]: https://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest
+  [2]: https://en.wikipedia.org/wiki/Cerberus

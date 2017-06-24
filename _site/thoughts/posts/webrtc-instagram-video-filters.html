@@ -12,7 +12,7 @@
       <meta name="description" content="With more than a $1 Billion valuation and over 75 million daily users, Instagram is arguably one of the most popular social networks today. Did you know more than 55 million photos are posted daily on Instagram? Or that the platform sees over 8,500 likes per second? I&rsquo;ve always had a small love affair with image processing. So I figured let&rsquo;s have some fun with WebRTC and find out, &ldquo;Can you apply Instagram filters to...">
       
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10">
-      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="/css/main.css" />
       <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
       <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
@@ -20,12 +20,12 @@
 
   <body>
     <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <main>
       <section id="single-wrap">
-  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="single-content" itemscope itemtype="https://schema.org/BlogPosting">
 	
     <div class="feat">
       <h5 class="page-date">
@@ -46,7 +46,7 @@
 
 <p>I&rsquo;ve always had a small love affair with image processing. So I figured let&rsquo;s have some fun with WebRTC and find out, &ldquo;Can you apply Instagram filters to a live WebRTC video stream?&rdquo; To be brutally honest, the question had been burning me for months, so I finally set out to find the answer.</p>
 
-<p>What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&rsquo;s a <a href="http://tiandavis.github.io/webrtc-instagram-video-filters/">live demo</a> I put together of the concept (Pro Tip: Use Chrome or <a href="http://caniuse.com/#feat=css-filters">FF 35+</a>). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. </p>
+<p>What I found is indeed you can add Instagram, or rather Instagram-ish, filters to your live WebRTC video stream. Here&rsquo;s a <a href="https://tiandavis.github.io/webrtc-instagram-video-filters/">live demo</a> I put together of the concept (Pro Tip: Use Chrome or <a href="https://caniuse.com/#feat=css-filters">FF 35+</a>). This is the story of how I went about getting it done. You can follow along as I break it down step-by-step. </p>
 
 <p>First, we need a little HTML to hang our video element and controls: </p>
 
@@ -68,9 +68,9 @@
   <span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">"Amaro"</span><span class="nt">&gt;</span>#Amaro<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<p>Here, I included Google&rsquo;s <a href="http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill">adapter.js shim</a> to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&rsquo;ll use that video tag to display the video stream coming from our web camera. We&rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the <a href="http://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b">most popular filter on Instagram</a>. Now for the actual filters.</p>
+<p>Here, I included Google&rsquo;s <a href="http://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill">adapter.js shim</a> to normalize WebRTC behavior across Chrome, Firefox and Opera. Then, I included a simple video tag. We&rsquo;ll use that video tag to display the video stream coming from our web camera. We&rsquo;ll also use that same video tag to apply our image filters against. Lastly, I created an unordered list of Instagram filters and a #NoFilter control to remove all filters from the video element. Interesting to note, #NoFilter is the <a href="https://www.buzzfeed.com/javim2/23-interesting-facts-about-instagram-bw9q#.vbRNlYMy5b">most popular filter on Instagram</a>. Now for the actual filters.</p>
 
-<p>Laying the foundation for the Instagram filters are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS3 filters</a>. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating <a href="http://designpieces.com/2014/09/instagram-filters-css3-effects/">every single Instagram filter using CSS3 filters</a>. Here are a few we&rsquo;ll use for this experiment:</p>
+<p>Laying the foundation for the Instagram filters are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS3 filters</a>. Thankfully, Nick Georgiou of Design Pieces already did a fantastic job recreating <a href="https://designpieces.com/2014/09/instagram-filters-css3-effects/">every single Instagram filter using CSS3 filters</a>. Here are a few we&rsquo;ll use for this experiment:</p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.ig-willow</span> <span class="p">{</span>
   <span class="nl">-webkit-filter</span><span class="p">:</span> <span class="n">saturate</span><span class="p">(</span><span class="m">0.02</span><span class="p">)</span> <span class="n">contrast</span><span class="p">(</span><span class="m">0.85</span><span class="p">)</span> <span class="n">brightness</span><span class="p">(</span><span class="m">1.2</span><span class="p">)</span> <span class="n">sepia</span><span class="p">(</span><span class="m">0.02</span><span class="p">);</span>
@@ -166,7 +166,7 @@
     <div id="share" class="feat">      
       <p>discuss on twitter</p>
       
-      <a href="http://twitter.com/share" class="popup">
+      <a href="https://twitter.com/share" class="popup">
         <span class="icon-twitter"></span>
       </a>
       

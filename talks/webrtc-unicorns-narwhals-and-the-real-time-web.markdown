@@ -60,11 +60,11 @@ This talk discusses lessons learned in the trenches developing with WebRTC. In p
 
 
 [GitHub]: https://github.com/tiandavis/native-webrtc-node-socket.io-signaling
-[Getting Started with WebRTC]: http://www.html5rocks.com/en/tutorials/webrtc/basics/
-[WebRTC for Real-Time Scaling]: http://stackoverflow.com/questions/18833920/webrtc-for-realtime-scaling/21103641#21103641
+[Getting Started with WebRTC]: https://www.html5rocks.com/en/tutorials/webrtc/basics/
+[WebRTC for Real-Time Scaling]: https://stackoverflow.com/questions/18833920/webrtc-for-realtime-scaling/21103641#21103641
 [Respoke]: https://www.respoke.io/
 [RTCDataChannel]: https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection#createDataChannel
 [WebRTC Samples]: https://github.com/webrtc/samples
-[Why another data channel]: http://www.html5rocks.com/en/tutorials/webrtc/datachannels/#why-another-data-channel
+[Why another data channel]: https://www.html5rocks.com/en/tutorials/webrtc/datachannels/#why-another-data-channel
 [codelab]: https://bitbucket.org/webrtc/codelab
 [WebRTC for the Web]: https://github.com/webrtcftw
