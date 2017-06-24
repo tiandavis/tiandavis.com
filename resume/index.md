@@ -34,7 +34,7 @@ I've been fortunate, really fortunate, that my startup experience has been shape
 
 I'm currently working with a talented team of engineers, leading the [retrofitting][browzine-subjects] of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
 
-The application is built using Ember and Sass on the frontend, running atop a Node Express API on the backend.
+The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend.
 
 ![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-10.png)
 
