@@ -208,7 +208,7 @@ Fun technical blog post written for blog.respoke.io mashing up two popular conce
 
 Thought leadership piece discussing the story of JavaScript told through the eyes of Joseph Campbell's "Hero's Journey".
 
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://tiandavis.com/thoughts/posts/javascript-and-the-monomyth/">JavaScript and The Monomyth</a></h4><p>In his seminal work, "The Hero with a Thousand Faces", Joseph Campbell put forth the idea of The Monomyth. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation. Simply put, all of mankind's myriad myths are but variations of a single great story. This is the monomyth and is most commonly expressed as a hero's journey....</p></blockquote>
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://tiandavis.com/thoughts/posts/javascript-and-the-monomyth">JavaScript and The Monomyth</a></h4><p>In his seminal work, "The Hero with a Thousand Faces", Joseph Campbell put forth the idea of The Monomyth. The idea is based on the observation that a common pattern exists beneath the narrative elements of most great myths, regardless of their origin or time of creation. Simply put, all of mankind's myriad myths are but variations of a single great story. This is the monomyth and is most commonly expressed as a hero's journey....</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <br>
