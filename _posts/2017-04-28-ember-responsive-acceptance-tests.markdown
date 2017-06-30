@@ -69,6 +69,6 @@ I think the key during the conversion is validating which class names/id names/e
 Ideally, we'd have an actual mobile browser, running on an actual mobile device, but that option doesn't seem available to any team at the moment. So if you're stuck figuring out how to bring your responsive ember application under test, give this approach a try.
 
 
-[1]: https://webstandardssherpa.com/reviews/responsive-retrofitting/
+[1]: http://webstandardssherpa.com/reviews/responsive-retrofitting/
 [2]: https://github.com/freshbooks/ember-responsive/
 [3]: https://github.com/freshbooks/ember-responsive/issues/95

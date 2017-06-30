@@ -2,105 +2,105 @@
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/ember-responsive-acceptance-tests</loc>
+    <loc>http://tiandavis.com/thoughts/posts/ember-responsive-acceptance-tests</loc>
     <lastmod>2017-04-27T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/git-for-tortoise-svn-developers-tutorial</loc>
+    <loc>http://tiandavis.com/thoughts/posts/git-for-tortoise-svn-developers-tutorial</loc>
     <lastmod>2015-10-27T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/using-chance-to-generate-sample-data</loc>
+    <loc>http://tiandavis.com/thoughts/posts/using-chance-to-generate-sample-data</loc>
     <lastmod>2015-07-03T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/git-update-multiple-repos</loc>
+    <loc>http://tiandavis.com/thoughts/posts/git-update-multiple-repos</loc>
     <lastmod>2015-05-26T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</loc>
+    <loc>http://tiandavis.com/thoughts/posts/webrtc-screensharing-with-respoke-and-node-webkit</loc>
     <lastmod>2015-04-09T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/webrtc-instagram-video-filters</loc>
+    <loc>http://tiandavis.com/thoughts/posts/webrtc-instagram-video-filters</loc>
     <lastmod>2015-03-03T19:00:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/javascript-shims-versus-polyfills</loc>
+    <loc>http://tiandavis.com/thoughts/posts/javascript-shims-versus-polyfills</loc>
     <lastmod>2015-02-16T19:00:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/the-history-of-the-pstn</loc>
+    <loc>http://tiandavis.com/thoughts/posts/the-history-of-the-pstn</loc>
     <lastmod>2014-11-20T19:00:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/javascript-and-the-monomyth</loc>
+    <loc>http://tiandavis.com/thoughts/posts/javascript-and-the-monomyth</loc>
     <lastmod>2014-06-07T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/foundation-is-everything</loc>
+    <loc>http://tiandavis.com/thoughts/posts/foundation-is-everything</loc>
     <lastmod>2012-05-29T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/hustle-and-code</loc>
+    <loc>http://tiandavis.com/thoughts/posts/hustle-and-code</loc>
     <lastmod>2011-08-07T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/rails-3-and-the-jquery-effect</loc>
+    <loc>http://tiandavis.com/thoughts/posts/rails-3-and-the-jquery-effect</loc>
     <lastmod>2011-08-07T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</loc>
+    <loc>http://tiandavis.com/thoughts/posts/silly-rabbit-parsing-html-is-for-kids</loc>
     <lastmod>2011-04-17T20:00:00-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</loc>
+    <loc>http://tiandavis.com/thoughts/posts/object-oriented-ruby-classes-mixins-and-jedi</loc>
     <lastmod>2011-01-26T19:00:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/posts/rails-resuce-from-routing-error-solution</loc>
+    <loc>http://tiandavis.com/thoughts/posts/rails-resuce-from-routing-error-solution</loc>
     <lastmod>2010-11-10T19:00:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -110,8 +110,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/404.html</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/404.html</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -121,8 +121,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/talks/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/talks/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -130,8 +130,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/archives/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/thoughts/archives/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -139,8 +139,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/thoughts/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/thoughts/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -148,8 +148,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -157,8 +157,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/developer/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/developer/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -166,8 +166,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/resume/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/resume/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -175,8 +175,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/developer-educator/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/developer-educator/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -184,8 +184,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/talks/javascript-and-the-monomyth/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/talks/javascript-and-the-monomyth/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -195,8 +195,8 @@
   
   
   <url>
-    <loc>http://0.0.0.0:4000/talks/webrtc-unicorns-narwhals-and-the-real-time-web/</loc>
-    <lastmod>2017-06-29T22:54:29-04:00</lastmod>
+    <loc>http://tiandavis.com/talks/webrtc-unicorns-narwhals-and-the-real-time-web/</loc>
+    <lastmod>2017-06-29T23:16:40-04:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
