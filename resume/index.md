@@ -76,7 +76,7 @@ Wrote Respoke PHP and Respoke Java server-side libraries.
 
 ### Open Source Contributions (OSS)
 
-During an ember-cli upgrade, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.
+During an ember-cli upgrade for BrowZine, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/ebryn/ember-component-css/pull/132">ebryn/ember-component-css</a></h4><p>An Ember CLI addon which allows you to specify styles for individual components</p></blockquote>
 
