@@ -32,13 +32,15 @@ I've been fortunate, really fortunate, that my startup experience has been shape
 
 ![Capabilities][capabilities-3]
 
-I'm currently working with a talented team of engineers, leading the [retrofitting][browzine-subjects] of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
+I'm currently working with a talented team of co-founders and engineers, leading the [retrofitting][browzine-subjects] of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
 
 The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend.
 
-![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-10.png)
+![ember-responsive acceptance tests](/images/subjects-search.png)
 
-![ember-responsive acceptance tests](/images/ember-responsive-acceptance-tests-11.png)
+![ember-responsive acceptance tests](/images/subject-details.png)
+
+![ember-responsive acceptance tests](/images/journal-toc.png)
 
 Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
 
@@ -255,4 +257,4 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 
 [browzine]: https://develop.browzine.com/libraries/222/subjects
 
-[browzine-subjects]: https://develop.browzine.com/libraries/222/subjects/60/bookcases/87/bookshelves/267?sort=title
+[browzine-subjects]: https://develop.browzine.com/libraries/222/subjects/60?sort=rank
