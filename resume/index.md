@@ -44,7 +44,7 @@ The application is built using Ember CLI, Sass and QUnit for testing on the fron
 
 Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
 
-Learn more about we got our [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
+Learn more about how we got our [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
 
 <br>
 
