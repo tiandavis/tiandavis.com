@@ -11,7 +11,7 @@ I know how hard it is to build developer trust and community because I've done i
 
 <br>
 
-##Strong technical writing skills 
+##Strong technical writing skills
 
 Take a look at the documentation reorganization I lead at Respoke and a few blog posts and screencasts I produced along the way.
 
@@ -19,7 +19,7 @@ Take a look at the documentation reorganization I lead at Respoke and a few blog
 
 ###Documentation
 
-Lead the documentation and reorganization of Respoke's developer docs along product lines - Client libraries (JavaScript, iOS, Android), Server libraries (Node, Ruby, .NET, PHP, Java) and REST API (JSON). 
+Lead the documentation and reorganization of Respoke's developer docs along product lines - Client libraries (JavaScript, iOS, Android), Server libraries (Node, Ruby, .NET, PHP, Java) and REST API (JSON).
 
 With a focus on quick Guides, the goal was a clear distinction between Guides, API References and Example Code.
 
@@ -202,7 +202,7 @@ Another talk focused on the story of JavaScript as seen through the eyes of the 
 
 ##What's next exactly...?
 
-I'd love to learn more about the position, the team and the company. Go ahead, <a href="mailto:tiandavis@gmail.com">email</a> me and we'll continue the conversation.
+I'd love to learn more about the position, the team and the company. Go ahead, email me and we'll continue the conversation.
 
 
 [apollo-dark]: /images/apollo-dark.png "Apollo Dark"

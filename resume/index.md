@@ -219,7 +219,7 @@ Thought leadership piece discussing the story of JavaScript told through the eye
 
 ## What's next exactly...?
 
-I'd love to learn more about the position, the team and the company. Go ahead, <a href="mailto:tiandavis@gmail.com">email</a> me and we'll continue the conversation.
+I'd love to learn more about the position, the team and the company. Go ahead, email me and we'll continue the conversation.
 
 
 
@@ -232,7 +232,6 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [GitHub]: https://github.com/tiandavis
 [Twitter]: https://twitter.com/tiandavis
 [Columbus Code Camp]: https://columbuscodecamp.com/
-[email]: mailto:tiandavis@gmail.com
 [capabilities-1]: /images/capabilities-1.png "Core Capabilities"
 [capabilities-2]: /images/capabilities-2.png "Core Capabilities"
 [capabilities-3]: /images/capabilities-3.png "Core Capabilities"

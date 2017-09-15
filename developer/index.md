@@ -20,7 +20,7 @@ I ship hiqh quality code. I've shipped critical components on both Respoke's Com
 
 ###Nationwide
 
-At Nationwide, I lead a team of five engineers to build a suite of line-of-business applications to manage underwriting risk. 
+At Nationwide, I lead a team of five engineers to build a suite of line-of-business applications to manage underwriting risk.
 
 The first thing we built was a custom offline-first desktop application to gather underwriting risk data in parts of the United States you'd think time forgotten. The system would sync once on the Nationwide network.
 
@@ -160,7 +160,7 @@ Another talk focused on the story of JavaScript as seen through the eyes of the 
 <br>
 <br>
 
-##Strong technical writing skills 
+##Strong technical writing skills
 
 Take a look at a few screencasts and blog posts I produced along the way.
 
@@ -216,9 +216,9 @@ Thought leadership piece discussing the story of JavaScript told through the eye
 
 ##What's next exactly...?
 
-I'd love to learn more about the position, the team and the company. Go ahead, <a href="mailto:tiandavis@gmail.com">email</a> me and we'll continue the conversation.
+I'd love to learn more about the position, the team and the company. Go ahead, email me and we'll continue the conversation.
 
- 
+
 
 
 
@@ -229,7 +229,6 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [GitHub]: https://github.com/tiandavis
 [Twitter]: https://twitter.com/tiandavis
 [Columbus Code Camp]: https://columbuscodecamp.com/
-[email]: mailto:tiandavis@gmail.com
 [capabilities-1]: /images/capabilities-1.png "Core Capabilities"
 [capabilities-2]: /images/capabilities-2.png "Core Capabilities"
 [respoke-logo]: /images/respoke.png "Respoke"
@@ -250,8 +249,3 @@ I'd love to learn more about the position, the team and the company. Go ahead, <
 [galileo]: https://github.com/tiandavis/galileo "Galileo"
 
 [companies]: /images/companies.png "Companies"
-
-
-
-
-
