@@ -32,9 +32,9 @@ I've been fortunate, really fortunate, that my startup experience has been shape
 
 ![Capabilities][capabilities-3]
 
-I'm currently working with a talented team of co-founders and engineers, leading the [retrofitting][browzine-subjects] of our existing ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
+I'm currently working with a talented team of co-founders and engineers, leading the [retrofitting][browzine-subjects] of our existing Ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
 
-The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend.
+The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend with CircleCI for continuous integration.
 
 ![ember-responsive acceptance tests](/images/subjects-search.png)
 
@@ -45,6 +45,14 @@ The application is built using Ember CLI, Sass and QUnit for testing on the fron
 Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
 
 Learn more about how we got our [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
+
+Also, lead the integration of a third-party title discovery solution called [Summon][Summon] with the BrowZine API, ultimately building an open source project called [browzine-summon-adapter][browzine-summon-adapter].
+
+![browzine-summon-adapter screenshot](/images/browzine-summon-adapter.png)
+
+Summon is built on Angular 1.6.x, so browzine-summon-adapter is able to take advantage of Angular's extensibility and act as a drop-in enhancement to Summon search results; Adding links to Journals (View the Journal) and Articles (View Complete Issue) in BrowZine as well as enhance Summon search results with BrowZine Journal Covers.
+
+Using Angular, Karma and Jasmine, built an [acceptance test][browzine-summon-adapter acceptance tests] suite to guard against regressions. This project also integrates with CircleCI for continuous integration.
 
 <br>
 
@@ -257,3 +265,9 @@ I'd love to learn more about the position, the team and the company. Go ahead, e
 [browzine]: https://develop.browzine.com/libraries/222/subjects
 
 [browzine-subjects]: https://develop.browzine.com/libraries/222/subjects/60?sort=rank
+
+[browzine-summon-adapter]: https://github.com/thirdiron/browzine-summon-adapter
+
+[Summon]: http://msulibrariestest.summon.serialssolutions.com/#!/search?ho=t&l=en&q=new%20england%20journal%20of%20medicine
+
+[browzine-summon-adapter acceptance tests]: https://github.com/thirdiron/browzine-summon-adapter/blob/develop/tests/acceptance/browzine-summon-adapter-test.js
