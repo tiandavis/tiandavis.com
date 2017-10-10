@@ -268,6 +268,6 @@ I'd love to learn more about the position, the team and the company. Go ahead, e
 
 [browzine-summon-adapter]: https://github.com/thirdiron/browzine-summon-adapter
 
-[Summon]: http://msulibraries.summon.serialssolutions.com/#!/search?ho=t&l=en&q=new%20england%20journal%20of%20medicine
+[Summon]: http://msulibrariestest.summon.serialssolutions.com/#!/search?ho=t&l=en&q=new%20england%20journal%20of%20medicine
 
 [browzine-summon-adapter acceptance tests]: https://github.com/thirdiron/browzine-summon-adapter/blob/develop/tests/acceptance/browzine-summon-adapter-test.js
