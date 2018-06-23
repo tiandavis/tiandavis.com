@@ -289,7 +289,7 @@
 
 <p>With all versions of Git, you can configure a git alias. So I configured an alias called git up:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global alias.up <span class="s1">'!git remote update -p; git merge --ff-only @{u}'</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config <span class="nt">--global</span> alias.up <span class="s1">'!git remote update -p; git merge --ff-only @{u}'</span></code></pre></figure>
 
 <p>This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch.</p>
 
@@ -301,7 +301,7 @@
 
 <p>I use a <a href="https://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos">shell script</a> to get the job done of updating multiple git repos:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>repo <span class="k">in </span>repo1 repo2 repo3; <span class="k">do</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>repo <span class="k">in </span>repo1 repo2 repo3<span class="p">;</span> <span class="k">do</span>
     <span class="o">(</span><span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">repo</span><span class="k">}</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> git checkout master <span class="o">&amp;&amp;</span> git up<span class="o">)</span>
 <span class="k">done</span></code></pre></figure>
 
@@ -351,7 +351,7 @@
       <span class="na">onLocalMedia</span><span class="p">:</span> <span class="nx">onLocalVideo</span>
 <span class="p">});</span>
 
-<span class="nx">To</span> <span class="nx">enable</span> <span class="nx">screensharing</span> <span class="nx">we</span> <span class="nx">just</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">pass</span> <span class="nx">getUserMedia</span> <span class="nx">MediaStreamContraints</span><span class="err">:</span>
+<span class="nx">To</span> <span class="nx">enable</span> <span class="nx">screensharing</span> <span class="nx">we</span> <span class="nx">just</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">pass</span> <span class="nx">getUserMedia</span> <span class="nx">MediaStreamContraints</span><span class="p">:</span>
 
 <span class="kd">var</span> <span class="nx">otherEndpoint</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getEndpoint</span><span class="p">({</span>
     <span class="na">id</span><span class="p">:</span> <span class="nx">theirName</span>
@@ -379,7 +379,7 @@
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-  <span class="s2">"chromium-args"</span><span class="err">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
+  <span class="s2">"chromium-args"</span><span class="p">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -394,7 +394,7 @@
 npm install
 
 Open Node Webkit Instance 1
-./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit <span class="nb">.</span>
 
 Open Node Webkit Instance 2
 ./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .</code></pre></figure>
@@ -1840,7 +1840,7 @@ Java: Try <a href="https://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
 <span class="nb">require</span> <span class="s1">'Lightsaber'</span>
 
 <span class="k">class</span> <span class="nc">Padawan</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:name</span>
 
   <span class="kp">include</span> <span class="no">Force</span>
   <span class="kp">include</span> <span class="no">Lightsaber</span>
@@ -1891,7 +1891,7 @@ Java: Try <a href="https://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
 <p>Ruby has a more elegant solution - the attr_accessor shortcut:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Padawan</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:name</span>
   <span class="p">.</span> <span class="nf">.</span> <span class="p">.</span>
 <span class="nf">end</span></code></pre></figure>
 
@@ -1911,8 +1911,8 @@ Java: Try <a href="https://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
 
 <p>You’re not going to always want a <em>getter</em> and <em>setter</em>. Sometimes you might only need one. You can do that in Ruby:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="kp">attr_reader</span> <span class="ss">:midi_chlorian</span>
-<span class="kp">attr_writer</span> <span class="ss">:heart_rate</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">attr_reader</span> <span class="ss">:midi_chlorian</span>
+<span class="nb">attr_writer</span> <span class="ss">:heart_rate</span></code></pre></figure>
 
 <p>You get the picture!</p>
 
@@ -2135,7 +2135,7 @@ Java: Try <a href="https://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2017 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 

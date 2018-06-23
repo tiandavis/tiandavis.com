@@ -40,9 +40,11 @@
 
 <h2 id="strong-engineering-skills">Strong Engineering Skills</h2>
 
-<p>Currently, I wax poetic with ember.js as a software developer on <a href="https://develop.browzine.com/libraries/222/subjects">BrowZine’s Front-End Engineering</a> Team - a remote startup in the academic and commercial research space.</p>
+<p>Currently, I wax poetic with Ember.js and Node as a software developer on the BrowZine <a href="https://browzine.com/libraries/222/subjects">Front-End Engineering Team</a>. BrowZine is a remote distributed startup in the academic and commercial research space.</p>
 
-<p>Previously, I shipped critical components on both Respoke’s Community Team and Respoke’s Front-End Team - a distributed startup in the communication space. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.</p>
+<p>Previously, I shipped critical components on both Respoke’s Community Team and Respoke’s Front-End Team. At its height, Respoke was a remote distributed startup in the telecommunication space, specifically WebRTC and Asterisk.</p>
+
+<p>Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.</p>
 
 <p><br /></p>
 
@@ -54,9 +56,11 @@
 
 <p><img src="/images/capabilities-3.png" alt="Capabilities" title="Core Capabilities" /></p>
 
-<p>I’m currently working with a talented team of co-founders and engineers, leading the <a href="https://develop.browzine.com/libraries/222/subjects/60?sort=rank">retrofitting</a> of our existing Ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)</p>
+<h4 id="browzinecom-mobile-responsive"><i>BrowZine.com: Mobile Responsive</i></h4>
 
-<p>The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend with CircleCI for continuous integration.</p>
+<p>Worked with a talented team of co-founders and engineers, leading the <a href="https://browzine.com/libraries/222/subjects/60?sort=rank">retrofitting</a> of our existing Ember.js desktop web application with a mobile responsive UI/UX. Resize your browser to try it out live. :)</p>
+
+<p>BrowZine is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express JSON API spec and Mocha for testing on the backend with CircleCI for continuous integration.</p>
 
 <p><img src="/images/subjects-search.png" alt="ember-responsive acceptance tests" /></p>
 
@@ -64,17 +68,23 @@
 
 <p><img src="/images/journal-toc.png" alt="ember-responsive acceptance tests" /></p>
 
-<p>Automated acceptance tests are challenging for desktop presentations. They’re are doubly challenging for responsive presentations, but we’ve even made progress running our automated acceptance tests against our mobile responsive UI.</p>
+<p>Automated acceptance tests are challenging for desktop layouts alone and they are exponentially challenging for responsive layouts, but we’ve succeeded in running our existing automated acceptance tests against our new mobile responsive user interface. Learn more about how we got our <a href="/thoughts/posts/ember-responsive-acceptance-tests">responsive user interface under test</a> using our existing, mature Ember acceptance tests.</p>
 
-<p>Learn more about how we got our <a href="/thoughts/posts/ember-responsive-acceptance-tests">ember responsive</a> UI under test.</p>
+<h4 id="discovery-service-adapters"><i>Discovery Service Adapters</i></h4>
 
-<p>Also, lead the integration of a third-party title discovery solution called <a href="http://msulibrariestest.summon.serialssolutions.com/#!/search?ho=t&amp;l=en&amp;q=new%20england%20journal%20of%20medicine">Summon</a> with the BrowZine API, ultimately building an open source project called <a href="https://github.com/thirdiron/browzine-summon-adapter">browzine-summon-adapter</a>.</p>
+<p>In the academic and commercial research space, students and scientists use a variety of tools and discovery services to stay connected with new research findings, follow journals and discover research articles that may impact their work. One of the cool things BrowZine does is enhance those various discovery service platforms to provide a better research experience.</p>
 
-<p><img src="/images/browzine-summon-adapter.png" alt="browzine-summon-adapter screenshot" /></p>
+<p>I play my part by leading BrowZine’s software integration into various third-party discovery services, of which there are many. Today, the <a href="https://github.com/thirdiron/browzine-discovery-service-adapters">browzine-discovery-service-adapters</a> collection of adapters integrate with Primo, Summon and 360 Core (EJP).</p>
 
-<p>Summon is built on Angular 1.6.x, so browzine-summon-adapter is able to take advantage of Angular’s extensibility and act as a drop-in enhancement to Summon search results; Adding links to Journals (View the Journal) and Articles (View Complete Issue) in BrowZine as well as enhance Summon search results with BrowZine Journal Covers.</p>
+<p><img src="/images/browzine-discovery-service-adapters.png" alt="browzine-discovery-service-adapters screenshot" /></p>
 
-<p>Using Angular, Karma and Jasmine, built an <a href="https://github.com/thirdiron/browzine-summon-adapter/blob/develop/tests/acceptance/browzine-summon-adapter-test.js">acceptance test</a> suite to guard against regressions. This project also integrates with CircleCI for continuous integration.</p>
+<p>The most exciting aspect of this project was working with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MutationObserver</a> browser interface. The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. Using MutationObserver allowed us to build adapters that could operate independent of the discovery service’s framework.</p>
+
+<p>The result is we’re able to add links to Journals and Articles in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is well tested using the Karma test runner and Jasmine for <a href="https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests">Unit and Acceptance Tests</a> to guard against regressions. This project also integrates with CircleCI for continuous integration.</p>
+
+<h4 id="ember-cli-upgrades"><i>Ember CLI Upgrades</i></h4>
+
+<p>One of the most frustrating pieces of Ember is upgrading to the latest versions of ember-cli. Lead the BrowZine upgrade to Ember 2.10.0 (Glimmer 2) and Ember 2.12.0 LTS. Additionally, lead the Ember Grand Testing Unification migration, the async/await updates and the upgrade plan to Ember 2.18.0 LTS, including the plan to refactor private API use out of our Acceptance Tests.</p>
 
 <p><br /></p>
 
@@ -105,6 +115,12 @@
 <p><br /></p>
 
 <h3 id="open-source-contributions-oss">Open Source Contributions (OSS)</h3>
+
+<p>While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we’d want to make the TTL for each adapter configurable.</p>
+
+<p>We were already using a library called deploy-web-to-s3 to deploy the adapters to S3, but the library didn’t expose a method to make the S3 Cache-Control header configurable. So went ahead and created a PR to expose the Cache-Control header using an environment variable called AWS_CACHE_CONTROL.</p>
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/revisohq/deploy-web-to-s3/pull/6">revisohq/deploy-web-to-s3</a></h4><p>A tool for easily recursively uploading a directory with client-side files to S3</p></blockquote>
 
 <p>During an ember-cli upgrade for BrowZine, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.</p>
 
@@ -233,7 +249,7 @@
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2017 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 

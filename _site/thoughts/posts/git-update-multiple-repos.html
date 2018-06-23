@@ -56,7 +56,7 @@
 
 <p>With all versions of Git, you can configure a git alias. So I configured an alias called git up:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global alias.up <span class="s1">'!git remote update -p; git merge --ff-only @{u}'</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config <span class="nt">--global</span> alias.up <span class="s1">'!git remote update -p; git merge --ff-only @{u}'</span></code></pre></figure>
 
 <p>This alias downloads all of the latest commits from all upstream branches and tries to fast-forward the local branch to the latest commit on the upstream branch.</p>
 
@@ -68,7 +68,7 @@
 
 <p>I use a <a href="https://stackoverflow.com/questions/17099564/make-a-shell-script-to-update-3-git-repos">shell script</a> to get the job done of updating multiple git repos:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>repo <span class="k">in </span>repo1 repo2 repo3; <span class="k">do</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>repo <span class="k">in </span>repo1 repo2 repo3<span class="p">;</span> <span class="k">do</span>
     <span class="o">(</span><span class="nb">cd</span> <span class="s2">"</span><span class="k">${</span><span class="nv">repo</span><span class="k">}</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> git checkout master <span class="o">&amp;&amp;</span> git up<span class="o">)</span>
 <span class="k">done</span></code></pre></figure>
 
@@ -105,7 +105,7 @@
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2017 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 

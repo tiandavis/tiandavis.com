@@ -18,9 +18,11 @@ Over the last twelve years, as a Front-End Developer and Tech Lead, I’ve done 
 
 ## Strong Engineering Skills
 
-Currently, I wax poetic with ember.js as a software developer on [BrowZine's Front-End Engineering][browzine] Team - a remote startup in the academic and commercial research space.
+Currently, I wax poetic with Ember.js and Node as a software developer on the BrowZine [Front-End Engineering Team][browzine]. BrowZine is a remote distributed startup in the academic and commercial research space.
 
-Previously, I shipped critical components on both Respoke's Community Team and Respoke's Front-End Team - a distributed startup in the communication space. Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
+Previously, I shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. At its height, Respoke was a remote distributed startup in the telecommunication space, specifically WebRTC and Asterisk.
+
+Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in various industries from banking to education to medical to military simulation and training.
 
 <br>
 
@@ -32,9 +34,11 @@ I've been fortunate, really fortunate, that my startup experience has been shape
 
 ![Capabilities][capabilities-3]
 
-I'm currently working with a talented team of co-founders and engineers, leading the [retrofitting][browzine-subjects] of our existing Ember.js desktop web application with a mobile responsive UI/UX. The project is coming along well so far. Resize your browser to try it out live. :)
+#### <i>BrowZine.com: Mobile Responsive</i>
 
-The application is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express API and Mocha for testing on the backend with CircleCI for continuous integration.
+Worked with a talented team of co-founders and engineers, leading the [retrofitting][browzine-subjects] of our existing Ember.js desktop web application with a mobile responsive UI/UX. Resize your browser to try it out live. :)
+
+BrowZine is built using Ember CLI, Sass and QUnit for testing on the frontend, running atop a Node Express JSON API spec and Mocha for testing on the backend with CircleCI for continuous integration.
 
 ![ember-responsive acceptance tests](/images/subjects-search.png)
 
@@ -42,17 +46,24 @@ The application is built using Ember CLI, Sass and QUnit for testing on the fron
 
 ![ember-responsive acceptance tests](/images/journal-toc.png)
 
-Automated acceptance tests are challenging for desktop presentations. They're are doubly challenging for responsive presentations, but we've even made progress running our automated acceptance tests against our mobile responsive UI.
+Automated acceptance tests are challenging for desktop layouts alone and they are exponentially challenging for responsive layouts, but we've succeeded in running our existing automated acceptance tests against our new mobile responsive user interface. Learn more about how we got our [responsive user interface under test](/thoughts/posts/ember-responsive-acceptance-tests) using our existing, mature Ember acceptance tests.
 
-Learn more about how we got our [ember responsive](/thoughts/posts/ember-responsive-acceptance-tests) UI under test.
+#### <i>Discovery Service Adapters</i>
 
-Also, lead the integration of a third-party title discovery solution called [Summon][Summon] with the BrowZine API, ultimately building an open source project called [browzine-summon-adapter][browzine-summon-adapter].
+In the academic and commercial research space, students and scientists use a variety of tools and discovery services to stay connected with new research findings, follow journals and discover research articles that may impact their work. One of the cool things BrowZine does is enhance those various discovery service platforms to provide a better research experience.
 
-![browzine-summon-adapter screenshot](/images/browzine-summon-adapter.png)
+I play my part by leading BrowZine's software integration into various third-party discovery services, of which there are many. Today, the [browzine-discovery-service-adapters][browzine-discovery-service-adapters] collection of adapters integrate with Primo, Summon and 360 Core (EJP).
 
-Summon is built on Angular 1.6.x, so browzine-summon-adapter is able to take advantage of Angular's extensibility and act as a drop-in enhancement to Summon search results; Adding links to Journals (View the Journal) and Articles (View Complete Issue) in BrowZine as well as enhance Summon search results with BrowZine Journal Covers.
+![browzine-discovery-service-adapters screenshot](/images/browzine-discovery-service-adapters.png)
 
-Using Angular, Karma and Jasmine, built an [acceptance test][browzine-summon-adapter acceptance tests] suite to guard against regressions. This project also integrates with CircleCI for continuous integration.
+The most exciting aspect of this project was working with the [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) browser interface. The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. Using MutationObserver allowed us to build adapters that could operate independent of the discovery service's framework.
+
+The result is we're able to add links to Journals and Articles in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is well tested using the Karma test runner and Jasmine for [Unit and Acceptance Tests](https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests) to guard against regressions. This project also integrates with CircleCI for continuous integration.
+
+#### <i>Ember CLI Upgrades</i>
+
+One of the most frustrating pieces of Ember is upgrading to the latest versions of ember-cli. Lead the BrowZine upgrade to Ember 2.10.0 (Glimmer 2) and Ember 2.12.0 LTS. Additionally, lead the Ember Grand Testing Unification migration, the async/await updates and the upgrade plan to Ember 2.18.0 LTS, including the plan to refactor private API use out of our Acceptance Tests.
+
 
 <br>
 
@@ -85,6 +96,13 @@ Wrote Respoke PHP and Respoke Java server-side libraries.
 <br>
 
 ### Open Source Contributions (OSS)
+
+While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we'd want to make the TTL for each adapter configurable.
+
+We were already using a library called deploy-web-to-s3 to deploy the adapters to S3, but the library didn't expose a method to make the S3 Cache-Control header configurable. So went ahead and created a PR to expose the Cache-Control header using an environment variable called AWS_CACHE_CONTROL.
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/revisohq/deploy-web-to-s3/pull/6">revisohq/deploy-web-to-s3</a></h4><p>A tool for easily recursively uploading a directory with client-side files to S3</p></blockquote>
+
 
 During an ember-cli upgrade for BrowZine, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.
 
@@ -262,12 +280,14 @@ I'd love to learn more about the position, the team and the company. Go ahead, e
 
 [companies]: /images/companies.png "Companies"
 
-[browzine]: https://develop.browzine.com/libraries/222/subjects
+[browzine]: https://browzine.com/libraries/222/subjects
 
-[browzine-subjects]: https://develop.browzine.com/libraries/222/subjects/60?sort=rank
+[browzine-subjects]: https://browzine.com/libraries/222/subjects/60?sort=rank
 
-[browzine-summon-adapter]: https://github.com/thirdiron/browzine-summon-adapter
+[browzine-discovery-service-adapters]: https://github.com/thirdiron/browzine-discovery-service-adapters
 
 [Summon]: http://msulibrariestest.summon.serialssolutions.com/#!/search?ho=t&l=en&q=new%20england%20journal%20of%20medicine
 
-[browzine-summon-adapter acceptance tests]: https://github.com/thirdiron/browzine-summon-adapter/blob/develop/tests/acceptance/browzine-summon-adapter-test.js
+[browzine-discovery-service-adapters acceptance tests]: https://github.com/thirdiron/browzine-discovery-service-adapters/blob/develop/tests/acceptance/browzine-summon-adapter-test.js
+
+[browzine-discovery-service-adapters-tests]: https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests

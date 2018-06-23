@@ -57,7 +57,7 @@
       <span class="na">onLocalMedia</span><span class="p">:</span> <span class="nx">onLocalVideo</span>
 <span class="p">});</span>
 
-<span class="nx">To</span> <span class="nx">enable</span> <span class="nx">screensharing</span> <span class="nx">we</span> <span class="nx">just</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">pass</span> <span class="nx">getUserMedia</span> <span class="nx">MediaStreamContraints</span><span class="err">:</span>
+<span class="nx">To</span> <span class="nx">enable</span> <span class="nx">screensharing</span> <span class="nx">we</span> <span class="nx">just</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">pass</span> <span class="nx">getUserMedia</span> <span class="nx">MediaStreamContraints</span><span class="p">:</span>
 
 <span class="kd">var</span> <span class="nx">otherEndpoint</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getEndpoint</span><span class="p">({</span>
     <span class="na">id</span><span class="p">:</span> <span class="nx">theirName</span>
@@ -85,7 +85,7 @@
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-  <span class="s2">"chromium-args"</span><span class="err">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
+  <span class="s2">"chromium-args"</span><span class="p">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -100,7 +100,7 @@
 npm install
 
 Open Node Webkit Instance 1
-./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .
+./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit <span class="nb">.</span>
 
 Open Node Webkit Instance 2
 ./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit .</code></pre></figure>
@@ -220,7 +220,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2017 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
     </footer>
 
