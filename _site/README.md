@@ -1,1 +1,1 @@
-All Content Copyright © Tian Davis. All Rights Reserved.
+Copyright © Tian Davis. All Rights Reserved.

@@ -9,7 +9,7 @@ Michelangelo never saw a lump of marble.
 
 He saw the [Pieta] and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.
 
-Over the last twelve years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I'm a seasoned Software Engineer.
+Over the last fifteen years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I'm a seasoned Software Engineer.
 
 ![Capabilities][capabilities-1]
 
@@ -26,7 +26,7 @@ Prior to that, I shipped as a Tech Lead at Nationwide and as a consultant in var
 
 <br>
 
-### BrowZine
+## BrowZine
 
 I've been fortunate, really fortunate, that my startup experience has been shaped with some of the most talented engineers and business leaders I've ever worked with.
 
@@ -52,50 +52,28 @@ Automated acceptance tests are challenging for desktop layouts alone and they ar
 
 In the academic and commercial research space, students and scientists use a variety of tools and discovery services to stay connected with new research findings, follow journals and discover research articles that may impact their work. One of the cool things BrowZine does is enhance those various discovery service platforms to provide a better research experience.
 
-I play my part by leading BrowZine's software integration into various third-party discovery services, of which there are many. Today, the [browzine-discovery-service-adapters][browzine-discovery-service-adapters] collection of adapters integrate with Primo, Summon and 360 Core (EJP).
+I play my part by leading BrowZine's software integration into various third-party, primarily Angular 1.x based, discovery services, of which there are many. Today, the [browzine-discovery-service-adapters][browzine-discovery-service-adapters] collection of adapters integrate with Primo, Summon and EJP.
 
-![browzine-discovery-service-adapters screenshot](/images/browzine-discovery-service-adapters.png)
+![browzine-discovery-service-adapters screenshot](/images/browzine-discovery-service-adapters-2.png)
 
 The most exciting aspect of this project was working with the [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) browser interface. The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. Using MutationObserver allowed us to build adapters that could operate independent of the discovery service's framework.
 
-The result is we're able to add links to Journals and Articles in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is well tested using the Karma test runner and Jasmine for [Unit and Acceptance Tests](https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests) to guard against regressions. This project also integrates with CircleCI for continuous integration.
+The result is we're able to add links to Journals, Articles and Article PDF downloads in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is open source and well tested using the Karma test runner and Jasmine for [Unit and Acceptance Tests](https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests) to guard against regressions. This project also integrates with CircleCI for continuous integration.
+
+#### <i>Nomad Chrome Extension</i>
+
+LibKey [Nomad](https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb) is a Chrome extension that helps academic researchers quickly identify and download the PDF of research journal articles. Nomad provides one-click access to millions of scholarly articles and is supported by over 725 libraries in more than 30 countries!
+
+![chrome browser extension screenshot](/images/chrome-browser-extension-1.png)
+
+LibKey Nomad is a React based Chrome extension, leveraging Puppeteer and Mocha for automated acceptance test coverage. Nomad proved to academic researchers that journal article PDFs accessed through their library could be both fast and reliable.
 
 #### <i>Ember CLI Upgrades</i>
 
 One of the most frustrating pieces of Ember is upgrading to the latest versions of ember-cli. Lead the BrowZine upgrade to Ember 2.10.0 (Glimmer 2) and Ember 2.12.0 LTS. Additionally, lead the Ember Grand Testing Unification migration, the async/await updates and the upgrade plan to Ember 2.18.0 LTS, including the plan to refactor private API use out of our Acceptance Tests.
 
 
-<br>
-
-### Apollo HD
-
-Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
-
-![Apollo][apollo-dark]
-
-As a JavaScript Engineer on the Respoke team, I helped developers see how easily we can add secure video, voice and data communication to our own apps using the power of WebRTC.
-
-We used some of the most innovative front-end technologies of the day, including HTML5, CSS3 (LESS), Jade, Gulp, Bootstrap, JavaScript, ES6, Babel, jQuery, Angular, NodeWebkit, Jasmine, Sinon, SuperTest and Phantom:
-
-![Capabilities][capabilities-2]
-
-And with these, we built [Apollo](https://www.apollohd.com/) - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.
-
-<br>
-
-### Respoke Server Libraries
-
-Wrote Respoke PHP and Respoke Java server-side libraries.
-
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-php/commits?author=tiandavis">respoke/respoke-php</a></h4><p>respoke-php - PHP serverside library for the Respoke REST API</p></blockquote>
-
-
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-java/commits?author=tiandavis">respoke/respoke-java</a></h4><p>respoke-java - Java serverside library for the Respoke REST API</p></blockquote>
-
-
-<br>
-
-### Open Source Contributions (OSS)
+#### <i>Open Source Contributions (OSS)</i>
 
 While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we'd want to make the TTL for each adapter configurable.
 
@@ -109,6 +87,35 @@ During an ember-cli upgrade for BrowZine, found a critical bug in a major ember 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/ebryn/ember-component-css/pull/132">ebryn/ember-component-css</a></h4><p>An Ember CLI addon which allows you to specify styles for individual components</p></blockquote>
 
 
+<br>
+
+## Apollo HD
+
+Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at [Respoke], a communication PaaS startup built on WebRTC.
+
+![Apollo][apollo-dark]
+
+As a JavaScript Engineer on the Respoke team, I helped developers see how easily we can add secure video, voice and data communication to our own apps using the power of WebRTC.
+
+We used some of the most innovative front-end technologies of the day, including HTML5, CSS3 (LESS), Jade, Gulp, Bootstrap, JavaScript, ES6, Babel, jQuery, Angular, NodeWebkit, Jasmine, Sinon, SuperTest and Phantom:
+
+![Capabilities][capabilities-2]
+
+And with these, we built [Apollo](https://www.apollohd.com/) - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.
+
+
+#### <i>Respoke Server Libraries</i>
+
+Wrote Respoke PHP and Respoke Java server-side libraries.
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-php/commits?author=tiandavis">respoke/respoke-php</a></h4><p>respoke-php - PHP serverside library for the Respoke REST API</p></blockquote>
+
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-java/commits?author=tiandavis">respoke/respoke-java</a></h4><p>respoke-java - Java serverside library for the Respoke REST API</p></blockquote>
+
+
+#### <i>Open Source Contributions (OSS)</i>
+
 Contributed a critical bug fix to Respoke.js which prevented screen sharing from working in Firefox and Chrome.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke/commits?author=tiandavis">respoke/respoke</a></h4><p>respoke - Respoke JavaScript Browser/Client Library</p></blockquote>
@@ -117,7 +124,6 @@ Contributed a critical bug fix to Respoke.js which prevented screen sharing from
 Contributed fixes to the respective browser plugins.
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-firefox-screen-sharing-extension/commits?author=tiandavis">respoke/respoke-firefox-screen-sharing-extension</a></h4><p>respoke-firefox-screen-sharing-extension - A base Firefox extension for enabling screen sharing from your domain using respoke</p></blockquote>
-
 
 <br>
 

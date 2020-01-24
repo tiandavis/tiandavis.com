@@ -108,7 +108,7 @@
 <span class="p">);</span>
 
 <span class="kd">function</span> <span class="nx">onMediaStream</span><span class="p">(</span><span class="nx">stream</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"localVideo"</span><span class="p">);</span>
+  <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">localVideo</span><span class="dl">"</span><span class="p">);</span>
   
   <span class="nx">attachMediaStream</span><span class="p">(</span><span class="nx">localVideo</span><span class="p">,</span> <span class="nx">stream</span><span class="p">);</span>
   
@@ -116,7 +116,7 @@
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">noMediaStream</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"No media stream for us."</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">No media stream for us.</span><span class="dl">"</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
 <p>Here, we call getUserMedia and pass it three parameters. The first is a constraints object listing which devices to access, in this case, both the video camera and the mic. The last two parameters are callbacks. We use the first callback for when we successfully get a stream from our camera. We use the second callback if accessing the camera stream fails.</p>
@@ -125,30 +125,30 @@
 
 <p>To accomplish this, we&rsquo;ll need to setup an event to apply each filter. Let&rsquo;s take a look at the JavaScript code to implement this:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"filters"</span><span class="p">);</span> 
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">filters</span><span class="dl">"</span><span class="p">);</span> 
 
-<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">filter</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
   
   <span class="kd">var</span> <span class="nx">filters</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"NoFilter"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">NoFilter</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Willow"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-willow"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Willow</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-willow</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Earlybird"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-earlybird"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Earlybird</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-earlybird</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Mayfair"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-mayfair"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Mayfair</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-mayfair</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Amaro"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-amaro"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Amaro</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-amaro</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}[</span><span class="nx">filter</span><span class="p">]();</span>
 <span class="p">});</span></code></pre></figure>
@@ -185,8 +185,8 @@
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
-        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
     <script src="/js/jquery.js"></script>

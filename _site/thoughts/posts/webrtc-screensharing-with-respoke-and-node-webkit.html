@@ -67,7 +67,7 @@
       <span class="na">audio</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
       <span class="na">video</span><span class="p">:</span> <span class="p">{</span>
             <span class="na">mandatory</span><span class="p">:</span> <span class="p">{</span>
-              <span class="na">chromeMediaSource</span><span class="p">:</span> <span class="s1">'screen'</span><span class="p">,</span>
+              <span class="na">chromeMediaSource</span><span class="p">:</span> <span class="dl">'</span><span class="s1">screen</span><span class="dl">'</span><span class="p">,</span>
               <span class="na">maxHeight</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
               <span class="na">maxWidth</span><span class="p">:</span> <span class="mi">2000</span>
             <span class="p">},</span>
@@ -85,7 +85,7 @@
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-  <span class="s2">"chromium-args"</span><span class="p">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
+  <span class="dl">"</span><span class="s2">chromium-args</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">--enable-usermedia-screen-capturing</span><span class="dl">"</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -97,9 +97,9 @@
 
 <span class="nb">cd </span>respoke-screensharing-node-webkit
 
-npm install
+npm <span class="nb">install
 
-Open Node Webkit Instance 1
+</span>Open Node Webkit Instance 1
 ./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit <span class="nb">.</span>
 
 Open Node Webkit Instance 2
@@ -114,39 +114,39 @@ Open Node Webkit Instance 2
 <p>For example, the working draft specifies constraints like width, height, frameRate and aspectRatio. But the Chromium MediaConstraints source code specifies so much more available constraints like minAspectRatio, maxAspectRatio, minWidth, maxWidth, minHeight, maxHeight, minFrameRate and maxFrameRate:</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
-  <span class="k">public</span><span class="o">:</span>
+  <span class="nl">public:</span>
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-    <span class="c1">// Constraint keys used by a local video source.
-</span>    <span class="c1">// Specified by draft-alvestrand-constraints-resolution-00b
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinAspectRatio</span><span class="p">[];</span> <span class="c1">// minAspectRatio
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxAspectRatio</span><span class="p">[];</span> <span class="c1">// maxAspectRatio
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxWidth</span><span class="p">[];</span> <span class="c1">// maxWidth
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinWidth</span><span class="p">[];</span> <span class="c1">// minWidth
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxHeight</span><span class="p">[];</span> <span class="c1">// maxHeight
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinHeight</span><span class="p">[];</span> <span class="c1">// minHeight
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxFrameRate</span><span class="p">[];</span> <span class="c1">// maxFrameRate
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinFrameRate</span><span class="p">[];</span> <span class="c1">// minFrameRate
-</span>
+    <span class="c1">// Constraint keys used by a local video source.</span>
+    <span class="c1">// Specified by draft-alvestrand-constraints-resolution-00b</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinAspectRatio</span><span class="p">[];</span> <span class="c1">// minAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxAspectRatio</span><span class="p">[];</span> <span class="c1">// maxAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxWidth</span><span class="p">[];</span> <span class="c1">// maxWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinWidth</span><span class="p">[];</span> <span class="c1">// minWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxHeight</span><span class="p">[];</span> <span class="c1">// maxHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinHeight</span><span class="p">[];</span> <span class="c1">// minHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxFrameRate</span><span class="p">[];</span> <span class="c1">// maxFrameRate</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinFrameRate</span><span class="p">[];</span> <span class="c1">// minFrameRate</span>
+
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">};</span></code></pre></figure>
 
 <p>The Chromium MediaConstraints even go on to define other interesting experimental contraints like echoCancellation, noiseReduction and cpuOveruseDetection:</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
-  <span class="k">public</span><span class="o">:</span>
+  <span class="nl">public:</span>
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-    <span class="c1">// Constraint keys used by a local audio source.
-</span>    <span class="c1">// These keys are google specific.
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEchoCancellation</span><span class="p">[];</span> <span class="c1">// googEchoCancellation
-</span>
-    <span class="c1">// Google-specific constraint keys for a local video source
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kNoiseReduction</span><span class="p">[];</span> <span class="c1">// googNoiseReduction
-</span>
+    <span class="c1">// Constraint keys used by a local audio source.</span>
+    <span class="c1">// These keys are google specific.</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEchoCancellation</span><span class="p">[];</span> <span class="c1">// googEchoCancellation</span>
+
+    <span class="c1">// Google-specific constraint keys for a local video source</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kNoiseReduction</span><span class="p">[];</span> <span class="c1">// googNoiseReduction</span>
+
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-    <span class="c1">// googTemporalLayeredScreencast
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kCpuOveruseDetection</span><span class="p">[];</span>
+    <span class="c1">// googTemporalLayeredScreencast</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kCpuOveruseDetection</span><span class="p">[];</span>
 <span class="p">};</span></code></pre></figure>
 
 <p>Of course there is no guarantee that those features will make it to the final Media Capture and Streams spec.</p>
@@ -158,14 +158,14 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 <p>It’s source code is defined in Chromium’s content_switches.h header file:</p>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Defines all the "content" command-line switches.
-</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Defines all the "content" command-line switches.</span>
+
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
 <span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
-<span class="c1">// All switches in alphabetical order. The switches should be documented
-// alongside the definition of their values in the .cc file.
-</span><span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="c1">// All switches in alphabetical order. The switches should be documented</span>
+<span class="c1">// alongside the definition of their values in the .cc file.</span>
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
 <span class="n">CONTENT_EXPORT</span> <span class="k">extern</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[];</span>
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
@@ -180,8 +180,8 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 <span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-<span class="c1">// Enable screen capturing support for MediaStream API.
-</span><span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[]</span> <span class="o">=</span>
+<span class="c1">// Enable screen capturing support for MediaStream API.</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[]</span> <span class="o">=</span>
     <span class="s">"enable-usermedia-screen-capturing"</span><span class="p">;</span>
 
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
@@ -220,8 +220,8 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
-        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
     <script src="/js/jquery.js"></script>

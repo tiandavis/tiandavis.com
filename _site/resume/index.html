@@ -32,7 +32,7 @@
 
 <p>He saw the <a href="https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)">Pieta</a> and he would later write in his diaries about releasing the image inside. I do the same thing with JavaScript. JavaScript is the raw material, the medium that could become great software. I don’t see eccentricities or quirks. I see the new Basecamp, Hubot and Slack.</p>
 
-<p>Over the last twelve years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I’m a seasoned Software Engineer.</p>
+<p>Over the last fifteen years, as a Front-End Developer and Tech Lead, I’ve done everything from lead a Fortune 500 development team through an agile transformation to writing some of the best JavaScript of my life at distributed startups. I’m a seasoned Software Engineer.</p>
 
 <p><img src="/images/capabilities-1.png" alt="Capabilities" title="Core Capabilities" /></p>
 
@@ -48,7 +48,7 @@
 
 <p><br /></p>
 
-<h3 id="browzine">BrowZine</h3>
+<h2 id="browzine">BrowZine</h2>
 
 <p>I’ve been fortunate, really fortunate, that my startup experience has been shaped with some of the most talented engineers and business leaders I’ve ever worked with.</p>
 
@@ -74,21 +74,41 @@
 
 <p>In the academic and commercial research space, students and scientists use a variety of tools and discovery services to stay connected with new research findings, follow journals and discover research articles that may impact their work. One of the cool things BrowZine does is enhance those various discovery service platforms to provide a better research experience.</p>
 
-<p>I play my part by leading BrowZine’s software integration into various third-party discovery services, of which there are many. Today, the <a href="https://github.com/thirdiron/browzine-discovery-service-adapters">browzine-discovery-service-adapters</a> collection of adapters integrate with Primo, Summon and 360 Core (EJP).</p>
+<p>I play my part by leading BrowZine’s software integration into various third-party, primarily Angular 1.x based, discovery services, of which there are many. Today, the <a href="https://github.com/thirdiron/browzine-discovery-service-adapters">browzine-discovery-service-adapters</a> collection of adapters integrate with Primo, Summon and EJP.</p>
 
-<p><img src="/images/browzine-discovery-service-adapters.png" alt="browzine-discovery-service-adapters screenshot" /></p>
+<p><img src="/images/browzine-discovery-service-adapters-2.png" alt="browzine-discovery-service-adapters screenshot" /></p>
 
 <p>The most exciting aspect of this project was working with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MutationObserver</a> browser interface. The MutationObserver interface provides the ability to watch for changes being made to the DOM tree. Using MutationObserver allowed us to build adapters that could operate independent of the discovery service’s framework.</p>
 
-<p>The result is we’re able to add links to Journals and Articles in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is well tested using the Karma test runner and Jasmine for <a href="https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests">Unit and Acceptance Tests</a> to guard against regressions. This project also integrates with CircleCI for continuous integration.</p>
+<p>The result is we’re able to add links to Journals, Articles and Article PDF downloads in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is open source and well tested using the Karma test runner and Jasmine for <a href="https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests">Unit and Acceptance Tests</a> to guard against regressions. This project also integrates with CircleCI for continuous integration.</p>
+
+<h4 id="nomad-chrome-extension"><i>Nomad Chrome Extension</i></h4>
+
+<p>LibKey <a href="https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb">Nomad</a> is a Chrome extension that helps academic researchers quickly identify and download the PDF of research journal articles. Nomad provides one-click access to millions of scholarly articles and is supported by over 725 libraries in more than 30 countries!</p>
+
+<p><img src="/images/chrome-browser-extension-1.png" alt="chrome browser extension screenshot" /></p>
+
+<p>LibKey Nomad is a React based Chrome extension, leveraging Puppeteer and Mocha for automated acceptance test coverage. Nomad proved to academic researchers that journal article PDFs accessed through their library could be both fast and reliable.</p>
 
 <h4 id="ember-cli-upgrades"><i>Ember CLI Upgrades</i></h4>
 
 <p>One of the most frustrating pieces of Ember is upgrading to the latest versions of ember-cli. Lead the BrowZine upgrade to Ember 2.10.0 (Glimmer 2) and Ember 2.12.0 LTS. Additionally, lead the Ember Grand Testing Unification migration, the async/await updates and the upgrade plan to Ember 2.18.0 LTS, including the plan to refactor private API use out of our Acceptance Tests.</p>
 
+<h4 id="open-source-contributions-oss"><i>Open Source Contributions (OSS)</i></h4>
+
+<p>While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we’d want to make the TTL for each adapter configurable.</p>
+
+<p>We were already using a library called deploy-web-to-s3 to deploy the adapters to S3, but the library didn’t expose a method to make the S3 Cache-Control header configurable. So went ahead and created a PR to expose the Cache-Control header using an environment variable called AWS_CACHE_CONTROL.</p>
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/revisohq/deploy-web-to-s3/pull/6">revisohq/deploy-web-to-s3</a></h4><p>A tool for easily recursively uploading a directory with client-side files to S3</p></blockquote>
+
+<p>During an ember-cli upgrade for BrowZine, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.</p>
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/ebryn/ember-component-css/pull/132">ebryn/ember-component-css</a></h4><p>An Ember CLI addon which allows you to specify styles for individual components</p></blockquote>
+
 <p><br /></p>
 
-<h3 id="apollo-hd">Apollo HD</h3>
+<h2 id="apollo-hd">Apollo HD</h2>
 
 <p>Sometimes you get the chance to write the best code of your life when you least expect it. I got that chance at <a href="https://www.respoke.io/" title="Respoke Url">Respoke</a>, a communication PaaS startup built on WebRTC.</p>
 
@@ -102,9 +122,7 @@
 
 <p>And with these, we built <a href="https://www.apollohd.com/">Apollo</a> - A powerful Slack competitor that enables team collaboration with chat, screen sharing, live video and voice.</p>
 
-<p><br /></p>
-
-<h3 id="respoke-server-libraries">Respoke Server Libraries</h3>
+<h4 id="respoke-server-libraries"><i>Respoke Server Libraries</i></h4>
 
 <p>Wrote Respoke PHP and Respoke Java server-side libraries.</p>
 
@@ -112,19 +130,7 @@
 
 <blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/respoke/respoke-java/commits?author=tiandavis">respoke/respoke-java</a></h4><p>respoke-java - Java serverside library for the Respoke REST API</p></blockquote>
 
-<p><br /></p>
-
-<h3 id="open-source-contributions-oss">Open Source Contributions (OSS)</h3>
-
-<p>While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we’d want to make the TTL for each adapter configurable.</p>
-
-<p>We were already using a library called deploy-web-to-s3 to deploy the adapters to S3, but the library didn’t expose a method to make the S3 Cache-Control header configurable. So went ahead and created a PR to expose the Cache-Control header using an environment variable called AWS_CACHE_CONTROL.</p>
-
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/revisohq/deploy-web-to-s3/pull/6">revisohq/deploy-web-to-s3</a></h4><p>A tool for easily recursively uploading a directory with client-side files to S3</p></blockquote>
-
-<p>During an ember-cli upgrade for BrowZine, found a critical bug in a major ember addon called ember-component-css. Analyzed the bug and submitted a PR to fix the same. We found the root cause to be in a dependency of ember-component-css called ember-cli-saas, but this PR helped folks make progress until we could get a fix upstream.</p>
-
-<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/ebryn/ember-component-css/pull/132">ebryn/ember-component-css</a></h4><p>An Ember CLI addon which allows you to specify styles for individual components</p></blockquote>
+<h4 id="open-source-contributions-oss-1"><i>Open Source Contributions (OSS)</i></h4>
 
 <p>Contributed a critical bug fix to Respoke.js which prevented screen sharing from working in Firefox and Chrome.</p>
 
@@ -249,8 +255,8 @@
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
-        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
     <script src="/js/jquery.js"></script>

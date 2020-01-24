@@ -70,21 +70,21 @@
 <p>We’re able to update ./testem.js to resize, at-least, Chrome/Opera during an ember test -s run.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">"framework"</span><span class="p">:</span> <span class="s2">"qunit"</span><span class="p">,</span>
-  <span class="s2">"test_page"</span><span class="p">:</span> <span class="s2">"tests/index.html?hidepassed"</span><span class="p">,</span>
-  <span class="s2">"disable_watching"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="s2">"launch_in_ci"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">"PhantomJS"</span>
+  <span class="dl">"</span><span class="s2">framework</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">qunit</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">test_page</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">tests/index.html?hidepassed</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">disable_watching</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">launch_in_ci</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="dl">"</span><span class="s2">PhantomJS</span><span class="dl">"</span>
   <span class="p">],</span>
-  <span class="s2">"launch_in_dev"</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">"PhantomJS"</span><span class="p">,</span>
-    <span class="s2">"Chrome"</span><span class="p">,</span>
-    <span class="s2">"Opera"</span>
+  <span class="dl">"</span><span class="s2">launch_in_dev</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="dl">"</span><span class="s2">PhantomJS</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">Chrome</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">Opera</span><span class="dl">"</span>
   <span class="p">],</span>
 
-  <span class="s2">"browser_args"</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">"Opera"</span><span class="p">:</span> <span class="p">[</span>
-      <span class="s2">"--window-size=320,600"</span>
+  <span class="dl">"</span><span class="s2">browser_args</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">Opera</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="dl">"</span><span class="s2">--window-size=320,600</span><span class="dl">"</span>
     <span class="p">]</span>
   <span class="p">}</span>
 <span class="p">};</span></code></pre></figure>
@@ -187,7 +187,7 @@
 <p>For example, say you’re working with a new instance of <a href="https://www.respoke.io/">Respoke</a>:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">respoke</span><span class="p">.</span><span class="nx">Client</span><span class="p">({</span>
-    <span class="na">appId</span><span class="p">:</span> <span class="s1">'918e31a3-34aa-40f8-aa4c-b5409f9e4053'</span><span class="p">,</span>
+    <span class="na">appId</span><span class="p">:</span> <span class="dl">'</span><span class="s1">918e31a3-34aa-40f8-aa4c-b5409f9e4053</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">developmentMode</span><span class="p">:</span> <span class="kc">true</span>
 <span class="p">});</span></code></pre></figure>
 
@@ -208,7 +208,7 @@
 <p>If you need to use a particular domain, you could set that using Chance as well:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span>
-    <span class="na">endpointId</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">email</span><span class="p">({</span><span class="na">domain</span><span class="p">:</span> <span class="s1">'respoke.io'</span><span class="p">})</span>
+    <span class="na">endpointId</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">email</span><span class="p">({</span><span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">respoke.io</span><span class="dl">'</span><span class="p">})</span>
 <span class="p">});</span></code></pre></figure>
 
 <p>Another potential use here is to generate a random Twitter username:</p>
@@ -225,7 +225,7 @@
 
 <p>You could use Chance to generate a random Black Berry Pin:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">bb_pin</span><span class="p">()</span> <span class="c1">//'985de771'</span>
   <span class="p">});</span>
@@ -233,7 +233,7 @@
 
 <p>Or you could you use Chance to generate a random Facebook Id:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">fbid</span><span class="p">()</span> <span class="c1">//'1000039460258605'</span>
   <span class="p">});</span>
@@ -241,7 +241,7 @@
 
 <p>Or you could you use Chance to generate a random Unix timestamp:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">hammertime</span><span class="p">()</span> <span class="c1">//2273327300317</span>
   <span class="p">});</span>
@@ -361,7 +361,7 @@
       <span class="na">audio</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
       <span class="na">video</span><span class="p">:</span> <span class="p">{</span>
             <span class="na">mandatory</span><span class="p">:</span> <span class="p">{</span>
-              <span class="na">chromeMediaSource</span><span class="p">:</span> <span class="s1">'screen'</span><span class="p">,</span>
+              <span class="na">chromeMediaSource</span><span class="p">:</span> <span class="dl">'</span><span class="s1">screen</span><span class="dl">'</span><span class="p">,</span>
               <span class="na">maxHeight</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
               <span class="na">maxWidth</span><span class="p">:</span> <span class="mi">2000</span>
             <span class="p">},</span>
@@ -379,7 +379,7 @@
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-  <span class="s2">"chromium-args"</span><span class="p">:</span> <span class="s2">"--enable-usermedia-screen-capturing"</span>
+  <span class="dl">"</span><span class="s2">chromium-args</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">--enable-usermedia-screen-capturing</span><span class="dl">"</span>
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -391,9 +391,9 @@
 
 <span class="nb">cd </span>respoke-screensharing-node-webkit
 
-npm install
+npm <span class="nb">install
 
-Open Node Webkit Instance 1
+</span>Open Node Webkit Instance 1
 ./node_modules/nodewebkit/nodewebkit/node-webkit.app/Contents/MacOS/node-webkit <span class="nb">.</span>
 
 Open Node Webkit Instance 2
@@ -408,39 +408,39 @@ Open Node Webkit Instance 2
 <p>For example, the working draft specifies constraints like width, height, frameRate and aspectRatio. But the Chromium MediaConstraints source code specifies so much more available constraints like minAspectRatio, maxAspectRatio, minWidth, maxWidth, minHeight, maxHeight, minFrameRate and maxFrameRate:</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
-  <span class="k">public</span><span class="o">:</span>
+  <span class="nl">public:</span>
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-    <span class="c1">// Constraint keys used by a local video source.
-</span>    <span class="c1">// Specified by draft-alvestrand-constraints-resolution-00b
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinAspectRatio</span><span class="p">[];</span> <span class="c1">// minAspectRatio
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxAspectRatio</span><span class="p">[];</span> <span class="c1">// maxAspectRatio
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxWidth</span><span class="p">[];</span> <span class="c1">// maxWidth
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinWidth</span><span class="p">[];</span> <span class="c1">// minWidth
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxHeight</span><span class="p">[];</span> <span class="c1">// maxHeight
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinHeight</span><span class="p">[];</span> <span class="c1">// minHeight
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxFrameRate</span><span class="p">[];</span> <span class="c1">// maxFrameRate
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinFrameRate</span><span class="p">[];</span> <span class="c1">// minFrameRate
-</span>
+    <span class="c1">// Constraint keys used by a local video source.</span>
+    <span class="c1">// Specified by draft-alvestrand-constraints-resolution-00b</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinAspectRatio</span><span class="p">[];</span> <span class="c1">// minAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxAspectRatio</span><span class="p">[];</span> <span class="c1">// maxAspectRatio</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxWidth</span><span class="p">[];</span> <span class="c1">// maxWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinWidth</span><span class="p">[];</span> <span class="c1">// minWidth</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxHeight</span><span class="p">[];</span> <span class="c1">// maxHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinHeight</span><span class="p">[];</span> <span class="c1">// minHeight</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMaxFrameRate</span><span class="p">[];</span> <span class="c1">// maxFrameRate</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kMinFrameRate</span><span class="p">[];</span> <span class="c1">// minFrameRate</span>
+
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">};</span></code></pre></figure>
 
 <p>The Chromium MediaConstraints even go on to define other interesting experimental contraints like echoCancellation, noiseReduction and cpuOveruseDetection:</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">MediaConstraintsInterface</span> <span class="p">{</span>
-  <span class="k">public</span><span class="o">:</span>
+  <span class="nl">public:</span>
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
-    <span class="c1">// Constraint keys used by a local audio source.
-</span>    <span class="c1">// These keys are google specific.
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEchoCancellation</span><span class="p">[];</span> <span class="c1">// googEchoCancellation
-</span>
-    <span class="c1">// Google-specific constraint keys for a local video source
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kNoiseReduction</span><span class="p">[];</span> <span class="c1">// googNoiseReduction
-</span>
+    <span class="c1">// Constraint keys used by a local audio source.</span>
+    <span class="c1">// These keys are google specific.</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEchoCancellation</span><span class="p">[];</span> <span class="c1">// googEchoCancellation</span>
+
+    <span class="c1">// Google-specific constraint keys for a local video source</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kNoiseReduction</span><span class="p">[];</span> <span class="c1">// googNoiseReduction</span>
+
     <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-    <span class="c1">// googTemporalLayeredScreencast
-</span>    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kCpuOveruseDetection</span><span class="p">[];</span>
+    <span class="c1">// googTemporalLayeredScreencast</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kCpuOveruseDetection</span><span class="p">[];</span>
 <span class="p">};</span></code></pre></figure>
 
 <p>Of course there is no guarantee that those features will make it to the final Media Capture and Streams spec.</p>
@@ -452,14 +452,14 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 <p>It’s source code is defined in Chromium’s content_switches.h header file:</p>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Defines all the "content" command-line switches.
-</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Defines all the "content" command-line switches.</span>
+
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
 <span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
-<span class="c1">// All switches in alphabetical order. The switches should be documented
-// alongside the definition of their values in the .cc file.
-</span><span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
+<span class="c1">// All switches in alphabetical order. The switches should be documented</span>
+<span class="c1">// alongside the definition of their values in the .cc file.</span>
+<span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
 <span class="n">CONTENT_EXPORT</span> <span class="k">extern</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[];</span>
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
@@ -474,8 +474,8 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 <span class="k">namespace</span> <span class="n">switches</span> <span class="p">{</span>
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 
-<span class="c1">// Enable screen capturing support for MediaStream API.
-</span><span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[]</span> <span class="o">=</span>
+<span class="c1">// Enable screen capturing support for MediaStream API.</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="n">kEnableUserMediaScreenCapturing</span><span class="p">[]</span> <span class="o">=</span>
     <span class="s">"enable-usermedia-screen-capturing"</span><span class="p">;</span>
 
 <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
@@ -578,7 +578,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 <span class="p">);</span>
 
 <span class="kd">function</span> <span class="nx">onMediaStream</span><span class="p">(</span><span class="nx">stream</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"localVideo"</span><span class="p">);</span>
+  <span class="nx">localVideo</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">localVideo</span><span class="dl">"</span><span class="p">);</span>
   
   <span class="nx">attachMediaStream</span><span class="p">(</span><span class="nx">localVideo</span><span class="p">,</span> <span class="nx">stream</span><span class="p">);</span>
   
@@ -586,7 +586,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 <span class="p">}</span>
 
 <span class="kd">function</span> <span class="nx">noMediaStream</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"No media stream for us."</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">No media stream for us.</span><span class="dl">"</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
 <span class="p">}</span></code></pre></figure>
 
 <p>Here, we call getUserMedia and pass it three parameters. The first is a constraints object listing which devices to access, in this case, both the video camera and the mic. The last two parameters are callbacks. We use the first callback for when we successfully get a stream from our camera. We use the second callback if accessing the camera stream fails.</p>
@@ -595,30 +595,30 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 <p>To accomplish this, we&rsquo;ll need to setup an event to apply each filter. Let&rsquo;s take a look at the JavaScript code to implement this:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"filters"</span><span class="p">);</span> 
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">filters</span><span class="dl">"</span><span class="p">);</span> 
 
-<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">filter</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">;</span>
   
   <span class="kd">var</span> <span class="nx">filters</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"NoFilter"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">NoFilter</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Willow"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-willow"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Willow</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-willow</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Earlybird"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-earlybird"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Earlybird</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-earlybird</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Mayfair"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-mayfair"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Mayfair</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-mayfair</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">},</span>
     
-    <span class="s2">"Amaro"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"ig-amaro"</span><span class="p">;</span>
+    <span class="dl">"</span><span class="s2">Amaro</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">localVideo</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">ig-amaro</span><span class="dl">"</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}[</span><span class="nx">filter</span><span class="p">]();</span>
 <span class="p">});</span></code></pre></figure>
@@ -925,7 +925,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 <p>You can use Respoke to <a href="https://docs-int.respoke.io/tutorials/calling-to-and-from-a-phone.html">make phone calls and receive phone calls</a> from phones on the PSTN as well as other Respoke client endpoints. It’s easy…</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// here's the App ID value from the portal:</span>
-<span class="kd">var</span> <span class="nx">appid</span> <span class="o">=</span> <span class="s2">"DD90A374-0C06-456F-9D4F-E8038E6523D2"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">appid</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">DD90A374-0C06-456F-9D4F-E8038E6523D2</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="c1">// create a client object using the App ID value</span>
 <span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">respoke</span><span class="p">.</span><span class="nx">createClient</span><span class="p">({</span>
@@ -934,18 +934,18 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 <span class="p">});</span>
 
 <span class="c1">// listen for the 'connect' event</span>
-<span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Connected to Respoke!"</span><span class="p">);</span>
+<span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Connected to Respoke!</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">});</span>
 
 <span class="c1">//Now all you have to do is make a call</span>
 <span class="nx">client</span><span class="p">.</span><span class="nx">startPhoneCall</span><span class="p">({</span>
-    <span class="na">number</span><span class="p">:</span> <span class="s2">"+15558675309"</span>
+    <span class="na">number</span><span class="p">:</span> <span class="dl">"</span><span class="s2">+15558675309</span><span class="dl">"</span>
 <span class="p">});</span>
 
 <span class="c1">//Attach listener to receive calls</span>
-<span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'call'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">call</span><span class="p">.</span><span class="nx">fromType</span> <span class="o">===</span> <span class="s1">'did'</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">call</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">call</span><span class="p">.</span><span class="nx">fromType</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">did</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// We got a call from a phone number!</span>
     <span class="p">}</span>
 
@@ -1640,8 +1640,8 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span><span class="nx">jQuery</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">();</span><span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
   <span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s2">"#button"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-       <span class="nx">alert</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#button</span><span class="dl">"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+       <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello World!</span><span class="dl">'</span><span class="p">);</span>
     <span class="p">});</span>
   <span class="p">});</span> <span class="c1">//document.ready</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
@@ -2135,8 +2135,8 @@ Java: Try <a href="https://htmlcleaner.sourceforge.net/">HTML Cleaner</a></p>
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
-        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
     <script src="/js/jquery.js"></script>

@@ -65,6 +65,6 @@ permalink: /
 
 
 <footer>
-    <p style="font-size: 80%;">All Content Copyright © {{ site.time | date: '%Y' }} Tian Davis. All Rights Reserved.</p>
-    <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+    <p style="font-size: 80%;">Copyright © {{ site.time | date: '%Y' }} Tian Davis. All Rights Reserved.</p>
+    <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
 </footer>

@@ -59,7 +59,7 @@
 <p>For example, say you’re working with a new instance of <a href="https://www.respoke.io/">Respoke</a>:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">respoke</span><span class="p">.</span><span class="nx">Client</span><span class="p">({</span>
-    <span class="na">appId</span><span class="p">:</span> <span class="s1">'918e31a3-34aa-40f8-aa4c-b5409f9e4053'</span><span class="p">,</span>
+    <span class="na">appId</span><span class="p">:</span> <span class="dl">'</span><span class="s1">918e31a3-34aa-40f8-aa4c-b5409f9e4053</span><span class="dl">'</span><span class="p">,</span>
     <span class="na">developmentMode</span><span class="p">:</span> <span class="kc">true</span>
 <span class="p">});</span></code></pre></figure>
 
@@ -80,7 +80,7 @@
 <p>If you need to use a particular domain, you could set that using Chance as well:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">({</span>
-    <span class="na">endpointId</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">email</span><span class="p">({</span><span class="na">domain</span><span class="p">:</span> <span class="s1">'respoke.io'</span><span class="p">})</span>
+    <span class="na">endpointId</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">email</span><span class="p">({</span><span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">respoke.io</span><span class="dl">'</span><span class="p">})</span>
 <span class="p">});</span></code></pre></figure>
 
 <p>Another potential use here is to generate a random Twitter username:</p>
@@ -97,7 +97,7 @@
 
 <p>You could use Chance to generate a random Black Berry Pin:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">bb_pin</span><span class="p">()</span> <span class="c1">//'985de771'</span>
   <span class="p">});</span>
@@ -105,7 +105,7 @@
 
 <p>Or you could you use Chance to generate a random Facebook Id:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">fbid</span><span class="p">()</span> <span class="c1">//'1000039460258605'</span>
   <span class="p">});</span>
@@ -113,7 +113,7 @@
 
 <p>Or you could you use Chance to generate a random Unix timestamp:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">client</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">connect</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">client</span><span class="p">.</span><span class="nx">join</span><span class="p">({</span>
       <span class="na">id</span><span class="p">:</span> <span class="nx">chance</span><span class="p">.</span><span class="nx">hammertime</span><span class="p">()</span> <span class="c1">//2273327300317</span>
   <span class="p">});</span>
@@ -149,8 +149,8 @@
     </main>
 
     <footer>
-        <p style="font-size: 80%;">All Content Copyright © 2018 Tian Davis. All Rights Reserved.</p>
-        <p style="font-size: 65%;">HANDCRAFTED WITH <abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr> IN COLUMBUS OHIO</p>
+        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
     <script src="/js/jquery.js"></script>
