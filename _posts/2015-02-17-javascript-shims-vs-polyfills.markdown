@@ -6,6 +6,8 @@ date:   2015-02-17 00:00:00
 permalink: /thoughts/posts/javascript-shims-versus-polyfills
 ---
 
+*Originally posted on the Respoke blog, [JavaScript: Shim vs Polyfill](https://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill).*
+
 ![Polyfilla](/images/polyfilla.jpg)
 
 

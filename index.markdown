@@ -32,6 +32,8 @@ permalink: /
 
   <h1 class="page-title" itemprop="name headline"><a href="/thoughts/posts/hustle-and-code">Hustle and Code</a></h1>
 
+  <h1 class="page-title" itemprop="name headline"><a href="/thoughts/posts/javascript-shims-versus-polyfills">JavaScript Shims Versus Polyfills</a></h1>
+
   <h1 class="page-title" itemprop="name headline"><a href="/thoughts/posts/rails-3-and-the-jquery-effect">Rails 3.1 and The jQuery Effect</a></h1>
 
   <h1 class="page-title" itemprop="name headline"><a href="/thoughts/posts/silly-rabbit-parsing-html-is-for-kids">Silly Rabbit, Parsing HTML is for Kids</a></h1>

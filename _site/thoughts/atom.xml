@@ -6,7 +6,7 @@
   <link href="http://localhost:4000" />
   <link href="http://localhost:4000/atom.xml" rel="self" />
   
-  <updated>2020-01-23T22:41:15-05:00</updated>
+  <updated>2020-02-01T23:11:04-05:00</updated>
   
   <rights>Copyright 2020, Tian Davis</rights>
   
@@ -564,7 +564,9 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
     <entry>
       <title>JavaScript Shims Versus Polyfills</title>
       <link href="http://localhost:4000/thoughts/posts/javascript-shims-versus-polyfills" />
-      <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/polyfilla.jpg&quot; alt=&quot;Polyfilla&quot; /&gt;&lt;/p&gt;
+      <summary type="html">&lt;p&gt;&lt;em&gt;Originally posted on the Respoke blog, &lt;a href=&quot;https://blog.respoke.io/post/111278536998/javascript-shim-vs-polyfill&quot;&gt;JavaScript: Shim vs Polyfill&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/polyfilla.jpg&quot; alt=&quot;Polyfilla&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’m currently working on a conference talk about WebRTC. One of the foundations of any WebRTC library is some form of Google’s original &lt;a href=&quot;https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js?r=3905&quot;&gt;adapter.js&lt;/a&gt;, which seeks to normalize the WebRTC API across various browsers. As I was about to build this particular slide, one question started to whisper in my ear, “Is adapter.js a shim or a polyfill?” Eventually, the whisper grew louder and I had to find the answer.&lt;/p&gt;
 
