@@ -89,7 +89,7 @@
   <span class="p">.</span> <span class="p">.</span> <span class="p">.</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>The <code class="highlighter-rouge">--enable-usermedia-screen-capturing</code> chromium flag replaces the media transmitted with your screen instead of your camera input.</p>
+<p>The <code class="language-plaintext highlighter-rouge">--enable-usermedia-screen-capturing</code> chromium flag replaces the media transmitted with your screen instead of your camera input.</p>
 
 <p>Our <a href="https://github.com/respoke/respoke-screen-sharing-node-webkit">Respoke screensharing demo</a> is open source. To use it, head over to our Respoke Screensharing Node-Webkit GitHub repo. Then run the following commands from your terminal:</p>
 
@@ -154,7 +154,7 @@ Open Node Webkit Instance 2
 <p>Flags
 We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle.</p>
 
-<p>For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: <code class="highlighter-rouge">--enable-usermedia-screen-capturing</code>.</p>
+<p>For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: <code class="language-plaintext highlighter-rouge">--enable-usermedia-screen-capturing</code>.</p>
 
 <p>It’s source code is defined in Chromium’s content_switches.h header file:</p>
 
@@ -189,10 +189,10 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 <p>We then use those flags as chromium-args in our node-webkit apps. You can pass chromium flags to chrome directly as well. On Mac OS X, you’d use:</p>
 
-<p><code class="highlighter-rouge">open -a "Google Chrome" --args --enable-usermedia-screen-capturing</code></p>
+<p><code class="language-plaintext highlighter-rouge">open -a "Google Chrome" --args --enable-usermedia-screen-capturing</code></p>
 
 <p>On Windows, something like:
-<code class="highlighter-rouge">chrome.exe --args --enable-usermedia-screen-capturing</code></p>
+<code class="language-plaintext highlighter-rouge">chrome.exe --args --enable-usermedia-screen-capturing</code></p>
 
 <p>I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.</p>
 
@@ -220,7 +220,7 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
     </main>
 
     <footer>
-        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">Copyright © 2021 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 

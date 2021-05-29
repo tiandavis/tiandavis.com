@@ -6,9 +6,9 @@
   <link href="http://localhost:4000" />
   <link href="http://localhost:4000/atom.xml" rel="self" />
   
-  <updated>2020-02-01T23:11:04-05:00</updated>
+  <updated>2021-05-29T17:29:29-04:00</updated>
   
-  <rights>Copyright 2020, Tian Davis</rights>
+  <rights>Copyright 2021, Tian Davis</rights>
   
   <author>
     <name>Tian Davis</name>
@@ -316,7 +316,7 @@
   &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;--enable-usermedia-screen-capturing&lt;/code&gt; chromium flag replaces the media transmitted with your screen instead of your camera input.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--enable-usermedia-screen-capturing&lt;/code&gt; chromium flag replaces the media transmitted with your screen instead of your camera input.&lt;/p&gt;
 
 &lt;p&gt;Our &lt;a href=&quot;https://github.com/respoke/respoke-screen-sharing-node-webkit&quot;&gt;Respoke screensharing demo&lt;/a&gt; is open source. To use it, head over to our Respoke Screensharing Node-Webkit GitHub repo. Then run the following commands from your terminal:&lt;/p&gt;
 
@@ -381,7 +381,7 @@ Open Node Webkit Instance 2
 &lt;p&gt;Flags
 We had to use Chromium command line flags to enable screensharing. Chromium command line flags are another interesting piece of the puzzle.&lt;/p&gt;
 
-&lt;p&gt;For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: &lt;code class=&quot;highlighter-rouge&quot;&gt;--enable-usermedia-screen-capturing&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For one they enable developers to take advantage of features not available to the general public. Another is peeking behind the covers is just really cool to see. Take for example the Chromium flag we used earlier: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--enable-usermedia-screen-capturing&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;It’s source code is defined in Chromium’s content_switches.h header file:&lt;/p&gt;
 
@@ -416,10 +416,10 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;p&gt;We then use those flags as chromium-args in our node-webkit apps. You can pass chromium flags to chrome directly as well. On Mac OS X, you’d use:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;open -a &quot;Google Chrome&quot; --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open -a &quot;Google Chrome&quot; --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;On Windows, something like:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;chrome.exe --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chrome.exe --args --enable-usermedia-screen-capturing&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I hope you’re as excited about the future of WebRTC as we are. It’s a great time to be a developer. Fork our demo screensharing app using Respoke and Node-Webkit. Play around and if you like it, share it with your friends.&lt;/p&gt;
 </summary>
@@ -592,15 +592,15 @@ We had to use Chromium command line flags to enable screensharing. Chromium comm
 
 &lt;h3 id=&quot;similarities-between-polyfill-and-shim&quot;&gt;Similarities Between Polyfill and Shim&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Both seek to normalize functionality across browsers&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;- Both seek to normalize functionality across browsers&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Both tend to extend native methods, opting for their own implementation when the native method does not exist.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;- Both tend to extend native methods, opting for their own implementation when the native method does not exist.&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;differences-between-polyfill-and-shim&quot;&gt;Differences Between Polyfill and Shim`&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- Shims tend to be written in a single language&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;- Shims tend to be written in a single language&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn’t exist in that browser at all. I believe that’s the pivotal point here.&lt;/p&gt;
 
@@ -612,15 +612,15 @@ A polyfill is code that detects if a certain “expected” API is missing and m
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if (!Function.prototype.bind) {&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if (!Function.prototype.bind) {&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Function.prototype.bind = ...;&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Function.prototype.bind = ...;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;A shim is code that intercepts existing API calls and implements different behavior. The idea here is to normalize certain APIs across different environments. So, if two browsers implement the same API differently, you could intercept the API calls in one of those browsers and make its behavior align with the other browser. Or, if a browser has a bug in one of its APIs, you could again intercept calls to that API, and then circumvent the bug.
@@ -646,11 +646,11 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;So as a developer, here’s a quick checklist to figure out if you’re developing a shim or a polyfill:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1.Does your library normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.Does your library normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. Does the JavaScript API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2. Does the JavaScript API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3.Does your library implement the JavaScript API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.Does your library implement the JavaScript API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Here’s a flow diagram of the decision tree:&lt;/p&gt;
 
@@ -660,15 +660,15 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 &lt;p&gt;Let’s use our decision framework to figure out the answer to the question:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1. Does adapter.js normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1. Does adapter.js normalize a JavaScript API across the major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Yes. Adapter.js normalizes the WebRTC API.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2. Does the WebRTC API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2. Does the WebRTC API exist in some major browsers?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Yes. Currently, the WebRTC API exists in Chrome, Firefox and Opera.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3. Does adapter.js implement the WebRTC API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3. Does adapter.js implement the WebRTC API where it does not exist?&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;No. Google’s adapter.js library does not implement the WebRTC API in either IE or Safari.&lt;/p&gt;
 

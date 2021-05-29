@@ -60,13 +60,15 @@ The most exciting aspect of this project was working with the [MutationObserver]
 
 The result is we're able to add links to Journals, Articles and Article PDF downloads in BrowZine, as well as enhance search results with BrowZine Journal Covers. The project is open source and well tested using the Karma test runner and Jasmine for [Unit and Acceptance Tests](https://github.com/thirdiron/browzine-discovery-service-adapters/tree/develop/tests) to guard against regressions. This project also integrates with CircleCI for continuous integration.
 
-#### <i>Nomad Chrome Extension</i>
+#### <i>LibKey Nomad Chrome Extension</i>
 
-LibKey [Nomad](https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb) is a Chrome extension that helps academic researchers quickly identify and download the PDF of research journal articles. Nomad provides one-click access to millions of scholarly articles and is supported by over 725 libraries in more than 30 countries!
+LibKey [Nomad](https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb) is a Google Chrome extension with 100,000+ users that helps academic researchers quickly identify and download the PDF of research journal articles. LibKey Nomad provides one-click access to millions of scholarly articles and is supported by over 1000+ libraries in more than 34 countries!
 
-![chrome browser extension screenshot](/images/chrome-browser-extension-1.png)
+![chrome browser extension screenshot](/images/chrome-browser-extension.png)
 
 LibKey Nomad is a React based Chrome extension, leveraging Puppeteer and Mocha for automated acceptance test coverage. Nomad proved to academic researchers that journal article PDFs accessed through their library could be both fast and reliable.
+
+In addition to Google Chrome, LibKey Nomad is also supported for Mozilla [Firefox](https://addons.mozilla.org/en-US/firefox/addon/libkey-nomad/) and Microsoft [Edge](https://microsoftedge.microsoft.com/addons/detail/libkey-nomad/aegommgkkknipcpebmcbepdapjdojiji). Windows Group Policy deployments using Active Directory are also supported in managed organization environments.
 
 #### <i>Ember CLI Upgrades</i>
 
@@ -74,6 +76,13 @@ One of the most frustrating pieces of Ember is upgrading to the latest versions 
 
 
 #### <i>Open Source Contributions (OSS)</i>
+
+My team was working through a VPAT accessibility audit for web assets. During the accessibility audit, one of the most pressing blockers surfaced was that highlighted select options were not spoken by any of the screen readers - Major (VoiceOver, NVDA, JAWS) or Minor (ChromeVox, etc).
+
+Created a PR for ember-power-select enabling screen readers to announce highlighted select options by alerting screen readers to highlighted select options.
+
+<blockquote class="embedly-card" data-card-key="db853905f7da46498006d870b8bcb67c" data-card-controls="0"><h4><a href="https://github.com/cibernox/ember-power-select/pull/1409">cibernox/ember-power-select</a></h4><p>The extensible select component built for ember</p></blockquote>
+
 
 While working through the BrowZine Discovery Service Adapters deployment strategy, we realized we'd want to make the TTL for each adapter configurable.
 

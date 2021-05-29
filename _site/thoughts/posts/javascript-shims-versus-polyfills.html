@@ -68,15 +68,15 @@
 
 <h3 id="similarities-between-polyfill-and-shim">Similarities Between Polyfill and Shim</h3>
 
-<p><code class="highlighter-rouge">- Both seek to normalize functionality across browsers</code></p>
+<p><code class="language-plaintext highlighter-rouge">- Both seek to normalize functionality across browsers</code></p>
 
-<p><code class="highlighter-rouge">- Both tend to extend native methods, opting for their own implementation when the native method does not exist.</code></p>
+<p><code class="language-plaintext highlighter-rouge">- Both tend to extend native methods, opting for their own implementation when the native method does not exist.</code></p>
 
 <h3 id="differences-between-polyfill-and-shim">Differences Between Polyfill and Shim`</h3>
 
-<p><code class="highlighter-rouge">- Shims tend to be written in a single language</code></p>
+<p><code class="language-plaintext highlighter-rouge">- Shims tend to be written in a single language</code></p>
 
-<p><code class="highlighter-rouge">-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization</code></p>
+<p><code class="language-plaintext highlighter-rouge">-Polyfills tend to use multiple language platforms to achieve the aim of cross-browser normalization</code></p>
 
 <p>Polyfills often have to use multiple language platforms because sometimes a particular JavaScript API doesn’t exist in that browser at all. I believe that’s the pivotal point here.</p>
 
@@ -88,15 +88,15 @@ A polyfill is code that detects if a certain “expected” API is missing and m
 </blockquote>
 
 <blockquote>
-  <p><code class="highlighter-rouge">if (!Function.prototype.bind) {</code></p>
+  <p><code class="language-plaintext highlighter-rouge">if (!Function.prototype.bind) {</code></p>
 </blockquote>
 
 <blockquote>
-  <p><code class="highlighter-rouge">Function.prototype.bind = ...;</code></p>
+  <p><code class="language-plaintext highlighter-rouge">Function.prototype.bind = ...;</code></p>
 </blockquote>
 
 <blockquote>
-  <p><code class="highlighter-rouge">}</code></p>
+  <p><code class="language-plaintext highlighter-rouge">}</code></p>
 </blockquote>
 
 <p>A shim is code that intercepts existing API calls and implements different behavior. The idea here is to normalize certain APIs across different environments. So, if two browsers implement the same API differently, you could intercept the API calls in one of those browsers and make its behavior align with the other browser. Or, if a browser has a bug in one of its APIs, you could again intercept calls to that API, and then circumvent the bug.
@@ -122,11 +122,11 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>So as a developer, here’s a quick checklist to figure out if you’re developing a shim or a polyfill:</p>
 
-<p><strong><code class="highlighter-rouge">1.Does your library normalize a JavaScript API across the major browsers?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">1.Does your library normalize a JavaScript API across the major browsers?</code></strong></p>
 
-<p><strong><code class="highlighter-rouge">2. Does the JavaScript API exist in some major browsers?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">2. Does the JavaScript API exist in some major browsers?</code></strong></p>
 
-<p><strong><code class="highlighter-rouge">3.Does your library implement the JavaScript API where it does not exist?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">3.Does your library implement the JavaScript API where it does not exist?</code></strong></p>
 
 <p>Here’s a flow diagram of the decision tree:</p>
 
@@ -136,15 +136,15 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
 
 <p>Let’s use our decision framework to figure out the answer to the question:</p>
 
-<p><strong><code class="highlighter-rouge">1. Does adapter.js normalize a JavaScript API across the major browsers?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">1. Does adapter.js normalize a JavaScript API across the major browsers?</code></strong></p>
 
 <p>Yes. Adapter.js normalizes the WebRTC API.</p>
 
-<p><strong><code class="highlighter-rouge">2. Does the WebRTC API exist in some major browsers?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">2. Does the WebRTC API exist in some major browsers?</code></strong></p>
 
 <p>Yes. Currently, the WebRTC API exists in Chrome, Firefox and Opera.</p>
 
-<p><strong><code class="highlighter-rouge">3. Does adapter.js implement the WebRTC API where it does not exist?</code></strong></p>
+<p><strong><code class="language-plaintext highlighter-rouge">3. Does adapter.js implement the WebRTC API where it does not exist?</code></strong></p>
 
 <p>No. Google’s adapter.js library does not implement the WebRTC API in either IE or Safari.</p>
 
@@ -180,7 +180,7 @@ I think this is the most clear definition I’ve seen of the two so far. Vidas m
     </main>
 
     <footer>
-        <p style="font-size: 80%;">Copyright © 2020 Tian Davis. All Rights Reserved.</p>
+        <p style="font-size: 80%;">Copyright © 2021 Tian Davis. All Rights Reserved.</p>
         <p style="font-size: 65%;"><abbr style="color: #FF2400; font-variant: none" title="love">❤</abbr></p>
     </footer>
 
