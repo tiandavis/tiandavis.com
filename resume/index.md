@@ -18,7 +18,7 @@ Over the last fifteen years, as a Front-End Developer and Tech Lead, I’ve done
 
 ## Strong Engineering Skills
 
-Currently, I wax poetic with Ember.js and Node as a software developer on the BrowZine [Front-End Engineering Team][browzine]. BrowZine is a remote distributed startup in the academic and commercial research space.
+Currently, I wax poetic with Ember.js and Node as a Software Engineer on the BrowZine [Front-End Engineering Team][browzine]. BrowZine is a remote distributed startup in the academic and commercial research space.
 
 Previously, I shipped critical components on both Respoke's Community Team and Respoke's Front-End Team. At its height, Respoke was a remote distributed startup in the telecommunication space, specifically WebRTC and Asterisk.
 
@@ -62,7 +62,7 @@ The result is we're able to add links to Journals, Articles and Article PDF down
 
 #### <i>LibKey Nomad Chrome Extension</i>
 
-LibKey [Nomad](https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb) is a Google Chrome extension with 100,000+ users that helps academic researchers quickly identify and download the PDF of research journal articles. LibKey Nomad provides one-click access to millions of scholarly articles and is supported by over 1000+ libraries in more than 34 countries!
+LibKey [Nomad](https://chrome.google.com/webstore/detail/libkey-nomad/lkoeejijapdihgbegpljiehpnlkadljb) is a Google Chrome extension with 1,000,000+ users that helps academic researchers quickly identify and download the PDF of research journal articles. LibKey Nomad provides one-click access to millions of scholarly articles and is supported by over 1500+ libraries in more than 35+ countries!
 
 ![chrome browser extension screenshot](/images/chrome-browser-extension.png)
 
